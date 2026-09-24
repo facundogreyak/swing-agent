@@ -34,7 +34,8 @@ def _tabla(df, columnas):
 
 def main():
     cfg = yaml.safe_load(open("config.yaml", encoding="utf-8"))
-    con = db.conectar(cfg["datos"]["base_datos"])
+    con = db.conectar(cfg["datos"]["base_precios"])
+    con_diario = db.conectar(cfg["datos"]["base_diario"])
     DOCS.mkdir(exist_ok=True)
     ahora = datetime.now(timezone(timedelta(hours=-3))).strftime("%d/%m/%Y %H:%M")
 
@@ -64,11 +65,24 @@ def main():
     ult = estado.ultima_fecha.max() if len(estado) else "—"
 
     # Versiones de parámetros
-    vers = pd.read_sql("SELECT version_id, nombre, creada FROM versiones_params ORDER BY creada DESC", con)
+    vers = pd.read_sql("SELECT version_id, nombre, creada FROM versiones_params ORDER BY creada DESC", con_diario)
 
     serie = {"fechas": [], "agente": [], "spy": []}
     if eq is not None:
         serie = {"fechas": eq.fecha.tolist(), "agente": eq.total.tolist(), "spy": eq.spy.tolist()}
+
+    calib_html = "<p class='vacio'>Todavía no hay calibración.</p>"
+    if (REP / "calibracion.csv").exists():
+        cal = pd.read_csv(REP / "calibracion.csv").head(8)
+        ren = {"objetivo_r": "Objetivo (R)", "max_dias_en_posicion": "Días máx.", "trailing_atr": "Trailing ATR",
+               "filtro_mercado": "Filtro SPY", "in_retorno_anual (CAGR)": "CAGR antes",
+               "in_max_drawdown": "Caída antes", "out_retorno_anual (CAGR)": "CAGR después",
+               "out_max_drawdown": "Caída después", "out_spy_retorno_anual": "SPY después"}
+        cal = cal[list(ren)].rename(columns=ren)
+        for c in ["CAGR antes", "Caída antes", "CAGR después", "Caída después", "SPY después"]:
+            cal[c] = cal[c].map(lambda v: f"{v:.1%}")
+        cal = cal.fillna("no")
+        calib_html = _tabla(cal, list(cal.columns))
 
     ultimas = ops.tail(15).iloc[::-1] if ops is not None else None
     cols_ops = ["ticker", "fecha_entrada", "fecha_salida", "motivo_salida", "dias", "r_multiple", "pnl_usd"]
@@ -101,6 +115,10 @@ th,td{{text-align:left;padding:6px 8px;border-bottom:1px solid var(--bd);white-s
 
 <h2>Últimas operaciones del backtest</h2>
 {_tabla(ultimas, cols_ops)}
+
+<h2>Calibración (mejores combinaciones)</h2>
+<div class="sub" style="margin-bottom:8px">"Antes" = período usado para elegir · "Después" = verificación con datos no usados</div>
+{calib_html}
 
 <h2>Estado de los datos</h2>
 <div class="card">{len(estado)} de {len(esperados)} tickers con precios.

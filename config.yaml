@@ -5,7 +5,7 @@
 #  comparar qué configuración rindió mejor.
 # =====================================================================
 
-nombre_version: "v1-base"        # ponele un nombre cada vez que cambies algo
+nombre_version: "v2-filtro-mercado"        # ponele un nombre cada vez que cambies algo
 
 # ---------------------------------------------------------------------
 # UNIVERSO: CEDEARs. Las señales se calculan sobre el SUBYACENTE (USA),
@@ -57,7 +57,7 @@ universo:
   - {subyacente: WMT,    cedear: WMT.BA, sector: Consumo}
   - {subyacente: HD,     cedear: HD.BA, sector: Consumo}
   - {subyacente: NKE,    cedear: NKE.BA, sector: Consumo}
-  - {subyacente: DIS,    cedear: DIS.BA, sector: Consumo}
+  - {subyacente: DIS,    cedear: DISN.BA, sector: Consumo}
   # --- Salud ---
   - {subyacente: JNJ,    cedear: JNJ.BA, sector: Salud}
   - {subyacente: PFE,    cedear: PFE.BA, sector: Salud}
@@ -77,13 +77,23 @@ benchmark: SPY                   # contra qué medimos si el agente agrega valor
 # ---------------------------------------------------------------------
 backtest:
   variantes_riesgo: [0.005, 0.01, 0.02]
+  # Calibración: se prueban todas las combinaciones de la grilla.
+  # Se elige mirando SOLO el período "dentro de muestra" (antes de esta fecha)
+  # y después se verifica en el período "fuera de muestra" (datos no usados para elegir).
+  inicio_fuera_de_muestra: "2023-01-01"
+  grilla:
+    objetivo_r: [1.5, 2.0, 3.0]
+    max_dias_en_posicion: [10, 15, 20]
+    trailing_atr: [null, 3.0]
+    filtro_mercado: [true, false]
 
 # ---------------------------------------------------------------------
 # DATOS
 # ---------------------------------------------------------------------
 datos:
-  historia_anios: 3              # cuántos años bajar la primera vez
-  base_datos: data/agente.db     # archivo SQLite donde se guarda todo
+  historia_anios: 10             # 10 años: incluye 2018, 2020 y 2022 (mercados bajistas)
+  base_precios: data/precios.db  # precios (NO se sube a GitHub; se guarda en caché)
+  base_diario: data/diario.db    # versiones, decisiones y operaciones (SÍ se sube)
 
 # ---------------------------------------------------------------------
 # ESTRATEGIA (se usa en la Etapa 2)
@@ -96,6 +106,8 @@ estrategia:
   rsi_entrada_max: 40            # entra solo si el RSI retrocedió por debajo de esto...
   rsi_confirmacion: true         # ...y hoy vuelve a subir (rebote)
   volumen_min_rel: 0.8           # volumen de hoy >= 0.8x su promedio de 20 ruedas
+  filtro_mercado: true           # operar solo si el benchmark (SPY) está sobre su media...
+  sma_mercado: 200               # ...de 200 ruedas (evita comprar en mercados bajistas)
 
 # ---------------------------------------------------------------------
 # GESTIÓN DE RIESGO (se usa en las Etapas 2-4)
@@ -106,6 +118,7 @@ riesgo:
   atr_periodo: 14
   stop_atr: 2.0                  # stop = entrada - 2 x ATR
   objetivo_r: 2.0                # take profit = 2 veces lo arriesgado (2R)
+  trailing_atr: null             # ej. 3.0 = el stop sube detrás del precio (máximo - 3xATR). null = apagado
   max_dias_en_posicion: 15       # salida por tiempo (swing = días/semanas)
   max_posiciones: 5
   max_por_sector: 2              # evita tener 5 posiciones que se mueven igual

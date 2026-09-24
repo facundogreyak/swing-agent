@@ -53,3 +53,8 @@ def tamano_posicion(capital, entrada, stop, riesgo_pct, efectivo, max_pct_posici
     cantidad = capital * riesgo_pct / riesgo_por_accion
     cantidad = min(cantidad, capital * max_pct_posicion / entrada, efectivo / entrada)
     return round(max(cantidad, 0.0), 4)
+
+
+def regimen_mercado(bench: pd.DataFrame, n: int = 200) -> pd.Series:
+    """True los días en que el benchmark (SPY) cierra por encima de su media de n ruedas."""
+    return bench["close"] > bench["close"].rolling(n).mean()

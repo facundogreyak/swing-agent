@@ -8,17 +8,19 @@ import yfinance as yf
 import db
 
 
-def _ultima_fecha(con, ticker):
-    fila = con.execute("SELECT MAX(fecha) FROM precios WHERE ticker=?", (ticker,)).fetchone()
-    return fila[0]
+def _rango(con, ticker):
+    return con.execute("SELECT MIN(fecha), MAX(fecha) FROM precios WHERE ticker=?", (ticker,)).fetchone()
 
 
 def actualizar_ticker(con, ticker: str, anios: int) -> int:
-    ultima = _ultima_fecha(con, ticker)
-    if ultima:
+    inicio_deseado = date.today() - timedelta(days=365 * anios)
+    primera, ultima = _rango(con, ticker)
+    # Si ya tenemos la historia completa, bajar solo lo que falta.
+    # Si falta historia (p. ej. se amplió historia_anios), bajar todo de nuevo.
+    if ultima and pd.Timestamp(primera).date() <= inicio_deseado + timedelta(days=15):
         desde = (pd.Timestamp(ultima) - timedelta(days=5)).date()   # pequeño solapamiento
     else:
-        desde = date.today() - timedelta(days=365 * anios)
+        desde = inicio_deseado
     df = yf.download(ticker, start=desde, progress=False, auto_adjust=True)
     if df is None or df.empty:
         return 0
