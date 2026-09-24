@@ -1,0 +1,24 @@
+# Calibración de parámetros
+
+Dentro de muestra: hasta 2023-01-01 (se usa para elegir). Fuera de muestra: desde 2023-01-01 (verificación con datos no usados).
+
+Orden: por retorno/caída (MAR) **dentro de muestra**. Si el ranking fuera de muestra se parece, el resultado es más confiable.
+
+Configuración actual: objetivo_r=3.0, max_dias_en_posicion=20, filtro_mercado=True, fuerza_relativa_dias=None
+
+## Top 10
+
+|   objetivo_r |   max_dias_en_posicion | filtro_mercado   | fuerza_relativa_dias   |   in_operaciones |   in_r_promedio (expectancy) | in_retorno_anual (CAGR)   | in_max_drawdown   |   in_retorno/caida (MAR) |   out_r_promedio (expectancy) | out_retorno_anual (CAGR)   | out_max_drawdown   |   out_retorno/caida (MAR) | out_spy_retorno_anual   |
+|-------------:|-----------------------:|:-----------------|:-----------------------|-----------------:|-----------------------------:|:--------------------------|:------------------|-------------------------:|------------------------------:|:---------------------------|:-------------------|--------------------------:|:------------------------|
+|            4 |                     20 | no               | no                     |              354 |                         0.19 | 10.1%                     | -19.0%            |                     0.53 |                          0.17 | 12.6%                      | -17.6%             |                      0.72 | 22.1%                   |
+|            4 |                     20 | sí               | no                     |              287 |                         0.18 | 7.5%                      | -16.9%            |                     0.44 |                          0.16 | 10.6%                      | -14.5%             |                      0.73 | 22.1%                   |
+|            3 |                     20 | no               | no                     |              363 |                         0.16 | 8.5%                      | -25.2%            |                     0.34 |                          0.16 | 10.8%                      | -18.1%             |                      0.6  | 22.1%                   |
+|            3 |                     20 | sí               | no                     |              293 |                         0.15 | 5.9%                      | -21.7%            |                     0.27 |                          0.15 | 9.5%                       | -15.0%             |                      0.64 | 22.1%                   |
+|            2 |                     20 | sí               | 63                     |              186 |                         0.18 | 4.6%                      | -19.9%            |                     0.23 |                          0.17 | 6.6%                       | -14.1%             |                      0.47 | 22.1%                   |
+|            4 |                     20 | sí               | 63                     |              176 |                         0.21 | 4.4%                      | -19.9%            |                     0.22 |                          0.16 | 5.8%                       | -14.7%             |                      0.39 | 22.1%                   |
+|            4 |                     30 | no               | no                     |              302 |                         0.15 | 4.9%                      | -22.5%            |                     0.22 |                          0.11 | 5.7%                       | -17.0%             |                      0.34 | 22.1%                   |
+|            2 |                     30 | sí               | 63                     |              183 |                         0.18 | 4.2%                      | -19.9%            |                     0.21 |                          0.27 | 10.7%                      | -13.1%             |                      0.81 | 22.1%                   |
+|            3 |                     20 | sí               | 63                     |              178 |                         0.19 | 4.0%                      | -19.9%            |                     0.2  |                          0.12 | 4.6%                       | -15.1%             |                      0.3  | 22.1%                   |
+|            2 |                     20 | no               | 63                     |              261 |                         0.12 | 4.1%                      | -21.1%            |                     0.19 |                          0.23 | 10.8%                      | -20.9%             |                      0.52 | 22.1%                   |
+
+Correlación de ranking dentro vs fuera de muestra (Spearman): **0.17** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).

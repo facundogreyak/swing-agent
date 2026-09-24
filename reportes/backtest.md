@@ -1,4 +1,4 @@
-# Backtest – v2-filtro-mercado
+# Backtest – v3-3R-20dias
 
 Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
@@ -6,18 +6,18 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 
 | Métrica | Valor |
 |---|---|
-| operaciones | 664 |
-| win_rate | 45.8% |
-| r_promedio (expectancy) | 0.04 |
-| ganancia_prom_R | 1.19 |
-| perdida_prom_R | -0.92 |
-| profit_factor | 1.05 |
-| dias_prom_en_posicion | 10.34 |
-| retorno_total | 14.1% |
-| retorno_anual (CAGR) | 1.4% |
-| max_drawdown | -26.6% |
-| retorno/caida (MAR) | 0.05 |
-| exposicion_prom | 55.2% |
+| operaciones | 558 |
+| win_rate | 44.1% |
+| r_promedio (expectancy) | 0.15 |
+| ganancia_prom_R | 1.57 |
+| perdida_prom_R | -0.97 |
+| profit_factor | 1.24 |
+| dias_prom_en_posicion | 13.42 |
+| retorno_total | 93.8% |
+| retorno_anual (CAGR) | 7.5% |
+| max_drawdown | -21.7% |
+| retorno/caida (MAR) | 0.34 |
+| exposicion_prom | 60.1% |
 | spy_retorno_anual | 15.0% |
 | spy_max_drawdown | -33.7% |
 
@@ -25,59 +25,59 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 
 | Año | Agente | SPY |
 |---|---|---|
-| 2017 | 9.8% | 10.3% |
-| 2018 | -19.2% | -4.6% |
-| 2019 | 11.0% | 31.2% |
-| 2020 | -2.8% | 18.3% |
-| 2021 | -1.1% | 28.7% |
-| 2022 | 3.5% | -18.2% |
-| 2023 | -0.2% | 26.2% |
-| 2024 | 13.1% | 24.9% |
-| 2025 | 13.3% | 17.7% |
-| 2026 | -9.0% | 13.0% |
+| 2017 | 12.9% | 10.3% |
+| 2018 | -11.5% | -4.6% |
+| 2019 | 18.5% | 31.2% |
+| 2020 | 6.4% | 18.3% |
+| 2021 | 5.5% | 28.7% |
+| 2022 | 2.9% | -18.2% |
+| 2023 | 7.3% | 26.2% |
+| 2024 | 22.5% | 24.9% |
+| 2025 | 10.0% | 17.7% |
+| 2026 | -2.0% | 12.9% |
 
 ## Variantes de riesgo por operación
 
 | Variante | operaciones | win_rate | r_promedio (expectancy) | retorno_anual (CAGR) | max_drawdown | exposicion_prom |
 |---|---|---|---|---|---|---|
-| riesgo 0.5% | 664 | 45.8% | 0.05 | 1.4% | -13.8% | 32.2% |
-| riesgo 1.0% | 664 | 45.8% | 0.04 | 1.4% | -26.6% | 55.2% |
-| riesgo 2.0% | 650 | 45.5% | 0.06 | 1.7% | -30.6% | 62.4% |
+| riesgo 0.5% | 558 | 44.3% | 0.15 | 4.5% | -12.3% | 35.2% |
+| riesgo 1.0% | 558 | 44.1% | 0.15 | 7.5% | -21.7% | 60.1% |
+| riesgo 2.0% | 546 | 42.3% | 0.14 | 8.8% | -24.0% | 66.8% |
 
 ## Resultado por motivo de salida
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 5 | -0.17 |
-| OBJETIVO | 86 | 1.93 |
-| OBJETIVO (gap) | 23 | 2.55 |
-| STOP | 204 | -1.07 |
-| STOP (gap) | 61 | -1.32 |
-| TIEMPO | 285 | 0.36 |
+| FIN PERÍODO | 4 | 0.05 |
+| OBJETIVO | 43 | 2.93 |
+| OBJETIVO (gap) | 9 | 3.88 |
+| STOP | 194 | -1.07 |
+| STOP (gap) | 58 | -1.35 |
+| TIEMPO | 250 | 0.83 |
 
 ## Resultado por sector
 
 | Sector | Operaciones | Win rate | R promedio | PnL USD |
 |---|---|---|---|---|
-| China | 14 | 57% | -0.24 | -358 |
-| Consumo | 136 | 43% | -0.01 | -633 |
-| Energía / Industria | 61 | 36% | -0.25 | -1,549 |
-| Financieras | 99 | 45% | 0.08 | 518 |
-| Latam / Brasil | 89 | 46% | -0.05 | -620 |
-| Salud | 63 | 52% | 0.20 | 1,066 |
-| Tecnología | 202 | 48% | 0.17 | 2,969 |
+| China | 10 | 30% | 0.23 | 538 |
+| Consumo | 120 | 42% | 0.08 | -582 |
+| Energía / Industria | 54 | 37% | -0.06 | 0 |
+| Financieras | 73 | 48% | 0.12 | 1,399 |
+| Latam / Brasil | 81 | 41% | 0.13 | 678 |
+| Salud | 54 | 48% | 0.12 | 824 |
+| Tecnología | 166 | 48% | 0.29 | 6,500 |
 
 ## Últimas 10 operaciones
 
 | ticker   | sector              | fecha_entrada   |   precio_entrada |   stop_inicial |   objetivo |   cantidad | fecha_salida   |   precio_salida | motivo_salida   |   dias |   pnl_usd |   r_multiple |
 |:---------|:--------------------|:----------------|-----------------:|---------------:|-----------:|-----------:|:---------------|----------------:|:----------------|-------:|----------:|-------------:|
-| C        | Financieras         | 2026-07-31      |          132.874 |       125.227  |   148.17   |    14.6314 | 2026-08-21     |         131.65  | TIEMPO          |     15 |    -23.72 |        -0.21 |
-| AVGO     | Tecnología          | 2026-08-24      |          364.307 |       333.803  |   425.314  |     3.7315 | 2026-09-15     |         338.653 | TIEMPO          |     15 |    -99.66 |        -0.88 |
-| C        | Financieras         | 2026-08-24      |          131.39  |       124.884  |   144.402  |    17.495  | 2026-09-15     |         136.17  | TIEMPO          |     15 |     76.6  |         0.67 |
-| INTC     | Tecnología          | 2026-08-28      |           90.27  |        78.6553 |   113.499  |     9.8303 | 2026-09-21     |         116.53  | OBJETIVO (gap)  |     15 |    255.09 |         2.23 |
-| BAC      | Financieras         | 2026-09-16      |           59.27  |        56.708  |    64.3939 |    44.6931 | 2026-09-22     |          56.708 | STOP            |      4 |   -122.28 |        -1.07 |
-| CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |   911.492  |     2.0034 | 2026-09-24     |         796.105 | FIN PERÍODO     |     13 |     -6.38 |        -0.06 |
-| LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1263.32   |     1.6901 | 2026-09-24     |        1192.2   | FIN PERÍODO     |      9 |    105.88 |         0.91 |
-| AMZN     | Tecnología          | 2026-09-18      |          252.92  |       240.572  |   277.617  |     9.3371 | 2026-09-24     |         246.53  | FIN PERÍODO     |      4 |    -66.66 |        -0.58 |
-| BAC      | Financieras         | 2026-09-22      |           58.1   |        55.5847 |    63.1306 |    46.1474 | 2026-09-24     |          55.935 | FIN PERÍODO     |      2 |   -107.8  |        -0.93 |
-| PYPL     | Tecnología          | 2026-09-23      |           52.79  |        49.4652 |    59.4396 |    34.3503 | 2026-09-24     |          52.24  | FIN PERÍODO     |      1 |    -24.3  |        -0.21 |
+| GOOGL    | Tecnología          | 2026-07-28      |          327.689 |       304.194  |   398.176  |     8.4553 | 2026-08-25     |        346.737  | TIEMPO          |     20 |    152.5  |         0.77 |
+| CAT      | Energía / Industria | 2026-07-31      |          843.39  |       759.87   |  1093.95   |     2.4121 | 2026-08-28     |        800.25   | TIEMPO          |     20 |   -110    |        -0.55 |
+| NVDA     | Tecnología          | 2026-08-03      |          197.469 |       182.538  |   242.261  |    13.416  | 2026-08-31     |        220.533  | TIEMPO          |     20 |    301.02 |         1.5  |
+| AVGO     | Tecnología          | 2026-08-28      |          372.921 |       344.64   |   457.764  |     6.9752 | 2026-09-03     |        344.64   | STOP            |      4 |   -204.77 |        -1.04 |
+| PYPL     | Tecnología          | 2026-09-03      |           54.675 |        50.8167 |    66.2498 |    51.1069 | 2026-09-10     |         50.8167 | STOP            |      4 |   -205.27 |        -1.04 |
+| C        | Financieras         | 2026-08-24      |          131.39  |       124.884  |   150.908  |    30.1377 | 2026-09-23     |        131.93   | TIEMPO          |     20 |      4.37 |         0.02 |
+| CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |   968.788  |     3.4415 | 2026-09-24     |        797.16   | FIN PERÍODO     |     13 |     -7.33 |        -0.04 |
+| LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1331.94   |     2.8487 | 2026-09-24     |       1193.39   | FIN PERÍODO     |      9 |    181.85 |         0.93 |
+| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    65.2248 |    49.2743 | 2026-09-24     |         52.29   | FIN PERÍODO     |      9 |    -58.06 |        -0.3  |
+| GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   392.023  |    11.9423 | 2026-09-24     |        337.61   | FIN PERÍODO     |      8 |    -78    |        -0.4  |
