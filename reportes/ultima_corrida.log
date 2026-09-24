@@ -211,8 +211,7 @@ Resumen de la base:
 Paper trading: no hay velas nuevas para procesar.
 
 === 2b. Paper trading momentum ===
-  2026-09-23: REBALANCEO · cartera USD 10,000.00 · posiciones 0
-Momentum: paper trading actualizado.
+Momentum: no hay velas nuevas para procesar.
 
 === 3a. Backtest y calibración swing ===
 # Backtest – v4.1-retroceso-4R
@@ -251,7 +250,7 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 4.7% | 12.8% |
+| 2026 | 4.7% | 12.9% |
 
 ## Variantes de riesgo por operación
 
@@ -280,7 +279,7 @@ Configuración actual: entrada=retroceso, objetivo_r=4.0, max_dias_en_posicion=2
 | ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.15 | 5.4%                       | -14.8%             |                      0.37 | 22.1%                   |
 | retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.18 | 10.4%                      | -18.4%             |                      0.57 | 22.1%                   |
 | ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.23 | 8.8%                       | -22.4%             |                      0.39 | 22.1%                   |
-| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.1  | 7.0%                       | -16.1%             |                      0.43 | 22.1%                   |
+| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.1  | 6.9%                       | -16.1%             |                      0.43 | 22.1%                   |
 | retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.21 | 9.2%                       | -17.1%             |                      0.54 | 22.1%                   |
 | ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.15 | 7.8%                       | -13.1%             |                      0.59 | 22.1%                   |
 | retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.16 | 8.6%                       | -16.0%             |                      0.54 | 22.1%                   |
@@ -298,66 +297,66 @@ Elegida solo con datos dentro de muestra; las columnas 'fuera' muestran cómo le
 Correlación de ranking dentro vs fuera de muestra (Spearman): **0.03** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
 
 === 3b. Backtest y calibración momentum ===
-# Momentum (m1-mix-top8) – booms del momento
+# Momentum (m2-mix-top5-mensual) – booms del momento
 
-Período: 2017-10-06 → 2026-09-24 · 50 acciones · Parámetros: puntaje=mix, top_n=8, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
+Período: 2017-10-06 → 2026-09-24 · 50 acciones · Parámetros: puntaje=mix, top_n=5, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
 
 ## Resultado
 
 | Métrica | Valor |
 |---|---|
-| retorno_anual (CAGR) | 27.7% |
-| max_drawdown | -30.7% |
-| retorno/caida (MAR) | 0.90 |
-| retorno_total | 794.3% |
-| compras_por_anio | 23.53 |
-| aciertos | 54.7% |
-| retorno_prom_por_posicion | 11.3% |
-| dias_prom_en_posicion | 90.36 |
-| rotacion_anual | 5.11 |
-| pct_en_acciones | 99.1% |
-| pct_en_spy | 0.8% |
+| retorno_anual (CAGR) | 34.1% |
+| max_drawdown | -37.2% |
+| retorno/caida (MAR) | 0.92 |
+| retorno_total | 1289.7% |
+| compras_por_anio | 14.16 |
+| aciertos | 54.1% |
+| retorno_prom_por_posicion | 14.1% |
+| dias_prom_en_posicion | 93.14 |
+| rotacion_anual | 5.02 |
+| pct_en_acciones | 98.6% |
+| pct_en_spy | 1.3% |
 | spy_retorno_anual | 14.8% |
 | spy_max_drawdown | -33.7% |
 
+**Referencia:** las mismas 50 acciones en partes iguales rindieron 21.9% anual (caída máx. -34.3%). La diferencia contra SPY es en gran parte por haber elegido la lista hoy; la ventaja real de la estrategia se mide contra esta referencia.
+
 ## Retorno por año
 
-| Año | Momentum | SPY |
-|---|---|---|
-| 2017 | 7.6% | 5.4% |
-| 2018 | -8.1% | -4.6% |
-| 2019 | 23.9% | 31.2% |
-| 2020 | 93.7% | 18.3% |
-| 2021 | 17.7% | 28.7% |
-| 2022 | 25.4% | -18.2% |
-| 2023 | 42.5% | 26.2% |
-| 2024 | 34.8% | 24.9% |
-| 2025 | 2.8% | 17.7% |
-| 2026 | 29.3% | 12.8% |
+| Año | Momentum | 50 en partes iguales | SPY |
+|---|---|---|---|
+| 2017 | 6.4% | 7.3% | 5.4% |
+| 2018 | 2.2% | 7.4% | -4.6% |
+| 2019 | 26.9% | 35.9% | 31.2% |
+| 2020 | 132.5% | 37.4% | 18.3% |
+| 2021 | 6.4% | 27.2% | 28.7% |
+| 2022 | 10.9% | -19.1% | -18.2% |
+| 2023 | 53.8% | 50.8% | 26.2% |
+| 2024 | 58.8% | 29.2% | 24.9% |
+| 2025 | -4.9% | 20.3% | 17.7% |
+| 2026 | 58.2% | 13.8% | 12.9% |
 
 ## Qué acciones aportaron (posiciones cerradas)
 
 | Ticker | Veces | Retorno promedio |
 |---|---|---|
-| NVDA | 5.0 | 121.2% |
-| AAPL | 1.0 | 112.5% |
-| META | 1.0 | 55.9% |
-| VIST | 5.0 | 53.8% |
-| MSTR | 6.0 | 52.2% |
-| MSFT | 1.0 | 50.5% |
-| PG | 1.0 | 37.2% |
-| COIN | 3.0 | 23.4% |
-| ADBE | 2.0 | 21.7% |
-| MELI | 9.0 | 20.3% |
+| AAPL | 1.0 | 87.4% |
+| NVDA | 5.0 | 82.2% |
+| TSLA | 6.0 | 69.1% |
+| VIST | 4.0 | 49.9% |
+| BA | 1.0 | 35.9% |
+| XOM | 2.0 | 32.0% |
+| MSTR | 6.0 | 26.8% |
+| META | 2.0 | 22.6% |
+| CVX | 1.0 | 22.1% |
+| GLOB | 5.0 | 21.0% |
 
 ## Qué pesa más en el resultado
 
 Retorno anual promedio de todas las combinaciones que usan cada valor. 'Dentro' = hasta 2023-01-01 · 'Fuera' = desde 2023-01-01. Un parámetro es confiable si el mejor valor coincide dentro y fuera.
 
-**puntaje** — impacto fuera de muestra: 29.5% (mejor dentro: r126, mejor fuera: r252)
+**puntaje** — impacto fuera de muestra: 16.2% (mejor dentro: r126, mejor fuera: r252)
 
-| Valor | CAGR dentro | CAGR fuera | Caída fuera |
-|---|---|---|---|
 
 === 4. Tablero ===
 Tablero generado: docs/index.html
