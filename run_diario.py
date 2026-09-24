@@ -3,11 +3,15 @@ Punto de entrada que corre GitHub Actions cada día:
   1. Actualiza precios
   2. Paper trading swing (retroceso) y momentum ("booms del momento")
   3. Backtests y calibraciones de ambas estrategias
-  4. Regenera la página web (docs/index.html)
+  4. Traduce la cartera a CEDEARs en pesos (CCL implícito, caros/baratos)
+  5. Regenera la página web (docs/index.html)
+  6. Manda un mail si hubo compras/ventas (y el resumen de los viernes)
 """
 import runpy
 from pathlib import Path
 import backtest
+import alertas
+import cedears
 import momentum
 import paper
 import tablero
@@ -27,5 +31,12 @@ print("\n=== 3a. Backtest y calibración swing ===")
 backtest.main(con_calibracion=True)
 print("\n=== 3b. Backtest y calibración momentum ===")
 momentum.main()
-print("\n=== 4. Tablero ===")
+print("\n=== 4. CEDEARs en pesos ===")
+cedears.main()
+print("\n=== 5. Tablero ===")
 tablero.main()
+print("\n=== 6. Alertas por mail ===")
+try:
+    alertas.main()
+except Exception as e:                      # un problema con el mail no debe frenar al agente
+    print("Alertas: no se pudo enviar el mail:", e)

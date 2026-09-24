@@ -14,63 +14,76 @@ nombre_version: "v4.1-retroceso-4R"        # ponele un nombre cada vez que cambi
 # ---------------------------------------------------------------------
 universo:
   # --- Tecnología ---
-  - {subyacente: AAPL,   cedear: AAPL.BA, sector: Tecnología}
-  - {subyacente: MSFT,   cedear: MSFT.BA, sector: Tecnología}
-  - {subyacente: GOOGL,  cedear: GOOGL.BA, sector: Tecnología}
-  - {subyacente: AMZN,   cedear: AMZN.BA, sector: Tecnología}
-  - {subyacente: NVDA,   cedear: NVDA.BA, sector: Tecnología}
-  - {subyacente: META,   cedear: META.BA, sector: Tecnología}
-  - {subyacente: TSLA,   cedear: TSLA.BA, sector: Tecnología}
-  - {subyacente: AVGO,   cedear: AVGO.BA, sector: Tecnología}
-  - {subyacente: ORCL,   cedear: ORCL.BA, sector: Tecnología}
-  - {subyacente: ADBE,   cedear: ADBE.BA, sector: Tecnología}
-  - {subyacente: CRM,    cedear: CRM.BA, sector: Tecnología}
-  - {subyacente: AMD,    cedear: AMD.BA, sector: Tecnología}
-  - {subyacente: INTC,   cedear: INTC.BA, sector: Tecnología}
-  - {subyacente: QCOM,   cedear: QCOM.BA, sector: Tecnología}
-  - {subyacente: CSCO,   cedear: CSCO.BA, sector: Tecnología}
-  - {subyacente: IBM,    cedear: IBM.BA, sector: Tecnología}
-  - {subyacente: TSM,    cedear: TSM.BA, sector: Tecnología}
-  - {subyacente: NFLX,   cedear: NFLX.BA, sector: Tecnología}
-  - {subyacente: UBER,   cedear: UBER.BA, sector: Tecnología}
-  - {subyacente: PYPL,   cedear: PYPL.BA, sector: Tecnología}
+  - {subyacente: AAPL,   cedear: AAPL.BA, sector: Tecnología, ratio: 20}
+  - {subyacente: MSFT,   cedear: MSFT.BA, sector: Tecnología, ratio: 30}
+  - {subyacente: GOOGL,  cedear: GOOGL.BA, sector: Tecnología, ratio: 58}
+  - {subyacente: AMZN,   cedear: AMZN.BA, sector: Tecnología, ratio: 144}
+  - {subyacente: NVDA,   cedear: NVDA.BA, sector: Tecnología, ratio: 24}
+  - {subyacente: META,   cedear: META.BA, sector: Tecnología, ratio: 24}
+  - {subyacente: TSLA,   cedear: TSLA.BA, sector: Tecnología, ratio: 15}
+  - {subyacente: AVGO,   cedear: AVGO.BA, sector: Tecnología, ratio: 39}
+  - {subyacente: ORCL,   cedear: ORCL.BA, sector: Tecnología, ratio: 3}
+  - {subyacente: ADBE,   cedear: ADBE.BA, sector: Tecnología, ratio: 44}
+  - {subyacente: CRM,    cedear: CRM.BA, sector: Tecnología, ratio: 18}
+  - {subyacente: AMD,    cedear: AMD.BA, sector: Tecnología, ratio: 10}
+  - {subyacente: INTC,   cedear: INTC.BA, sector: Tecnología, ratio: 5}
+  - {subyacente: QCOM,   cedear: QCOM.BA, sector: Tecnología, ratio: 11}
+  - {subyacente: CSCO,   cedear: CSCO.BA, sector: Tecnología, ratio: 5}
+  - {subyacente: IBM,    cedear: IBM.BA, sector: Tecnología, ratio: 15}
+  - {subyacente: TSM,    cedear: TSM.BA, sector: Tecnología, ratio: 9}
+  - {subyacente: NFLX,   cedear: NFLX.BA, sector: Tecnología, ratio: 48}
+  - {subyacente: UBER,   cedear: UBER.BA, sector: Tecnología, ratio: 2}
+  - {subyacente: PYPL,   cedear: PYPL.BA, sector: Tecnología, ratio: 8}
   # --- Latam / Brasil ---
-  - {subyacente: MELI,   cedear: MELI.BA, sector: Latam / Brasil}
-  - {subyacente: GLOB,   cedear: GLOB.BA, sector: Latam / Brasil}
-  - {subyacente: NU,     cedear: NU.BA, sector: Latam / Brasil}
-  - {subyacente: VIST,   cedear: VIST.BA, sector: Latam / Brasil}
-  - {subyacente: PBR,    cedear: PBR.BA, sector: Latam / Brasil}
-  - {subyacente: VALE,   cedear: VALE.BA, sector: Latam / Brasil}
+  - {subyacente: MELI,   cedear: MELI.BA, sector: Latam / Brasil, ratio: 120}
+  - {subyacente: GLOB,   cedear: GLOB.BA, sector: Latam / Brasil, ratio: 18}
+  - {subyacente: NU,     cedear: NU.BA, sector: Latam / Brasil, ratio: 2}
+  - {subyacente: VIST,   cedear: VIST.BA, sector: Latam / Brasil, ratio: 3}
+  - {subyacente: PBR,    cedear: PBR.BA, sector: Latam / Brasil, ratio: 1}
+  - {subyacente: VALE,   cedear: VALE.BA, sector: Latam / Brasil, ratio: 2}
   # --- Financieras ---
-  - {subyacente: JPM,    cedear: JPM.BA, sector: Financieras}
-  - {subyacente: BAC,    cedear: BAC.BA, sector: Financieras}
-  - {subyacente: C,      cedear: C.BA, sector: Financieras}
-  - {subyacente: V,      cedear: V.BA, sector: Financieras}
-  - {subyacente: BRK-B,  cedear: BRKB.BA, sector: Financieras}
-  - {subyacente: COIN,   cedear: COIN.BA, sector: Financieras}
-  - {subyacente: MSTR,   cedear: MSTR.BA, sector: Financieras}
+  - {subyacente: JPM,    cedear: JPM.BA, sector: Financieras, ratio: 15}
+  - {subyacente: BAC,    cedear: BAC.BA, sector: Financieras, ratio: 41}
+  - {subyacente: C,      cedear: C.BA, sector: Financieras, ratio: 3}
+  - {subyacente: V,      cedear: V.BA, sector: Financieras, ratio: 18}
+  - {subyacente: BRK-B,  cedear: BRKB.BA, sector: Financieras, ratio: 22}
+  - {subyacente: COIN,   cedear: COIN.BA, sector: Financieras, ratio: 27}
+  - {subyacente: MSTR,   cedear: MSTR.BA, sector: Financieras, ratio: 20}
   # --- Consumo ---
-  - {subyacente: KO,     cedear: KO.BA, sector: Consumo}
-  - {subyacente: PEP,    cedear: PEP.BA, sector: Consumo}
-  - {subyacente: PG,     cedear: PG.BA, sector: Consumo}
-  - {subyacente: MCD,    cedear: MCD.BA, sector: Consumo}
-  - {subyacente: WMT,    cedear: WMT.BA, sector: Consumo}
-  - {subyacente: HD,     cedear: HD.BA, sector: Consumo}
-  - {subyacente: NKE,    cedear: NKE.BA, sector: Consumo}
-  - {subyacente: DIS,    cedear: DISN.BA, sector: Consumo}
+  - {subyacente: KO,     cedear: KO.BA, sector: Consumo, ratio: 5}
+  - {subyacente: PEP,    cedear: PEP.BA, sector: Consumo, ratio: 18}
+  - {subyacente: PG,     cedear: PG.BA, sector: Consumo, ratio: 15}
+  - {subyacente: MCD,    cedear: MCD.BA, sector: Consumo, ratio: 24}
+  - {subyacente: WMT,    cedear: WMT.BA, sector: Consumo, ratio: 18}
+  - {subyacente: HD,     cedear: HD.BA, sector: Consumo, ratio: 32}
+  - {subyacente: NKE,    cedear: NKE.BA, sector: Consumo, ratio: 12}
+  - {subyacente: DIS,    cedear: DISN.BA, sector: Consumo, ratio: 12}
   # --- Salud ---
-  - {subyacente: JNJ,    cedear: JNJ.BA, sector: Salud}
-  - {subyacente: PFE,    cedear: PFE.BA, sector: Salud}
-  - {subyacente: MRK,    cedear: MRK.BA, sector: Salud}
-  - {subyacente: LLY,    cedear: LLY.BA, sector: Salud}
+  - {subyacente: JNJ,    cedear: JNJ.BA, sector: Salud, ratio: 15}
+  - {subyacente: PFE,    cedear: PFE.BA, sector: Salud, ratio: 4}
+  - {subyacente: MRK,    cedear: MRK.BA, sector: Salud, ratio: 5}
+  - {subyacente: LLY,    cedear: LLY.BA, sector: Salud, ratio: 56}
   # --- Energía / Industria (+ China) ---
-  - {subyacente: XOM,    cedear: XOM.BA, sector: Energía / Industria}
-  - {subyacente: CVX,    cedear: CVX.BA, sector: Energía / Industria}
-  - {subyacente: CAT,    cedear: CAT.BA, sector: Energía / Industria}
-  - {subyacente: BA,     cedear: BA.BA, sector: Energía / Industria}
-  - {subyacente: BABA,   cedear: BABA.BA, sector: China}
+  - {subyacente: XOM,    cedear: XOM.BA, sector: Energía / Industria, ratio: 10}
+  - {subyacente: CVX,    cedear: CVX.BA, sector: Energía / Industria, ratio: 16}
+  - {subyacente: CAT,    cedear: CAT.BA, sector: Energía / Industria, ratio: 20}
+  - {subyacente: BA,     cedear: BA.BA, sector: Energía / Industria, ratio: 24}
+  - {subyacente: BABA,   cedear: BABA.BA, sector: China, ratio: 9}
 
 benchmark: SPY                   # contra qué medimos si el agente agrega valor
+benchmark_cedear: {cedear: SPY.BA, ratio: 60}
+
+# ---------------------------------------------------------------------
+# CEDEARs EN PESOS (cedears.py)
+# ratio = cuántos CEDEARs equivalen a 1 acción (fuente: tabla oficial de ratios, 02/09/2026).
+# El agente calcula el dólar CCL implícito de cada CEDEAR; si uno se aleja mucho de la mediana,
+# lo marca "a revisar" (ratio cambiado o precio viejo) y no lo usa.
+# ---------------------------------------------------------------------
+cedears:
+  prima_caro: 0.015              # CCL implícito 1,5% arriba de la mediana -> CEDEAR "caro"
+  prima_barato: -0.015           # 1,5% abajo -> "barato"
+  desvio_revisar: 0.10           # más de 10% de diferencia -> ratio o precio a revisar
+  dias_max_precio: 5             # precio en pesos con más de 5 días de antigüedad -> no se usa
 
 # ---------------------------------------------------------------------
 # BACKTEST (Etapa 3): variantes a comparar además de la configuración base
@@ -117,7 +130,7 @@ estrategia:
 # que más subieron. Siempre 100% invertido (lo que sobra va a SPY).
 # ---------------------------------------------------------------------
 momentum:
-  nombre: "m2-mix-top5-mensual"
+  nombre: "m3-mix-top5-mensual-tope25"
   # Elegido con el backtest de 10 años (ver reportes/momentum.md, "Qué pesa más"):
   #  - sin filtro de mercado: estar 100% invertido rindió más antes y después de 2023
   #  - top 5: más retorno que 8 o 10 en los dos períodos (ojo: caídas más profundas)
@@ -129,6 +142,9 @@ momentum:
   rebalanceo_dias: 21            # cada cuántas ruedas se revisa el ranking (5 = semanal, 21 = mensual)
   buffer: 5                      # una acción que ya tenemos se queda mientras esté en el top_n + buffer
   max_por_sector: 3              # null = sin límite
+  universo: base                 # base = las 50 de arriba · ampliado = + universo_ampliado.csv (~190 CEDEARs)
+  liquidez_min_usd: 20000000     # solo acciones con más de USD 20 M operados por día (mediana 60 ruedas)
+  max_peso: 0.25                 # en cada revisión, ninguna acción puede pesar más de 25% (se recorta el excedente)
   filtro_mercado: false          # true = pasar a efectivo si SPY < media de 200 (deja de estar 100% invertido)
   grilla:                        # combinaciones que prueba la calibración (se descartaron r21, r63 y el filtro)
     puntaje: [mix, r126, r252]

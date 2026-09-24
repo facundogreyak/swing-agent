@@ -1,0 +1,138 @@
+subyacente,cedear,ratio,sector
+AAL,AAL.BA,2,Energía / Industria
+ABBV,ABBV.BA,10,Salud
+ABNB,ABNB.BA,15,Consumo
+ABT,ABT.BA,4,Salud
+ACN,ACN.BA,75,Tecnología
+ADI,ADI.BA,15,Tecnología
+ADP,ADP.BA,6,Tecnología
+AEM,AEM.BA,6,Materiales / Minería
+AIG,AIG.BA,5,Financieras
+AMAT,AMAT.BA,5,Tecnología
+AMGN,AMGN.BA,30,Salud
+AMX,AMX.BA,1,Latam / Brasil
+ANET,ANET.BA,29,Tecnología
+ARCO,ARCO.BA,0.5,Latam / Brasil
+ARM,ARM.BA,27,Tecnología
+ASML,ASML.BA,146,Tecnología
+AXP,AXP.BA,15,Financieras
+AZN,AZN.BA,4,Salud
+B,B.BA,2,Materiales / Minería
+BBD,BBD.BA,1,Latam / Brasil
+BHP,BHP.BA,2,Materiales / Minería
+BIDU,BIDU.BA,11,China
+BK,BK.BA,2,Financieras
+BKNG,BKNG.BA,700,Consumo
+BKR,BKR.BA,7,Energía / Industria
+BMY,BMY.BA,3,Salud
+BP,BP.BA,5,Energía / Industria
+BX,BX.BA,30,Financieras
+CAAP,CAAP.BA,0.25,Latam / Brasil
+CAH,CAH.BA,3,Salud
+CCL,CCL.BA,3,Consumo
+CEG,CEG.BA,45,Energía / Industria
+CL,CL.BA,3,Consumo
+COP,COP.BA,25,Energía / Industria
+COST,COST.BA,48,Consumo
+CRWD,CRWD.BA,79,Tecnología
+CVS,CVS.BA,15,Salud
+DAL,DAL.BA,8,Energía / Industria
+DE,DE.BA,40,Energía / Industria
+DELL,DELL.BA,74,Tecnología
+DHR,DHR.BA,54,Salud
+DOCU,DOCU.BA,22,Tecnología
+EA,EA.BA,14,Comunicación
+EBAY,EBAY.BA,2,Consumo
+ERJ,ERJ.BA,1,Latam / Brasil
+ETSY,ETSY.BA,16,Consumo
+F,F.BA,1,Consumo
+FCX,FCX.BA,3,Materiales / Minería
+FDX,FDX.BA,10,Energía / Industria
+FSLR,FSLR.BA,18,Energía / Industria
+GE,GE.BA,8,Energía / Industria
+GEV,GEV.BA,180,Energía / Industria
+GGB,GGB.BA,0.25,Latam / Brasil
+GILD,GILD.BA,4,Salud
+GLW,GLW.BA,41,Tecnología
+GM,GM.BA,6,Consumo
+GS,GS.BA,13,Financieras
+HAL,HAL.BA,2,Energía / Industria
+HMC,HMC.BA,1,Consumo
+HON,HON.BA,8,Energía / Industria
+HOOD,HOOD.BA,29,Financieras
+HPQ,HPQ.BA,1,Tecnología
+HSBC,HSBC.BA,2,Financieras
+IBKR,IBKR.BA,17,Financieras
+INFY,INFY.BA,1,Tecnología
+ISRG,ISRG.BA,90,Salud
+ITUB,ITUB.BA,1,Latam / Brasil
+JD,JD.BA,4,China
+KLAC,KLAC.BA,34,Tecnología
+KMB,KMB.BA,6,Consumo
+LIN,LIN.BA,102,Materiales / Minería
+LMT,LMT.BA,20,Energía / Industria
+LRCX,LRCX.BA,56,Tecnología
+LVS,LVS.BA,2,Consumo
+MA,MA.BA,33,Financieras
+MDLZ,MDLZ.BA,15,Consumo
+MDT,MDT.BA,4,Salud
+MMM,MMM.BA,10,Energía / Industria
+MO,MO.BA,4,Consumo
+MRNA,MRNA.BA,19,Salud
+MRVL,MRVL.BA,14,Tecnología
+MS,MS.BA,41,Financieras
+MU,MU.BA,5,Tecnología
+NEE,NEE.BA,19,Energía / Industria
+NEM,NEM.BA,3,Materiales / Minería
+NIO,NIO.BA,4,China
+NOW,NOW.BA,172,Tecnología
+NTES,NTES.BA,14,China
+NUE,NUE.BA,16,Materiales / Minería
+NVO,NVO.BA,7,Salud
+NVS,NVS.BA,4,Salud
+OXY,OXY.BA,5,Energía / Industria
+PANW,PANW.BA,50,Tecnología
+PAAS,PAAS.BA,3,Materiales / Minería
+PAGS,PAGS.BA,3,Latam / Brasil
+PDD,PDD.BA,25,China
+PINS,PINS.BA,7,Comunicación
+PLTR,PLTR.BA,3,Tecnología
+PM,PM.BA,18,Consumo
+RACE,RACE.BA,83,Consumo
+RBLX,RBLX.BA,2,Comunicación
+RIO,RIO.BA,8,Materiales / Minería
+ROKU,ROKU.BA,13,Comunicación
+RTX,RTX.BA,5,Energía / Industria
+SAP,SAP.BA,6,Tecnología
+SBUX,SBUX.BA,12,Consumo
+SCCO,SCCO.BA,2,Materiales / Minería
+SCHW,SCHW.BA,13,Financieras
+SE,SE.BA,32,Consumo
+SHEL,SHEL.BA,2,Energía / Industria
+SHOP,SHOP.BA,107,Tecnología
+SLB,SLB.BA,3,Energía / Industria
+SNAP,SNAP.BA,1,Comunicación
+SNOW,SNOW.BA,30,Tecnología
+SONY,SONY.BA,8,Consumo
+SPGI,SPGI.BA,45,Financieras
+SPOT,SPOT.BA,28,Comunicación
+STNE,STNE.BA,3,Latam / Brasil
+T,T.BA,3,Comunicación
+TGT,TGT.BA,24,Consumo
+TM,TM.BA,15,Consumo
+TMO,TMO.BA,22,Salud
+TMUS,TMUS.BA,33,Comunicación
+TTE,TTE.BA,3,Energía / Industria
+TXN,TXN.BA,5,Tecnología
+UAL,UAL.BA,5,Energía / Industria
+UNH,UNH.BA,33,Salud
+UNP,UNP.BA,20,Energía / Industria
+UPST,UPST.BA,5,Financieras
+USB,USB.BA,5,Financieras
+VZ,VZ.BA,4,Comunicación
+WFC,WFC.BA,5,Financieras
+XP,XP.BA,4,Latam / Brasil
+XPEV,XPEV.BA,4,China
+ZM,ZM.BA,47,Tecnología
+TEN,TEN.BA,1,Energía / Industria
+TXR,TXR.BA,4,Materiales / Minería

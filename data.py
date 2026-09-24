@@ -3,6 +3,7 @@ data.py - Descarga precios diarios con yfinance y los guarda en la base.
 La primera vez baja N años; después solo baja lo que falta.
 """
 from datetime import date, timedelta
+from pathlib import Path
 import pandas as pd
 import yfinance as yf
 import db
@@ -30,11 +31,27 @@ def actualizar_ticker(con, ticker: str, anios: int) -> int:
     return db.guardar_precios(con, ticker, df)
 
 
+def universo_ampliado(cfg: dict) -> list:
+    """Universo base + las acciones de universo_ampliado.csv (todas con CEDEAR en BYMA)."""
+    base = list(cfg["universo"])
+    archivo = Path("universo_ampliado.csv")
+    if not archivo.exists():
+        return base
+    ya = {p["subyacente"] for p in base}
+    extra = pd.read_csv(archivo).to_dict("records")
+    return base + [p for p in extra if p["subyacente"] not in ya]
+
+
 def actualizar_todo(con, cfg: dict):
     anios = cfg["datos"]["historia_anios"]
-    tickers = [cfg["benchmark"]]
+    tickers = [cfg["benchmark"], cfg.get("benchmark_cedear", {}).get("cedear")]
     for par in cfg["universo"]:
         tickers += [par["subyacente"], par["cedear"]]
+    # universo ampliado: el subyacente siempre (para comparar en el backtest); el CEDEAR solo si se usa
+    usa_ampliado = cfg.get("momentum", {}).get("universo") == "ampliado"
+    for par in universo_ampliado(cfg)[len(cfg["universo"]):]:
+        tickers += [par["subyacente"]] + ([par["cedear"]] if usa_ampliado else [])
+    tickers = [t for t in dict.fromkeys(tickers) if t]
     resumen = []
     for t in tickers:
         try:

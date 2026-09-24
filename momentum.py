@@ -43,22 +43,28 @@ PUNTAJES = ("r21", "r63", "r126", "r252", "mix")
 # ---------------------------------------------------------------------------
 # Datos
 # ---------------------------------------------------------------------------
-def cargar(con, cfg):
-    """Precios alineados al calendario del benchmark. Devuelve un dict con matrices."""
+def cargar(con, cfg, universo=None):
+    """Precios alineados al calendario del benchmark. Devuelve un dict con matrices.
+    universo: "base" (las 50 de config.yaml) o "ampliado" (+ universo_ampliado.csv).
+    Por defecto usa momentum.universo de config.yaml."""
+    universo = universo or cfg.get("momentum", {}).get("universo", "base")
+    pares = data.universo_ampliado(cfg) if universo == "ampliado" else cfg["universo"]
     bench_t = cfg["benchmark"]
     bench = data.cargar_precios(con, bench_t)
     fechas = bench.index
-    close, opn, sectores = {}, {}, {}
-    for par in cfg["universo"]:
+    close, opn, vol, sectores = {}, {}, {}, {}
+    for par in pares:
         t = par["subyacente"]
         df = data.cargar_precios(con, t)
         if len(df) < 300:
             continue
         df = df.reindex(fechas)
-        close[t], opn[t] = df["close"], df["open"]
+        close[t], opn[t], vol[t] = df["close"], df["open"], df["close"] * df["volume"]
         sectores[t] = par.get("sector", "Otros")
     close = pd.DataFrame(close)
     opn = pd.DataFrame(opn)
+    # liquidez: mediana del volumen operado en dólares de las últimas 60 ruedas
+    dolar_vol = pd.DataFrame(vol).rolling(60, min_periods=20).median()
     return {
         "fechas": fechas,
         "tickers": list(close.columns),
@@ -70,6 +76,8 @@ def cargar(con, cfg):
         "bench_close": bench["close"],
         "bench_open": bench["open"].fillna(bench["close"]),
         "mercado_ok": bench["close"] > bench["close"].rolling(200).mean(),
+        "dolar_vol": dolar_vol,
+        "universo": universo,
     }
 
 
@@ -100,6 +108,8 @@ class Motor:
         self.C, self.O = P["close"].values, P["open"].values
         self.BC, self.BO = P["bench_close"].values, P["bench_open"].values
         self.MOK = P["mercado_ok"].values
+        liq = m.get("liquidez_min_usd")
+        self.LIQ = (P["dolar_vol"].values >= liq) if liq else None
         e = estado or {}
         self.efectivo = e.get("efectivo", capital)
         self.pos = e.get("pos", {})              # ticker -> cantidad (incluye el benchmark)
@@ -171,6 +181,15 @@ class Motor:
             if bench in self.pos:
                 self._vender(bench, self.pos[bench], i, fecha, "filtro de mercado: SPY bajo su media")
             return
+        # 1b) recortar las posiciones que superan el tope de peso (el excedente se reinvierte)
+        tope = self.m.get("max_peso")
+        if tope:
+            total = self.valor(i, apertura=True)
+            for t in [x for x in self.pos if x != bench]:
+                px = self._px(t, i, True)
+                exceso = self.pos[t] * px - tope * total
+                if exceso > 0.01 * total:
+                    self._vender(t, exceso / px, i, fecha, f"recorte al tope de {tope:.0%} del capital")
         # 2) comprar lo que entra (cada una con 1/top_n del capital)
         nuevos = [t for t in nombres if t not in self.pos]
         if nuevos:
@@ -190,7 +209,8 @@ class Motor:
         """Al cierre: arma el ranking y define la cartera objetivo para la próxima apertura."""
         m = self.m
         sc, ab = self.score[i], self.absoluto[i]
-        validos = [j for j in np.argsort(-np.nan_to_num(sc, nan=-np.inf)) if not np.isnan(sc[j])]
+        validos = [j for j in np.argsort(-np.nan_to_num(sc, nan=-np.inf)) if not np.isnan(sc[j])
+                   and (self.LIQ is None or bool(self.LIQ[i, j]))]
         puesto = {self.tickers[j]: k + 1 for k, j in enumerate(validos)}
         if m.get("filtro_mercado") and not bool(self.MOK[i]):
             self.pendiente = {"nombres": [], "efectivo": True, "motivos": {
@@ -440,6 +460,33 @@ def main():
         L += ["", "## Qué acciones aportaron (posiciones cerradas)", "",
               "| Ticker | Veces | Retorno promedio |", "|---|---|---|"]
         L += [f"| {t} | {r.veces} | {r.retorno_prom:.1%} |" for t, r in top.head(10).iterrows()]
+
+    # Comparación de universos: ¿qué pasa con las ~190 acciones con CEDEAR en vez de las 50 elegidas hoy?
+    if Path("universo_ampliado.csv").exists():
+        corte_s = cfg["backtest"]["inicio_fuera_de_muestra"]
+        filas_u = []
+        for u in ("base", "ampliado"):
+            Pu = P if u == P.get("universo") else cargar(con, cfg, u)
+            pu = pun if Pu is P else calcular_puntajes(Pu["close"])
+            o_u, e_u = simular(Pu, pu, cfg)
+            k = metricas(o_u, e_u, cap0, bench)
+            _, e_in = simular(Pu, pu, cfg, hasta=corte_s)
+            _, e_out = simular(Pu, pu, cfg, desde=corte_s)
+            k_in, k_out = metricas(pd.DataFrame(columns=o_u.columns), e_in, cap0, bench), \
+                metricas(pd.DataFrame(columns=o_u.columns), e_out, cap0, bench)
+            ew = e_u["igual_peso"]
+            an = (pd.Timestamp(e_u.index[-1]) - pd.Timestamp(e_u.index[0])).days / 365.25
+            filas_u.append((u, len(Pu["tickers"]), k, k_in, k_out, (ew.iloc[-1] / ew.iloc[0]) ** (1 / an) - 1))
+            if u == "ampliado":
+                e_u.to_csv(REPORTES / "momentum_equity_ampliado.csv")
+        L += ["", "## Universo: 50 elegidas hoy vs. todas las que tienen CEDEAR", "",
+              f"Misma configuración. 'Ampliado' = {filas_u[1][1]} acciones con CEDEAR en BYMA y liquidez suficiente. "
+              "La columna 'partes iguales' muestra cuánto rinde cada lista sin estrategia.", "",
+              "| Universo | Acciones | Retorno anual | Caída máx. | Antes de " + corte_s[:4] + " | Desde " + corte_s[:4]
+              + " | Partes iguales |", "|---|---|---|---|---|---|---|"]
+        for u, n_t, k, k_in, k_out, ew_c in filas_u:
+            L.append(f"| {u} | {n_t} | {k['retorno_anual (CAGR)']:.1%} | {k['max_drawdown']:.1%} | "
+                     f"{k_in['retorno_anual (CAGR)']:.1%} | {k_out['retorno_anual (CAGR)']:.1%} | {ew_c:.1%} |")
 
     corte = pd.Timestamp(cfg["backtest"]["inicio_fuera_de_muestra"])
     if m.get("grilla") and P["fechas"][260] + pd.Timedelta(days=365) > corte:

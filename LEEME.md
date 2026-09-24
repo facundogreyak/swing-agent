@@ -11,6 +11,9 @@ Tablero: GitHub Pages (carpeta `docs/`). Reportes: carpeta `reportes/`.
 - `momentum.py`   → "booms del momento": rotación por momentum 100% invertida (backtest, calibración,
                     análisis de qué pesa más y paper trading con el mismo motor)
 - `backtest.py`   → backtest + calibración dentro/fuera de muestra → `reportes/`
+- `cedears.py`    → pasa la cartera a CEDEARs en pesos: ratios, dólar CCL implícito, caros/baratos
+- `alertas.py`    → mail con compras/ventas y resumen de los viernes (secrets GMAIL_USUARIO y GMAIL_CLAVE)
+- `universo_ampliado.csv` → ~140 acciones más con CEDEAR, para comparar con la lista de 50
 - `tablero.py`    → página web `docs/index.html`
 - `run_diario.py` → lo que ejecuta GitHub cada día
 
