@@ -18,14 +18,22 @@ concurrency:
 jobs:
   correr:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main              # siempre la última versión del repo
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Recuperar precios guardados (caché)
+        uses: actions/cache@v4
+        with:
+          path: data/precios.db
+          key: precios-${{ github.run_id }}
+          restore-keys: precios-
       - name: Ejecutar agente
         run: |
           mkdir -p reportes data docs
@@ -34,6 +42,8 @@ jobs:
         run: |
           git config user.name "agente-bot"
           git config user.email "agente-bot@users.noreply.github.com"
-          git add -A data reportes docs
+          git add -A reportes docs
+          if [ -f data/diario.db ]; then git add data/diario.db; fi
+          git rm -q --cached --ignore-unmatch data/agente.db
           git diff --cached --quiet || git commit -m "Corrida $(date -u +%F) [skip ci]"
           git pull --rebase -q && git push
