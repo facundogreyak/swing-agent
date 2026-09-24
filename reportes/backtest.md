@@ -13,8 +13,8 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 | perdida_prom_R | -0.97 |
 | profit_factor | 1.32 |
 | dias_prom_en_posicion | 14.18 |
-| retorno_total | 143.3% |
-| retorno_anual (CAGR) | 10.1% |
+| retorno_total | 143.4% |
+| retorno_anual (CAGR) | 10.2% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.44 |
 | exposicion_prom | 69.5% |
@@ -34,7 +34,7 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 5.0% | 13.3% |
+| 2026 | 5.1% | 13.5% |
 
 ## Variantes de riesgo por operación
 
@@ -42,14 +42,14 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 |---|---|---|---|---|---|---|
 | efectivo en SPY: sí | 618 | 44.7% | 0.17 | 8.8% | -40.8% | 69.4% |
 | riesgo 0.5% | 620 | 44.7% | 0.17 | 5.7% | -12.5% | 40.1% |
-| riesgo 1.0% | 618 | 44.7% | 0.17 | 10.1% | -23.1% | 69.5% |
+| riesgo 1.0% | 618 | 44.7% | 0.17 | 10.2% | -23.1% | 69.5% |
 | riesgo 2.0% | 602 | 43.2% | 0.17 | 11.5% | -30.1% | 78.3% |
 
 ## Resultado por motivo de salida
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 4 | 0.12 |
+| FIN PERÍODO | 4 | 0.13 |
 | OBJETIVO | 14 | 3.93 |
 | OBJETIVO (gap) | 7 | 4.68 |
 | STOP | 208 | -1.07 |
@@ -62,11 +62,11 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 |---|---|---|---|---|
 | China | 12 | 42% | 0.38 | 955 |
 | Consumo | 131 | 38% | 0.04 | -1,007 |
-| Energía / Industria | 61 | 43% | 0.10 | 1,400 |
+| Energía / Industria | 61 | 43% | 0.10 | 1,407 |
 | Financieras | 82 | 46% | 0.10 | 1,259 |
 | Latam / Brasil | 84 | 44% | 0.20 | 1,877 |
-| Salud | 67 | 54% | 0.29 | 2,394 |
-| Tecnología | 181 | 46% | 0.24 | 7,422 |
+| Salud | 67 | 54% | 0.29 | 2,393 |
+| Tecnología | 181 | 46% | 0.24 | 7,427 |
 
 ## Últimas 10 operaciones
 
@@ -78,7 +78,7 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 | AVGO     | Tecnología          | 2026-08-28      |          372.921 |       344.64   |   486.045  |     8.8241 | 2026-09-03     |        344.64   | STOP            |      4 |   -259.05 |        -1.04 |
 | PYPL     | Tecnología          | 2026-09-03      |           54.675 |        50.8167 |    70.1081 |    64.0085 | 2026-09-10     |         50.8167 | STOP            |      4 |   -257.09 |        -1.04 |
 | BAC      | Financieras         | 2026-09-16      |           59.27  |        56.708  |    69.5179 |    95.065  | 2026-09-22     |         56.708  | STOP            |      4 |   -260.09 |        -1.07 |
-| CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |  1026.08   |     4.3103 | 2026-09-24     |        804.14   | FIN PERÍODO     |     13 |     20.86 |         0.08 |
-| LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1400.56   |     3.5659 | 2026-09-24     |       1189.09   | FIN PERÍODO     |      9 |    212.29 |         0.87 |
-| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-09-24     |         52.12   | FIN PERÍODO     |      9 |    -83.11 |        -0.34 |
-| GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-09-24     |        342.29   | FIN PERÍODO     |      8 |    -27.88 |        -0.11 |
+| CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |  1026.08   |     4.3103 | 2026-09-24     |        805.675  | FIN PERÍODO     |     13 |     27.46 |         0.11 |
+| LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1400.56   |     3.5659 | 2026-09-24     |       1188.61   | FIN PERÍODO     |      9 |    210.59 |         0.86 |
+| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-09-24     |         52.27   | FIN PERÍODO     |      9 |    -73.88 |        -0.3  |
+| GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-09-24     |        342.05   | FIN PERÍODO     |      8 |    -31.47 |        -0.13 |
