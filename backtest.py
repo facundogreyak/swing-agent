@@ -97,6 +97,11 @@ def simular(panel, sectores, cfg, desde=None, hasta=None):
         raise ValueError("Período demasiado corto para simular")
 
     efectivo, abiertas, cerradas, curva, pendientes = capital0, {}, [], [], []
+    # 100% invertido: el efectivo ocioso se mantiene en el benchmark (SPY) y rinde lo que rinde SPY.
+    # Cada compra de acciones "vende SPY" y cada venta "compra SPY" (se cobra comisión en esos pasos).
+    en_spy = bool(r.get("efectivo_en_spy", False))
+    cs = com if en_spy else 0.0
+    BCL = panel["bench"].values
 
     def valor_abiertas(i):
         return sum(p["cantidad"] * CF[i, ti[t]] for t, p in abiertas.items())
@@ -104,7 +109,7 @@ def simular(panel, sectores, cfg, desde=None, hasta=None):
     def cerrar(t, pos, i, precio, motivo):
         nonlocal efectivo
         bruto = pos["cantidad"] * precio
-        efectivo += bruto * (1 - com)
+        efectivo += bruto * (1 - com) * (1 - cs)
         pnl = bruto * (1 - com) - pos["costo_total"]
         cerradas.append({
             "ticker": t, "sector": sectores[t],
@@ -155,17 +160,19 @@ def simular(panel, sectores, cfg, desde=None, hasta=None):
             entrada = O[i, j]
             stop = entrada - r["stop_atr"] * cand["atr"]
             cant = tamano_posicion(capital, entrada, stop, r["riesgo_por_operacion"],
-                                   efectivo / (1 + com), r.get("max_pct_posicion", 1.0))
+                                   efectivo / (1 + com) / (1 + cs), r.get("max_pct_posicion", 1.0))
             if cant <= 0:
                 continue
             costo = cant * entrada * (1 + com)
-            efectivo -= costo
+            efectivo -= costo * (1 + cs)
             abiertas[t] = {"i": i, "entrada": entrada, "stop": stop, "stop0": stop,
                            "objetivo": entrada + r["objetivo_r"] * (entrada - stop),
                            "cantidad": cant, "costo_total": costo, "dias": 0,
                            "riesgo_usd": cant * (entrada - stop), "maximo": entrada}
 
-        # 3) Valuación al cierre
+        # 3) Valuación al cierre (el efectivo en SPY acompaña la variación del día)
+        if en_spy and i > 0 and not np.isnan(BCL[i]) and not np.isnan(BCL[i - 1]):
+            efectivo *= BCL[i] / BCL[i - 1]
         inv = valor_abiertas(i)
         curva.append((todas[i].date(), round(efectivo, 2), round(inv, 2), round(efectivo + inv, 2), len(abiertas)))
 
@@ -335,6 +342,11 @@ def main(con_calibracion=False):
     anual = pd.concat([eq_idx[["total", "spy"]].iloc[[0]], anual]).pct_change().dropna()
 
     variantes = []
+    c2 = copy.deepcopy(cfg)
+    c2["riesgo"]["efectivo_en_spy"] = not cfg["riesgo"].get("efectivo_en_spy", False)
+    o2, e2 = simular(panel, sectores, c2)
+    variantes.append(("efectivo en SPY: " + ("sí" if c2["riesgo"]["efectivo_en_spy"] else "no"),
+                      metricas(o2, e2, capital0)))
     for rv in cfg.get("backtest", {}).get("variantes_riesgo", []):
         c2 = copy.deepcopy(cfg)
         c2["riesgo"]["riesgo_por_operacion"] = rv

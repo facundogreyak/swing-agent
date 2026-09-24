@@ -5,7 +5,7 @@
 #  comparar qué configuración rindió mejor.
 # =====================================================================
 
-nombre_version: "v4-retroceso-4R"        # ponele un nombre cada vez que cambies algo
+nombre_version: "v4.1-retroceso-4R"        # ponele un nombre cada vez que cambies algo
 
 # ---------------------------------------------------------------------
 # UNIVERSO: CEDEARs. Las señales se calculan sobre el SUBYACENTE (USA),
@@ -112,6 +112,27 @@ estrategia:
   fuerza_relativa_dias: null     # ej. 126 = solo papeles que le ganaron al SPY en los últimos ~6 meses. null = apagado
 
 # ---------------------------------------------------------------------
+# MOMENTUM - "booms del momento" (momentum.py)
+# Rotación: cada `rebalanceo_dias` ruedas se queda con las `top_n` acciones
+# que más subieron. Siempre 100% invertido (lo que sobra va a SPY).
+# ---------------------------------------------------------------------
+momentum:
+  nombre: "m1-mix-top8"
+  puntaje: mix                   # r21 (1 mes) | r63 (3 meses) | r126 (6-1) | r252 (12-1) | mix
+  top_n: 8                       # cuántas acciones tener (cada una ~1/8 del capital)
+  rebalanceo_dias: 21            # cada cuántas ruedas se revisa el ranking (5 = semanal, 21 = mensual)
+  buffer: 5                      # una acción que ya tenemos se queda mientras esté en el top_n + buffer
+  max_por_sector: 3              # null = sin límite
+  filtro_mercado: false          # true = pasar a efectivo si SPY < media de 200 (deja de estar 100% invertido)
+  grilla:                        # combinaciones que prueba la calibración
+    puntaje: [r21, r63, r126, r252, mix]
+    top_n: [5, 10]
+    rebalanceo_dias: [5, 21]
+    buffer: [0, 5]
+    max_por_sector: [null, 3]
+    filtro_mercado: [false, true]
+
+# ---------------------------------------------------------------------
 # GESTIÓN DE RIESGO (se usa en las Etapas 2-4)
 # ---------------------------------------------------------------------
 riesgo:
@@ -125,4 +146,5 @@ riesgo:
   max_posiciones: 5
   max_por_sector: 2              # evita tener 5 posiciones que se mueven igual
   max_pct_posicion: 0.25         # ninguna posición puede superar el 25% del capital
+  efectivo_en_spy: false         # true = la plata que no está en posiciones queda en SPY (ver reporte: con 0,15% de comisión por mover SPY en cada operación, en swing puede no convenir)
   comision_pct: 0.0015           # comisión por operación (cada compra y cada venta): 0,15%

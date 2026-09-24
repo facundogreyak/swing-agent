@@ -57,6 +57,9 @@ def main():
         cuenta = (r["capital_inicial_usd"], None)
     efectivo, ultima = cuenta
 
+    en_spy = bool(r.get("efectivo_en_spy", False))
+    cs = com if en_spy else 0.0        # comisión de mover el efectivo desde/hacia SPY
+    bench_c = panel["bench"]
     a_procesar = _fechas_a_procesar(fechas, ultima)
     if len(a_procesar) == 0:
         print("Paper trading: no hay velas nuevas para procesar.")
@@ -98,7 +101,7 @@ def main():
                 px, mot = salida
                 bruto = cant * px
                 pnl = bruto * (1 - com) - costo
-                efectivo += bruto * (1 - com)
+                efectivo += bruto * (1 - com) * (1 - cs)
                 dia.execute("UPDATE operaciones SET estado='CERRADA', fecha_salida=?, precio_salida=?, "
                             "motivo_salida=?, pnl_usd=?, r_multiple=?, dias=? WHERE id=?",
                             (fs, round(px, 4), mot, round(pnl, 2), round(pnl / riesgo, 2) if riesgo else 0, dias, oid))
@@ -130,14 +133,14 @@ def main():
             if motivo_desc is None:
                 stop = entrada - r["stop_atr"] * atr
                 cant = tamano_posicion(capital, entrada, stop, r["riesgo_por_operacion"],
-                                       efectivo / (1 + com), r.get("max_pct_posicion", 1.0))
+                                       efectivo / (1 + com) / (1 + cs), r.get("max_pct_posicion", 1.0))
                 if cant <= 0:
                     motivo_desc = "sin efectivo suficiente"
             if motivo_desc:
                 dia.execute("UPDATE ordenes SET estado='DESCARTADA', detalle=? WHERE id=?", (motivo_desc, oid))
                 continue
             costo = cant * entrada * (1 + com)
-            efectivo -= costo
+            efectivo -= costo * (1 + cs)
             dia.execute(
                 "INSERT INTO operaciones (ticker, cedear, sector, version_id, fecha_entrada, precio_entrada, "
                 "precio_entrada_cedear_ars, cantidad, stop, stop_inicial, objetivo, riesgo_usd, costo_total, "
@@ -148,7 +151,10 @@ def main():
                         (f"compra {cant} a {entrada:.2f}", oid))
             abiertas[t] = cant
 
-        # 3) Valor de la cartera al cierre
+        # 3) Valor de la cartera al cierre (el efectivo en SPY acompaña la variación del día)
+        k = fechas.get_loc(f)
+        if en_spy and k > 0 and not pd.isna(bench_c.iloc[k]) and not pd.isna(bench_c.iloc[k - 1]):
+            efectivo *= float(bench_c.iloc[k] / bench_c.iloc[k - 1])
         abiertas_q = dict(dia.execute("SELECT ticker, cantidad FROM operaciones WHERE estado='ABIERTA'").fetchall())
         invertido = sum(q * (precio("close_ffill", t, f) or 0) for t, q in abiertas_q.items())
         dia.execute("INSERT OR REPLACE INTO equity VALUES (?,?,?,?,?)",

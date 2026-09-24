@@ -75,6 +75,36 @@ CREATE TABLE IF NOT EXISTS cuenta (
     ultima_fecha    TEXT                -- última vela procesada por el paper trading
 );
 
+-- Momentum ("booms del momento")
+CREATE TABLE IF NOT EXISTS estado_motor (
+    nombre        TEXT PRIMARY KEY,     -- 'momentum'
+    ultima_fecha  TEXT,
+    estado_json   TEXT                  -- efectivo, posiciones, orden pendiente, etc.
+);
+
+CREATE TABLE IF NOT EXISTS mom_operaciones (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    fecha       TEXT,
+    ticker      TEXT,
+    lado        TEXT,                   -- COMPRA / VENTA
+    cantidad    REAL,
+    precio      REAL,
+    monto_usd   REAL,
+    motivo      TEXT,
+    retorno     REAL,                   -- en ventas: resultado de la posición
+    version_id  TEXT
+);
+
+CREATE TABLE IF NOT EXISTS ranking (
+    fecha    TEXT,
+    ticker   TEXT,
+    sector   TEXT,
+    puesto   INTEGER,
+    puntaje  REAL,
+    r21 REAL, r63 REAL, r126 REAL, r252 REAL,
+    PRIMARY KEY (fecha, ticker)
+);
+
 CREATE TABLE IF NOT EXISTS equity (
     fecha      TEXT,
     version_id TEXT,
@@ -106,15 +136,16 @@ def conectar(ruta: str) -> sqlite3.Connection:
     return con
 
 
-def registrar_version(con, cfg: dict) -> str:
+def registrar_version(con, cfg: dict, claves=("estrategia", "riesgo"), nombre=None) -> str:
     """Guarda la configuración actual y devuelve su ID.
-    Si no cambiaste nada, reutiliza el mismo ID."""
-    params = {k: cfg[k] for k in ("estrategia", "riesgo")}
+    Si no cambiaste nada, reutiliza el mismo ID.
+    `claves`: secciones de config.yaml que definen la estrategia (swing o momentum)."""
+    params = {k: cfg[k] for k in claves}
     texto = json.dumps(params, sort_keys=True)
     version_id = hashlib.sha1(texto.encode()).hexdigest()[:8]
     con.execute(
         "INSERT OR IGNORE INTO versiones_params (version_id, nombre, params_json) VALUES (?,?,?)",
-        (version_id, cfg.get("nombre_version", ""), texto),
+        (version_id, nombre or cfg.get("nombre_version", ""), texto),
     )
     con.commit()
     return version_id
