@@ -56,6 +56,25 @@ CREATE TABLE IF NOT EXISTS operaciones (
     estado         TEXT DEFAULT 'ABIERTA'
 );
 
+CREATE TABLE IF NOT EXISTS ordenes (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    fecha_senal  TEXT,                  -- cierre en que apareció la señal
+    ticker       TEXT,
+    atr          REAL,
+    prioridad    REAL,
+    version_id   TEXT,
+    estado       TEXT DEFAULT 'PENDIENTE',   -- PENDIENTE / EJECUTADA / DESCARTADA
+    detalle      TEXT
+);
+
+CREATE TABLE IF NOT EXISTS cuenta (
+    id              INTEGER PRIMARY KEY CHECK (id = 1),
+    capital_inicial REAL,
+    efectivo        REAL,
+    inicio          TEXT,
+    ultima_fecha    TEXT                -- última vela procesada por el paper trading
+);
+
 CREATE TABLE IF NOT EXISTS equity (
     fecha      TEXT,
     version_id TEXT,
@@ -67,10 +86,23 @@ CREATE TABLE IF NOT EXISTS equity (
 """
 
 
+# Columnas agregadas después de la primera versión (se crean si faltan)
+COLUMNAS_EXTRA = {
+    "operaciones": {"sector": "TEXT", "stop_inicial": "REAL", "dias": "INTEGER DEFAULT 0",
+                    "maximo": "REAL", "costo_total": "REAL"},
+}
+
+
 def conectar(ruta: str) -> sqlite3.Connection:
     Path(ruta).parent.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(ruta)
     con.executescript(ESQUEMA)
+    for tabla, cols in COLUMNAS_EXTRA.items():
+        existentes = {f[1] for f in con.execute(f"PRAGMA table_info({tabla})")}
+        for col, tipo in cols.items():
+            if col not in existentes:
+                con.execute(f"ALTER TABLE {tabla} ADD COLUMN {col} {tipo}")
+    con.commit()
     return con
 
 

@@ -25,7 +25,7 @@ import yaml
 
 import db
 import data
-from estrategia import evaluar, tamano_posicion, regimen_mercado
+from estrategia import evaluar, tamano_posicion, regimen_mercado, entradas_usadas
 
 REPORTES = Path("reportes")
 
@@ -36,7 +36,9 @@ REPORTES = Path("reportes")
 def preparar_panel(con, cfg):
     bench = data.cargar_precios(con, cfg["benchmark"])
     fechas = bench.index
-    cols = {k: {} for k in ("open", "high", "low", "close", "atr", "rsi", "senal")}
+    tipos = entradas_usadas(cfg)
+    cols = {k: {} for k in ["open", "high", "low", "close", "atr", "rsi"]
+            + [f"senal_{t}" for t in tipos] + [f"prio_{t}" for t in tipos]}
     sectores = {}
     for par in cfg["universo"]:
         t = par["subyacente"]
@@ -47,7 +49,9 @@ def preparar_panel(con, cfg):
         for k in ("open", "high", "low", "atr", "rsi"):
             cols[k][t] = ev[k]
         cols["close"][t] = ev["close"]
-        cols["senal"][t] = ev["senal_compra"].fillna(False).astype(bool)
+        for tipo in tipos:
+            cols[f"senal_{tipo}"][t] = ev[f"senal_{tipo}"].fillna(False).astype(bool)
+            cols[f"prio_{tipo}"][t] = ev[f"prio_{tipo}"]
         sectores[t] = par.get("sector", "Otros")
     panel = {k: pd.DataFrame(v) for k, v in cols.items()}
     panel["close_ffill"] = panel["close"].ffill()
@@ -78,7 +82,8 @@ def simular(panel, sectores, cfg, desde=None, hasta=None):
     ti = {t: i for i, t in enumerate(tickers)}
     O, H, L = panel["open"].values, panel["high"].values, panel["low"].values
     C, CF = panel["close"].values, panel["close_ffill"].values
-    ATR, RSI, SEN = panel["atr"].values, panel["rsi"].values, panel["senal"].values
+    tipo = e.get("entrada", "retroceso")
+    ATR, SEN, PRIO = panel["atr"].values, panel[f"senal_{tipo}"].values, panel[f"prio_{tipo}"].values
     MOK = panel["mercado_ok"].values
     todas = panel["close"].index
 
@@ -169,8 +174,10 @@ def simular(panel, sectores, cfg, desde=None, hasta=None):
         if not usar_filtro or bool(MOK[i]):
             candidatos = SEN[i] & (FR[i] > 0) if FR is not None else SEN[i]
             for j in np.where(candidatos)[0]:
-                pendientes.append({"ticker": tickers[j], "atr": ATR[i, j], "rsi": RSI[i, j]})
-            pendientes.sort(key=lambda x: x["rsi"])      # prioridad: retroceso más profundo
+                if tickers[j] in abiertas:          # ya está en cartera: no se duplica
+                    continue
+                pendientes.append({"ticker": tickers[j], "atr": ATR[i, j], "prio": PRIO[i, j]})
+            pendientes.sort(key=lambda x: x["prio"])     # retroceso: menor RSI · ruptura: mayor volumen
 
     # Cerrar lo que quede abierto al último precio (solo para medir)
     if len(idx):
@@ -237,7 +244,7 @@ def tabla_md(filas, claves, primera="Variante"):
 # ---------------------------------------------------------------------------
 UBICACION = {"objetivo_r": "riesgo", "max_dias_en_posicion": "riesgo", "trailing_atr": "riesgo",
              "stop_atr": "riesgo", "riesgo_por_operacion": "riesgo", "filtro_mercado": "estrategia",
-             "rsi_entrada_max": "estrategia", "fuerza_relativa_dias": "estrategia"}
+             "rsi_entrada_max": "estrategia", "fuerza_relativa_dias": "estrategia", "entrada": "estrategia"}
 
 
 def calibrar(panel, sectores, cfg, capital0):
@@ -287,6 +294,16 @@ def calibrar(panel, sectores, cfg, capital0):
         top[col] = [fmt(col.split("_", 1)[1], v) for v in top[col]]
     L.append(top.to_markdown(index=False))
     corr = df["in_retorno/caida (MAR)"].rank().corr(df["out_retorno/caida (MAR)"].rank())   # Spearman sin scipy
+    if "entrada" in claves:
+        L += ["", "## Mejor combinación de cada tipo de entrada", "",
+              "Elegida solo con datos dentro de muestra; las columnas 'fuera' muestran cómo le fue después.", "",
+              "| Entrada | Parámetros | CAGR dentro | Caída dentro | CAGR fuera | Caída fuera | SPY fuera |",
+              "|---|---|---|---|---|---|---|"]
+        for tipo, g in df.groupby("entrada", sort=False):
+            m = g.iloc[0]
+            params = ", ".join(f"{k}={m[k]}" for k in claves if k != "entrada")
+            L.append(f"| {tipo} | {params} | {m['in_retorno_anual (CAGR)']:.1%} | {m['in_max_drawdown']:.1%} | "
+                     f"{m['out_retorno_anual (CAGR)']:.1%} | {m['out_max_drawdown']:.1%} | {m['out_spy_retorno_anual']:.1%} |")
     L += ["", f"Correlación de ranking dentro vs fuera de muestra (Spearman): **{corr:.2f}** "
               "(cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después)."]
     (REPORTES / "calibracion.md").write_text("\n".join(L), encoding="utf-8")

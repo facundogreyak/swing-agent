@@ -71,10 +71,55 @@ def main():
     if eq is not None:
         serie = {"fechas": eq.fecha.tolist(), "agente": eq.total.tolist(), "spy": eq.spy.tolist()}
 
+    # ---------------- Paper trading (Etapa 4) ----------------
+    cuenta = con_diario.execute("SELECT capital_inicial, inicio, ultima_fecha FROM cuenta WHERE id=1").fetchone()
+    paper_kpis, paper_html = "", "<p class='vacio'>El paper trading arranca en la próxima corrida.</p>"
+    if cuenta:
+        cap_ini, inicio, ult_paper = cuenta
+        eqp = pd.read_sql("SELECT fecha, total FROM equity WHERE version_id='paper' ORDER BY fecha", con_diario)
+        abiertas = pd.read_sql("SELECT ticker, fecha_entrada, precio_entrada, stop, objetivo, cantidad, riesgo_usd, "
+                               "costo_total, dias FROM operaciones WHERE estado='ABIERTA' ORDER BY fecha_entrada",
+                               con_diario)
+        cerradas = pd.read_sql("SELECT ticker, fecha_entrada, fecha_salida, motivo_salida, dias, r_multiple, pnl_usd "
+                               "FROM operaciones WHERE estado='CERRADA' ORDER BY fecha_salida DESC", con_diario)
+        decis = pd.read_sql("SELECT ticker, accion, motivo FROM decisiones WHERE fecha=? "
+                            "ORDER BY CASE accion WHEN 'COMPRAR' THEN 0 WHEN 'VENDER' THEN 1 "
+                            "WHEN 'MANTENER' THEN 2 ELSE 3 END, ticker", con_diario, params=(ult_paper,))
+        total = eqp.total.iloc[-1] if len(eqp) else cap_ini
+        if len(abiertas):
+            ultimos = {r.ticker: con.execute("SELECT close FROM precios WHERE ticker=? ORDER BY fecha DESC LIMIT 1",
+                                             (r.ticker,)).fetchone()[0] for r in abiertas.itertuples()}
+            abiertas["precio_actual"] = abiertas.ticker.map(ultimos).round(2)
+            abiertas["r_multiple"] = ((abiertas.precio_actual * abiertas.cantidad - abiertas.costo_total)
+                                      / abiertas.riesgo_usd).round(2)
+            for c in ("precio_entrada", "stop", "objetivo"):
+                abiertas[c] = abiertas[c].round(2)
+        paper_kpis = "".join(f"<div class='kpi'><span>{k}</span><b>{v}</b></div>" for k, v in [
+            ("Cartera simulada", f"USD {total:,.0f}"),
+            ("Retorno desde " + (inicio or ""), f"{total / cap_ini - 1:.1%}"),
+            ("Posiciones abiertas", f"{len(abiertas)}"),
+            ("Operaciones cerradas", f"{len(cerradas)}"),
+            ("Aciertos", f"{(cerradas.pnl_usd > 0).mean():.0%}" if len(cerradas) else "—"),
+            ("R promedio", f"{cerradas.r_multiple.mean():.2f}" if len(cerradas) else "—"),
+        ])
+        activas = decis[decis.accion != "NO_OPERAR"]
+        paper_html = (
+            f"<h3>Decisiones del {ult_paper}</h3>"
+            + (_tabla(activas, ["ticker", "accion", "motivo"]) if len(activas)
+               else "<p class='vacio'>Sin compras ni ventas: ningún papel cumplió todas las condiciones.</p>")
+            + f"<details><summary>Ver los {len(decis)} papeles analizados</summary>"
+            + _tabla(decis, ["ticker", "accion", "motivo"]) + "</details>"
+            + "<h3>Posiciones abiertas</h3>"
+            + _tabla(abiertas, ["ticker", "fecha_entrada", "dias", "precio_entrada", "precio_actual",
+                                "stop", "objetivo", "r_multiple"] if len(abiertas) else ["ticker"])
+            + "<h3>Operaciones cerradas</h3>"
+            + _tabla(cerradas.head(20), ["ticker", "fecha_entrada", "fecha_salida", "motivo_salida",
+                                         "dias", "r_multiple", "pnl_usd"]))
+
     calib_html = "<p class='vacio'>Todavía no hay calibración.</p>"
     if (REP / "calibracion.csv").exists():
         cal = pd.read_csv(REP / "calibracion.csv").head(8)
-        ren = {"objetivo_r": "Objetivo (R)", "max_dias_en_posicion": "Días máx.", "trailing_atr": "Trailing ATR",
+        ren = {"entrada": "Entrada", "objetivo_r": "Objetivo (R)", "max_dias_en_posicion": "Días máx.", "trailing_atr": "Trailing ATR",
                "filtro_mercado": "Filtro SPY", "fuerza_relativa_dias": "Fuerza rel. (días)",
                "stop_atr": "Stop (ATR)", "rsi_entrada_max": "RSI máx.", "in_retorno_anual (CAGR)": "CAGR antes",
                "in_max_drawdown": "Caída antes", "out_retorno_anual (CAGR)": "CAGR después",
@@ -99,7 +144,8 @@ def main():
 @media (prefers-color-scheme:dark){{:root{{--bg:#151514;--card:#1f1f1d;--tx:#ecece8;--mu:#9a9a92;--bd:#33332f;--pos:#4cc38a;--neg:#ef6f5e;--a:#7c9cff;--b:#77776f}}}}
 *{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}}
 main{{max-width:1000px;margin:0 auto;padding:24px 16px 48px}}
-h1{{font-size:22px;margin:0}}h2{{font-size:16px;margin:28px 0 10px}}.sub{{color:var(--mu);font-size:13px}}
+h1{{font-size:22px;margin:0}}h3{{font-size:14px;margin:18px 0 8px;color:var(--mu);font-weight:600}}
+details{{margin-top:8px}}summary{{cursor:pointer;color:var(--mu);font-size:13px}}h2{{font-size:16px;margin:28px 0 10px}}.sub{{color:var(--mu);font-size:13px}}
 .kpis{{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}}
 .kpi{{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px}}
 .kpi span{{display:block;color:var(--mu);font-size:12px}}.kpi b{{font-size:20px}}
@@ -110,6 +156,10 @@ th,td{{text-align:left;padding:6px 8px;border-bottom:1px solid var(--bd);white-s
 </style></head><body><main>
 <h1>Agente Swing · CEDEARs</h1>
 <div class="sub">Paper trading (simulado) · Actualizado {ahora} (hora Argentina) · Datos hasta {ult} · Versión {cfg['nombre_version']}</div>
+
+<h2>Paper trading (operaciones simuladas con datos reales)</h2>
+<div class="kpis">{paper_kpis}</div>
+{paper_html}
 
 <h2>Backtest de la estrategia</h2>
 <div class="kpis">{kpis or "<p class='vacio'>Todavía no se corrió el backtest.</p>"}</div>
