@@ -1,0 +1,113 @@
+# =====================================================================
+#  AGENTE SWING TRADING - PARÁMETROS
+#  Todo lo que el agente "decide" sale de acá. Si cambiás algo, el
+#  agente guarda una nueva VERSIÓN de parámetros, así después podés
+#  comparar qué configuración rindió mejor.
+# =====================================================================
+
+nombre_version: "v1-base"        # ponele un nombre cada vez que cambies algo
+
+# ---------------------------------------------------------------------
+# UNIVERSO: CEDEARs. Las señales se calculan sobre el SUBYACENTE (USA),
+# que tiene más liquidez y datos más limpios. El precio del CEDEAR (ARS)
+# se guarda para registrar a cuánto habrías entrado en BYMA.
+# ---------------------------------------------------------------------
+universo:
+  # --- Tecnología ---
+  - {subyacente: AAPL,   cedear: AAPL.BA, sector: Tecnología}
+  - {subyacente: MSFT,   cedear: MSFT.BA, sector: Tecnología}
+  - {subyacente: GOOGL,  cedear: GOOGL.BA, sector: Tecnología}
+  - {subyacente: AMZN,   cedear: AMZN.BA, sector: Tecnología}
+  - {subyacente: NVDA,   cedear: NVDA.BA, sector: Tecnología}
+  - {subyacente: META,   cedear: META.BA, sector: Tecnología}
+  - {subyacente: TSLA,   cedear: TSLA.BA, sector: Tecnología}
+  - {subyacente: AVGO,   cedear: AVGO.BA, sector: Tecnología}
+  - {subyacente: ORCL,   cedear: ORCL.BA, sector: Tecnología}
+  - {subyacente: ADBE,   cedear: ADBE.BA, sector: Tecnología}
+  - {subyacente: CRM,    cedear: CRM.BA, sector: Tecnología}
+  - {subyacente: AMD,    cedear: AMD.BA, sector: Tecnología}
+  - {subyacente: INTC,   cedear: INTC.BA, sector: Tecnología}
+  - {subyacente: QCOM,   cedear: QCOM.BA, sector: Tecnología}
+  - {subyacente: CSCO,   cedear: CSCO.BA, sector: Tecnología}
+  - {subyacente: IBM,    cedear: IBM.BA, sector: Tecnología}
+  - {subyacente: TSM,    cedear: TSM.BA, sector: Tecnología}
+  - {subyacente: NFLX,   cedear: NFLX.BA, sector: Tecnología}
+  - {subyacente: UBER,   cedear: UBER.BA, sector: Tecnología}
+  - {subyacente: PYPL,   cedear: PYPL.BA, sector: Tecnología}
+  # --- Latam / Brasil ---
+  - {subyacente: MELI,   cedear: MELI.BA, sector: Latam / Brasil}
+  - {subyacente: GLOB,   cedear: GLOB.BA, sector: Latam / Brasil}
+  - {subyacente: NU,     cedear: NU.BA, sector: Latam / Brasil}
+  - {subyacente: VIST,   cedear: VIST.BA, sector: Latam / Brasil}
+  - {subyacente: PBR,    cedear: PBR.BA, sector: Latam / Brasil}
+  - {subyacente: VALE,   cedear: VALE.BA, sector: Latam / Brasil}
+  # --- Financieras ---
+  - {subyacente: JPM,    cedear: JPM.BA, sector: Financieras}
+  - {subyacente: BAC,    cedear: BAC.BA, sector: Financieras}
+  - {subyacente: C,      cedear: C.BA, sector: Financieras}
+  - {subyacente: V,      cedear: V.BA, sector: Financieras}
+  - {subyacente: BRK-B,  cedear: BRKB.BA, sector: Financieras}
+  - {subyacente: COIN,   cedear: COIN.BA, sector: Financieras}
+  - {subyacente: MSTR,   cedear: MSTR.BA, sector: Financieras}
+  # --- Consumo ---
+  - {subyacente: KO,     cedear: KO.BA, sector: Consumo}
+  - {subyacente: PEP,    cedear: PEP.BA, sector: Consumo}
+  - {subyacente: PG,     cedear: PG.BA, sector: Consumo}
+  - {subyacente: MCD,    cedear: MCD.BA, sector: Consumo}
+  - {subyacente: WMT,    cedear: WMT.BA, sector: Consumo}
+  - {subyacente: HD,     cedear: HD.BA, sector: Consumo}
+  - {subyacente: NKE,    cedear: NKE.BA, sector: Consumo}
+  - {subyacente: DIS,    cedear: DIS.BA, sector: Consumo}
+  # --- Salud ---
+  - {subyacente: JNJ,    cedear: JNJ.BA, sector: Salud}
+  - {subyacente: PFE,    cedear: PFE.BA, sector: Salud}
+  - {subyacente: MRK,    cedear: MRK.BA, sector: Salud}
+  - {subyacente: LLY,    cedear: LLY.BA, sector: Salud}
+  # --- Energía / Industria (+ China) ---
+  - {subyacente: XOM,    cedear: XOM.BA, sector: Energía / Industria}
+  - {subyacente: CVX,    cedear: CVX.BA, sector: Energía / Industria}
+  - {subyacente: CAT,    cedear: CAT.BA, sector: Energía / Industria}
+  - {subyacente: BA,     cedear: BA.BA, sector: Energía / Industria}
+  - {subyacente: BABA,   cedear: BABA.BA, sector: China}
+
+benchmark: SPY                   # contra qué medimos si el agente agrega valor
+
+# ---------------------------------------------------------------------
+# BACKTEST (Etapa 3): variantes a comparar además de la configuración base
+# ---------------------------------------------------------------------
+backtest:
+  variantes_riesgo: [0.005, 0.01, 0.02]
+
+# ---------------------------------------------------------------------
+# DATOS
+# ---------------------------------------------------------------------
+datos:
+  historia_anios: 3              # cuántos años bajar la primera vez
+  base_datos: data/agente.db     # archivo SQLite donde se guarda todo
+
+# ---------------------------------------------------------------------
+# ESTRATEGIA (se usa en la Etapa 2)
+# Idea base: "comprar retrocesos dentro de una tendencia alcista"
+# ---------------------------------------------------------------------
+estrategia:
+  sma_rapida: 50                 # media móvil corta
+  sma_lenta: 200                 # media móvil larga -> filtro de tendencia
+  rsi_periodo: 14
+  rsi_entrada_max: 40            # entra solo si el RSI retrocedió por debajo de esto...
+  rsi_confirmacion: true         # ...y hoy vuelve a subir (rebote)
+  volumen_min_rel: 0.8           # volumen de hoy >= 0.8x su promedio de 20 ruedas
+
+# ---------------------------------------------------------------------
+# GESTIÓN DE RIESGO (se usa en las Etapas 2-4)
+# ---------------------------------------------------------------------
+riesgo:
+  capital_inicial_usd: 10000
+  riesgo_por_operacion: 0.01     # arriesgar 1% del capital por trade
+  atr_periodo: 14
+  stop_atr: 2.0                  # stop = entrada - 2 x ATR
+  objetivo_r: 2.0                # take profit = 2 veces lo arriesgado (2R)
+  max_dias_en_posicion: 15       # salida por tiempo (swing = días/semanas)
+  max_posiciones: 5
+  max_por_sector: 2              # evita tener 5 posiciones que se mueven igual
+  max_pct_posicion: 0.25         # ninguna posición puede superar el 25% del capital
+  comision_pct: 0.0015           # comisión por operación (cada compra y cada venta): 0,15%

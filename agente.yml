@@ -1,0 +1,37 @@
+name: Agente diario
+
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"      # 18:30 hora Argentina, lunes a viernes
+  workflow_dispatch: {}          # botón "Run workflow" en la pestaña Actions
+  push:
+    branches: [main]
+    paths: ["**.py", "config.yaml", ".github/workflows/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agente
+  cancel-in-progress: false
+
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Ejecutar agente
+        run: python run_diario.py 2>&1 | tee reportes/ultima_corrida.log
+      - name: Guardar resultados en el repo
+        run: |
+          git config user.name "agente-bot"
+          git config user.email "agente-bot@users.noreply.github.com"
+          git add -A data reportes docs
+          git diff --cached --quiet || git commit -m "Corrida $(date -u +%F) [skip ci]"
+          git pull --rebase -q && git push
