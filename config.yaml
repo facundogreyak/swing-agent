@@ -5,7 +5,7 @@
 #  comparar qué configuración rindió mejor.
 # =====================================================================
 
-nombre_version: "v2-filtro-mercado"        # ponele un nombre cada vez que cambies algo
+nombre_version: "v3-3R-20dias"        # ponele un nombre cada vez que cambies algo
 
 # ---------------------------------------------------------------------
 # UNIVERSO: CEDEARs. Las señales se calculan sobre el SUBYACENTE (USA),
@@ -82,10 +82,10 @@ backtest:
   # y después se verifica en el período "fuera de muestra" (datos no usados para elegir).
   inicio_fuera_de_muestra: "2023-01-01"
   grilla:
-    objetivo_r: [1.5, 2.0, 3.0]
-    max_dias_en_posicion: [10, 15, 20]
-    trailing_atr: [null, 3.0]
+    objetivo_r: [2.0, 3.0, 4.0]
+    max_dias_en_posicion: [20, 30]
     filtro_mercado: [true, false]
+    fuerza_relativa_dias: [null, 63, 126]
 
 # ---------------------------------------------------------------------
 # DATOS
@@ -108,6 +108,7 @@ estrategia:
   volumen_min_rel: 0.8           # volumen de hoy >= 0.8x su promedio de 20 ruedas
   filtro_mercado: true           # operar solo si el benchmark (SPY) está sobre su media...
   sma_mercado: 200               # ...de 200 ruedas (evita comprar en mercados bajistas)
+  fuerza_relativa_dias: null     # ej. 126 = solo papeles que le ganaron al SPY en los últimos ~6 meses. null = apagado
 
 # ---------------------------------------------------------------------
 # GESTIÓN DE RIESGO (se usa en las Etapas 2-4)
@@ -117,9 +118,9 @@ riesgo:
   riesgo_por_operacion: 0.01     # arriesgar 1% del capital por trade
   atr_periodo: 14
   stop_atr: 2.0                  # stop = entrada - 2 x ATR
-  objetivo_r: 2.0                # take profit = 2 veces lo arriesgado (2R)
+  objetivo_r: 3.0                # take profit = 3 veces lo arriesgado (3R) · v3: mejor dentro y fuera de muestra
   trailing_atr: null             # ej. 3.0 = el stop sube detrás del precio (máximo - 3xATR). null = apagado
-  max_dias_en_posicion: 15       # salida por tiempo (swing = días/semanas)
+  max_dias_en_posicion: 20       # salida por tiempo (swing = días/semanas) · v3: 20 le ganó a 10 y 15
   max_posiciones: 5
   max_por_sector: 2              # evita tener 5 posiciones que se mueven igual
   max_pct_posicion: 0.25         # ninguna posición puede superar el 25% del capital

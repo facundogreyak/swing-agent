@@ -53,6 +53,12 @@ def preparar_panel(con, cfg):
     panel["close_ffill"] = panel["close"].ffill()
     panel["mercado_ok"] = regimen_mercado(bench, cfg["estrategia"].get("sma_mercado", 200))
     panel["bench"] = bench["close"]
+    # Fuerza relativa: retorno de n ruedas del papel menos el del SPY (para cada n que se use)
+    ns = {cfg["estrategia"].get("fuerza_relativa_dias")}
+    ns |= set(cfg.get("backtest", {}).get("grilla", {}).get("fuerza_relativa_dias", []))
+    for n in {x for x in ns if x}:
+        rb = bench["close"].pct_change(n)
+        panel[f"fr_{n}"] = panel["close_ffill"].pct_change(n, fill_method=None).sub(rb, axis=0)
     return panel, sectores
 
 
@@ -65,6 +71,8 @@ def simular(panel, sectores, cfg, desde=None, hasta=None):
     capital0 = r["capital_inicial_usd"]
     trailing = r.get("trailing_atr")
     usar_filtro = e.get("filtro_mercado", False)
+    fr_n = e.get("fuerza_relativa_dias")
+    FR = panel[f"fr_{fr_n}"].values if fr_n else None
 
     tickers = list(panel["close"].columns)
     ti = {t: i for i, t in enumerate(tickers)}
@@ -159,7 +167,8 @@ def simular(panel, sectores, cfg, desde=None, hasta=None):
         # 4) Señales al cierre de hoy (se ejecutan mañana)
         pendientes = []
         if not usar_filtro or bool(MOK[i]):
-            for j in np.where(SEN[i])[0]:
+            candidatos = SEN[i] & (FR[i] > 0) if FR is not None else SEN[i]
+            for j in np.where(candidatos)[0]:
                 pendientes.append({"ticker": tickers[j], "atr": ATR[i, j], "rsi": RSI[i, j]})
             pendientes.sort(key=lambda x: x["rsi"])      # prioridad: retroceso más profundo
 
@@ -228,7 +237,7 @@ def tabla_md(filas, claves, primera="Variante"):
 # ---------------------------------------------------------------------------
 UBICACION = {"objetivo_r": "riesgo", "max_dias_en_posicion": "riesgo", "trailing_atr": "riesgo",
              "stop_atr": "riesgo", "riesgo_por_operacion": "riesgo", "filtro_mercado": "estrategia",
-             "rsi_entrada_max": "estrategia"}
+             "rsi_entrada_max": "estrategia", "fuerza_relativa_dias": "estrategia"}
 
 
 def calibrar(panel, sectores, cfg, capital0):
@@ -277,7 +286,7 @@ def calibrar(panel, sectores, cfg, capital0):
             continue
         top[col] = [fmt(col.split("_", 1)[1], v) for v in top[col]]
     L.append(top.to_markdown(index=False))
-    corr = df["in_retorno/caida (MAR)"].corr(df["out_retorno/caida (MAR)"], method="spearman")
+    corr = df["in_retorno/caida (MAR)"].rank().corr(df["out_retorno/caida (MAR)"].rank())   # Spearman sin scipy
     L += ["", f"Correlación de ranking dentro vs fuera de muestra (Spearman): **{corr:.2f}** "
               "(cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después)."]
     (REPORTES / "calibracion.md").write_text("\n".join(L), encoding="utf-8")
