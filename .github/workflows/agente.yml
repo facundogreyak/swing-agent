@@ -36,6 +36,9 @@ jobs:
           restore-keys: precios-
       - name: Ejecutar agente
         shell: bash              # con pipefail: si Python falla, la corrida sale en rojo
+        env:                     # claves guardadas en Settings -> Secrets and variables -> Actions
+          GMAIL_USUARIO: ${{ secrets.GMAIL_USUARIO }}
+          GMAIL_CLAVE: ${{ secrets.GMAIL_CLAVE }}
         run: |
           mkdir -p reportes data docs
           python run_diario.py 2>&1 | tee reportes/ultima_corrida.log
