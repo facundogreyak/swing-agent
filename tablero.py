@@ -75,9 +75,11 @@ def main():
     if (REP / "calibracion.csv").exists():
         cal = pd.read_csv(REP / "calibracion.csv").head(8)
         ren = {"objetivo_r": "Objetivo (R)", "max_dias_en_posicion": "Días máx.", "trailing_atr": "Trailing ATR",
-               "filtro_mercado": "Filtro SPY", "in_retorno_anual (CAGR)": "CAGR antes",
+               "filtro_mercado": "Filtro SPY", "fuerza_relativa_dias": "Fuerza rel. (días)",
+               "stop_atr": "Stop (ATR)", "rsi_entrada_max": "RSI máx.", "in_retorno_anual (CAGR)": "CAGR antes",
                "in_max_drawdown": "Caída antes", "out_retorno_anual (CAGR)": "CAGR después",
                "out_max_drawdown": "Caída después", "out_spy_retorno_anual": "SPY después"}
+        ren = {k: v for k, v in ren.items() if k in cal.columns}   # solo los parámetros de la grilla actual
         cal = cal[list(ren)].rename(columns=ren)
         for c in ["CAGR antes", "Caída antes", "CAGR después", "Caída después", "SPY después"]:
             cal[c] = cal[c].map(lambda v: f"{v:.1%}")
