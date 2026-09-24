@@ -35,6 +35,7 @@ jobs:
           key: precios-${{ github.run_id }}
           restore-keys: precios-
       - name: Ejecutar agente
+        shell: bash              # con pipefail: si Python falla, la corrida sale en rojo
         run: |
           mkdir -p reportes data docs
           python run_diario.py 2>&1 | tee reportes/ultima_corrida.log
