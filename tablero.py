@@ -203,6 +203,8 @@ def seccion_comparacion(cfg):
         e = pd.read_csv(REP / "momentum_equity.csv", index_col="fecha")
         series["Momentum"] = e.total
         series.setdefault("SPY", e.spy)
+        if "igual_peso" in e.columns:
+            series["50 acciones en partes iguales"] = e.igual_peso
     if len(series) < 2:
         return "<p class='vacio'>Falta correr los backtests.</p>", {"fechas": [], "series": {}}
     df = pd.DataFrame(series).dropna()
@@ -219,7 +221,9 @@ def seccion_comparacion(cfg):
     ta = ta.reset_index().rename(columns={"fecha": "año", "index": "año"})
     for c in ta.columns[1:]:
         ta[c] = ta[c].map(lambda v: _pct(v))
-    html = (f"<div class='sub'>Backtest del {df.index[0]} al {df.index[-1]}, mismo capital inicial.</div>"
+    html = (f"<div class='sub'>Backtest del {df.index[0]} al {df.index[-1]}, mismo capital inicial. "
+            "'50 acciones en partes iguales' es la referencia honesta: la lista se armó hoy con ganadores "
+            "conocidos, así que la ventaja real de una estrategia es lo que supera a esa línea, no a SPY.</div>"
             + _tabla(pd.DataFrame(filas), list(filas[0].keys()),
                      signo=("retorno anual", "mejor año", "peor año", "total"))
             + "<div class='card' style='margin-top:12px'><canvas id='cmp' height='130'></canvas></div>"
@@ -341,9 +345,9 @@ def main():
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
 :root{{--bg:#f7f7f5;--card:#fff;--tx:#1d1d1b;--mu:#6b6b66;--bd:#e4e4df;--pos:#1a7f4b;--neg:#c0392b;
---s1:#2f5bd3;--s2:#d9822b;--s3:#9a9a92}}
+--s1:#2f5bd3;--s2:#d9822b;--s3:#9a9a92;--s4:#2a9d8f}}
 @media (prefers-color-scheme:dark){{:root{{--bg:#151514;--card:#1f1f1d;--tx:#ecece8;--mu:#9a9a92;--bd:#33332f;
---pos:#4cc38a;--neg:#ef6f5e;--s1:#7c9cff;--s2:#f0a35e;--s3:#77776f}}}}
+--pos:#4cc38a;--neg:#ef6f5e;--s1:#7c9cff;--s2:#f0a35e;--s3:#77776f;--s4:#4fc1b4}}}}
 *{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}}
 main{{max-width:1040px;margin:0 auto;padding:24px 16px 48px}}
 h1{{font-size:22px;margin:0}}h2{{font-size:17px;margin:34px 0 8px;padding-top:8px;border-top:1px solid var(--bd)}}
@@ -394,11 +398,11 @@ buffer {m['buffer']}, límite por sector {m['max_por_sector'] or 'no'}. Lo que n
 <script>
 const d={json.dumps(comp)};
 const css=getComputedStyle(document.documentElement);
-const col=['--s1','--s2','--s3'].map(v=>css.getPropertyValue(v).trim());
+const col=['--s1','--s2','--s4','--s3'].map(v=>css.getPropertyValue(v).trim());
 if(window.Chart && d.fechas.length){{
   const orden=Object.keys(d.series).sort((a,b)=>(a==='SPY')-(b==='SPY'));
   new Chart(document.getElementById('cmp'),{{type:'line',
-  data:{{labels:d.fechas,datasets:orden.map((k,i)=>({{label:k,data:d.series[k],borderColor:k==='SPY'?col[2]:col[i],
+  data:{{labels:d.fechas,datasets:orden.map((k,i)=>({{label:k,data:d.series[k],borderColor:k==='SPY'?col[3]:col[i],
     borderWidth:k==='SPY'?1.5:2,pointRadius:0}}))}},
   options:{{interaction:{{mode:'index',intersect:false}},scales:{{x:{{ticks:{{maxTicksLimit:8}}}},
     y:{{type:'logarithmic',ticks:{{callback:v=>'$'+Math.round(v).toLocaleString('es-AR')}}}}}},

@@ -117,20 +117,25 @@ estrategia:
 # que más subieron. Siempre 100% invertido (lo que sobra va a SPY).
 # ---------------------------------------------------------------------
 momentum:
-  nombre: "m1-mix-top8"
+  nombre: "m2-mix-top5-mensual"
+  # Elegido con el backtest de 10 años (ver reportes/momentum.md, "Qué pesa más"):
+  #  - sin filtro de mercado: estar 100% invertido rindió más antes y después de 2023
+  #  - top 5: más retorno que 8 o 10 en los dos períodos (ojo: caídas más profundas)
+  #  - puntaje mix: el mejor período cambió entre antes y después de 2023; mix combina 3, 6 y 12 meses
+  #  - revisión mensual: semanal vs mensual y el buffer dieron diferencias chicas (ruido);
+  #    mensual opera menos (~14 compras/año)
   puntaje: mix                   # r21 (1 mes) | r63 (3 meses) | r126 (6-1) | r252 (12-1) | mix
-  top_n: 8                       # cuántas acciones tener (cada una ~1/8 del capital)
+  top_n: 5                       # cuántas acciones tener (cada una ~1/5 del capital)
   rebalanceo_dias: 21            # cada cuántas ruedas se revisa el ranking (5 = semanal, 21 = mensual)
   buffer: 5                      # una acción que ya tenemos se queda mientras esté en el top_n + buffer
   max_por_sector: 3              # null = sin límite
   filtro_mercado: false          # true = pasar a efectivo si SPY < media de 200 (deja de estar 100% invertido)
-  grilla:                        # combinaciones que prueba la calibración
-    puntaje: [r21, r63, r126, r252, mix]
-    top_n: [5, 10]
+  grilla:                        # combinaciones que prueba la calibración (se descartaron r21, r63 y el filtro)
+    puntaje: [mix, r126, r252]
+    top_n: [5, 8, 10]
     rebalanceo_dias: [5, 21]
-    buffer: [0, 5]
+    buffer: [5, 10]
     max_por_sector: [null, 3]
-    filtro_mercado: [false, true]
 
 # ---------------------------------------------------------------------
 # GESTIÓN DE RIESGO (se usa en las Etapas 2-4)

@@ -271,9 +271,30 @@ def simular(P, pun, cfg, m=None, desde=None, hasta=None):
         mot.paso(i, f, es_dia_de_rebalanceo(fechas, i, mot.ult_reb, m["rebalanceo_dias"]))
     eq = pd.DataFrame(mot.curva, columns=["fecha", "efectivo", "acciones", "spy_en_cartera", "total", "posiciones"])
     eq = eq.set_index("fecha")
+    cap0 = cfg["riesgo"]["capital_inicial_usd"]
     b = P["bench_close"].iloc[idx]
-    eq["spy"] = (b / b.iloc[0] * cfg["riesgo"]["capital_inicial_usd"]).round(2).values
+    eq["spy"] = (b / b.iloc[0] * cap0).round(2).values
+    eq["igual_peso"] = (igual_peso(P, idx) * cap0).round(2)
     return pd.DataFrame(mot.log), eq
+
+
+def igual_peso(P, idx):
+    """Referencia honesta: las mismas acciones del universo en partes iguales, rebalanceo mensual.
+    Como el universo se eligió hoy (con ganadores conocidos), esta curva muestra cuánto del
+    resultado viene de la lista de acciones y no de la estrategia."""
+    c = P["close"].iloc[idx]
+    r = c.pct_change().fillna(0.0).values
+    meses = c.index.to_period("M")
+    valor, pos, vals = 1.0, None, []
+    for k in range(len(c)):
+        if k == 0 or meses[k] != meses[k - 1]:
+            validos = ~np.isnan(c.values[k])
+            pos = np.where(validos, valor / validos.sum(), 0.0)
+        pos = pos * (1 + r[k]) if k > 0 else pos
+        valor = pos.sum()
+        vals.append(valor)
+    return np.array(vals)
+
 
 
 def max_dd(s):
@@ -392,7 +413,6 @@ def main():
     base = metricas(ops, eq, cap0, bench)
     eq.to_csv(REPORTES / "momentum_equity.csv")
     ops.to_csv(REPORTES / "momentum_operaciones.csv", index=False)
-    anual = por_anio(eq)
 
     params = ", ".join(f"{k}={m[k]}" for k in ("puntaje", "top_n", "rebalanceo_dias", "buffer",
                                                  "max_por_sector", "filtro_mercado"))
@@ -400,8 +420,18 @@ def main():
          f"Período: {eq.index[0]} → {eq.index[-1]} · {len(P['tickers'])} acciones · Parámetros: {params}", "",
          "## Resultado", "", "| Métrica | Valor |", "|---|---|"]
     L += [f"| {k} | {fmt(k, v)} |" for k, v in base.items()]
-    L += ["", "## Retorno por año", "", "| Año | Momentum | SPY |", "|---|---|---|"]
-    L += [f"| {f.year} | {a:.1%} | {s:.1%} |" for f, a, s in zip(anual.index, anual.total, anual.spy)]
+    ew = eq["igual_peso"]
+    anios = (pd.Timestamp(eq.index[-1]) - pd.Timestamp(eq.index[0])).days / 365.25
+    L += ["", f"**Referencia:** las mismas {len(P['tickers'])} acciones en partes iguales rindieron "
+              f"{(ew.iloc[-1] / ew.iloc[0]) ** (1 / anios) - 1:.1%} anual (caída máx. {max_dd(ew):.1%}). "
+              "La diferencia contra SPY es en gran parte por haber elegido la lista hoy; "
+              "la ventaja real de la estrategia se mide contra esta referencia."]
+    e2 = eq.copy()
+    e2.index = pd.to_datetime(e2.index)
+    an = e2[["total", "igual_peso", "spy"]].resample("YE").last()
+    an = pd.concat([e2[["total", "igual_peso", "spy"]].iloc[[0]], an]).pct_change().dropna()
+    L += ["", "## Retorno por año", "", "| Año | Momentum | 50 en partes iguales | SPY |", "|---|---|---|---|"]
+    L += [f"| {f.year} | {r.total:.1%} | {r.igual_peso:.1%} | {r.spy:.1%} |" for f, r in an.iterrows()]
 
     ventas = ops[(ops.lado == "VENTA") & (ops.ticker != bench)] if len(ops) else ops
     if len(ventas):
@@ -471,6 +501,11 @@ def paper():
         print("Momentum: no hay velas nuevas para procesar.")
         return
 
+    if estado and estado.get("version") != version:
+        # Cambiaron los parámetros: se descarta la orden pendiente (armada con los viejos)
+        # y se vuelve a armar el ranking con los nuevos en la próxima vela.
+        print(f"Momentum: nueva versión de parámetros ({version}); se rearma la cartera objetivo.")
+        estado["pendiente"], estado["ult_reb"] = None, None
     mot = Motor(P, pun, m, cfg["riesgo"]["comision_pct"], cfg["riesgo"]["capital_inicial_usd"], estado)
     for f in a_procesar:
         i = fechas.get_loc(f)
@@ -520,7 +555,9 @@ def paper():
         print(f"  {fs}: {'REBALANCEO' if rebalanceo else 'seguimiento'} · cartera USD {total:,.2f} "
               f"· posiciones {sum(1 for t in mot.pos if t != P['bench'])}")
 
+    est = mot.estado()
+    est["version"] = version
     dia.execute("INSERT OR REPLACE INTO estado_motor VALUES ('momentum', ?, ?)",
-                (a_procesar[-1].strftime("%Y-%m-%d"), json.dumps(mot.estado())))
+                (a_procesar[-1].strftime("%Y-%m-%d"), json.dumps(est)))
     dia.commit()
     print("Momentum: paper trading actualizado.")
