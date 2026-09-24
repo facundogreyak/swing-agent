@@ -1,5 +1,5 @@
 === 1. Datos ===
-Parámetros registrados -> versión e2abd305 (v3-3R-20dias)
+Parámetros registrados -> versión 4e3cfafb (v4-retroceso-4R)
 
 Descargando precios...
   SPY        OK         4 velas
@@ -12,11 +12,11 @@ Descargando precios...
   AMZN       OK         4 velas
   AMZN.BA    OK         1598 velas
   NVDA       OK         4 velas
-  NVDA.BA    OK         1598 velas
+  NVDA.BA    OK         1597 velas
   META       OK         4 velas
   META.BA    OK         1 velas
   TSLA       OK         4 velas
-  TSLA.BA    OK         1598 velas
+  TSLA.BA    OK         1597 velas
   AVGO       OK         4 velas
   AVGO.BA    OK         1 velas
   ORCL       OK         4 velas
@@ -42,11 +42,11 @@ Descargando precios...
   UBER       OK         1854 velas
   UBER.BA    OK         1017 velas
   PYPL       OK         4 velas
-  PYPL.BA    OK         1825 velas
+  PYPL.BA    OK         1824 velas
   MELI       OK         3 velas
   MELI.BA    OK         4 velas
   GLOB       OK         3 velas
-  GLOB.BA    OK         1053 velas
+  GLOB.BA    OK         1052 velas
   NU         OK         1201 velas
   NU.BA      OK         615 velas
   VIST       OK         1800 velas
@@ -102,7 +102,7 @@ Descargando precios...
   BA         OK         4 velas
   BA.BA      OK         4 velas
   BABA       OK         4 velas
-  BABA.BA    OK         1598 velas
+  BABA.BA    OK         1597 velas
 
 Resumen de la base:
   AAPL        2513 velas  2016-09-26 -> 2026-09-24
@@ -207,8 +207,12 @@ Resumen de la base:
   XOM         2512 velas  2016-09-26 -> 2026-09-24
   XOM.BA      2444 velas  2016-09-26 -> 2026-09-24
 
-=== 2. Backtest y calibración ===
-# Backtest – v3-3R-20dias
+=== 2. Paper trading ===
+  2026-09-23: {'NO_OPERAR': 50} · cartera USD 10,000.00
+Paper trading actualizado.
+
+=== 3. Backtest y calibración ===
+# Backtest – v4-retroceso-4R
 
 Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
@@ -216,18 +220,18 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 
 | Métrica | Valor |
 |---|---|
-| operaciones | 558 |
-| win_rate | 44.1% |
-| r_promedio (expectancy) | 0.15 |
-| ganancia_prom_R | 1.57 |
+| operaciones | 618 |
+| win_rate | 44.5% |
+| r_promedio (expectancy) | 0.17 |
+| ganancia_prom_R | 1.59 |
 | perdida_prom_R | -0.97 |
-| profit_factor | 1.24 |
-| dias_prom_en_posicion | 13.42 |
-| retorno_total | 93.6% |
-| retorno_anual (CAGR) | 7.4% |
-| max_drawdown | -21.7% |
-| retorno/caida (MAR) | 0.34 |
-| exposicion_prom | 60.1% |
+| profit_factor | 1.32 |
+| dias_prom_en_posicion | 14.18 |
+| retorno_total | 142.3% |
+| retorno_anual (CAGR) | 10.1% |
+| max_drawdown | -23.1% |
+| retorno/caida (MAR) | 0.44 |
+| exposicion_prom | 69.5% |
 | spy_retorno_anual | 15.0% |
 | spy_max_drawdown | -33.7% |
 
@@ -235,24 +239,24 @@ Período: 2017-07-13 → 2026-09-24 · Tickers con datos: 50 de 50 · Capital in
 
 | Año | Agente | SPY |
 |---|---|---|
-| 2017 | 12.9% | 10.3% |
-| 2018 | -11.5% | -4.6% |
-| 2019 | 18.5% | 31.2% |
-| 2020 | 6.4% | 18.3% |
-| 2021 | 5.5% | 28.7% |
-| 2022 | 2.9% | -18.2% |
-| 2023 | 7.3% | 26.2% |
-| 2024 | 22.5% | 24.9% |
-| 2025 | 10.0% | 17.7% |
-| 2026 | -2.1% | 12.8% |
+| 2017 | 13.7% | 10.3% |
+| 2018 | -9.3% | -4.6% |
+| 2019 | 15.5% | 31.2% |
+| 2020 | 11.5% | 18.3% |
+| 2021 | 0.1% | 28.7% |
+| 2022 | 13.4% | -18.2% |
+| 2023 | 7.6% | 26.2% |
+| 2024 | 22.3% | 24.9% |
+| 2025 | 16.8% | 17.7% |
+| 2026 | 4.6% | 12.9% |
 
 ## Variantes de riesgo por operación
 
 | Variante | operaciones | win_rate | r_promedio (expectancy) | retorno_anual (CAGR) | max_drawdown | exposicion_prom |
 |---|---|---|---|---|---|---|
-| riesgo 0.5% | 558 | 44.3% | 0.15 | 4.5% | -12.3% | 35.2% |
-| riesgo 1.0% | 558 | 44.1% | 0.15 | 7.4% | -21.7% | 60.1% |
-| riesgo 2.0% | 546 | 42.3% | 0.14 | 8.8% | -24.0% | 66.8% |
+| riesgo 0.5% | 620 | 44.5% | 0.17 | 5.6% | -12.5% | 40.1% |
+| riesgo 1.0% | 618 | 44.5% | 0.17 | 10.1% | -23.1% | 69.5% |
+| riesgo 2.0% | 602 | 43.0% | 0.17 | 11.4% | -30.1% | 78.3% |
 
 === Calibración ===
 # Calibración de parámetros
@@ -261,24 +265,34 @@ Dentro de muestra: hasta 2023-01-01 (se usa para elegir). Fuera de muestra: desd
 
 Orden: por retorno/caída (MAR) **dentro de muestra**. Si el ranking fuera de muestra se parece, el resultado es más confiable.
 
-Configuración actual: objetivo_r=3.0, max_dias_en_posicion=20, filtro_mercado=True, fuerza_relativa_dias=None
+Configuración actual: entrada=retroceso, objetivo_r=4.0, max_dias_en_posicion=20, filtro_mercado=False
 
 ## Top 10
 
-|   objetivo_r |   max_dias_en_posicion | filtro_mercado   | fuerza_relativa_dias   |   in_operaciones |   in_r_promedio (expectancy) | in_retorno_anual (CAGR)   | in_max_drawdown   |   in_retorno/caida (MAR) |   out_r_promedio (expectancy) | out_retorno_anual (CAGR)   | out_max_drawdown   |   out_retorno/caida (MAR) | out_spy_retorno_anual   |
-|-------------:|-----------------------:|:-----------------|:-----------------------|-----------------:|-----------------------------:|:--------------------------|:------------------|-------------------------:|------------------------------:|:---------------------------|:-------------------|--------------------------:|:------------------------|
-|            4 |                     20 | no               | no                     |              354 |                         0.19 | 10.1%                     | -19.0%            |                     0.53 |                          0.17 | 12.6%                      | -17.6%             |                      0.72 | 22.1%                   |
-|            4 |                     20 | sí               | no                     |              287 |                         0.18 | 7.5%                      | -16.9%            |                     0.44 |                          0.16 | 10.5%                      | -14.5%             |                      0.73 | 22.1%                   |
-|            3 |                     20 | no               | no                     |              363 |                         0.16 | 8.5%                      | -25.2%            |                     0.34 |                          0.15 | 10.8%                      | -18.1%             |                      0.6  | 22.1%                   |
-|            3 |                     20 | sí               | no                     |              293 |                         0.15 | 5.9%                      | -21.7%            |                     0.27 |                          0.14 | 9.5%                       | -15.0%             |                      0.63 | 22.1%                   |
-|            2 |                     20 | sí               | 63                     |              186 |                         0.18 | 4.6%                      | -19.9%            |                     0.23 |                          0.17 | 6.6%                       | -14.1%             |                      0.47 | 22.1%                   |
-|            4 |                     20 | sí               | 63                     |              176 |                         0.21 | 4.4%                      | -19.9%            |                     0.22 |                          0.16 | 5.8%                       | -14.7%             |                      0.39 | 22.1%                   |
-|            4 |                     30 | no               | no                     |              302 |                         0.15 | 4.9%                      | -22.5%            |                     0.22 |                          0.11 | 5.7%                       | -17.0%             |                      0.34 | 22.1%                   |
-|            2 |                     30 | sí               | 63                     |              183 |                         0.18 | 4.2%                      | -19.9%            |                     0.21 |                          0.27 | 10.6%                      | -13.1%             |                      0.81 | 22.1%                   |
-|            3 |                     20 | sí               | 63                     |              178 |                         0.19 | 4.0%                      | -19.9%            |                     0.2  |                          0.12 | 4.6%                       | -15.1%             |                      0.3  | 22.1%                   |
-|            2 |                     20 | no               | 63                     |              261 |                         0.12 | 4.1%                      | -21.1%            |                     0.19 |                          0.23 | 10.8%                      | -20.9%             |                      0.52 | 22.1%                   |
+| entrada    |   objetivo_r |   max_dias_en_posicion | filtro_mercado   |   in_operaciones |   in_r_promedio (expectancy) | in_retorno_anual (CAGR)   | in_max_drawdown   |   in_retorno/caida (MAR) |   out_r_promedio (expectancy) | out_retorno_anual (CAGR)   | out_max_drawdown   |   out_retorno/caida (MAR) | out_spy_retorno_anual   |
+|:-----------|-------------:|-----------------------:|:-----------------|-----------------:|-----------------------------:|:--------------------------|:------------------|-------------------------:|------------------------------:|:---------------------------|:-------------------|--------------------------:|:------------------------|
+| ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.16 | 11.9%                      | -18.4%             |                      0.65 | 22.1%                   |
+| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.1  | 5.1%                       | -18.9%             |                      0.27 | 22.1%                   |
+| ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.22 | 8.8%                       | -19.4%             |                      0.46 | 22.1%                   |
+| ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.15 | 5.5%                       | -14.8%             |                      0.37 | 22.1%                   |
+| retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.18 | 10.4%                      | -18.4%             |                      0.57 | 22.1%                   |
+| ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.23 | 8.8%                       | -22.4%             |                      0.39 | 22.1%                   |
+| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.1  | 7.0%                       | -16.1%             |                      0.43 | 22.1%                   |
+| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.21 | 9.2%                       | -17.1%             |                      0.54 | 22.1%                   |
+| ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.15 | 7.8%                       | -13.1%             |                      0.6  | 22.1%                   |
+| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.16 | 8.6%                       | -16.0%             |                      0.54 | 22.1%                   |
 
-Correlación de ranking dentro vs fuera de muestra (Spearman): **0.17** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
+## Mejor combinación de cada tipo de entrada
 
-=== 3. Tablero ===
+Elegida solo con datos dentro de muestra; las columnas 'fuera' muestran cómo le fue después.
+
+| Entrada | Parámetros | CAGR dentro | Caída dentro | CAGR fuera | Caída fuera | SPY fuera |
+|---|---|---|---|---|---|---|
+| ruptura_20 | objetivo_r=5.0, max_dias_en_posicion=20, filtro_mercado=sí | 8.4% | -18.3% | 11.9% | -18.4% | 22.1% |
+| ruptura_55 | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.2% | -19.1% | 5.1% | -18.9% | 22.1% |
+| retroceso | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.3% | -21.3% | 10.4% | -18.4% | 22.1% |
+
+Correlación de ranking dentro vs fuera de muestra (Spearman): **0.03** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
+
+=== 4. Tablero ===
 Tablero generado: docs/index.html
