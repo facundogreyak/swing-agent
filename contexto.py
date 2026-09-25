@@ -158,8 +158,32 @@ def _nombre_corto(info, t):
     return n.strip(" ,.") or t
 
 
+GENERICAS = {"bank", "banco", "american", "general", "united", "first", "international", "national", "global",
+             "digital", "energy", "health", "capital", "financial", "technologies", "systems", "the"}
+
+
+def _plano(x):
+    return re.sub(r"[^a-z0-9]", "", str(x).lower())
+
+
+def _relevante(titulo, t, info):
+    """True si el titular nombra a la empresa (nombre, primera palabra distintiva o ticker)."""
+    tp = _plano(titulo)
+    nombre = _nombre_corto(info, t)
+    claves = {_plano(nombre)}
+    primera = nombre.split()[0] if nombre.split() else ""
+    if len(_plano(primera)) >= 4 and _plano(primera) not in GENERICAS:
+        claves.add(_plano(primera))
+    if any(k and k in tp for k in claves):
+        return True
+    base = t.split("-")[0].split(".")[0]
+    patron = rf"\b{re.escape(base)}\b" if len(base) >= 3 else rf"(\${re.escape(base)}\b|\({re.escape(base)}\))"
+    return re.search(patron, titulo) is not None
+
+
 def noticias(t, fecha, dias=7, maximo=5):
-    """Titulares de los `dias` anteriores a `fecha` (Yahoo + Google News), sin repetidos, más nuevos primero."""
+    """Titulares de los `dias` anteriores a `fecha` (Yahoo + Google News) que nombran a la empresa,
+    sin repetidos, más nuevos primero."""
     info = empresa(t)
     fin = pd.Timestamp(fecha) + timedelta(days=1)
     ini = fin - timedelta(days=dias + 1)
@@ -167,7 +191,7 @@ def noticias(t, fecha, dias=7, maximo=5):
     vistas, out = set(), []
     for n in sorted(todas, key=lambda x: x["fecha"], reverse=True):
         clave = re.sub(r"\W+", " ", n["titulo"].lower()).strip()[:70]
-        if not (ini <= n["fecha"] <= fin) or clave in vistas:
+        if not (ini <= n["fecha"] <= fin) or clave in vistas or not _relevante(n["titulo"], t, info):
             continue
         vistas.add(clave)
         out.append(n)
