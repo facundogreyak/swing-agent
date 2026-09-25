@@ -621,7 +621,6 @@ def seccion_setups(cfg):
 
 def seccion_tesis():
     """Tesis de inversión de cada compra (tesis.py) y link a la última revisión semanal."""
-    import tesis as T
     f = REP / "tesis" / "estado.csv"
     semanales = sorted((REP / "revision_semanal").glob("*.md")) if (REP / "revision_semanal").exists() else []
     html = ("<div class='sub'>Cada compra de las dos carteras queda escrita como una tesis de inversión: la idea, "
@@ -629,9 +628,13 @@ def seccion_tesis():
             "de la decisión y después se sigue hasta el cierre, con el veredicto de si se cumplió.</div>")
     if semanales:
         u = semanales[-1]
-        html += (f"<p><a class='badge b-neu' href='{T.URL_REPO}reportes/revision_semanal/{u.name}'>"
-                 f"Revisión semanal {u.stem}</a> <a class='badge b-gris' href='{T.URL_REPO}reportes/revision_semanal'>"
-                 f"anteriores</a> <a class='badge b-gris' href='{T.URL_REPO}reportes/tesis/README.md'>todas las tesis</a></p>")
+        pdf = (DOCS / "revision_semanal" / f"{u.stem}.pdf").exists()
+        html += (f"<p><a class='badge b-neu' href='revision_semanal/{u.stem}.html'>Revisión semanal {u.stem}</a> "
+                 + (f"<a class='badge b-neu' href='revision_semanal/{u.stem}.pdf'>PDF</a> " if pdf else "")
+                 + "<a class='badge b-gris' href='revision_semanal/index.html'>anteriores</a> "
+                 "<a class='badge b-gris' href='tesis/index.html'>todas las tesis</a></p>")
+    else:
+        html += "<p><a class='badge b-gris' href='tesis/index.html'>todas las tesis</a></p>"
     if not f.exists() or f.stat().st_size < 5:
         return html + "<p class='vacio'>Todavía no hay tesis: se escriben con la primera compra.</p>"
     d = pd.read_csv(f)
@@ -642,7 +645,8 @@ def seccion_tesis():
     d = d.assign(_o=d.estado.map(orden).fillna(3)).sort_values(["_o", "fecha"], ascending=[True, False])
     abiertas = d[d.estado != "CERRADA"]
     cerradas = d[d.estado == "CERRADA"]
-    d["acción"] = [f"<a href='{T.URL_REPO}reportes/{r.archivo}'><b>{r.ticker}</b></a>" for r in d.itertuples()]
+    d["acción"] = [f"<a href='{Path(r.archivo).with_suffix('.html').as_posix()}'><b>{r.ticker}</b></a>"
+                   for r in d.itertuples()]
     d["cartera "] = d.cartera.str.capitalize()
     d["decisión"] = d.fecha.map(_fecha)
     d["resultado "] = [("" if pd.isna(r.resultado) else _pct(r.resultado)) +

@@ -4,7 +4,8 @@ Punto de entrada que corre GitHub Actions cada día:
   2. Paper trading swing (retroceso) y momentum ("booms del momento")
   3. Backtests y calibraciones de ambas estrategias
   4. Traduce la cartera a CEDEARs en pesos (CCL implícito, caros/baratos)
-     y escribe la tesis de cada compra + la revisión semanal (tesis.py)
+     y escribe la tesis de cada compra + la revisión semanal (tesis.py),
+     que se publican como páginas web y un PDF semanal (publicar.py)
   5. Regenera la página web (docs/index.html)
   6. Manda un mail si hubo compras/ventas (y el resumen de los viernes)
 """
@@ -16,6 +17,7 @@ import cedears
 import momentum
 import paper
 import setups
+import publicar
 import tablero
 import tesis
 
@@ -43,6 +45,11 @@ try:
     tesis.main()
 except Exception as e:                      # un problema con las tesis no debe frenar al tablero ni al mail
     print("Tesis: no se pudieron escribir:", repr(e))
+print("\n=== 4c. Tesis y revisiones en la web + PDF semanal ===")
+try:
+    publicar.main()
+except Exception as e:
+    print("Publicar: no se pudo:", repr(e))
 print("\n=== 5. Tablero ===")
 tablero.main()
 print("\n=== 6. Alertas por mail ===")

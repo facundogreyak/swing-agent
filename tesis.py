@@ -692,7 +692,7 @@ def escribir_indice(filas):
                         _nota(f)))
         L += [_tabla(tab, ["Decisión", "Acción", "Estado", "Resultado", "Veredicto"]), ""]
         if no_ej:
-            L += [f"<details><summary>Señales que no se operaron ({len(no_ej)})</summary>", "",
+            L += [f'<details markdown="1"><summary>Señales que no se operaron ({len(no_ej)})</summary>', "",
                   _tabla([(_fecha(f["fecha"]), f["ticker"], f.get("motivo_no", "")) for f in sorted(no_ej, key=lambda x: x["fecha"], reverse=True)],
                          ["Decisión", "Acción", "Motivo"]), "", "</details>", ""]
     (DIR_TESIS / "README.md").write_text("\n".join(L), encoding="utf-8")
@@ -768,7 +768,7 @@ def revision_semanal(D, dia, cfg, clave, ini, fin):
     # 2) Movimientos de la semana
     mov = []
     for f in filas:
-        if ini_s <= f["fecha"] <= fin_s:
+        if ini_s <= f["fecha"] <= fin_s and f["estado"] != "NO EJECUTADA":     # esas van en la sección 4
             quien = "Momentum" if f["cartera"] == "momentum" else "Swing"
             mov.append((f["fecha"], f"{_fecha(f['fecha'])} · {quien}: decisión de compra de {link(f)} → {f['estado'].lower()}"))
         if f.get("fecha_salida") and ini_s <= f["fecha_salida"] <= fin_s:

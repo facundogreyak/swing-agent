@@ -1,7 +1,8 @@
 # Agente Swing Trading – CEDEARs (paper trading)
 
 Corre solo en GitHub Actions de lunes a viernes a las 18:30 (hora Argentina).
-Tablero: GitHub Pages (carpeta `docs/`). Reportes: carpeta `reportes/`.
+Tablero: https://facundogreyak.github.io/swing-agent/ (carpeta `docs/`). Reportes: carpeta `reportes/`.
+Tesis: https://facundogreyak.github.io/swing-agent/tesis/ · Revisiones semanales (con PDF): https://facundogreyak.github.io/swing-agent/revision_semanal/
 
 ## Archivos
 - `config.yaml`   → todos los parámetros (universo, entrada, riesgo, grilla de calibración)
@@ -19,6 +20,9 @@ Tablero: GitHub Pages (carpeta `docs/`). Reportes: carpeta `reportes/`.
 - `contexto.py`   → datos de internet para las tesis (Yahoo Finance y Google News, sin claves): la empresa,
                     analistas, próximo balance y titulares, en la compra, en la venta y en la revisión semanal.
                     Acompañan la decisión; las reglas no cambian. Se apaga con `tesis.noticias: false`
+- `publicar.py`   → pasa las tesis y las revisiones semanales a páginas web del tablero (`docs/tesis/`,
+                    `docs/revision_semanal/`) y arma el PDF de cada semana (revisión + tesis de la semana)
+                    con el Chrome del servidor de GitHub; el mail de los viernes lo lleva adjunto
 - `alertas.py`    → mail con compras/ventas y resumen de los viernes (secrets GMAIL_USUARIO y GMAIL_CLAVE)
 - `universo_ampliado.csv` → ~140 acciones más con CEDEAR, para comparar con la lista de 50
 - `tablero.py`    → página web `docs/index.html`

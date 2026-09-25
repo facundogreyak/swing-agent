@@ -15,6 +15,7 @@ import json
 import os
 import smtplib
 import sys
+from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -26,7 +27,6 @@ import db
 
 REP = Path("reportes")
 WEB = "https://facundogreyak.github.io/swing-agent/"
-URL_REPO = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'facundogreyak/swing-agent')}/blob/main/"
 C = {"tx": "#111827", "mu": "#6b7280", "bd": "#e5e7eb", "bg": "#f5f6fa", "ac": "#4f46e5",
      "pos": "#16a34a", "neg": "#dc2626"}
 
@@ -126,7 +126,8 @@ def armar(cfg, dia, con, fecha, semanal):
         cartera = "momentum" if quien == "Momentum" else "swing"
         tesis_md = REP / "tesis" / cartera / f"{fecha}_{r.ticker}.md"
         if r.accion in ("ENTRA", "COMPRAR") and tesis_md.exists():
-            extra += (f" · <a href='{URL_REPO}{tesis_md.as_posix()}' style='color:{C['ac']}'>leer la tesis</a>")
+            extra += (f" · <a href='{WEB}{tesis_md.relative_to(REP).with_suffix('.html').as_posix()}' "
+                      f"style='color:{C['ac']}'>leer la tesis</a>")
         items.append(f"<li style='margin-bottom:8px'><b>{quien} {verbo} {r.ticker}</b>{extra}<br>"
                      f"<span style='color:{C['mu']};font-size:12px'>{r.motivo}</span></li>")
     for r in ejecutadas.itertuples():
@@ -169,8 +170,10 @@ def armar(cfg, dia, con, fecha, semanal):
     if semanal and semana.exists():
         revision = (f"<h3 style='font-size:13px;color:{C['mu']};text-transform:uppercase;margin:20px 0 4px'>"
                     f"Revisión semanal</h3><p style='font-size:14px;margin:4px 0'>Resultados, estado de cada tesis y "
-                    f"qué mirar la semana que viene: <a href='{URL_REPO}{semana.as_posix()}' style='color:{C['ac']}'>"
-                    f"leer la revisión {semana.stem}</a></p>")
+                    f"qué mirar la semana que viene: <a href='{WEB}revision_semanal/{semana.stem}.html' "
+                    f"style='color:{C['ac']}'>"
+                    f"leer la revisión {semana.stem}</a>"
+                    + (" · el PDF va adjunto a este mail." if _pdf_semanal(fecha) else "") + "</p>")
 
     html = f"""<div style="font-family:Inter,Segoe UI,Arial,sans-serif;background:{C['bg']};padding:20px">
 <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:14px;padding:22px;color:{C['tx']}">
@@ -189,12 +192,24 @@ asesoramiento financiero. Antes de operar verificá precios y ratios en tu broke
     return asunto, html
 
 
-def enviar(asunto, html):
+def _pdf_semanal(fecha):
+    """PDF de la revisión semanal de la semana de `fecha` (lo arma publicar.py), si existe."""
+    pdf = Path("docs") / "revision_semanal" / f"{pd.Timestamp(fecha).strftime('%G-S%V')}.pdf"
+    return pdf if pdf.exists() else None
+
+
+def enviar(asunto, html, adjuntos=()):
     usuario, clave = os.environ.get("GMAIL_USUARIO"), os.environ.get("GMAIL_CLAVE")
     destino = os.environ.get("MAIL_DESTINO") or usuario
-    msg = MIMEMultipart("alternative")
+    msg = MIMEMultipart("mixed")
     msg["Subject"], msg["From"], msg["To"] = asunto, f"Agente Inversor <{usuario}>", destino
-    msg.attach(MIMEText(html, "html", "utf-8"))
+    cuerpo = MIMEMultipart("alternative")
+    cuerpo.attach(MIMEText(html, "html", "utf-8"))
+    msg.attach(cuerpo)
+    for ruta in adjuntos:
+        parte = MIMEApplication(Path(ruta).read_bytes(), _subtype="pdf")
+        parte.add_header("Content-Disposition", "attachment", filename=Path(ruta).name)
+        msg.attach(parte)
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
         s.login(usuario, clave.replace(" ", ""))
         s.sendmail(usuario, [destino], msg.as_string())
@@ -225,8 +240,9 @@ def main(prueba=False):
         print("Alertas: faltan los secrets GMAIL_USUARIO / GMAIL_CLAVE; no se envía.")
         return
     else:
-        enviar(asunto, html)
-        print("Alertas: mail enviado ->", asunto)
+        pdf = _pdf_semanal(fecha) if semanal else None
+        enviar(asunto, html, [pdf] if pdf else [])
+        print("Alertas: mail enviado ->", asunto + (f" (adjunto {pdf.name})" if pdf else ""))
     dia.execute("INSERT OR REPLACE INTO estado_motor VALUES ('alertas', ?, ?)", (fecha, json.dumps({})))
     dia.commit()
 
