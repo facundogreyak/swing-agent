@@ -558,6 +558,65 @@ def seccion_byma(cfg):
     return html
 
 
+NOMBRES_SETUP = {"trend_template": "Trend Template", "breakout_q": "Breakout Q", "episodic_pivot": "Episodic Pivot",
+                 "max_52s": "Máx. 52 sem.", "rs_90": "RS ≥ 90"}
+
+
+def seccion_setups(cfg):
+    """Screener de setups de traders conocidos + cuánto rindieron históricamente."""
+    f_h, f_e = REP / "setups_hoy.csv", REP / "setups_estadistica.csv"
+    if not f_e.exists():
+        return "<p class='vacio'>Se calcula en la próxima corrida.</p>"
+    est = pd.read_csv(f_e)
+    hoy = pd.read_csv(f_h) if f_h.exists() and f_h.stat().st_size > 5 else pd.DataFrame()
+    corte = cfg["backtest"]["inicio_fuera_de_muestra"][:4]
+    # tabla de rendimiento a 10 ruedas, antes y después del corte
+    filas = []
+    for s, g in est[est.ruedas == 10].groupby("setup", sort=False):
+        a = g[g.periodo == "antes"].iloc[0] if (g.periodo == "antes").any() else None
+        d = g[g.periodo == "después"].iloc[0] if (g.periodo == "después").any() else None
+        t_ = g[g.periodo == "todo"].iloc[0]
+        consistente = a is not None and d is not None and a.vs_spy_prom > 0.001 and d.vs_spy_prom > 0.001
+        filas.append({"setup": NOMBRES_SETUP.get(s, s), "señales": int(t_.senales),
+                      "retorno 10 ruedas": _pct(t_.retorno_prom), "aciertos": f"{t_.aciertos:.0%}",
+                      f"vs SPY antes de {corte}": _pct(a.vs_spy_prom) if a is not None else "—",
+                      f"vs SPY desde {corte}": _pct(d.vs_spy_prom) if d is not None else "—",
+                      "¿ventaja estable?": "sí" if consistente else "no"})
+    tabla_est = pd.DataFrame(filas)
+    html = ("<div class='sub'>Reglas públicas de traders conocidos aplicadas a todo el universo: "
+            "<b>Trend Template</b> y <b>RS Rating</b> de Mark Minervini, <b>Breakout</b> y <b>Episodic Pivot</b> de "
+            "Kristjan Kullamägi (Qullamaggie) y la ruptura del <b>máximo de 52 semanas</b>. "
+            "Es un screener para analizar: el agente no opera con estas señales.</div>")
+    html += "<h3>Hoy cumplen algún setup</h3>"
+    if len(hoy):
+        d = hoy.copy()
+
+        def chips(r):
+            nuevos = set(str(r.nuevos_hoy).split(",")) if isinstance(r.nuevos_hoy, str) else set()
+            return " ".join(f"<span class='badge {'b-pos' if s in nuevos else 'b-neu'}'>"
+                            f"{NOMBRES_SETUP.get(s, s)}{' · nuevo' if s in nuevos else ''}</span>"
+                            for s in str(r.setups).split(","))
+        d["setups "] = d.apply(chips, axis=1)
+        d["ticker "] = d.ticker.map(lambda x: f"<b>{x}</b>")
+        d["RS"] = d.rs.map(lambda v: f"{v:.0f}")
+        d["1 mes"] = d.r21.map(lambda v: _pct(v, 0))
+        d["3 meses"] = d.r63.map(lambda v: _pct(v, 0))
+        d["vs. máx. 52s"] = d.dist_max52.map(lambda v: _pct(v, 0))
+        html += _tabla(d.head(30), ["ticker ", "setups ", "RS", "1 mes", "3 meses", "vs. máx. 52s"],
+                       signo=("1 mes", "3 meses"), opcionales=("3 meses", "vs. máx. 52s"))
+        if len(d) > 30:
+            html += f"<div class='sub'>Y {len(d) - 30} más.</div>"
+    else:
+        html += "<p class='vacio'>Ninguna acción cumple un setup hoy.</p>"
+    html += ("<h3>¿Sirven? Qué pasó 10 ruedas después de cada señal (últimos 10 años)</h3>"
+             "<div class='sub'>Comprando en la apertura siguiente. 'vs SPY' = cuánto más (o menos) que SPY en la "
+             "misma ventana. Ventaja estable = le ganó a SPY antes y después de " + corte + ".</div>"
+             + _tabla(tabla_est, list(tabla_est.columns),
+                      signo=("retorno 10 ruedas", f"vs SPY antes de {corte}", f"vs SPY desde {corte}"),
+                      opcionales=("señales", "aciertos")))
+    return html
+
+
 def seccion_cartera_momentum(con_diario, cfg, P):
     fila = con_diario.execute("SELECT ultima_fecha, estado_json FROM estado_motor WHERE nombre='momentum'").fetchone()
     if not fila:
@@ -751,6 +810,7 @@ def main():
     resumen_html, evo = seccion_resumen(con, con_diario, cfg, ctx["P"]) if ctx else ("", {"fechas": [], "series": {}})
     comp_html, comp = seccion_comparacion(cfg)
     byma_html = seccion_byma(cfg)
+    setups_html = seccion_setups(cfg)
     pesa_html = seccion_que_pesa(cfg)
     swing_html = seccion_swing(con, con_diario, cfg)
     calib_html = seccion_calibracion_swing()
@@ -769,7 +829,7 @@ def main():
 <header><div class="barra">
   <div class="marca"><div><h1>{NOMBRE}</h1>
   <div class="sub">Simulado, sin dinero real · <span class="opt">Actualizado </span>{ahora}<span class="opt"> · Datos al {_fecha(ult)}</span></div></div></div>
-  <nav><a href="#momentum">Cartera</a><a href="#byma">En pesos</a><a href="#booms">Booms</a><a href="#comparacion">Comparación</a>
+  <nav><a href="#momentum">Cartera</a><a href="#byma">En pesos</a><a href="#booms">Booms</a><a href="#setups">Setups</a><a href="#comparacion">Comparación</a>
   <a href="#pesa">Qué pesa más</a><a href="#swing">Swing</a><a href="#datos">Datos</a></nav>
 </div></header>
 <main>
@@ -791,6 +851,11 @@ margen {m['buffer']} puestos, máx. {m['max_por_sector'] or '—'} por sector. L
 <section id="booms">
 <h2>Booms del momento</h2>
 {booms_html}
+</section>
+
+<section id="setups">
+<h2>Setups de swing <span class="etiqueta">screener</span></h2>
+{setups_html}
 </section>
 
 <section id="comparacion">

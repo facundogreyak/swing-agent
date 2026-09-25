@@ -22,6 +22,7 @@ import numpy as np
 import pandas as pd
 import yaml
 
+import data
 import db
 
 REPORTES = Path("reportes")
@@ -40,7 +41,8 @@ def tabla_cedears(con, cfg):
     """CCL implícito, prima y estado de cada CEDEAR del universo (+ SPY)."""
     p = cfg.get("cedears", {})
     dias_max = p.get("dias_max_precio", 5)
-    pares = list(cfg["universo"]) + [{"subyacente": cfg["benchmark"], **cfg.get("benchmark_cedear", {}),
+    base = data.universo_ampliado(cfg) if cfg.get("momentum", {}).get("universo") == "ampliado" else cfg["universo"]
+    pares = list(base) + [{"subyacente": cfg["benchmark"], **cfg.get("benchmark_cedear", {}),
                                       "sector": "Índice"}]
     ult_usd = con.execute("SELECT MAX(fecha) FROM precios WHERE ticker=?", (cfg["benchmark"],)).fetchone()[0]
     filas = []
@@ -48,6 +50,13 @@ def tabla_cedears(con, cfg):
         t, ced, ratio = par["subyacente"], par.get("cedear"), par.get("ratio")
         usd, f_usd = _ultimo(con, t)
         ars, f_ars = _ultimo(con, ced) if ced else (None, None)
+        for alt in par.get("cedear_alternativos", []) or []:      # símbolos alternativos en Yahoo
+            a_ars, a_f = _ultimo(con, alt)
+            n_alt = con.execute("SELECT COUNT(*) FROM precios WHERE ticker=?", (alt,)).fetchone()[0]
+            n_act = con.execute("SELECT COUNT(*) FROM precios WHERE ticker=?", (ced,)).fetchone()[0]
+            # se queda con el símbolo que tenga el dato más reciente y más historia
+            if a_ars and (f_ars is None or (a_f, n_alt) > (f_ars, n_act)):
+                ars, f_ars, ced = a_ars, a_f, alt
         fila = {"ticker": t, "cedear": (ced or "").replace(".BA", ""), "sector": par.get("sector", ""),
                 "ratio": ratio, "precio_usd": usd, "precio_ars": ars, "fecha_ars": f_ars, "ccl_implicito": None,
                 "estado": ""}

@@ -43,7 +43,7 @@ universo:
   - {subyacente: VALE,   cedear: VALE.BA, sector: Latam / Brasil, ratio: 2}
   # --- Financieras ---
   - {subyacente: JPM,    cedear: JPM.BA, sector: Financieras, ratio: 15}
-  - {subyacente: BAC,    cedear: BAC.BA, sector: Financieras, ratio: 41}
+  - {subyacente: BAC,    cedear: BAC.BA, sector: Financieras, ratio: 41, cedear_alternativos: [BA.C.BA, BA-C.BA]}
   - {subyacente: C,      cedear: C.BA, sector: Financieras, ratio: 3}
   - {subyacente: V,      cedear: V.BA, sector: Financieras, ratio: 18}
   - {subyacente: BRK-B,  cedear: BRKB.BA, sector: Financieras, ratio: 22}
@@ -130,7 +130,7 @@ estrategia:
 # que más subieron. Siempre 100% invertido (lo que sobra va a SPY).
 # ---------------------------------------------------------------------
 momentum:
-  nombre: "m3-mix-top5-mensual-tope25"
+  nombre: "m4-ampliado-top5-mensual-tope25"
   # Elegido con el backtest de 10 años (ver reportes/momentum.md, "Qué pesa más"):
   #  - sin filtro de mercado: estar 100% invertido rindió más antes y después de 2023
   #  - top 5: más retorno que 8 o 10 en los dos períodos (ojo: caídas más profundas)
@@ -142,7 +142,7 @@ momentum:
   rebalanceo_dias: 21            # cada cuántas ruedas se revisa el ranking (5 = semanal, 21 = mensual)
   buffer: 5                      # una acción que ya tenemos se queda mientras esté en el top_n + buffer
   max_por_sector: 3              # null = sin límite
-  universo: base                 # base = las 50 de arriba · ampliado = + universo_ampliado.csv (~190 CEDEARs)
+  universo: ampliado             # base = las 50 de arriba · ampliado = + universo_ampliado.csv (~190 CEDEARs)
   liquidez_min_usd: 20000000     # solo acciones con más de USD 20 M operados por día (mediana 60 ruedas)
   max_peso: 0.25                 # en cada revisión, ninguna acción puede pesar más de 25% (se recorta el excedente)
   filtro_mercado: false          # true = pasar a efectivo si SPY < media de 200 (deja de estar 100% invertido)

@@ -51,6 +51,9 @@ def actualizar_todo(con, cfg: dict):
     usa_ampliado = cfg.get("momentum", {}).get("universo") == "ampliado"
     for par in universo_ampliado(cfg)[len(cfg["universo"]):]:
         tickers += [par["subyacente"]] + ([par["cedear"]] if usa_ampliado else [])
+    # CEDEARs con símbolo dudoso en Yahoo: se prueban alternativas y se usa la que tenga datos
+    for par in cfg["universo"]:
+        tickers += par.get("cedear_alternativos", [])
     tickers = [t for t in dict.fromkeys(tickers) if t]
     resumen = []
     for t in tickers:

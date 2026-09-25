@@ -14,6 +14,7 @@ import alertas
 import cedears
 import momentum
 import paper
+import setups
 import tablero
 
 # La base vieja (precios + diario juntos) se reemplazó por precios.db + diario.db
@@ -31,6 +32,8 @@ print("\n=== 3a. Backtest y calibración swing ===")
 backtest.main(con_calibracion=True)
 print("\n=== 3b. Backtest y calibración momentum ===")
 momentum.main()
+print("\n=== 3c. Setups de swing (screener) ===")
+setups.main()
 print("\n=== 4. CEDEARs en pesos ===")
 cedears.main()
 print("\n=== 5. Tablero ===")

@@ -148,9 +148,13 @@ def armar(cfg, dia, con, fecha, semanal):
     titulo = "Resumen semanal" if semanal and not hay_algo else ("Novedades y resumen semanal" if semanal
                                                                   else "Novedades del agente")
     if len(novedades):
-        compras = [r.ticker for r in novedades.itertuples() if r.accion in ("ENTRA", "COMPRAR")]
-        ventas = [r.ticker for r in novedades.itertuples() if r.accion in ("SALE", "VENDER")]
-        partes = ([f"compra {', '.join(compras)}"] if compras else []) + ([f"vende {', '.join(ventas)}"] if ventas else [])
+        partes = []
+        for cartera, acc_c, acc_v in (("Momentum", "ENTRA", "SALE"), ("Swing", "COMPRAR", "VENDER")):
+            c = [r.ticker for r in novedades.itertuples() if r.accion == acc_c]
+            v = [r.ticker for r in novedades.itertuples() if r.accion == acc_v]
+            detalle = ([f"compra {', '.join(c)}"] if c else []) + ([f"vende {', '.join(v)}"] if v else [])
+            if detalle:
+                partes.append(f"{cartera} {' y '.join(detalle)}")
         asunto = f"Agente Inversor · {_fecha(fecha)}: {' · '.join(partes)}"
     else:
         asunto = f"Agente Inversor · {titulo} {_fecha(fecha)}"
