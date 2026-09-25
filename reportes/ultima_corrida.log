@@ -91,7 +91,7 @@ Descargando precios...
   PFE        OK         5 velas
   PFE.BA     OK         5 velas
   MRK        OK         5 velas
-  MRK.BA     OK         4 velas
+  MRK.BA     OK         5 velas
   LLY        OK         5 velas
   LLY.BA     OK         5 velas
   XOM        OK         5 velas
@@ -117,7 +117,7 @@ Descargando precios...
   ADI        OK         5 velas
   ADI.BA     OK         5 velas
   ADP        OK         5 velas
-  ADP.BA     OK         4 velas
+  ADP.BA     OK         5 velas
   AEM        OK         5 velas
   AEM.BA     OK         1433 velas
   AIG        OK         5 velas
@@ -127,7 +127,7 @@ Descargando precios...
   AMGN       OK         5 velas
   AMGN.BA    OK         5 velas
   AMX        OK         5 velas
-  AMX.BA     OK         4 velas
+  AMX.BA     OK         5 velas
   ANET       OK         5 velas
   ANET.BA    OK         92 velas
   ARCO       OK         5 velas
@@ -139,7 +139,7 @@ Descargando precios...
   AXP        OK         5 velas
   AXP.BA     OK         5 velas
   AZN        OK         5 velas
-  AZN.BA     OK         4 velas
+  AZN.BA     OK         5 velas
   B          OK         5 velas
   B.BA       OK         339 velas
   BBD        OK         5 velas
@@ -167,7 +167,7 @@ Descargando precios...
   CEG        OK         1176 velas
   CEG.BA     OK         336 velas
   CL         OK         5 velas
-  CL.BA      OK         4 velas
+  CL.BA      OK         5 velas
   COP        OK         5 velas
   COP.BA     OK         90 velas
   COST       OK         5 velas
@@ -189,7 +189,7 @@ Descargando precios...
   EA         OK         1 velas
   EA.BA      OK         1 velas
   EBAY       OK         5 velas
-  EBAY.BA    OK         4 velas
+  EBAY.BA    OK         5 velas
   ETSY       OK         5 velas
   ETSY.BA    OK         1 velas
   F          OK         5 velas
@@ -223,7 +223,7 @@ Descargando precios...
   HOOD       OK         1296 velas
   HOOD.BA    OK         214 velas
   HPQ        OK         5 velas
-  HPQ.BA     OK         4 velas
+  HPQ.BA     OK         5 velas
   HSBC       OK         5 velas
   HSBC.BA    OK         4 velas
   IBKR       OK         5 velas
@@ -237,7 +237,7 @@ Descargando precios...
   JD         OK         5 velas
   JD.BA      OK         1597 velas
   KLAC       OK         5 velas
-  KLAC.BA    OK         17 velas
+  KLAC.BA    OK         18 velas
   KMB        OK         5 velas
   KMB.BA     OK         5 velas
   LIN        OK         5 velas
@@ -259,7 +259,7 @@ Descargando precios...
   MDT        OK         5 velas
   MDT.BA     OK         4 velas
   MMM        OK         5 velas
-  MMM.BA     OK         4 velas
+  MMM.BA     OK         5 velas
   MO         OK         5 velas
   MO.BA      OK         5 velas
   MRNA       OK         1960 velas
@@ -273,7 +273,7 @@ Descargando precios...
   NEE        OK         5 velas
   NEE.BA     OK         91 velas
   NEM        OK         5 velas
-  NEM.BA     OK         4 velas
+  NEM.BA     OK         5 velas
   NIO        OK         2020 velas
   NIO.BA     OK         1 velas
   NOW        OK         5 velas
@@ -281,7 +281,7 @@ Descargando precios...
   NTES       OK         5 velas
   NTES.BA    OK         1 velas
   NUE        OK         5 velas
-  NUE.BA     OK         4 velas
+  NUE.BA     OK         5 velas
   NVO        OK         5 velas
   NVO.BA     OK         88 velas
   NVS        OK         5 velas
@@ -303,7 +303,7 @@ Descargando precios...
   PM         OK         5 velas
   PM.BA      OK         578 velas
   RACE       OK         5 velas
-  RACE.BA    OK         603 velas
+  RACE.BA    OK         604 velas
   RBLX       OK         1394 velas
   RBLX.BA    OK         1019 velas
   RIO        OK         5 velas
@@ -311,7 +311,7 @@ Descargando precios...
   ROKU       OK         2260 velas
   ROKU.BA    OK         602 velas
   RTX        OK         5 velas
-  RTX.BA     OK         4 velas
+  RTX.BA     OK         5 velas
   SAP        OK         5 velas
   SAP.BA     OK         5 velas
   SBUX       OK         5 velas
@@ -329,7 +329,7 @@ Descargando precios...
   SLB        OK         5 velas
   SLB.BA     OK         4 velas
   SNAP       OK         2406 velas
-  SNAP.BA    OK         1623 velas
+  SNAP.BA    OK         1624 velas
   SNOW       OK         1514 velas
   SNOW.BA    OK         1 velas
   SONY       OK         5 velas
@@ -345,7 +345,7 @@ Descargando precios...
   TGT        OK         5 velas
   TGT.BA     OK         1573 velas
   TM         OK         5 velas
-  TM.BA      OK         4 velas
+  TM.BA      OK         5 velas
   TMO        OK         5 velas
   TMO.BA     OK         1552 velas
   TMUS       OK         5 velas
@@ -353,9 +353,9 @@ Descargando precios...
   TTE        OK         5 velas
   TTE.BA     OK         4 velas
   TXN        OK         5 velas
-  TXN.BA     OK         4 velas
+  TXN.BA     OK         5 velas
   UAL        OK         5 velas
-  UAL.BA     OK         1003 velas
+  UAL.BA     OK         1004 velas
   UNH        OK         5 velas
   UNH.BA     OK         1 velas
   UNP        OK         5 velas
@@ -399,7 +399,7 @@ Resumen de la base:
   ADI         2514 velas  2016-09-26 -> 2026-09-25
   ADI.BA      2444 velas  2016-09-27 -> 2026-09-25
   ADP         2514 velas  2016-09-26 -> 2026-09-25
-  ADP.BA      2443 velas  2016-09-27 -> 2026-09-24
+  ADP.BA      2444 velas  2016-09-27 -> 2026-09-25
   AEM         2514 velas  2016-09-26 -> 2026-09-25
   AEM.BA      1433 velas  2020-11-17 -> 2026-09-25
   AIG         2514 velas  2016-09-26 -> 2026-09-25
@@ -411,7 +411,7 @@ Resumen de la base:
   AMGN        2514 velas  2016-09-26 -> 2026-09-25
   AMGN.BA     2444 velas  2016-09-27 -> 2026-09-25
   AMX         2514 velas  2016-09-26 -> 2026-09-25
-  AMX.BA      2442 velas  2016-09-27 -> 2026-09-24
+  AMX.BA      2443 velas  2016-09-27 -> 2026-09-25
   AMZN        2514 velas  2016-09-26 -> 2026-09-25
   AMZN.BA     1599 velas  2020-03-12 -> 2026-09-25
   ANET        2514 velas  2016-09-26 -> 2026-09-25
@@ -594,7 +594,7 @@ Resumen de la base:
   MO          2514 velas  2016-09-26 -> 2026-09-25
   MO.BA       2444 velas  2016-09-27 -> 2026-09-25
   MRK         2514 velas  2016-09-26 -> 2026-09-25
-  MRK.BA      2444 velas  2016-09-26 -> 2026-09-24
+  MRK.BA      2445 velas  2016-09-26 -> 2026-09-25
   MRNA        1960 velas  2018-12-07 -> 2026-09-25
   MRNA.BA      586 velas  2024-05-07 -> 2026-09-25
   MRVL        2514 velas  2016-09-26 -> 2026-09-25
@@ -624,7 +624,7 @@ Resumen de la base:
   NU          1203 velas  2021-12-09 -> 2026-09-25
   NU.BA        616 velas  2024-03-19 -> 2026-09-25
   NUE         2514 velas  2016-09-26 -> 2026-09-25
-  NUE.BA      2443 velas  2016-09-27 -> 2026-09-24
+  NUE.BA      2444 velas  2016-09-27 -> 2026-09-25
   NVDA        2514 velas  2016-09-26 -> 2026-09-25
   NVDA.BA     1599 velas  2020-03-12 -> 2026-09-25
   NVO         2514 velas  2016-09-26 -> 2026-09-25
@@ -688,7 +688,7 @@ Resumen de la base:
   SLB         2514 velas  2016-09-26 -> 2026-09-25
   SLB.BA      2443 velas  2016-09-27 -> 2026-09-24
   SNAP        2406 velas  2017-03-02 -> 2026-09-25
-  SNAP.BA     1623 velas  2020-02-04 -> 2026-09-24
+  SNAP.BA     1624 velas  2020-02-04 -> 2026-09-25
   SNOW        1514 velas  2020-09-16 -> 2026-09-25
   SNOW.BA        2 velas  2026-09-24 -> 2026-09-25  <-- revisar
   SONY        2514 velas  2016-09-26 -> 2026-09-25
@@ -778,7 +778,7 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 | perdida_prom_R | -0.97 |
 | profit_factor | 1.32 |
 | dias_prom_en_posicion | 14.16 |
-| retorno_total | 143.8% |
+| retorno_total | 144.1% |
 | retorno_anual (CAGR) | 10.2% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.44 |
@@ -799,7 +799,7 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 5.3% | 13.4% |
+| 2026 | 5.4% | 13.5% |
 
 ## Variantes de riesgo por operación
 
@@ -823,15 +823,15 @@ Configuración actual: entrada=retroceso, objetivo_r=4.0, max_dias_en_posicion=2
 | entrada    |   objetivo_r |   max_dias_en_posicion | filtro_mercado   |   in_operaciones |   in_r_promedio (expectancy) | in_retorno_anual (CAGR)   | in_max_drawdown   |   in_retorno/caida (MAR) |   out_r_promedio (expectancy) | out_retorno_anual (CAGR)   | out_max_drawdown   |   out_retorno/caida (MAR) | out_spy_retorno_anual   |
 |:-----------|-------------:|-----------------------:|:-----------------|-----------------:|-----------------------------:|:--------------------------|:------------------|-------------------------:|------------------------------:|:---------------------------|:-------------------|--------------------------:|:------------------------|
 | ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.16 | 11.7%                      | -18.4%             |                      0.64 | 22.2%                   |
-| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.1  | 4.8%                       | -18.9%             |                      0.26 | 22.2%                   |
+| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.1  | 4.8%                       | -18.9%             |                      0.25 | 22.2%                   |
 | ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.22 | 8.6%                       | -19.4%             |                      0.44 | 22.2%                   |
 | ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.15 | 5.2%                       | -14.8%             |                      0.35 | 22.2%                   |
 | retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.18 | 10.5%                      | -18.4%             |                      0.57 | 22.2%                   |
 | ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.23 | 8.9%                       | -22.4%             |                      0.4  | 22.2%                   |
 | ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.09 | 6.8%                       | -16.1%             |                      0.42 | 22.2%                   |
-| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.22 | 9.4%                       | -17.1%             |                      0.55 | 22.2%                   |
+| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.22 | 9.5%                       | -17.1%             |                      0.55 | 22.2%                   |
 | ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.15 | 7.5%                       | -13.1%             |                      0.57 | 22.2%                   |
-| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.16 | 8.7%                       | -16.0%             |                      0.54 | 22.2%                   |
+| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.16 | 8.6%                       | -16.0%             |                      0.54 | 22.2%                   |
 
 ## Mejor combinación de cada tipo de entrada
 
@@ -857,7 +857,7 @@ Período: 2017-10-06 → 2026-09-25 · 183 acciones · Parámetros: puntaje=mix,
 | retorno_anual (CAGR) | 44.1% |
 | max_drawdown | -51.7% |
 | retorno/caida (MAR) | 0.85 |
-| retorno_total | 2548.2% |
+| retorno_total | 2549.2% |
 | compras_por_anio | 20.96 |
 | aciertos | 58.0% |
 | retorno_prom_por_posicion | 31.2% |
@@ -883,7 +883,7 @@ Período: 2017-10-06 → 2026-09-25 · 183 acciones · Parámetros: puntaje=mix,
 | 2023 | 20.9% | 37.0% | 26.2% |
 | 2024 | 71.3% | 20.5% | 24.9% |
 | 2025 | 66.6% | 27.5% | 17.7% |
-| 2026 | 112.7% | 19.6% | 13.4% |
+| 2026 | 112.7% | 19.6% | 13.5% |
 
 ## Qué acciones aportaron (posiciones cerradas)
 
@@ -930,18 +930,21 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 | Máximo de 52 semanas | después | 5054 | 0.63% | 0.42% | 53% | +0.11% | 48% |
 
 === 4. CEDEARs en pesos ===
-CCL implícito (mediana de 180 CEDEARs): 1,616.85
+CCL implícito (mediana de 180 CEDEARs): 1,617.69
 estado
-normal                                172
-barato                                  7
+normal                                174
+barato                                  4
 ratio o precio a revisar                4
-caro                                    1
+caro                                    2
 precio en pesos viejo (2026-08-03)      1
 precio en pesos viejo (2025-07-28)      1
 A revisar: BA-C (ratio o precio a revisar), EA (precio en pesos viejo (2026-08-03)), GLW (ratio o precio a revisar), SCHW (precio en pesos viejo (2025-07-28)), TEN (ratio o precio a revisar), TXR (ratio o precio a revisar)
 
 === 4b. Tesis de inversión y revisión semanal ===
-Tesis: 2 nuevas · 2 en total (0 abiertas, 0 cerradas)
+Tesis: 0 nuevas · 2 en total (0 abiertas, 0 cerradas)
+
+=== 4c. Tesis y revisiones en la web + PDF semanal ===
+Publicar: 3 páginas actualizadas en docs/
 
 === 5. Tablero ===
 Tablero generado: docs/index.html
