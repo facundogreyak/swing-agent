@@ -7,14 +7,14 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 | Métrica | Valor |
 |---|---|
 | operaciones | 619 |
-| win_rate | 44.6% |
+| win_rate | 44.7% |
 | r_promedio (expectancy) | 0.17 |
-| ganancia_prom_R | 1.59 |
+| ganancia_prom_R | 1.58 |
 | perdida_prom_R | -0.97 |
 | profit_factor | 1.32 |
 | dias_prom_en_posicion | 14.16 |
-| retorno_total | 143.3% |
-| retorno_anual (CAGR) | 10.1% |
+| retorno_total | 143.8% |
+| retorno_anual (CAGR) | 10.2% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.44 |
 | exposicion_prom | 69.5% |
@@ -34,22 +34,22 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 5.1% | 13.4% |
+| 2026 | 5.3% | 13.4% |
 
 ## Variantes de riesgo por operación
 
 | Variante | operaciones | win_rate | r_promedio (expectancy) | retorno_anual (CAGR) | max_drawdown | exposicion_prom |
 |---|---|---|---|---|---|---|
-| efectivo en SPY: sí | 619 | 44.6% | 0.17 | 8.8% | -40.8% | 69.4% |
-| riesgo 0.5% | 621 | 44.6% | 0.17 | 5.7% | -12.5% | 40.1% |
-| riesgo 1.0% | 619 | 44.6% | 0.17 | 10.1% | -23.1% | 69.5% |
-| riesgo 2.0% | 602 | 43.2% | 0.17 | 11.6% | -30.1% | 78.3% |
+| efectivo en SPY: sí | 619 | 44.7% | 0.17 | 8.8% | -40.8% | 69.4% |
+| riesgo 0.5% | 621 | 44.8% | 0.17 | 5.7% | -12.5% | 40.1% |
+| riesgo 1.0% | 619 | 44.7% | 0.17 | 10.2% | -23.1% | 69.5% |
+| riesgo 2.0% | 602 | 43.4% | 0.18 | 11.6% | -30.1% | 78.3% |
 
 ## Resultado por motivo de salida
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 5 | 0.10 |
+| FIN PERÍODO | 5 | 0.14 |
 | OBJETIVO | 14 | 3.93 |
 | OBJETIVO (gap) | 7 | 4.68 |
 | STOP | 208 | -1.07 |
@@ -62,11 +62,11 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 |---|---|---|---|---|
 | China | 12 | 42% | 0.38 | 955 |
 | Consumo | 131 | 38% | 0.04 | -1,007 |
-| Energía / Industria | 61 | 43% | 0.11 | 1,459 |
-| Financieras | 83 | 46% | 0.10 | 1,218 |
+| Energía / Industria | 61 | 43% | 0.11 | 1,446 |
+| Financieras | 83 | 46% | 0.10 | 1,221 |
 | Latam / Brasil | 84 | 44% | 0.20 | 1,877 |
-| Salud | 67 | 54% | 0.29 | 2,319 |
-| Tecnología | 181 | 46% | 0.25 | 7,476 |
+| Salud | 67 | 54% | 0.28 | 2,312 |
+| Tecnología | 181 | 47% | 0.25 | 7,547 |
 
 ## Últimas 10 operaciones
 
@@ -77,8 +77,8 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 | AVGO     | Tecnología          | 2026-08-28      |          372.921 |       344.64   |   486.045  |     8.8241 | 2026-09-03     |        344.64   | STOP            |      4 |   -259.05 |        -1.04 |
 | PYPL     | Tecnología          | 2026-09-03      |           54.675 |        50.8167 |    70.1081 |    64.0085 | 2026-09-10     |         50.8167 | STOP            |      4 |   -257.09 |        -1.04 |
 | BAC      | Financieras         | 2026-09-16      |           59.27  |        56.708  |    69.5179 |    95.065  | 2026-09-22     |         56.708  | STOP            |      4 |   -260.09 |        -1.07 |
-| CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |  1026.08   |     4.3103 | 2026-09-25     |        817.73   | FIN PERÍODO     |     15 |     79.34 |         0.32 |
-| LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1400.56   |     3.5659 | 2026-09-25     |       1167.89   | FIN PERÍODO     |     11 |    136.84 |         0.56 |
-| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-09-25     |         53.0411 | FIN PERÍODO     |     10 |    -26.41 |        -0.11 |
-| GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-09-25     |        342.16   | FIN PERÍODO     |      9 |    -29.82 |        -0.12 |
-| BAC      | Financieras         | 2026-09-25      |           56.31  |        53.8468 |    66.1626 |    98.9107 | 2026-09-25     |         56.055  | FIN PERÍODO     |      0 |    -41.89 |        -0.17 |
+| CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |  1026.08   |     4.3103 | 2026-09-25     |        814.705  | FIN PERÍODO     |     15 |     66.33 |         0.27 |
+| LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1400.56   |     3.5659 | 2026-09-25     |       1166      | FIN PERÍODO     |     11 |    130.09 |         0.53 |
+| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-09-25     |         54.145  | FIN PERÍODO     |     10 |     41.54 |         0.17 |
+| GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-09-25     |        342.355  | FIN PERÍODO     |      9 |    -26.9  |        -0.11 |
+| BAC      | Financieras         | 2026-09-25      |           56.31  |        53.8468 |    66.1626 |    99.1185 | 2026-09-25     |         56.095  | FIN PERÍODO     |      0 |    -38.02 |        -0.16 |
