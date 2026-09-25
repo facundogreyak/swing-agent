@@ -13,11 +13,11 @@ Descargando precios...
   AMZN       OK         5 velas
   AMZN.BA    OK         1598 velas
   NVDA       OK         5 velas
-  NVDA.BA    OK         1598 velas
+  NVDA.BA    OK         1597 velas
   META       OK         5 velas
   META.BA    OK         1 velas
   TSLA       OK         5 velas
-  TSLA.BA    OK         1598 velas
+  TSLA.BA    OK         1597 velas
   AVGO       OK         5 velas
   AVGO.BA    OK         1 velas
   ORCL       OK         5 velas
@@ -43,11 +43,11 @@ Descargando precios...
   UBER       OK         1855 velas
   UBER.BA    OK         1017 velas
   PYPL       OK         5 velas
-  PYPL.BA    OK         1825 velas
+  PYPL.BA    OK         1824 velas
   MELI       OK         5 velas
   MELI.BA    OK         4 velas
   GLOB       OK         5 velas
-  GLOB.BA    OK         1053 velas
+  GLOB.BA    OK         1052 velas
   NU         OK         1203 velas
   NU.BA      OK         615 velas
   VIST       OK         1802 velas
@@ -103,11 +103,11 @@ Descargando precios...
   BA         OK         5 velas
   BA.BA      OK         4 velas
   BABA       OK         5 velas
-  BABA.BA    OK         1598 velas
+  BABA.BA    OK         1597 velas
   AAL        OK         5 velas
   AAL.BA     OK         1 velas
   ABBV       OK         5 velas
-  ABBV.BA    OK         1048 velas
+  ABBV.BA    OK         1047 velas
   ABNB       OK         1454 velas
   ABNB.BA    OK         1018 velas
   ABT        OK         5 velas
@@ -147,7 +147,7 @@ Descargando precios...
   BHP        OK         5 velas
   BHP.BA     OK         4 velas
   BIDU       OK         5 velas
-  BIDU.BA    OK         1597 velas
+  BIDU.BA    OK         1596 velas
   BKNG       OK         5 velas
   BKNG.BA    OK         561 velas
   BKR        OK         5 velas
@@ -235,7 +235,7 @@ Descargando precios...
   ITUB       OK         5 velas
   ITUB.BA    OK         1766 velas
   JD         OK         5 velas
-  JD.BA      OK         1597 velas
+  JD.BA      OK         1596 velas
   KLAC       OK         5 velas
   KLAC.BA    OK         17 velas
   KMB        OK         5 velas
@@ -250,11 +250,7 @@ Descargando precios...
   LVS.BA     OK         4 velas
   MA         OK         5 velas
   MA.BA      OK         1 velas
-  MDLZ       OK         5 velas$TXR: possibly delisted; no price data found  (1d 2016-09-27 -> 2026-09-25)
-
-1 Failed download:
-['TXR']: possibly delisted; no price data found  (1d 2016-09-27 -> 2026-09-25)
-$BA.C.BA: possibly delisted; no timezone found
+  MDLZ       OK         5 velas$BA.C.BA: possibly delisted; no timezone found
 
 1 Failed download:
 ['BA.C.BA']: possibly delisted; no timezone found
@@ -295,7 +291,7 @@ $BA.C.BA: possibly delisted; no timezone found
   PANW       OK         5 velas
   PANW.BA    OK         1013 velas
   PAAS       OK         5 velas
-  PAAS.BA    OK         1362 velas
+  PAAS.BA    OK         1361 velas
   PAGS       OK         2180 velas
   PAGS.BA    OK         1 velas
   PDD        OK         2053 velas
@@ -347,7 +343,7 @@ $BA.C.BA: possibly delisted; no timezone found
   T          OK         5 velas
   T.BA       OK         4 velas
   TGT        OK         5 velas
-  TGT.BA     OK         1573 velas
+  TGT.BA     OK         1572 velas
   TM         OK         5 velas
   TM.BA      OK         4 velas
   TMO        OK         5 velas
@@ -380,7 +376,7 @@ $BA.C.BA: possibly delisted; no timezone found
   ZM.BA      OK         1 velas
   TEN        OK         5 velas
   TEN.BA     OK         1 velas
-  TXR        SIN DATOS  0 velas
+  TXR        OK         16 velas
   TXR.BA     OK         4 velas
   BA.C.BA    SIN DATOS  0 velas
   BA-C.BA    OK         4 velas
@@ -506,7 +502,7 @@ Resumen de la base:
   EBAY        2514 velas  2016-09-26 -> 2026-09-25
   EBAY.BA     2444 velas  2016-09-27 -> 2026-09-25
   ETSY        2514 velas  2016-09-26 -> 2026-09-25
-  ETSY.BA        1 velas  2026-09-24 -> 2026-09-24  <-- revisar
+  ETSY.BA        2 velas  2026-09-24 -> 2026-09-25  <-- revisar
   F           2514 velas  2016-09-26 -> 2026-09-25
   F.BA        1019 velas  2022-07-26 -> 2026-09-25
   FCX         2514 velas  2016-09-26 -> 2026-09-25
@@ -782,8 +778,8 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 | perdida_prom_R | -0.97 |
 | profit_factor | 1.32 |
 | dias_prom_en_posicion | 14.16 |
-| retorno_total | 143.7% |
-| retorno_anual (CAGR) | 10.2% |
+| retorno_total | 143.3% |
+| retorno_anual (CAGR) | 10.1% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.44 |
 | exposicion_prom | 69.5% |
@@ -803,7 +799,7 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 5.2% | 13.5% |
+| 2026 | 5.1% | 13.4% |
 
 ## Variantes de riesgo por operación
 
@@ -811,7 +807,7 @@ Período: 2017-07-13 → 2026-09-25 · Tickers con datos: 50 de 50 · Capital in
 |---|---|---|---|---|---|---|
 | efectivo en SPY: sí | 619 | 44.6% | 0.17 | 8.8% | -40.8% | 69.4% |
 | riesgo 0.5% | 621 | 44.6% | 0.17 | 5.7% | -12.5% | 40.1% |
-| riesgo 1.0% | 619 | 44.6% | 0.17 | 10.2% | -23.1% | 69.5% |
+| riesgo 1.0% | 619 | 44.6% | 0.17 | 10.1% | -23.1% | 69.5% |
 
 === Calibración ===
 # Calibración de parámetros
@@ -826,16 +822,16 @@ Configuración actual: entrada=retroceso, objetivo_r=4.0, max_dias_en_posicion=2
 
 | entrada    |   objetivo_r |   max_dias_en_posicion | filtro_mercado   |   in_operaciones |   in_r_promedio (expectancy) | in_retorno_anual (CAGR)   | in_max_drawdown   |   in_retorno/caida (MAR) |   out_r_promedio (expectancy) | out_retorno_anual (CAGR)   | out_max_drawdown   |   out_retorno/caida (MAR) | out_spy_retorno_anual   |
 |:-----------|-------------:|-----------------------:|:-----------------|-----------------:|-----------------------------:|:--------------------------|:------------------|-------------------------:|------------------------------:|:---------------------------|:-------------------|--------------------------:|:------------------------|
-| ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.16 | 11.8%                      | -18.4%             |                      0.64 | 22.3%                   |
-| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.1  | 4.8%                       | -18.9%             |                      0.26 | 22.3%                   |
-| ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.22 | 8.6%                       | -19.4%             |                      0.44 | 22.3%                   |
-| ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.15 | 5.3%                       | -14.8%             |                      0.36 | 22.3%                   |
-| retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.18 | 10.5%                      | -18.4%             |                      0.57 | 22.3%                   |
-| ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.23 | 8.9%                       | -22.4%             |                      0.4  | 22.3%                   |
-| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.09 | 6.8%                       | -16.1%             |                      0.43 | 22.3%                   |
-| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.21 | 9.3%                       | -17.1%             |                      0.54 | 22.3%                   |
-| ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.15 | 7.5%                       | -13.1%             |                      0.57 | 22.3%                   |
-| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.16 | 8.6%                       | -16.0%             |                      0.54 | 22.3%                   |
+| ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.16 | 11.7%                      | -18.4%             |                      0.64 | 22.2%                   |
+| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.1  | 4.8%                       | -18.9%             |                      0.26 | 22.2%                   |
+| ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.22 | 8.6%                       | -19.4%             |                      0.44 | 22.2%                   |
+| ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.15 | 5.3%                       | -14.8%             |                      0.36 | 22.2%                   |
+| retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.18 | 10.5%                      | -18.4%             |                      0.57 | 22.2%                   |
+| ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.23 | 8.9%                       | -22.4%             |                      0.4  | 22.2%                   |
+| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.09 | 6.8%                       | -16.1%             |                      0.43 | 22.2%                   |
+| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.21 | 9.3%                       | -17.1%             |                      0.54 | 22.2%                   |
+| ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.15 | 7.5%                       | -13.1%             |                      0.57 | 22.2%                   |
+| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.16 | 8.6%                       | -16.0%             |                      0.54 | 22.2%                   |
 
 ## Mejor combinación de cada tipo de entrada
 
@@ -843,9 +839,9 @@ Elegida solo con datos dentro de muestra; las columnas 'fuera' muestran cómo le
 
 | Entrada | Parámetros | CAGR dentro | Caída dentro | CAGR fuera | Caída fuera | SPY fuera |
 |---|---|---|---|---|---|---|
-| ruptura_20 | objetivo_r=5.0, max_dias_en_posicion=20, filtro_mercado=sí | 8.4% | -18.3% | 11.8% | -18.4% | 22.3% |
-| ruptura_55 | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.2% | -19.1% | 4.8% | -18.9% | 22.3% |
-| retroceso | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.3% | -21.3% | 10.5% | -18.4% | 22.3% |
+| ruptura_20 | objetivo_r=5.0, max_dias_en_posicion=20, filtro_mercado=sí | 8.4% | -18.3% | 11.7% | -18.4% | 22.2% |
+| ruptura_55 | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.2% | -19.1% | 4.8% | -18.9% | 22.2% |
+| retroceso | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.3% | -21.3% | 10.5% | -18.4% | 22.2% |
 
 Correlación de ranking dentro vs fuera de muestra (Spearman): **0.05** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
 
@@ -861,7 +857,7 @@ Período: 2017-10-06 → 2026-09-25 · 183 acciones · Parámetros: puntaje=mix,
 | retorno_anual (CAGR) | 44.0% |
 | max_drawdown | -51.7% |
 | retorno/caida (MAR) | 0.85 |
-| retorno_total | 2537.6% |
+| retorno_total | 2536.8% |
 | compras_por_anio | 20.96 |
 | aciertos | 58.0% |
 | retorno_prom_por_posicion | 31.2% |
@@ -887,7 +883,7 @@ Período: 2017-10-06 → 2026-09-25 · 183 acciones · Parámetros: puntaje=mix,
 | 2023 | 20.9% | 37.0% | 26.2% |
 | 2024 | 71.3% | 20.5% | 24.9% |
 | 2025 | 66.6% | 27.5% | 17.7% |
-| 2026 | 111.8% | 19.4% | 13.5% |
+| 2026 | 111.7% | 19.4% | 13.4% |
 
 ## Qué acciones aportaron (posiciones cerradas)
 
@@ -934,11 +930,11 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 | Máximo de 52 semanas | después | 5054 | 0.63% | 0.42% | 53% | +0.11% | 48% |
 
 === 4. CEDEARs en pesos ===
-CCL implícito (mediana de 180 CEDEARs): 1,620.83
+CCL implícito (mediana de 180 CEDEARs): 1,620.84
 estado
-normal                                141
-barato                                 25
-caro                                   14
+normal                                147
+barato                                 21
+caro                                   12
 ratio o precio a revisar                4
 precio en pesos viejo (2026-08-03)      1
 precio en pesos viejo (2025-07-28)      1
