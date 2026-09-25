@@ -181,19 +181,36 @@ def _relevante(titulo, t, info):
     return re.search(patron, titulo) is not None
 
 
+# Páginas de cotización o notas generadas automáticamente: no aportan información
+RELLENO = re.compile(r"\bstock (forecasts?|quote|price and news|price today|price,? news)\b|"
+                     r"\bstock price \w+ \d{1,2},? \d{4}", re.I)
+
+
+def _palabras(titulo, excluir=()):
+    return {w for w in re.findall(r"[a-z0-9$]+", titulo.lower()) if len(w) > 2 and w not in excluir}
+
+
+def _parecida(p, vistas):
+    """True si el titular (sus palabras, sin el nombre de la empresa) cuenta lo mismo que uno ya elegido:
+    la misma nota publicada por otra fuente."""
+    return any(len(p & q) >= 3 and len(p & q) / max(1, min(len(p), len(q))) >= 0.5 for q in vistas)
+
+
 def noticias(t, fecha, dias=7, maximo=5):
     """Titulares de los `dias` anteriores a `fecha` (Yahoo + Google News) que nombran a la empresa,
-    sin repetidos, más nuevos primero."""
+    sin páginas de cotización ni la misma nota repetida por otra fuente, más nuevos primero."""
     info = empresa(t)
     fin = pd.Timestamp(fecha) + timedelta(days=1)
     ini = fin - timedelta(days=dias + 1)
     todas = noticias_yahoo(t) + noticias_google(f'"{_nombre_corto(info, t)}" stock', dias)
-    vistas, out = set(), []
+    excluir = _palabras(f"{_nombre_corto(info, t)} {t}")
+    vistas, out = [], []
     for n in sorted(todas, key=lambda x: x["fecha"], reverse=True):
-        clave = re.sub(r"\W+", " ", n["titulo"].lower()).strip()[:70]
-        if not (ini <= n["fecha"] <= fin) or clave in vistas or not _relevante(n["titulo"], t, info):
+        p = _palabras(n["titulo"], excluir)
+        if not (ini <= n["fecha"] <= fin) or RELLENO.search(n["titulo"]) or _parecida(p, vistas) \
+                or not _relevante(n["titulo"], t, info):
             continue
-        vistas.add(clave)
+        vistas.append(p)
         out.append(n)
     return out[:maximo]
 
