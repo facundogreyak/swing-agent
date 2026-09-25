@@ -26,6 +26,7 @@ import db
 
 REP = Path("reportes")
 WEB = "https://facundogreyak.github.io/swing-agent/"
+URL_REPO = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'facundogreyak/swing-agent')}/blob/main/"
 C = {"tx": "#111827", "mu": "#6b7280", "bd": "#e5e7eb", "bg": "#f5f6fa", "ac": "#4f46e5",
      "pos": "#16a34a", "neg": "#dc2626"}
 
@@ -122,6 +123,10 @@ def armar(cfg, dia, con, fecha, semanal):
         quien = "Momentum" if r.accion in ("ENTRA", "SALE", "A_EFECTIVO") else "Swing"
         verbo = {"ENTRA": "compra mañana", "SALE": "vende mañana", "COMPRAR": "compra mañana",
                  "VENDER": "vendió", "A_EFECTIVO": "pasa a efectivo"}[r.accion]
+        cartera = "momentum" if quien == "Momentum" else "swing"
+        tesis_md = REP / "tesis" / cartera / f"{fecha}_{r.ticker}.md"
+        if r.accion in ("ENTRA", "COMPRAR") and tesis_md.exists():
+            extra += (f" · <a href='{URL_REPO}{tesis_md.as_posix()}' style='color:{C['ac']}'>leer la tesis</a>")
         items.append(f"<li style='margin-bottom:8px'><b>{quien} {verbo} {r.ticker}</b>{extra}<br>"
                      f"<span style='color:{C['mu']};font-size:12px'>{r.motivo}</span></li>")
     for r in ejecutadas.itertuples():
@@ -159,6 +164,14 @@ def armar(cfg, dia, con, fecha, semanal):
     else:
         asunto = f"Agente Inversor · {titulo} {_fecha(fecha)}"
 
+    revision = ""
+    semana = REP / "revision_semanal" / f"{pd.Timestamp(fecha).strftime('%G-S%V')}.md"
+    if semanal and semana.exists():
+        revision = (f"<h3 style='font-size:13px;color:{C['mu']};text-transform:uppercase;margin:20px 0 4px'>"
+                    f"Revisión semanal</h3><p style='font-size:14px;margin:4px 0'>Resultados, estado de cada tesis y "
+                    f"qué mirar la semana que viene: <a href='{URL_REPO}{semana.as_posix()}' style='color:{C['ac']}'>"
+                    f"leer la revisión {semana.stem}</a></p>")
+
     html = f"""<div style="font-family:Inter,Segoe UI,Arial,sans-serif;background:{C['bg']};padding:20px">
 <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:14px;padding:22px;color:{C['tx']}">
 <div style="font-size:12px;color:{C['mu']}">Agente Inversor – Facundo · simulado, sin dinero real</div>
@@ -168,7 +181,7 @@ def armar(cfg, dia, con, fecha, semanal):
 {nov_html}
 <h3 style="font-size:13px;color:{C['mu']};text-transform:uppercase;margin:20px 0 4px">Booms del momento</h3>
 <table width="100%" style="font-size:14px">{booms}</table>
-<p style="margin:22px 0 6px"><a href="{WEB}" style="background:{C['ac']};color:#fff;text-decoration:none;
+{revision}<p style="margin:22px 0 6px"><a href="{WEB}" style="background:{C['ac']};color:#fff;text-decoration:none;
 padding:10px 18px;border-radius:999px;font-weight:600;font-size:14px">Ver el tablero completo</a></p>
 <p style="font-size:11px;color:{C['mu']};margin-top:18px">Herramienta de análisis y simulación. No es
 asesoramiento financiero. Antes de operar verificá precios y ratios en tu broker.</p>

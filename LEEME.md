@@ -12,6 +12,10 @@ Tablero: GitHub Pages (carpeta `docs/`). Reportes: carpeta `reportes/`.
                     análisis de qué pesa más y paper trading con el mismo motor)
 - `backtest.py`   → backtest + calibración dentro/fuera de muestra → `reportes/`
 - `cedears.py`    → pasa la cartera a CEDEARs en pesos: ratios, dólar CCL implícito, caros/baratos
+- `tesis.py`      → cada compra (swing y momentum) escrita como tesis de inversión en `reportes/tesis/`:
+                    la idea, por qué ahora, el plan, qué la invalida y qué esperar según el backtest (se congela
+                    el día de la decisión), y después ejecución, seguimiento y cierre con veredicto.
+                    Cada semana escribe la revisión de la cartera en `reportes/revision_semanal/`
 - `alertas.py`    → mail con compras/ventas y resumen de los viernes (secrets GMAIL_USUARIO y GMAIL_CLAVE)
 - `universo_ampliado.csv` → ~140 acciones más con CEDEAR, para comparar con la lista de 50
 - `tablero.py`    → página web `docs/index.html`
@@ -24,4 +28,4 @@ Cada decisión y operación guarda la versión de parámetros con la que se tom�
 
 ## Hoja de ruta
 1. Datos ✔  2. Señales ✔  3. Backtest y calibración ✔  4. Paper trading ✔ (swing + momentum)
-5. Métricas por versión de parámetros  6. Alertas
+5. Métricas por versión de parámetros  6. Alertas ✔  7. Tesis de inversión y revisión semanal ✔

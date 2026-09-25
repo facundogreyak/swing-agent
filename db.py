@@ -7,6 +7,7 @@ Tablas:
   decisiones         -> DIARIO del agente: qué decidió, por qué y con qué datos
   operaciones        -> trades simulados (paper): entrada, stop, objetivo, salida, resultado
   equity             -> valor de la cartera simulada día a día
+  tesis              -> tesis de inversión de cada compra (ver tesis.py)
 """
 import sqlite3, json, hashlib
 from pathlib import Path
@@ -103,6 +104,19 @@ CREATE TABLE IF NOT EXISTS ranking (
     puntaje  REAL,
     r21 REAL, r63 REAL, r126 REAL, r252 REAL,
     PRIMARY KEY (fecha, ticker)
+);
+
+-- Tesis de inversión (tesis.py): las secciones 1-5 se congelan el día de la decisión
+CREATE TABLE IF NOT EXISTS tesis (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    cartera         TEXT,               -- swing / momentum
+    ticker          TEXT,
+    fecha_decision  TEXT,               -- cierre en que se decidió la compra
+    version_id      TEXT,
+    archivo         TEXT,               -- ruta del .md dentro de reportes/
+    idea_md         TEXT,               -- la idea, por qué ahora, el plan, qué la invalida y qué esperar
+    creada          TEXT DEFAULT (datetime('now','localtime')),
+    UNIQUE (cartera, ticker, fecha_decision)
 );
 
 CREATE TABLE IF NOT EXISTS equity (

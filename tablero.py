@@ -6,6 +6,7 @@ Ejecutar:  python tablero.py   (lo corre GitHub Actions después de cada corrida
 Secciones:
   1. Booms del momento       -> ranking de momentum de hoy, qué sube en el ranking, sectores en alza
   2. Cartera momentum        -> paper trading 100% invertido (rotación por momentum)
+     Tesis de inversión      -> cada compra por escrito + revisión semanal (ver tesis.py)
   3. Comparación             -> swing vs momentum vs SPY (backtest) + qué parámetro pesa más
   4. Swing                   -> paper trading y backtest de la estrategia de retroceso
   5. Datos y versiones
@@ -112,6 +113,7 @@ tbody tr:hover{background:#fafafe}
 .badge::first-letter{text-transform:uppercase}
 .b-pos{background:#dcfce7;color:#15803d}.b-neg{background:#fee2e2;color:#b91c1c}
 .b-neu{background:var(--acento-suave);color:var(--acento)}.b-gris{background:#f3f4f6;color:#6b7280}
+.tw a{color:var(--acento);text-decoration:none}.badge a,a.badge{text-decoration:none}
 .pos{color:var(--pos);font-weight:500}.neg{color:var(--neg);font-weight:500}.vacio{color:var(--mu)}.warn{color:var(--neg)}
 pre{white-space:pre-wrap;font-size:12px;background:var(--bg);border-radius:12px;padding:12px;overflow-x:auto}
 footer{max-width:1080px;margin:0 auto;padding:0 16px 40px;color:var(--mu);font-size:12px}
@@ -617,6 +619,51 @@ def seccion_setups(cfg):
     return html
 
 
+def seccion_tesis():
+    """Tesis de inversión de cada compra (tesis.py) y link a la última revisión semanal."""
+    import tesis as T
+    f = REP / "tesis" / "estado.csv"
+    semanales = sorted((REP / "revision_semanal").glob("*.md")) if (REP / "revision_semanal").exists() else []
+    html = ("<div class='sub'>Cada compra de las dos carteras queda escrita como una tesis de inversión: la idea, "
+            "por qué ahora, el plan de salida, qué la invalidaría y qué esperar según el backtest. Se congela el día "
+            "de la decisión y después se sigue hasta el cierre, con el veredicto de si se cumplió.</div>")
+    if semanales:
+        u = semanales[-1]
+        html += (f"<p><a class='badge b-neu' href='{T.URL_REPO}reportes/revision_semanal/{u.name}'>"
+                 f"Revisión semanal {u.stem}</a> <a class='badge b-gris' href='{T.URL_REPO}reportes/revision_semanal'>"
+                 f"anteriores</a> <a class='badge b-gris' href='{T.URL_REPO}reportes/tesis/README.md'>todas las tesis</a></p>")
+    if not f.exists() or f.stat().st_size < 5:
+        return html + "<p class='vacio'>Todavía no hay tesis: se escriben con la primera compra.</p>"
+    d = pd.read_csv(f)
+    d = d[d.estado != "NO EJECUTADA"]
+    if not len(d):
+        return html + "<p class='vacio'>Todavía no hay tesis: se escriben con la primera compra.</p>"
+    orden = {"PENDIENTE": 0, "ABIERTA": 1, "CERRADA": 2}
+    d = d.assign(_o=d.estado.map(orden).fillna(3)).sort_values(["_o", "fecha"], ascending=[True, False])
+    abiertas = d[d.estado != "CERRADA"]
+    cerradas = d[d.estado == "CERRADA"]
+    d["acción"] = [f"<a href='{T.URL_REPO}reportes/{r.archivo}'><b>{r.ticker}</b></a>" for r in d.itertuples()]
+    d["cartera "] = d.cartera.str.capitalize()
+    d["decisión"] = d.fecha.map(_fecha)
+    d["resultado "] = [("" if pd.isna(r.resultado) else _pct(r.resultado)) +
+                       (f" ({r.r:+.2f}R)".replace(".", ",") if r.cartera == "swing" and pd.notna(r.r) else "")
+                       for r in d.itertuples()]
+    d["estado "] = d.estado.str.lower()
+    d["nota "] = d.nota.fillna("")
+    cols = ["decisión", "cartera ", "acción", "estado ", "resultado ", "nota "]
+    kp = [("Abiertas", str((d.estado == "ABIERTA").sum())), ("Cerradas", str(len(cerradas)))]
+    if len(cerradas):
+        kp.append(("Ganadas", f"{(cerradas.resultado > 0).mean():.0%}"))
+    html += _kpis(kp)
+    html += "<h3>En curso</h3>" + (_tabla(d.loc[abiertas.index], cols, signo=("resultado ",),
+                                          opcionales=("cartera ", "nota ")) if len(abiertas)
+                                   else "<p class='vacio'>Ninguna.</p>")
+    if len(cerradas):
+        html += "<h3>Últimas cerradas</h3>" + _tabla(d.loc[cerradas.index].head(10), cols, signo=("resultado ",),
+                                                     opcionales=("cartera ", "nota "))
+    return html
+
+
 def seccion_cartera_momentum(con_diario, cfg, P):
     fila = con_diario.execute("SELECT ultima_fecha, estado_json FROM estado_motor WHERE nombre='momentum'").fetchone()
     if not fila:
@@ -811,6 +858,7 @@ def main():
     comp_html, comp = seccion_comparacion(cfg)
     byma_html = seccion_byma(cfg)
     setups_html = seccion_setups(cfg)
+    tesis_html = seccion_tesis()
     pesa_html = seccion_que_pesa(cfg)
     swing_html = seccion_swing(con, con_diario, cfg)
     calib_html = seccion_calibracion_swing()
@@ -829,7 +877,7 @@ def main():
 <header><div class="barra">
   <div class="marca"><div><h1>{NOMBRE}</h1>
   <div class="sub">Simulado, sin dinero real · <span class="opt">Actualizado </span>{ahora}<span class="opt"> · Datos al {_fecha(ult)}</span></div></div></div>
-  <nav><a href="#momentum">Cartera</a><a href="#byma">En pesos</a><a href="#booms">Booms</a><a href="#setups">Setups</a><a href="#comparacion">Comparación</a>
+  <nav><a href="#momentum">Cartera</a><a href="#tesis">Tesis</a><a href="#byma">En pesos</a><a href="#booms">Booms</a><a href="#setups">Setups</a><a href="#comparacion">Comparación</a>
   <a href="#pesa">Qué pesa más</a><a href="#swing">Swing</a><a href="#datos">Datos</a></nav>
 </div></header>
 <main>
@@ -841,6 +889,11 @@ def main():
 <div class="sub">Las {m['top_n']} acciones más fuertes (puntaje {m['puntaje']}), revisión cada {m['rebalanceo_dias']} ruedas,
 margen {m['buffer']} puestos, máx. {m['max_por_sector'] or '—'} por sector. Lo que no va a acciones queda en SPY.</div>
 {cartera_html}
+</section>
+
+<section id="tesis">
+<h2>Tesis de inversión <span class="etiqueta">cada compra, por escrito</span></h2>
+{tesis_html}
 </section>
 
 <section id="byma">
