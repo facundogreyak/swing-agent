@@ -14,7 +14,10 @@ Revisión semanal (reportes/revision_semanal/AAAA-Sxx.md): se escribe una vez po
 última rueda de la semana (normalmente el viernes). Resume resultados, movimientos, el estado de
 cada tesis abierta y qué mirar la semana siguiente.
 
-Todo sale de los datos del agente (precios, reglas y backtest): no usa noticias ni balances.
+Los números de la señal salen de los datos del agente (precios, reglas y backtest). Con
+`tesis.noticias: true` en config.yaml se suma contexto de internet (contexto.py): la empresa, los
+analistas, el próximo balance y los titulares de los últimos días, en la compra, en la venta y en
+la revisión semanal. Ese contexto acompaña la decisión; las reglas de compra y venta no cambian.
 Ejecutar:  python tesis.py
 """
 import os
@@ -24,6 +27,7 @@ import numpy as np
 import pandas as pd
 import yaml
 
+import contexto
 import data
 import db
 import momentum as M
@@ -180,6 +184,26 @@ def _mercado(D, fecha):
             f"200 ruedas ({'mercado alcista' if d >= 0 else 'mercado bajista: más riesgo de que las subas no sigan'}).")
 
 
+def _con_internet(cfg, fecha):
+    """Solo se buscan noticias para decisiones recientes (una tesis armada tarde no mira el presente)."""
+    return bool(cfg.get("tesis", {}).get("noticias")) and \
+        (pd.Timestamp.now().normalize() - pd.Timestamp(fecha)).days <= 4
+
+
+def _contexto(cfg, t, fecha, precio, fin_plazo, que_plazo):
+    """(markdown, alertas) con datos de internet, o una nota si está apagado o no corresponde."""
+    if not cfg.get("tesis", {}).get("noticias"):
+        return "", []
+    titulo = f"### Contexto: la empresa y las noticias (al {_fecha(fecha)})"
+    if not _con_internet(cfg, fecha):
+        return titulo + "\n\n_No disponible: la tesis se armó días después de la decisión._\n", []
+    try:
+        md, alertas = contexto.seccion(t, fecha, precio, fin_plazo, cfg.get("tesis", {}), que_plazo)
+    except Exception as ex:
+        md, alertas = f"_No se pudo armar el contexto ({ex})._", []
+    return f"{titulo}\n\n_Fuentes: Yahoo Finance y Google News. Acompaña la decisión; no la cambia._\n\n{md}\n", alertas
+
+
 def _tabla_retornos(D, t, fecha):
     filas = []
     for nombre, n, saltar in PLAZOS:
@@ -204,11 +228,13 @@ def idea_swing(D, dia, cfg, t, fecha, sector, cedear, ratio):
                      "ORDER BY fecha DESC LIMIT 1", (fecha,)).fetchone()
     efectivo, capital = eq if eq else (r["capital_inicial_usd"], r["capital_inicial_usd"])
     riesgo_usd = capital * r["riesgo_por_operacion"]
-    cant = max(min(riesgo_usd / (close - stop), capital * r["max_pct_posicion"] / close, efectivo / close), 0)
+    cant = max(min(riesgo_usd / (close - stop), capital * r["max_pct_posicion"] / close), 0)
+    falta_efectivo = efectivo < cant * close * 0.99
     mismo_sector = [x for (x,) in dia.execute(
         "SELECT ticker FROM operaciones WHERE sector=? AND fecha_entrada<=? AND (fecha_salida IS NULL OR "
         "fecha_salida>?)", (sector, fecha, fecha))]
     pf = D.perfil(t, fecha)
+    ctx_md, ctx_alertas = _contexto(cfg, t, fecha, close, limite, "la salida por tiempo")
 
     L = ["## 1. La idea", "",
          f"Comprar un **retroceso dentro de una tendencia alcista**. {t} viene en tendencia de suba "
@@ -235,6 +261,7 @@ def idea_swing(D, dia, cfg, t, fecha, sector, cedear, ratio):
          f"- Mercado: {_mercado(D, fecha)}" + (" El filtro de mercado está apagado." if not e.get("filtro_mercado") else ""),
          f"- Sector: {sector}." + (f" Ya hay posiciones abiertas del mismo sector: {', '.join(mismo_sector)} "
                                    f"(máximo {r['max_por_sector']})." if mismo_sector else ""), "",
+         ctx_md,
          "## 3. El plan", "",
          f"- **Entrada:** en la apertura de la rueda siguiente (referencia: cierre de USD {_n(close)}).",
          f"- **Stop (si sale mal):** entrada − {_n(r['stop_atr'], 1)} × ATR ≈ **USD {_n(stop)}** ({_pct(stop / close - 1)}).",
@@ -244,7 +271,9 @@ def idea_swing(D, dia, cfg, t, fecha, sector, cedear, ratio):
          f"(≈ {_fecha(limite)}).",
          f"- **Tamaño:** se arriesga {_pct(r['riesgo_por_operacion'], 0, False)} del capital (≈ {_usd(riesgo_usd)}) → "
          f"≈ {_n(cant, 2)} acciones ≈ {_usd(cant * close)} ({_pct(cant * close / capital, 0, False)} de la cartera, "
-         f"tope {_pct(r['max_pct_posicion'], 0, False)}).",
+         f"tope {_pct(r['max_pct_posicion'], 0, False)})."
+         + (f" Hoy hay {_usd(efectivo)} libres: si en la apertura no se libera efectivo, la compra se achica o "
+            f"se descarta." if falta_efectivo else ""),
          ]
     ced = _cedear_hoy(t, fecha)
     linea = f"- **En BYMA:** CEDEAR {cedear or '—'} (ratio {ratio or '—'}:1)"
@@ -260,7 +289,8 @@ def idea_swing(D, dia, cfg, t, fecha, sector, cedear, ratio):
           f"comienzo de una baja. La pérdida queda acotada a ~1R ({_usd(riesgo_usd)}), salvo que abra con un salto.",
           f"- ⚠ **Señales de alerta** en el seguimiento: cierre debajo de la media de {e['sma_rapida']} "
           f"(hoy USD {_n(f.sma_rapida)}) o de la de {e['sma_lenta']} (USD {_n(f.sma_lenta)}). El agente no vende por "
-          f"eso (solo por stop, objetivo o tiempo), pero la tesis pierde fuerza.", ""]
+          f"eso (solo por stop, objetivo o tiempo), pero la tesis pierde fuerza."]
+    L += [f"- ⚠ **Del contexto:** {a}." for a in ctx_alertas] + [""]
 
     L += ["## 5. Qué se puede esperar (backtest de esta configuración)", ""]
     bt = _leer_csv("backtest_operaciones.csv")
@@ -306,6 +336,7 @@ def idea_momentum(D, dia, cfg, t, fecha, sector, cedear, ratio, motivo_txt):
         "SELECT ticker FROM decisiones WHERE fecha=? AND accion IN ('ENTRA','SE_QUEDA') AND ticker!=?",
         (fecha, t))]
     mismo_sector = [x for x in otros if P["sectores"].get(x) == sector]
+    ctx_md, ctx_alertas = _contexto(cfg, t, fecha, D.cierre(t, fecha), prox, "la próxima revisión")
     nombres_puntaje = {"mix": "combina las subas de 3, 6 y 12 meses", "r21": "suba del último mes",
                        "r63": "suba de 3 meses", "r126": "suba de 6 meses sin el último mes",
                        "r252": "suba de 12 meses sin el último mes"}
@@ -327,6 +358,7 @@ def idea_momentum(D, dia, cfg, t, fecha, sector, cedear, ratio, motivo_txt):
          f"- Mercado: {_mercado(D, fecha)}",
          f"- Sector: {sector}." + (f" En la cartera objetivo también: {', '.join(mismo_sector)} (máximo "
                                    f"{m['max_por_sector']})." if mismo_sector else ""), "",
+         ctx_md,
          "## 3. El plan", "",
          f"- **Entrada:** en la apertura de la rueda siguiente, con ~1/{m['top_n']} de la cartera (≈ {_usd(cupo)}).",
          f"- **Se mantiene** mientras en cada revisión (cada {m['rebalanceo_dias']} ruedas; la próxima ≈ "
@@ -348,8 +380,9 @@ def idea_momentum(D, dia, cfg, t, fecha, sector, cedear, ratio, motivo_txt):
           f"- ✘ **Se invalida** si cae más abajo del puesto #{lim} o su suba se vuelve negativa: en ese caso "
           f"se vende en la revisión siguiente.",
           "- ⚠ **Riesgo propio de la estrategia:** cuando el mercado gira, las acciones que más subieron suelen "
-          "ser las que más caen, y la estrategia recién reacciona en la revisión.", "",
-          "## 5. Qué se puede esperar (backtest de esta configuración)", ""]
+          "ser las que más caen, y la estrategia recién reacciona en la revisión."]
+    L += [f"- ⚠ **Del contexto:** {a}." for a in ctx_alertas]
+    L += ["", "## 5. Qué se puede esperar (backtest de esta configuración)", ""]
     ops, eqb = _leer_csv("momentum_operaciones.csv"), _leer_csv("momentum_equity.csv")
     if len(ops):
         cerr = ops[(ops.lado == "VENTA") & ops.dias.notna() & (ops.ticker != cfg["benchmark"])]
@@ -540,6 +573,16 @@ def crear_tesis_nuevas(D, dia, cfg):
         "AND NOT EXISTS (SELECT 1 FROM tesis x WHERE x.ticker=d.ticker AND x.fecha_decision=d.fecha AND "
         "x.cartera = CASE d.accion WHEN 'COMPRAR' THEN 'swing' ELSE 'momentum' END) ORDER BY d.fecha, d.id",
         (sw, mo)).fetchall()
+    # Tesis recientes armadas sin contexto de internet (p. ej. antes de activarlo): se rearman una vez.
+    # La versión vieja se reemplaza solo si la nueva se pudo armar.
+    if cfg.get("tesis", {}).get("noticias"):
+        for fecha, t, cartera, version in dia.execute(
+                "SELECT fecha_decision, ticker, cartera, version_id FROM tesis WHERE idea_md NOT LIKE "
+                "'%### Contexto: la empresa%'").fetchall():
+            if _con_internet(cfg, fecha):
+                pend.append((fecha, t, "COMPRAR" if cartera == "swing" else "ENTRA",
+                             dia.execute("SELECT motivo FROM decisiones WHERE fecha=? AND ticker=? AND accion IN "
+                                         "('COMPRAR','ENTRA')", (fecha, t)).fetchone()[0], version))
     nuevas = 0
     for fecha, t, accion, motivo_txt, version in pend:
         p = info.get(t, {})
@@ -554,7 +597,7 @@ def crear_tesis_nuevas(D, dia, cfg):
             print(f"  Tesis {t} {fecha}: no se pudo armar ({ex})")
             continue
         archivo = f"tesis/{cartera}/{fecha}_{t}.md"
-        dia.execute("INSERT INTO tesis (cartera, ticker, fecha_decision, version_id, archivo, idea_md) "
+        dia.execute("INSERT OR REPLACE INTO tesis (cartera, ticker, fecha_decision, version_id, archivo, idea_md) "
                     "VALUES (?,?,?,?,?,?)", (cartera, t, fecha, version, archivo, idea))
         nuevas += 1
     dia.commit()
@@ -564,8 +607,8 @@ def crear_tesis_nuevas(D, dia, cfg):
 def estado_tesis(D, dia, cfg, hasta):
     """Todas las tesis con su estado al cierre de `hasta` (sin mirar después)."""
     filas = []
-    for (tid, cartera, t, fecha, archivo, idea) in dia.execute(
-            "SELECT id, cartera, ticker, fecha_decision, archivo, idea_md FROM tesis WHERE fecha_decision<=? "
+    for (tid, cartera, t, fecha, archivo, idea, cierre_md) in dia.execute(
+            "SELECT id, cartera, ticker, fecha_decision, archivo, idea_md, cierre_md FROM tesis WHERE fecha_decision<=? "
             "ORDER BY fecha_decision, id", (hasta,)).fetchall():
         fn = seguimiento_swing if cartera == "swing" else seguimiento_momentum
         try:
@@ -573,8 +616,26 @@ def estado_tesis(D, dia, cfg, hasta):
         except Exception as ex:
             estado, md, res = "SIN DATOS", f"No se pudo calcular el seguimiento ({ex}).", {}
         filas.append({"id": tid, "cartera": cartera, "ticker": t, "fecha": fecha, "archivo": archivo,
-                      "idea": idea, "estado": estado, "md": md, **res})
+                      "idea": idea, "estado": estado, "md": md, "cierre_md": cierre_md, **res})
     return filas
+
+
+def noticias_de_cierre(dia, cfg, filas):
+    """Al cerrar una posición, congela los titulares de los días previos a la venta."""
+    ct = cfg.get("tesis", {})
+    for f in filas:
+        if f["estado"] != "CERRADA" or f.get("cierre_md") is not None or not _con_internet(cfg, f["fecha_salida"]):
+            continue
+        try:
+            lista = contexto.noticias(f["ticker"], f["fecha_salida"], ct.get("dias_noticias", 7),
+                                      ct.get("max_noticias", 5))
+            cuerpo = "\n".join(contexto.lineas_noticias(lista)) if lista else "- Sin titulares relevantes en esos días."
+        except Exception as ex:
+            cuerpo = f"_No se pudieron obtener noticias ({ex})._"
+        f["cierre_md"] = (f"### Noticias alrededor de la venta\n\n_Fuentes: Yahoo Finance y Google News; "
+                          f"titulares de los {ct.get('dias_noticias', 7)} días previos a la venta._\n\n{cuerpo}\n")
+        dia.execute("UPDATE tesis SET cierre_md=? WHERE id=?", (f["cierre_md"], f["id"]))
+    dia.commit()
 
 
 def escribir_tesis(filas, cfg):
@@ -590,10 +651,11 @@ def escribir_tesis(filas, cfg):
             f"# Tesis de inversión · {f['ticker']} · {titulo}", "",
             f"Decisión: **compra** al cierre del {_fecha(f['fecha'])} · Sector: {p.get('sector', '—')} · "
             f"Estado: **{f['estado']}**", "",
-            "> Escrita por el agente con sus propios datos (precio, volumen, ranking y backtest) el día de la "
-            "decisión. Las secciones 1 a 5 no se modifican después; la 6 a 8 se actualizan con lo que pasó. "
+            "> Escrita por el agente el día de la decisión con sus propios datos (precio, volumen, ranking y "
+            "backtest) y contexto de internet (Yahoo Finance y Google News). Las secciones 1 a 5 no se modifican después; la 6 a 8 se actualizan con lo que pasó. "
             "Simulado, sin dinero real. No es asesoramiento financiero.", "",
-            f["idea"], f["md"].replace("\n\n\n", "\n\n"), "", "[← Todas las tesis](../README.md)", ""])
+            f["idea"], f["md"].replace("\n\n\n", "\n\n"), f.get("cierre_md") or "",
+            "", "[← Todas las tesis](../README.md)", ""])
         ruta.parent.mkdir(parents=True, exist_ok=True)
         if not ruta.exists() or ruta.read_text(encoding="utf-8") != doc:
             ruta.write_text(doc, encoding="utf-8")
@@ -781,7 +843,28 @@ def revision_semanal(D, dia, cfg, clave, ini, fin):
     L.append("")
 
     # 5) Qué mirar la semana que viene
-    L += ["## 5. Qué mirar la semana que viene", ""]
+    # 5) Noticias de la cartera (solo si la revisión se escribe en el momento)
+    en_vivo = fin_s == dia.execute("SELECT MAX(fecha) FROM equity").fetchone()[0] and _con_internet(cfg, fin_s)
+    tenidas_t = list(dict.fromkeys(f["ticker"] for f in abiertas_m + abiertas_s))
+    balances = []
+    if en_vivo and tenidas_t:
+        ct = cfg.get("tesis", {})
+        L += ["## 5. Noticias de la cartera", "",
+              f"_Titulares de los últimos {ct.get('dias_noticias', 7)} días (Yahoo Finance y Google News)._", ""]
+        for t in tenidas_t:
+            try:
+                lista = contexto.noticias(t, fin_s, ct.get("dias_noticias", 7), 3)
+                bal = contexto.proximo_balance(t, fin_s)
+            except Exception as ex:
+                lista, bal = [], None
+                print(f"  revisión {t}: sin noticias ({ex})")
+            if bal is not None and bal <= pd.Timestamp(fin_s) + pd.Timedelta(days=21):
+                balances.append(f"{t} ({_fecha(bal)})")
+            L += [f"**{t}**", ""] + (contexto.lineas_noticias(lista) or ["- Sin titulares relevantes."]) + [""]
+    L += ["## 6. Qué mirar la semana que viene" if en_vivo and tenidas_t else "## 5. Qué mirar la semana que viene", ""]
+    if balances:
+        L.append("- Balances de empresas en cartera en las próximas 3 semanas: " + ", ".join(balances)
+                 + ". Suelen mover el precio con saltos.")
     ult_reb = dia.execute("SELECT MAX(fecha) FROM decisiones WHERE fecha<=? AND accion IN "
                           "('ENTRA','SALE','SE_QUEDA','A_EFECTIVO')", (fin_s,)).fetchone()[0]
     if ult_reb:
@@ -836,6 +919,7 @@ def main():
     D = Datos(con, cfg)
     nuevas = crear_tesis_nuevas(D, dia, cfg)
     filas = estado_tesis(D, dia, cfg, hasta)
+    noticias_de_cierre(dia, cfg, filas)
     DIR_TESIS.mkdir(parents=True, exist_ok=True)
     escribir_tesis(filas, cfg)
     escribir_indice(filas)

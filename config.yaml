@@ -154,6 +154,16 @@ momentum:
     max_por_sector: [null, 3]
 
 # ---------------------------------------------------------------------
+# TESIS DE INVERSIÓN (tesis.py + contexto.py)
+# Cada compra se documenta como tesis. Con `noticias: true` suma datos de internet (Yahoo Finance y
+# Google News): la empresa, analistas, próximo balance y titulares. Es contexto: no cambia las reglas.
+# ---------------------------------------------------------------------
+tesis:
+  noticias: true
+  dias_noticias: 7               # titulares de los últimos 7 días
+  max_noticias: 5                # cuántos titulares por tesis
+
+# ---------------------------------------------------------------------
 # GESTIÓN DE RIESGO (se usa en las Etapas 2-4)
 # ---------------------------------------------------------------------
 riesgo:

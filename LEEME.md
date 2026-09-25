@@ -16,6 +16,9 @@ Tablero: GitHub Pages (carpeta `docs/`). Reportes: carpeta `reportes/`.
                     la idea, por qué ahora, el plan, qué la invalida y qué esperar según el backtest (se congela
                     el día de la decisión), y después ejecución, seguimiento y cierre con veredicto.
                     Cada semana escribe la revisión de la cartera en `reportes/revision_semanal/`
+- `contexto.py`   → datos de internet para las tesis (Yahoo Finance y Google News, sin claves): la empresa,
+                    analistas, próximo balance y titulares, en la compra, en la venta y en la revisión semanal.
+                    Acompañan la decisión; las reglas no cambian. Se apaga con `tesis.noticias: false`
 - `alertas.py`    → mail con compras/ventas y resumen de los viernes (secrets GMAIL_USUARIO y GMAIL_CLAVE)
 - `universo_ampliado.csv` → ~140 acciones más con CEDEAR, para comparar con la lista de 50
 - `tablero.py`    → página web `docs/index.html`

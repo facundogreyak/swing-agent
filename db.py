@@ -134,6 +134,7 @@ CREATE TABLE IF NOT EXISTS equity (
 COLUMNAS_EXTRA = {
     "operaciones": {"sector": "TEXT", "stop_inicial": "REAL", "dias": "INTEGER DEFAULT 0",
                     "maximo": "REAL", "costo_total": "REAL"},
+    "tesis": {"cierre_md": "TEXT"},     # noticias alrededor de la venta (se congelan al cerrar)
 }
 
 
