@@ -242,10 +242,12 @@ def seccion(t, fecha, precio, fin_plazo, cfg_t, que_plazo="la salida"):
         L.append("- " + " · ".join(partes) + ".")
         val = []
         pe, fpe = _num(info.get("trailingPE")), _num(info.get("forwardPE"))
-        if pe:
+        if pe is not None and pe > 0:
             val.append(f"P/E {_n(pe)}")
-        if fpe:
-            val.append(f"P/E estimado {_n(fpe)}" + (" (se esperan más ganancias)" if pe and fpe < pe * 0.95 else
+        if fpe is not None and fpe <= 0:
+            val.append("sin ganancias esperadas para el próximo año (P/E estimado negativo)")
+        elif fpe:
+            val.append(f"P/E estimado {_n(fpe)}" + (" (se esperan más ganancias)" if pe and 0 < fpe < pe * 0.95 else
                                                     " (se esperan menos ganancias)" if pe and fpe > pe * 1.05 else ""))
         rg, eg, mg = _num(info.get("revenueGrowth")), _num(info.get("earningsGrowth")), _num(info.get("profitMargins"))
         if rg is not None:

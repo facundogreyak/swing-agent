@@ -890,7 +890,7 @@ def revision_semanal(D, dia, cfg, clave, ini, fin):
         if partes:
             L.append(f"- Swing: {link(f)} {'; '.join(partes)}.")
     puestos, _ = D.puestos(fin_s)
-    tenidas = set(pos)
+    tenidas = set(pos) | {f["ticker"] for f in pend}          # las órdenes pendientes ya "entran"
     top = [t for t, p in sorted(puestos.items(), key=lambda x: x[1]) if t not in tenidas][:5]
     if top:
         L.append("- Booms que no están en la cartera (top del ranking hoy): " + ", ".join(
