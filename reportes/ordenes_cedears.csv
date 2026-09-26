@@ -1,6 +1,6 @@
 tipo,ticker,cedear,cantidad,precio_ars,monto_ars,monto_usd,estado_precio,motivo
-COMPRAR,AMD,AMD,31,103050.0,3194550.0,2000.0,normal,entra: puesto #1
-COMPRAR,MRK,MRK,67,48000.0,3216000.0,2000.0,normal,entra: puesto #2
-COMPRAR,LLY,LLY,95,33820.0,3212900.0,2000.0,normal,entra: puesto #3
-COMPRAR,INTC,INTC,79,40580.0,3205820.0,2000.0,normal,entra: puesto #4
-COMPRAR,AAPL,AAPL,119,27140.0,3229660.0,2000.0,normal,entra: puesto #5
+COMPRAR,MRNA,MRNA,191,16930.0,3233630.0,2000.0,caro,entra: puesto #1
+COMPRAR,DELL,DELL,263,12310.0,3237530.0,2000.0,normal,entra: puesto #2
+COMPRAR,AMD,AMD,31,102200.0,3168200.0,2000.0,normal,entra: puesto #3
+COMPRAR,CRWD,CRWD,629,5160.0,3245640.0,2000.0,barato,entra: puesto #4
+COMPRAR,SCCO,SCCO,19,164600.0,3127400.0,2000.0,normal,entra: puesto #7

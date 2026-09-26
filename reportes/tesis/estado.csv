@@ -1,3 +1,8 @@
 cartera,ticker,fecha,estado,resultado,r,vs_spy,fecha_salida,archivo,nota
-swing,JPM,2026-09-24,PENDIENTE,,,,,tesis/swing/2026-09-24_JPM.md,
-swing,BAC,2026-09-24,PENDIENTE,,,,,tesis/swing/2026-09-24_BAC.md,
+swing,JPM,2026-09-24,ABIERTA,-0.00209825600349578,-0.05256204924751331,,,tesis/swing/2026-09-24_JPM.md,⚠ cerró debajo de la media de 50.
+swing,BAC,2026-09-24,ABIERTA,-0.004127178622316818,-0.09435124397570789,,,tesis/swing/2026-09-24_BAC.md,⚠ cerró debajo de la media de 50.
+momentum,MRNA,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_MRNA.md,
+momentum,DELL,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_DELL.md,
+momentum,AMD,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_AMD.md,
+momentum,CRWD,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_CRWD.md,
+momentum,SCCO,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_SCCO.md,
