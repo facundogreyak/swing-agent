@@ -13,11 +13,11 @@ Descargando precios...
   AMZN       OK         4 velas
   AMZN.BA    OK         1599 velas
   NVDA       OK         4 velas
-  NVDA.BA    OK         1599 velas
+  NVDA.BA    OK         1598 velas
   META       OK         4 velas
   META.BA    OK         1 velas
   TSLA       OK         4 velas
-  TSLA.BA    OK         1599 velas
+  TSLA.BA    OK         1598 velas
   AVGO       OK         4 velas
   AVGO.BA    OK         1 velas
   ORCL       OK         4 velas
@@ -43,11 +43,11 @@ Descargando precios...
   UBER       OK         1854 velas
   UBER.BA    OK         1018 velas
   PYPL       OK         4 velas
-  PYPL.BA    OK         1826 velas
+  PYPL.BA    OK         1825 velas
   MELI       OK         4 velas
   MELI.BA    OK         5 velas
   GLOB       OK         4 velas
-  GLOB.BA    OK         1054 velas
+  GLOB.BA    OK         1053 velas
   NU         OK         1202 velas
   NU.BA      OK         616 velas
   VIST       OK         1801 velas
@@ -103,11 +103,11 @@ Descargando precios...
   BA         OK         4 velas
   BA.BA      OK         5 velas
   BABA       OK         4 velas
-  BABA.BA    OK         1599 velas
+  BABA.BA    OK         1598 velas
   AAL        OK         4 velas
   AAL.BA     OK         1 velas
   ABBV       OK         4 velas
-  ABBV.BA    OK         1049 velas
+  ABBV.BA    OK         1048 velas
   ABNB       OK         1453 velas
   ABNB.BA    OK         1019 velas
   ABT        OK         4 velas
@@ -147,7 +147,7 @@ Descargando precios...
   BHP        OK         4 velas
   BHP.BA     OK         5 velas
   BIDU       OK         4 velas
-  BIDU.BA    OK         1598 velas
+  BIDU.BA    OK         1597 velas
   BKNG       OK         4 velas
   BKNG.BA    OK         562 velas
   BKR        OK         4 velas
@@ -235,7 +235,7 @@ Descargando precios...
   ITUB       OK         4 velas
   ITUB.BA    OK         1767 velas
   JD         OK         4 velas
-  JD.BA      OK         1598 velas
+  JD.BA      OK         1597 velas
   KLAC       OK         4 velas
   KLAC.BA    OK         18 velas
   KMB        OK         4 velas
@@ -250,11 +250,7 @@ Descargando precios...
   LVS.BA     OK         5 velas
   MA         OK         4 velas
   MA.BA      OK         1 velas
-  MDLZ       OK         4 velas$TXR: possibly delisted; no price data found  (1d 2016-09-28 -> 2026-09-25)
-
-1 Failed download:
-['TXR']: possibly delisted; no price data found  (1d 2016-09-28 -> 2026-09-25)
-$BA.C.BA: possibly delisted; no timezone found
+  MDLZ       OK         4 velas$BA.C.BA: possibly delisted; no timezone found
 
 1 Failed download:
 ['BA.C.BA']: possibly delisted; no timezone found
@@ -295,7 +291,7 @@ $BA.C.BA: possibly delisted; no timezone found
   PANW       OK         4 velas
   PANW.BA    OK         1014 velas
   PAAS       OK         4 velas
-  PAAS.BA    OK         1363 velas
+  PAAS.BA    OK         1362 velas
   PAGS       OK         2179 velas
   PAGS.BA    OK         1 velas
   PDD        OK         2052 velas
@@ -347,7 +343,7 @@ $BA.C.BA: possibly delisted; no timezone found
   T          OK         4 velas
   T.BA       OK         5 velas
   TGT        OK         4 velas
-  TGT.BA     OK         1574 velas
+  TGT.BA     OK         1573 velas
   TM         OK         4 velas
   TM.BA      OK         5 velas
   TMO        OK         4 velas
@@ -380,7 +376,7 @@ $BA.C.BA: possibly delisted; no timezone found
   ZM.BA      OK         1 velas
   TEN        OK         4 velas
   TEN.BA     OK         1 velas
-  TXR        SIN DATOS  0 velas
+  TXR        OK         16 velas
   TXR.BA     OK         5 velas
   BA.C.BA    SIN DATOS  0 velas
   BA-C.BA    OK         5 velas
@@ -761,13 +757,10 @@ Resumen de la base:
   ZM.BA          2 velas  2026-09-24 -> 2026-09-25  <-- revisar
 
 === 2a. Paper trading swing ===
-  2026-09-25: {'MANTENER': 2, 'NO_OPERAR': 48} · cartera USD 9,978.14
-Paper trading actualizado.
+Paper trading: no hay velas nuevas para procesar.
 
 === 2b. Paper trading momentum ===
-Momentum: nueva versión de parámetros (9d9ed0ec); se rearma la cartera objetivo.
-  2026-09-25: REBALANCEO · cartera USD 10,000.00 · posiciones 0
-Momentum: paper trading actualizado.
+Momentum: no hay velas nuevas para procesar.
 
 === 3a. Backtest y calibración swing ===
 # Backtest – v4.1-retroceso-4R
@@ -948,15 +941,13 @@ precio en pesos viejo (2025-07-28)      1
 A revisar: BA-C (ratio o precio a revisar), EA (precio en pesos viejo (2026-08-03)), GLW (ratio o precio a revisar), SCHW (precio en pesos viejo (2025-07-28)), TEN (ratio o precio a revisar), TXR (ratio o precio a revisar)
 
 === 4b. Tesis de inversión y revisión semanal ===
-Tesis: 5 nuevas · 7 en total (2 abiertas, 0 cerradas)
-Revisión semanal escrita: reportes/revision_semanal/2026-S39.md
+Tesis: 0 nuevas · 7 en total (2 abiertas, 0 cerradas)
 
 === 4c. Tesis y revisiones en la web + PDF semanal ===
-Publicar: 9 páginas actualizadas en docs/
-Publicar: PDF semanal -> docs/revision_semanal/2026-S39.pdf
+Publicar: 0 páginas actualizadas en docs/
 
 === 5. Tablero ===
 Tablero generado: docs/index.html
 
 === 6. Alertas por mail ===
-Alertas: mail enviado -> Agente Inversor · 25/09/2026: Momentum compra MRNA, DELL, AMD, CRWD, SCCO (adjunto 2026-S39.pdf)
+Alertas: ya se avisó lo del 2026-09-25.
