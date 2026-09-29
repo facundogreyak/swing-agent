@@ -16,5 +16,5 @@ Cada compra del agente, documentada el día de la decisión y seguida hasta el c
 
 | Decisión | Acción | Estado | Resultado | Veredicto |
 |---|---|---|---|---|
-| 24/09/2026 | [JPM](swing/2026-09-24_JPM.md) | ABIERTA | -0,2% (-0,05R) | ⚠ cerró debajo de la media de 50. |
-| 24/09/2026 | [BAC](swing/2026-09-24_BAC.md) | ABIERTA | -0,4% (-0,09R) | ⚠ cerró debajo de la media de 50. |
+| 24/09/2026 | [JPM](swing/2026-09-24_JPM.md) | ABIERTA | +0,7% (0,17R) | ⚠ cerró debajo de la media de 50. |
+| 24/09/2026 | [BAC](swing/2026-09-24_BAC.md) | ABIERTA | +0,7% (0,16R) | ⚠ cerró debajo de la media de 50. |
