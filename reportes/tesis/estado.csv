@@ -1,8 +1,8 @@
 cartera,ticker,fecha,estado,resultado,r,vs_spy,fecha_salida,archivo,nota
-swing,JPM,2026-09-24,ABIERTA,0.006734839430674322,0.16871009125646763,,,tesis/swing/2026-09-24_JPM.md,⚠ cerró debajo de la media de 50.
-swing,BAC,2026-09-24,ABIERTA,0.006925959206880661,0.15833404044125718,,,tesis/swing/2026-09-24_BAC.md,⚠ cerró debajo de la media de 50.
-momentum,MRNA,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_MRNA.md,
-momentum,DELL,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_DELL.md,
-momentum,AMD,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_AMD.md,
-momentum,CRWD,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_CRWD.md,
-momentum,SCCO,2026-09-25,PENDIENTE,,,,,tesis/momentum/2026-09-25_SCCO.md,
+swing,JPM,2026-09-24,ABIERTA,-0.012251855859930938,-0.3069132889457841,,,tesis/swing/2026-09-24_JPM.md,⚠ cerró debajo de la media de 50.
+swing,BAC,2026-09-24,ABIERTA,-0.014917399738889614,-0.34102600130668786,,,tesis/swing/2026-09-24_BAC.md,⚠ cerró debajo de la media de 50.
+momentum,MRNA,2026-09-25,ABIERTA,0.010888774457722628,,0.01445484502639216,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
+momentum,DELL,2026-09-25,ABIERTA,-0.015061455258307821,,-0.011495384689638288,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
+momentum,AMD,2026-09-25,ABIERTA,-0.027252368191410636,,-0.023686297622741104,,tesis/momentum/2026-09-25_AMD.md,✔ firme: sigue entre las primeras.
+momentum,CRWD,2026-09-25,ABIERTA,0.04154111928006099,,0.04510718984873052,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
+momentum,SCCO,2026-09-25,ABIERTA,0.028787595871306415,,0.03235366643997595,,tesis/momentum/2026-09-25_SCCO.md,"◐ en zona de margen (puesto #8): se queda, pero perdió fuerza."
