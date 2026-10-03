@@ -1,8 +1,10 @@
 cartera,ticker,fecha,estado,resultado,r,vs_spy,fecha_salida,archivo,nota
-swing,JPM,2026-09-24,ABIERTA,-0.02915502891357491,-0.7303437059228644,,,tesis/swing/2026-09-24_JPM.md,⚠ cerró debajo de la media de 50; está cerca del stop.
-swing,BAC,2026-09-24,ABIERTA,-0.033386604418828236,-0.7632496548630175,,,tesis/swing/2026-09-24_BAC.md,⚠ cerró debajo de la media de 200; está cerca del stop.
-momentum,MRNA,2026-09-25,ABIERTA,-0.013245843948560099,,-0.005801357861652923,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
-momentum,DELL,2026-09-25,ABIERTA,-0.024993634307769574,,-0.0175491482208624,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
-momentum,AMD,2026-09-25,ABIERTA,-0.021027348750800146,,-0.01358286266389297,,tesis/momentum/2026-09-25_AMD.md,✔ firme: sigue entre las primeras.
-momentum,CRWD,2026-09-25,ABIERTA,0.06363745932264675,,0.07108194540955393,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
-momentum,SCCO,2026-09-25,ABIERTA,0.02883833971186256,,0.036282825798769736,,tesis/momentum/2026-09-25_SCCO.md,"◐ en zona de margen (puesto #10): se queda, pero perdió fuerza."
+swing,JPM,2026-09-24,CERRADA,-0.03991959268117318,-1.07,-0.034170166607560115,2026-10-01,tesis/swing/2026-09-24_JPM.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
+swing,BAC,2026-09-24,CERRADA,-0.04374356242230515,-1.07,-0.03799413634869209,2026-10-01,tesis/swing/2026-09-24_BAC.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
+momentum,MRNA,2026-09-25,ABIERTA,-0.03184646849219208,,-0.02617199007727755,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
+momentum,DELL,2026-09-25,ABIERTA,-0.01812449662091753,,-0.012450018206003,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
+momentum,AMD,2026-09-25,ABIERTA,-0.014674379150664052,,-0.008999900735749522,,tesis/momentum/2026-09-25_AMD.md,✔ firme: sigue entre las primeras.
+momentum,CRWD,2026-09-25,ABIERTA,0.06902091654771048,,0.074695394962625,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
+momentum,SCCO,2026-09-25,ABIERTA,0.011474417245649349,,0.01714889566056388,,tesis/momentum/2026-09-25_SCCO.md,"⚠ cayó al puesto #20: si sigue así, sale en la próxima revisión."
+swing,V,2026-10-01,PENDIENTE,,,,,tesis/swing/2026-10-01_V.md,
+swing,BRK-B,2026-10-01,PENDIENTE,,,,,tesis/swing/2026-10-01_BRK-B.md,
