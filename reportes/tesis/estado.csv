@@ -1,10 +1,15 @@
 cartera,ticker,fecha,estado,resultado,r,vs_spy,fecha_salida,archivo,nota
 swing,JPM,2026-09-24,CERRADA,-0.03991959268117318,-1.07,-0.034170166607560115,2026-10-01,tesis/swing/2026-09-24_JPM.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
 swing,BAC,2026-09-24,CERRADA,-0.04374356242230515,-1.07,-0.03799413634869209,2026-10-01,tesis/swing/2026-09-24_BAC.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
-momentum,MRNA,2026-09-25,ABIERTA,-0.03184646849219208,,-0.02617199007727755,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
-momentum,DELL,2026-09-25,ABIERTA,-0.01812449662091753,,-0.012450018206003,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
-momentum,AMD,2026-09-25,ABIERTA,-0.014674379150664052,,-0.008999900735749522,,tesis/momentum/2026-09-25_AMD.md,✔ firme: sigue entre las primeras.
-momentum,CRWD,2026-09-25,ABIERTA,0.06902091654771048,,0.074695394962625,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
-momentum,SCCO,2026-09-25,ABIERTA,0.011474417245649349,,0.01714889566056388,,tesis/momentum/2026-09-25_SCCO.md,"⚠ cayó al puesto #20: si sigue así, sale en la próxima revisión."
-swing,V,2026-10-01,PENDIENTE,,,,,tesis/swing/2026-10-01_V.md,
-swing,BRK-B,2026-10-01,PENDIENTE,,,,,tesis/swing/2026-10-01_BRK-B.md,
+momentum,MRNA,2026-09-25,ABIERTA,0.041274918469253574,,0.032841207647613224,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
+momentum,DELL,2026-09-25,ABIERTA,0.0009968065163732387,,-0.007436904305267111,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
+momentum,AMD,2026-09-25,ABIERTA,0.010961753880621039,,0.002528043058980689,,tesis/momentum/2026-09-25_AMD.md,✔ firme: sigue entre las primeras.
+momentum,CRWD,2026-09-25,ABIERTA,0.0954562429301129,,0.08702253210847255,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
+momentum,SCCO,2026-09-25,ABIERTA,0.04229281725290823,,0.03385910643126788,,tesis/momentum/2026-09-25_SCCO.md,"⚠ cayó al puesto #20: si sigue así, sale en la próxima revisión."
+swing,V,2026-10-01,ABIERTA,0.026373480622631673,0.8163279171905786,,,tesis/swing/2026-10-01_V.md,"en curso, sin alertas."
+swing,BRK-B,2026-10-01,NO EJECUTADA,,,,,tesis/swing/2026-10-01_BRK-B.md,máximo por sector (Financieras)
+swing,BRK-B,2026-10-02,NO EJECUTADA,,,,,tesis/swing/2026-10-02_BRK-B.md,máximo por sector (Financieras)
+swing,MELI,2026-10-05,PENDIENTE,,,,,tesis/swing/2026-10-05_MELI.md,
+swing,VIST,2026-10-05,PENDIENTE,,,,,tesis/swing/2026-10-05_VIST.md,
+swing,KO,2026-10-05,PENDIENTE,,,,,tesis/swing/2026-10-05_KO.md,
+swing,DIS,2026-10-05,PENDIENTE,,,,,tesis/swing/2026-10-05_DIS.md,
