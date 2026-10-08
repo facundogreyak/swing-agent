@@ -13,7 +13,7 @@ Período: 2017-07-13 → 2026-10-06 · Tickers con datos: 50 de 50 · Capital in
 | perdida_prom_R | -0.97 |
 | profit_factor | 1.32 |
 | dias_prom_en_posicion | 14.17 |
-| retorno_total | 144.7% |
+| retorno_total | 144.8% |
 | retorno_anual (CAGR) | 10.2% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.44 |
@@ -49,7 +49,7 @@ Período: 2017-07-13 → 2026-10-06 · Tickers con datos: 50 de 50 · Capital in
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 5 | 0.30 |
+| FIN PERÍODO | 5 | 0.31 |
 | OBJETIVO | 14 | 3.93 |
 | OBJETIVO (gap) | 7 | 4.68 |
 | STOP | 209 | -1.07 |
@@ -66,7 +66,7 @@ Período: 2017-07-13 → 2026-10-06 · Tickers con datos: 50 de 50 · Capital in
 | Financieras | 85 | 46% | 0.10 | 1,105 |
 | Latam / Brasil | 84 | 44% | 0.20 | 1,877 |
 | Salud | 67 | 54% | 0.28 | 2,282 |
-| Tecnología | 181 | 48% | 0.25 | 7,643 |
+| Tecnología | 181 | 48% | 0.25 | 7,656 |
 
 ## Últimas 10 operaciones
 
@@ -78,7 +78,7 @@ Período: 2017-07-13 → 2026-10-06 · Tickers con datos: 50 de 50 · Capital in
 | BAC      | Financieras         | 2026-09-25      |           56.31  |        53.8468 |    66.1626 |    99.8109 | 2026-10-01     |         53.8468 | STOP            |      4 |   -262.34 |        -1.07 |
 | CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |  1026.08   |     4.3103 | 2026-10-02     |        845.42   | TIEMPO          |     20 |    198.52 |         0.8  |
 | LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1400.56   |     3.5659 | 2026-10-06     |       1157.49   | FIN PERÍODO     |     18 |     99.79 |         0.41 |
-| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-10-06     |         54.41   | FIN PERÍODO     |     16 |     57.85 |         0.24 |
+| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-10-06     |         54.61   | FIN PERÍODO     |     17 |     70.16 |         0.29 |
 | GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-10-06     |        347.68   | FIN PERÍODO     |     16 |     52.87 |         0.22 |
 | JPM      | Financieras         | 2026-10-02      |          332.342 |       319.141  |   385.145  |    18.152  | 2026-10-06     |        331.28   | FIN PERÍODO     |      2 |    -37.35 |        -0.16 |
 | V        | Financieras         | 2026-10-02      |          360.21  |       348.572  |   406.76   |    15.5379 | 2026-10-06     |        370.64   | FIN PERÍODO     |      2 |    145.03 |         0.8  |

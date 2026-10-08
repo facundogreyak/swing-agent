@@ -6,11 +6,11 @@ Cada compra del agente, documentada el día de la decisión y seguida hasta el c
 
 | Decisión | Acción | Estado | Resultado | Veredicto |
 |---|---|---|---|---|
-| 25/09/2026 | [MRNA](momentum/2026-09-25_MRNA.md) | ABIERTA | +4,1% | ✔ firme: sigue entre las primeras. |
-| 25/09/2026 | [DELL](momentum/2026-09-25_DELL.md) | ABIERTA | +0,1% | ✔ firme: sigue entre las primeras. |
+| 25/09/2026 | [MRNA](momentum/2026-09-25_MRNA.md) | ABIERTA | -3,9% | ✔ firme: sigue entre las primeras. |
+| 25/09/2026 | [DELL](momentum/2026-09-25_DELL.md) | ABIERTA | +4,0% | ✔ firme: sigue entre las primeras. |
 | 25/09/2026 | [AMD](momentum/2026-09-25_AMD.md) | ABIERTA | +3,9% | ✔ firme: sigue entre las primeras. |
-| 25/09/2026 | [CRWD](momentum/2026-09-25_CRWD.md) | ABIERTA | +9,5% | ✔ firme: sigue entre las primeras. |
-| 25/09/2026 | [SCCO](momentum/2026-09-25_SCCO.md) | ABIERTA | +3,7% | ⚠ cayó al puesto #19: si sigue así, sale en la próxima revisión. |
+| 25/09/2026 | [CRWD](momentum/2026-09-25_CRWD.md) | ABIERTA | +12,0% | ✔ firme: sigue entre las primeras. |
+| 25/09/2026 | [SCCO](momentum/2026-09-25_SCCO.md) | ABIERTA | +3,7% | ⚠ cayó al puesto #20: si sigue así, sale en la próxima revisión. |
 
 ## Swing
 

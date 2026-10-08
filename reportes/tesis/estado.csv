@@ -1,11 +1,11 @@
 cartera,ticker,fecha,estado,resultado,r,vs_spy,fecha_salida,archivo,nota
 swing,JPM,2026-09-24,CERRADA,-0.03991959268117318,-1.07,-0.034170166607560115,2026-10-01,tesis/swing/2026-09-24_JPM.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
 swing,BAC,2026-09-24,CERRADA,-0.04374356242230515,-1.07,-0.03799413634869209,2026-10-01,tesis/swing/2026-09-24_BAC.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
-momentum,MRNA,2026-09-25,ABIERTA,0.041274918469253574,,0.02729684648279851,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
-momentum,DELL,2026-09-25,ABIERTA,0.0009968065163732387,,-0.012981265470081826,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
+momentum,MRNA,2026-09-25,ABIERTA,-0.039430162107723654,,-0.05340823409417872,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
+momentum,DELL,2026-09-25,ABIERTA,0.04034509007866016,,0.026367018092205097,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
 momentum,AMD,2026-09-25,ABIERTA,0.03923825077637422,,0.025260178789919152,,tesis/momentum/2026-09-25_AMD.md,✔ firme: sigue entre las primeras.
-momentum,CRWD,2026-09-25,ABIERTA,0.0954562429301129,,0.08147817094365783,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
-momentum,SCCO,2026-09-25,ABIERTA,0.037063335229670535,,0.02308526324321547,,tesis/momentum/2026-09-25_SCCO.md,"⚠ cayó al puesto #19: si sigue así, sale en la próxima revisión."
+momentum,CRWD,2026-09-25,ABIERTA,0.12032455647246998,,0.10634648448601491,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
+momentum,SCCO,2026-09-25,ABIERTA,0.037063335229670535,,0.02308526324321547,,tesis/momentum/2026-09-25_SCCO.md,"⚠ cayó al puesto #20: si sigue así, sale en la próxima revisión."
 swing,V,2026-10-01,ABIERTA,0.028955372278497427,0.896244188690819,,,tesis/swing/2026-10-01_V.md,"en curso, sin alertas."
 swing,BRK-B,2026-10-01,NO EJECUTADA,,,,,tesis/swing/2026-10-01_BRK-B.md,máximo por sector (Financieras)
 swing,BRK-B,2026-10-02,NO EJECUTADA,,,,,tesis/swing/2026-10-02_BRK-B.md,máximo por sector (Financieras)

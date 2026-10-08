@@ -22,32 +22,32 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 | RS Rating ≥ 90 | antes | 1479 | 0.44% | 0.60% | 54% | +0.08% | 50% |
 | RS Rating ≥ 90 | después | 1128 | 0.90% | 0.35% | 52% | +0.06% | 49% |
 
-## Hoy: 33 acciones cumplen algún setup
+## Hoy: 35 acciones cumplen algún setup
 
 | ticker   | sector               | setups                                  | nuevos_hoy         |   rs |         r21 |         r63 |       adr |   dist_max52 |
 |:---------|:---------------------|:----------------------------------------|:-------------------|-----:|------------:|------------:|----------:|-------------:|
 | AMD      | Tecnología           | trend_template,breakout_q,max_52s,rs_90 | breakout_q,max_52s |   97 |  0.359842   |  0.255136   | 0.0363994 |   0          |
-| MRNA     | Salud                | trend_template,rs_90                    |                    |   99 |  0.396153   |  1.75352    | 0.074696  |  -0.00122874 |
-| DELL     | Tecnología           | trend_template,rs_90                    |                    |   98 |  0.053707   |  0.280651   | 0.0475917 |  -0.0613699  |
+| ANET     | Tecnología           | trend_template,max_52s,rs_90            | max_52s            |   90 |  0.111363   |  0.189506   | 0.0298165 |   0          |
+| MRNA     | Salud                | trend_template,rs_90                    |                    |   99 |  0.287942   |  1.54011    | 0.0778139 |  -0.0786395  |
+| DELL     | Tecnología           | trend_template,rs_90                    |                    |   98 |  0.0951272  |  0.330992   | 0.04755   |  -0.0244732  |
 | MU       | Tecnología           | trend_template,rs_90                    |                    |   98 |  0.0284973  |  0.101982   | 0.0358832 |  -0.138303   |
 | MRVL     | Tecnología           | trend_template,rs_90                    |                    |   97 |  0.283874   |  0.238966   | 0.0475119 |  -0.092751   |
 | INTC     | Tecnología           | trend_template,rs_90                    |                    |   96 |  0.174321   |  0.0205007  | 0.0468183 |  -0.201788   |
-| CRWD     | Tecnología           | trend_template,rs_90                    |                    |   96 |  0.27954    |  0.426695   | 0.0465859 |   0          |
-| PANW     | Tecnología           | trend_template,rs_90                    |                    |   95 |  0.220549   |  0.268786   | 0.0444062 |   0          |
+| CRWD     | Tecnología           | trend_template,rs_90                    |                    |   96 |  0.308587   |  0.459083   | 0.0462475 |   0          |
+| PANW     | Tecnología           | trend_template,rs_90                    |                    |   95 |  0.260007   |  0.309804   | 0.0446531 |   0          |
 | TEN      | Energía / Industria  | trend_template,rs_90                    |                    |   94 |  0.153864   |  0.321322   | 0.0456337 |  -0.0443098  |
 | PBR      | Latam / Brasil       | trend_template,rs_90                    |                    |   93 |  0.182902   |  0.421001   | 0.0254124 |  -0.0140845  |
-| SNOW     | Tecnología           | trend_template,rs_90                    |                    |   93 |  0.00536805 |  0.297271   | 0.0392106 |  -0.0490364  |
+| SNOW     | Tecnología           | trend_template,rs_90                    |                    |   93 | -0.00364785 |  0.285638   | 0.0393225 |  -0.0575644  |
 | HPQ      | Tecnología           | trend_template,rs_90                    |                    |   91 | -0.0184327  |  0.347282   | 0.044923  |  -0.105693   |
 | LRCX     | Tecnología           | trend_template,rs_90                    |                    |   91 |  0.0864447  |  0.00328599 | 0.037573  |  -0.22866    |
-| ARM      | Tecnología           | rs_90                                   |                    |   95 |  0.201555   |  0.00885959 | 0.0533867 |  -0.310745   |
-| XP       | Latam / Brasil       | rs_90                                   |                    |   94 |  0.417422   |  0.823187   | 0.0437117 |   0          |
+| XP       | Latam / Brasil       | rs_90                                   |                    |   95 |  0.496979   |  0.925518   | 0.0434267 |   0          |
+| ARM      | Tecnología           | rs_90                                   |                    |   94 |  0.200206   |  0.00772718 | 0.0519513 |  -0.311519   |
 | AMAT     | Tecnología           | rs_90                                   |                    |   92 |  0.166172   | -0.0695232  | 0.0317976 |  -0.265786   |
-| TGT      | Consumo              | rs_90                                   | rs_90              |   90 | -0.0614814  |  0.174404   | 0.0225248 |  -0.0915887  |
-| FCX      | Materiales / Minería | trend_template                          |                    |   89 | -0.00233749 |  0.264976   | 0.032345  |  -0.0919785  |
-| CSCO     | Tecnología           | trend_template                          |                    |   88 |  0.0800367  |  0.0361975  | 0.0236112 |  -0.0893753  |
+| FCX      | Materiales / Minería | trend_template                          |                    |   88 | -0.00233749 |  0.264976   | 0.032345  |  -0.0919785  |
 | TXN      | Tecnología           | trend_template                          |                    |   88 |  0.150093   | -0.00852305 | 0.0264021 |  -0.100903   |
+| CSCO     | Tecnología           | trend_template                          |                    |   87 |  0.0800367  |  0.0361975  | 0.0236112 |  -0.0893753  |
 | TSM      | Tecnología           | trend_template                          |                    |   87 |  0.127495   |  0.106673   | 0.0193407 |  -0.00720461 |
-| ASML     | Tecnología           | trend_template                          |                    |   87 |  0.0695209  |  0.0383467  | 0.0222805 |  -0.07689    |
-| SCCO     | Materiales / Minería | trend_template                          |                    |   86 |  0.0276716  |  0.24307    | 0.031414  |  -0.0702777  |
+| ASML     | Tecnología           | trend_template                          |                    |   86 |  0.0695209  |  0.0383467  | 0.0222805 |  -0.07689    |
 | ADI      | Tecnología           | trend_template                          |                    |   85 |  0.160939   |  0.0945286  | 0.0254824 |  -0.0530859  |
-| ANET     | Tecnología           | trend_template                          |                    |   85 |  0.0677056  |  0.142778   | 0.0291327 |  -0.0171022  |
+| SCCO     | Materiales / Minería | trend_template                          |                    |   85 |  0.0276716  |  0.24307    | 0.031414  |  -0.0702777  |
+| GGB      | Latam / Brasil       | trend_template                          |                    |   84 |  0.0301811  |  0.203202   | 0.0335534 |  -0.00967122 |
