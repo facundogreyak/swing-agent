@@ -1,23 +1,23 @@
 # Momentum (m4-ampliado-top5-mensual-tope25) – booms del momento
 
-Período: 2017-10-06 → 2026-10-07 · 183 acciones · Parámetros: puntaje=mix, top_n=5, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
+Período: 2017-10-06 → 2026-10-08 · 183 acciones · Parámetros: puntaje=mix, top_n=5, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
 
 ## Resultado
 
 | Métrica | Valor |
 |---|---|
-| retorno_anual (CAGR) | 44.4% |
+| retorno_anual (CAGR) | 44.3% |
 | max_drawdown | -51.7% |
 | retorno/caida (MAR) | 0.86 |
-| retorno_total | 2627.5% |
+| retorno_total | 2615.0% |
 | compras_por_anio | 20.88 |
 | aciertos | 58.0% |
 | retorno_prom_por_posicion | 31.2% |
 | dias_prom_en_posicion | 63.17 |
-| rotacion_anual | 7.47 |
+| rotacion_anual | 7.46 |
 | pct_en_acciones | 99.3% |
 | pct_en_spy | 0.6% |
-| spy_retorno_anual | 15.0% |
+| spy_retorno_anual | 14.9% |
 | spy_max_drawdown | -33.7% |
 
 **Referencia:** las mismas 183 acciones en partes iguales rindieron 20.1% anual (caída máx. -35.3%). La diferencia contra SPY es en gran parte por haber elegido la lista hoy; la ventaja real de la estrategia se mide contra esta referencia.
@@ -35,7 +35,7 @@ Período: 2017-10-06 → 2026-10-07 · 183 acciones · Parámetros: puntaje=mix,
 | 2023 | 20.9% | 37.0% | 26.2% |
 | 2024 | 71.3% | 20.5% | 24.9% |
 | 2025 | 66.6% | 27.5% | 17.7% |
-| 2026 | 119.0% | 20.7% | 14.9% |
+| 2026 | 118.0% | 21.1% | 14.4% |
 
 ## Qué acciones aportaron (posiciones cerradas)
 
@@ -58,63 +58,63 @@ Misma configuración. 'Ampliado' = 183 acciones con CEDEAR en BYMA y liquidez su
 
 | Universo | Acciones | Retorno anual | Caída máx. | Antes de 2023 | Desde 2023 | Partes iguales |
 |---|---|---|---|---|---|---|
-| base | 50 | 27.3% | -39.9% | 24.5% | 32.1% | 21.8% |
-| ampliado | 183 | 44.4% | -51.7% | 27.8% | 41.4% | 20.1% |
+| base | 50 | 26.9% | -39.9% | 24.5% | 31.3% | 21.8% |
+| ampliado | 183 | 44.3% | -51.7% | 27.8% | 41.0% | 20.1% |
 
 ## Qué pesa más en el resultado
 
 Retorno anual promedio de todas las combinaciones que usan cada valor. 'Dentro' = hasta 2023-01-01 · 'Fuera' = desde 2023-01-01. Un parámetro es confiable si el mejor valor coincide dentro y fuera.
 
-**puntaje** — impacto fuera de muestra: 19.1% (mejor dentro: r126, mejor fuera: r252)
+**puntaje** — impacto fuera de muestra: 18.2% (mejor dentro: r126, mejor fuera: r252)
 
 | Valor | CAGR dentro | CAGR fuera | Caída fuera |
 |---|---|---|---|
-| mix | 30.2% | 42.8% | -38.4% |
-| r126 | 53.1% | 60.2% | -36.9% |
-| r252 | 36.7% | 61.9% | -36.5% |
+| mix | 30.2% | 42.5% | -38.4% |
+| r126 | 53.1% | 59.1% | -36.9% |
+| r252 | 36.7% | 60.7% | -36.5% |
 
-**top_n** — impacto fuera de muestra: 12.5% (mejor dentro: 5, mejor fuera: 5)
-
-| Valor | CAGR dentro | CAGR fuera | Caída fuera |
-|---|---|---|---|
-| 10 | 34.2% | 49.2% | -35.9% |
-| 5 | 46.2% | 61.6% | -39.1% |
-| 8 | 39.5% | 54.2% | -36.9% |
-
-**max_por_sector** — impacto fuera de muestra: 5.0% (mejor dentro: no, mejor fuera: 3)
+**top_n** — impacto fuera de muestra: 12.2% (mejor dentro: 5, mejor fuera: 5)
 
 | Valor | CAGR dentro | CAGR fuera | Caída fuera |
 |---|---|---|---|
-| 3 | 38.7% | 57.5% | -36.5% |
-| no | 41.3% | 52.5% | -38.0% |
+| 10 | 34.2% | 48.4% | -35.9% |
+| 5 | 46.2% | 60.6% | -39.1% |
+| 8 | 39.5% | 53.3% | -36.9% |
 
-**rebalanceo_dias** — impacto fuera de muestra: 2.7% (mejor dentro: 21, mejor fuera: 5)
+**max_por_sector** — impacto fuera de muestra: 5.5% (mejor dentro: no, mejor fuera: 3)
 
 | Valor | CAGR dentro | CAGR fuera | Caída fuera |
 |---|---|---|---|
-| 21 | 41.1% | 53.6% | -37.7% |
-| 5 | 38.9% | 56.3% | -36.9% |
+| 3 | 38.7% | 56.8% | -36.5% |
+| no | 41.3% | 51.4% | -38.0% |
+
+**rebalanceo_dias** — impacto fuera de muestra: 2.9% (mejor dentro: 21, mejor fuera: 5)
+
+| Valor | CAGR dentro | CAGR fuera | Caída fuera |
+|---|---|---|---|
+| 21 | 41.1% | 52.6% | -37.7% |
+| 5 | 38.9% | 55.5% | -36.9% |
 
 **buffer** — impacto fuera de muestra: 1.1% (mejor dentro: 10, mejor fuera: 5)
 
 | Valor | CAGR dentro | CAGR fuera | Caída fuera |
 |---|---|---|---|
-| 10 | 41.1% | 54.4% | -36.6% |
-| 5 | 38.8% | 55.5% | -38.0% |
+| 10 | 41.1% | 53.5% | -36.6% |
+| 5 | 38.8% | 54.6% | -38.0% |
 
 ## Top 10 combinaciones (elegidas con datos dentro de muestra)
 
 | puntaje   |   top_n |   rebalanceo_dias |   buffer | max_por_sector   | in_retorno_anual (CAGR)   | in_max_drawdown   | out_retorno_anual (CAGR)   | out_max_drawdown   | out_spy_retorno_anual   |   out_compras_por_anio |
 |:----------|--------:|------------------:|---------:|:-----------------|:--------------------------|:------------------|:---------------------------|:-------------------|:------------------------|-----------------------:|
-| r126      |       5 |                21 |       10 | no               | 73.4%                     | -38.4%            | 77.9%                      | -37.3%             | 22.4%                   |                  18.36 |
-| r126      |       5 |                21 |       10 | 3                | 71.9%                     | -41.3%            | 83.0%                      | -36.5%             | 22.4%                   |                  19.69 |
-| r126      |       8 |                21 |       10 | no               | 65.2%                     | -37.5%            | 51.9%                      | -35.1%             | 22.4%                   |                  28.46 |
-| r126      |       5 |                 5 |       10 | no               | 67.0%                     | -40.0%            | 59.3%                      | -38.5%             | 22.4%                   |                  22.88 |
-| r126      |       8 |                21 |       10 | 3                | 60.2%                     | -38.3%            | 51.1%                      | -33.1%             | 22.4%                   |                  30.59 |
-| r126      |       5 |                21 |        5 | no               | 63.9%                     | -41.8%            | 76.8%                      | -39.3%             | 22.4%                   |                  21.02 |
-| r126      |       5 |                 5 |       10 | 3                | 61.6%                     | -40.4%            | 65.7%                      | -38.5%             | 22.4%                   |                  25.01 |
-| r126      |       5 |                 5 |        5 | no               | 59.1%                     | -40.7%            | 63.2%                      | -42.0%             | 22.4%                   |                  28.73 |
-| r126      |       5 |                21 |        5 | 3                | 66.2%                     | -45.9%            | 82.5%                      | -39.3%             | 22.4%                   |                  22.61 |
-| r126      |       5 |                 5 |        5 | 3                | 56.8%                     | -39.9%            | 72.4%                      | -38.3%             | 22.4%                   |                  31.66 |
+| r126      |       5 |                21 |       10 | no               | 73.4%                     | -38.4%            | 76.1%                      | -37.3%             | 22.3%                   |                  18.34 |
+| r126      |       5 |                21 |       10 | 3                | 71.9%                     | -41.3%            | 82.0%                      | -36.5%             | 22.3%                   |                  19.67 |
+| r126      |       8 |                21 |       10 | no               | 65.2%                     | -37.5%            | 50.3%                      | -35.1%             | 22.3%                   |                  28.44 |
+| r126      |       5 |                 5 |       10 | no               | 67.0%                     | -40.0%            | 57.4%                      | -38.5%             | 22.3%                   |                  22.86 |
+| r126      |       8 |                21 |       10 | 3                | 60.2%                     | -38.3%            | 50.5%                      | -33.1%             | 22.3%                   |                  30.57 |
+| r126      |       5 |                21 |        5 | no               | 63.9%                     | -41.8%            | 75.1%                      | -39.3%             | 22.3%                   |                  21    |
+| r126      |       5 |                 5 |       10 | 3                | 61.6%                     | -40.4%            | 64.9%                      | -38.5%             | 22.3%                   |                  24.99 |
+| r126      |       5 |                 5 |        5 | no               | 59.1%                     | -40.7%            | 61.8%                      | -42.0%             | 22.3%                   |                  28.71 |
+| r126      |       5 |                21 |        5 | 3                | 66.2%                     | -45.9%            | 81.4%                      | -39.3%             | 22.3%                   |                  22.6  |
+| r126      |       5 |                 5 |        5 | 3                | 56.8%                     | -39.9%            | 71.6%                      | -38.3%             | 22.3%                   |                  31.63 |
 
-Correlación de ranking dentro vs fuera: **0.53**
+Correlación de ranking dentro vs fuera: **0.51**
