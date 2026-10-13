@@ -1,22 +1,22 @@
 # Backtest – v4.1-retroceso-4R
 
-Período: 2017-07-13 → 2026-10-08 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
+Período: 2017-07-13 → 2026-10-12 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
 ## Configuración actual
 
 | Métrica | Valor |
 |---|---|
-| operaciones | 622 |
-| win_rate | 44.9% |
-| r_promedio (expectancy) | 0.17 |
-| ganancia_prom_R | 1.58 |
-| perdida_prom_R | -0.97 |
-| profit_factor | 1.32 |
-| dias_prom_en_posicion | 14.17 |
-| retorno_total | 146.2% |
-| retorno_anual (CAGR) | 10.2% |
+| operaciones | 623 |
+| win_rate | 45.3% |
+| r_promedio (expectancy) | 0.18 |
+| ganancia_prom_R | 1.57 |
+| perdida_prom_R | -0.98 |
+| profit_factor | 1.34 |
+| dias_prom_en_posicion | 14.16 |
+| retorno_total | 152.2% |
+| retorno_anual (CAGR) | 10.5% |
 | max_drawdown | -23.1% |
-| retorno/caida (MAR) | 0.44 |
+| retorno/caida (MAR) | 0.46 |
 | exposicion_prom | 69.6% |
 | spy_retorno_anual | 15.1% |
 | spy_max_drawdown | -33.7% |
@@ -34,27 +34,27 @@ Período: 2017-07-13 → 2026-10-08 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 6.3% | 14.4% |
+| 2026 | 8.9% | 15.0% |
 
 ## Variantes de riesgo por operación
 
 | Variante | operaciones | win_rate | r_promedio (expectancy) | retorno_anual (CAGR) | max_drawdown | exposicion_prom |
 |---|---|---|---|---|---|---|
-| efectivo en SPY: sí | 622 | 44.9% | 0.17 | 8.9% | -40.8% | 69.5% |
-| riesgo 0.5% | 624 | 44.9% | 0.18 | 5.7% | -12.5% | 40.2% |
-| riesgo 1.0% | 622 | 44.9% | 0.17 | 10.2% | -23.1% | 69.6% |
-| riesgo 2.0% | 605 | 43.5% | 0.18 | 11.8% | -30.1% | 78.4% |
+| efectivo en SPY: sí | 623 | 45.3% | 0.18 | 9.1% | -40.8% | 69.5% |
+| riesgo 0.5% | 625 | 45.3% | 0.18 | 5.9% | -12.5% | 40.2% |
+| riesgo 1.0% | 623 | 45.3% | 0.18 | 10.5% | -23.1% | 69.6% |
+| riesgo 2.0% | 606 | 43.9% | 0.18 | 12.0% | -30.1% | 78.4% |
 
 ## Resultado por motivo de salida
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 5 | 0.32 |
+| FIN PERÍODO | 4 | 0.90 |
 | OBJETIVO | 14 | 3.93 |
 | OBJETIVO (gap) | 7 | 4.68 |
 | STOP | 209 | -1.07 |
 | STOP (gap) | 68 | -1.33 |
-| TIEMPO | 319 | 1.04 |
+| TIEMPO | 321 | 1.03 |
 
 ## Resultado por sector
 
@@ -63,22 +63,22 @@ Período: 2017-07-13 → 2026-10-08 · Tickers con datos: 50 de 50 · Capital in
 | China | 12 | 42% | 0.38 | 955 |
 | Consumo | 131 | 38% | 0.04 | -1,007 |
 | Energía / Industria | 61 | 43% | 0.11 | 1,578 |
-| Financieras | 85 | 46% | 0.10 | 1,176 |
-| Latam / Brasil | 84 | 44% | 0.20 | 1,877 |
-| Salud | 68 | 53% | 0.28 | 2,317 |
-| Tecnología | 181 | 48% | 0.25 | 7,690 |
+| Financieras | 85 | 47% | 0.12 | 1,449 |
+| Latam / Brasil | 85 | 45% | 0.21 | 1,994 |
+| Salud | 68 | 54% | 0.29 | 2,434 |
+| Tecnología | 181 | 48% | 0.25 | 7,788 |
 
 ## Últimas 10 operaciones
 
 | ticker   | sector              | fecha_entrada   |   precio_entrada |   stop_inicial |   objetivo |   cantidad | fecha_salida   |   precio_salida | motivo_salida   |   dias |   pnl_usd |   r_multiple |
 |:---------|:--------------------|:----------------|-----------------:|---------------:|-----------:|-----------:|:---------------|----------------:|:----------------|-------:|----------:|-------------:|
-| PYPL     | Tecnología          | 2026-09-03      |           54.675 |        50.8167 |    70.1081 |    64.0085 | 2026-09-10     |         50.8167 | STOP            |      4 |   -257.09 |        -1.04 |
 | BAC      | Financieras         | 2026-09-16      |           59.27  |        56.708  |    69.5179 |    95.065  | 2026-09-22     |         56.708  | STOP            |      4 |   -260.09 |        -1.07 |
 | BAC      | Financieras         | 2026-09-25      |           56.31  |        53.8468 |    66.1626 |    99.8109 | 2026-10-01     |         53.8468 | STOP            |      4 |   -262.34 |        -1.07 |
 | CAT      | Energía / Industria | 2026-09-03      |          796.9   |       739.604  |  1026.08   |     4.3103 | 2026-10-02     |        845.42   | TIEMPO          |     20 |    198.52 |         0.8  |
 | LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1400.56   |     3.5659 | 2026-10-08     |       1169.6    | TIEMPO          |     20 |    142.91 |         0.58 |
-| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-10-08     |         55.02   | FIN PERÍODO     |     19 |     95.4  |         0.39 |
-| GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-10-08     |        348.29   | FIN PERÍODO     |     18 |     62    |         0.25 |
-| JPM      | Financieras         | 2026-10-02      |          332.342 |       319.141  |   385.145  |    18.152  | 2026-10-08     |        331.42   | FIN PERÍODO     |      4 |    -34.81 |        -0.15 |
-| V        | Financieras         | 2026-10-02      |          360.21  |       348.572  |   406.76   |    15.5379 | 2026-10-08     |        375.1    | FIN PERÍODO     |      4 |    214.22 |         1.18 |
-| JNJ      | Salud               | 2026-10-08      |          256.22  |       246.116  |   296.637  |    16.229  | 2026-10-08     |        256.48   | FIN PERÍODO     |      0 |     -8.26 |        -0.05 |
+| PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-10-09     |         55.53   | TIEMPO          |     20 |    126.8  |         0.52 |
+| GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-10-12     |        352.72   | TIEMPO          |     20 |    128.36 |         0.52 |
+| JPM      | Financieras         | 2026-10-02      |          332.342 |       319.141  |   385.145  |    18.152  | 2026-10-12     |        334.3    | FIN PERÍODO     |      6 |     17.39 |         0.07 |
+| V        | Financieras         | 2026-10-02      |          360.21  |       348.572  |   406.76   |    15.5379 | 2026-10-12     |        389.27   | FIN PERÍODO     |      6 |    434.06 |         2.4  |
+| JNJ      | Salud               | 2026-10-08      |          256.22  |       246.116  |   296.637  |    16.229  | 2026-10-12     |        263.73   | FIN PERÍODO     |      2 |    109.22 |         0.67 |
+| VIST     | Latam / Brasil      | 2026-10-09      |           66.82  |        61.6894 |    87.3422 |    48.67   | 2026-10-12     |         69.42   | FIN PERÍODO     |      1 |    116.6  |         0.47 |
