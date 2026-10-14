@@ -37,6 +37,7 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 | PBR      | Latam / Brasil       | trend_template,rs_90         |              |   94 |  0.199057   |  0.460133   | 0.0262589 |  0           |
 | SNOW     | Tecnología           | trend_template,rs_90         |              |   94 |  0.0953829  |  0.305972   | 0.0399085 | -0.0230964   |
 | XOM      | Energía / Industria  | trend_template,max_52s       | max_52s      |   85 |  0.0371106  |  0.194188   | 0.0186988 |  0           |
+| SHEL     | Energía / Industria  | trend_template,max_52s       | max_52s      |   83 |  0.0498088  |  0.214078   | 0.015429  |  0           |
 | XP       | Latam / Brasil       | rs_90                        |              |   96 |  0.64149    |  0.932424   | 0.0422601 |  0           |
 | INTC     | Tecnología           | rs_90                        |              |   93 | -0.0154459  | -0.0594841  | 0.0469575 | -0.2809      |
 | ARM      | Tecnología           | rs_90                        |              |   93 | -0.0360663  | -0.0922218  | 0.0525568 | -0.419196    |
@@ -50,4 +51,3 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 | SHOP     | Tecnología           | max_52s                      | max_52s      |   88 |  0.391568   |  0.426003   | 0.0418656 |  0           |
 | COP      | Energía / Industria  | trend_template               |              |   87 |  0.00152888 |  0.237843   | 0.0234687 | -0.025917    |
 | FCX      | Materiales / Minería | trend_template               |              |   84 |  0.0312368  |  0.185922   | 0.0294479 | -0.0828432   |
-| GGB      | Latam / Brasil       | trend_template               |              |   83 | -0.00194179 |  0.126676   | 0.0325764 | -0.00580275  |
