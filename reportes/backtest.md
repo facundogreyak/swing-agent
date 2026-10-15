@@ -1,22 +1,22 @@
 # Backtest – v4.1-retroceso-4R
 
-Período: 2017-07-13 → 2026-10-12 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
+Período: 2017-07-13 → 2026-10-13 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
 ## Configuración actual
 
 | Métrica | Valor |
 |---|---|
 | operaciones | 623 |
-| win_rate | 45.3% |
-| r_promedio (expectancy) | 0.18 |
-| ganancia_prom_R | 1.57 |
-| perdida_prom_R | -0.98 |
-| profit_factor | 1.34 |
-| dias_prom_en_posicion | 14.16 |
-| retorno_total | 152.2% |
-| retorno_anual (CAGR) | 10.5% |
+| win_rate | 44.9% |
+| r_promedio (expectancy) | 0.17 |
+| ganancia_prom_R | 1.58 |
+| perdida_prom_R | -0.97 |
+| profit_factor | 1.33 |
+| dias_prom_en_posicion | 14.17 |
+| retorno_total | 149.6% |
+| retorno_anual (CAGR) | 10.4% |
 | max_drawdown | -23.1% |
-| retorno/caida (MAR) | 0.46 |
+| retorno/caida (MAR) | 0.45 |
 | exposicion_prom | 69.6% |
 | spy_retorno_anual | 15.1% |
 | spy_max_drawdown | -33.7% |
@@ -34,25 +34,25 @@ Período: 2017-07-13 → 2026-10-12 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 8.9% | 15.0% |
+| 2026 | 7.8% | 15.0% |
 
 ## Variantes de riesgo por operación
 
 | Variante | operaciones | win_rate | r_promedio (expectancy) | retorno_anual (CAGR) | max_drawdown | exposicion_prom |
 |---|---|---|---|---|---|---|
-| efectivo en SPY: sí | 623 | 45.3% | 0.18 | 9.1% | -40.8% | 69.5% |
-| riesgo 0.5% | 625 | 45.3% | 0.18 | 5.9% | -12.5% | 40.2% |
-| riesgo 1.0% | 623 | 45.3% | 0.18 | 10.5% | -23.1% | 69.6% |
-| riesgo 2.0% | 606 | 43.9% | 0.18 | 12.0% | -30.1% | 78.4% |
+| efectivo en SPY: sí | 623 | 44.9% | 0.17 | 9.0% | -40.8% | 69.5% |
+| riesgo 0.5% | 625 | 45.0% | 0.18 | 5.8% | -12.5% | 40.2% |
+| riesgo 1.0% | 623 | 44.9% | 0.17 | 10.4% | -23.1% | 69.6% |
+| riesgo 2.0% | 606 | 43.6% | 0.18 | 11.8% | -30.1% | 78.4% |
 
 ## Resultado por motivo de salida
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 4 | 0.90 |
+| FIN PERÍODO | 3 | 1.08 |
 | OBJETIVO | 14 | 3.93 |
 | OBJETIVO (gap) | 7 | 4.68 |
-| STOP | 209 | -1.07 |
+| STOP | 210 | -1.07 |
 | STOP (gap) | 68 | -1.33 |
 | TIEMPO | 321 | 1.03 |
 
@@ -63,9 +63,9 @@ Período: 2017-07-13 → 2026-10-12 · Tickers con datos: 50 de 50 · Capital in
 | China | 12 | 42% | 0.38 | 955 |
 | Consumo | 131 | 38% | 0.04 | -1,007 |
 | Energía / Industria | 61 | 43% | 0.11 | 1,578 |
-| Financieras | 85 | 47% | 0.12 | 1,449 |
-| Latam / Brasil | 85 | 45% | 0.21 | 1,994 |
-| Salud | 68 | 54% | 0.29 | 2,434 |
+| Financieras | 85 | 46% | 0.12 | 1,502 |
+| Latam / Brasil | 85 | 45% | 0.21 | 1,974 |
+| Salud | 68 | 53% | 0.27 | 2,149 |
 | Tecnología | 181 | 48% | 0.25 | 7,788 |
 
 ## Últimas 10 operaciones
@@ -78,7 +78,7 @@ Período: 2017-07-13 → 2026-10-12 · Tickers con datos: 50 de 50 · Capital in
 | LLY      | Salud               | 2026-09-10      |         1126.08  |      1057.46   |  1400.56   |     3.5659 | 2026-10-08     |       1169.6    | TIEMPO          |     20 |    142.91 |         0.58 |
 | PYPL     | Tecnología          | 2026-09-11      |           53.31  |        49.3384 |    69.1964 |    61.6487 | 2026-10-09     |         55.53   | TIEMPO          |     20 |    126.8  |         0.52 |
 | GOOGL    | Tecnología          | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-10-12     |        352.72   | TIEMPO          |     20 |    128.36 |         0.52 |
-| JPM      | Financieras         | 2026-10-02      |          332.342 |       319.141  |   385.145  |    18.152  | 2026-10-12     |        334.3    | FIN PERÍODO     |      6 |     17.39 |         0.07 |
-| V        | Financieras         | 2026-10-02      |          360.21  |       348.572  |   406.76   |    15.5379 | 2026-10-12     |        389.27   | FIN PERÍODO     |      6 |    434.06 |         2.4  |
-| JNJ      | Salud               | 2026-10-08      |          256.22  |       246.116  |   296.637  |    16.229  | 2026-10-12     |        263.73   | FIN PERÍODO     |      2 |    109.22 |         0.67 |
-| VIST     | Latam / Brasil      | 2026-10-09      |           66.82  |        61.6894 |    87.3422 |    48.67   | 2026-10-12     |         69.42   | FIN PERÍODO     |      1 |    116.6  |         0.47 |
+| JNJ      | Salud               | 2026-10-08      |          256.22  |       246.116  |   296.637  |    16.229  | 2026-10-13     |        246.116  | STOP            |      3 |   -176.21 |        -1.07 |
+| JPM      | Financieras         | 2026-10-02      |          332.342 |       319.141  |   385.145  |    18.152  | 2026-10-13     |        331.43   | FIN PERÍODO     |      7 |    -34.63 |        -0.14 |
+| V        | Financieras         | 2026-10-02      |          360.21  |       348.572  |   406.76   |    15.5379 | 2026-10-13     |        396.06   | FIN PERÍODO     |      7 |    539.41 |         2.98 |
+| VIST     | Latam / Brasil      | 2026-10-09      |           66.82  |        61.6894 |    87.3422 |    48.67   | 2026-10-13     |         69.02   | FIN PERÍODO     |      2 |     97.16 |         0.39 |
