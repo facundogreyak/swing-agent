@@ -3,185 +3,185 @@ Parámetros registrados -> versión 13e0e78b (v4.1-retroceso-4R)
 
 Descargando precios...
   SPY        OK         5 velas
-  SPY.BA     OK         1142 velas
+  SPY.BA     OK         1143 velas
   AAPL       OK         5 velas
-  AAPL.BA    OK         4 velas
+  AAPL.BA    OK         5 velas
   MSFT       OK         5 velas
-  MSFT.BA    OK         4 velas
+  MSFT.BA    OK         5 velas
   GOOGL      OK         5 velas
-  GOOGL.BA   OK         4 velas
+  GOOGL.BA   OK         5 velas
   AMZN       OK         5 velas
-  AMZN.BA    OK         1608 velas
+  AMZN.BA    OK         1609 velas
   NVDA       OK         5 velas
-  NVDA.BA    OK         1608 velas
+  NVDA.BA    OK         1609 velas
   META       OK         5 velas
   META.BA    OK         1 velas
   TSLA       OK         5 velas
-  TSLA.BA    OK         1608 velas
+  TSLA.BA    OK         1609 velas
   AVGO       OK         5 velas
   AVGO.BA    OK         1 velas
   ORCL       OK         5 velas
-  ORCL.BA    OK         4 velas
+  ORCL.BA    OK         5 velas
   ADBE       OK         5 velas
-  ADBE.BA    OK         1608 velas
+  ADBE.BA    OK         1609 velas
   CRM        OK         5 velas
-  CRM.BA     OK         1607 velas
+  CRM.BA     OK         1608 velas
   AMD        OK         5 velas
-  AMD.BA     OK         1454 velas
+  AMD.BA     OK         1455 velas
   INTC       OK         5 velas
-  INTC.BA    OK         4 velas
+  INTC.BA    OK         5 velas
   QCOM       OK         5 velas
-  QCOM.BA    OK         4 velas
+  QCOM.BA    OK         5 velas
   CSCO       OK         5 velas
-  CSCO.BA    OK         4 velas
+  CSCO.BA    OK         5 velas
   IBM        OK         5 velas
-  IBM.BA     OK         4 velas
+  IBM.BA     OK         5 velas
   TSM        OK         5 velas
-  TSM.BA     OK         4 velas
+  TSM.BA     OK         5 velas
   NFLX       OK         5 velas
-  NFLX.BA    OK         1608 velas
+  NFLX.BA    OK         1609 velas
   UBER       OK         1870 velas
-  UBER.BA    OK         1032 velas
+  UBER.BA    OK         1033 velas
   PYPL       OK         5 velas
-  PYPL.BA    OK         1835 velas
+  PYPL.BA    OK         1836 velas
   MELI       OK         5 velas
-  MELI.BA    OK         4 velas
+  MELI.BA    OK         5 velas
   GLOB       OK         5 velas
-  GLOB.BA    OK         1063 velas
+  GLOB.BA    OK         1064 velas
   NU         OK         1218 velas
-  NU.BA      OK         630 velas
+  NU.BA      OK         631 velas
   VIST       OK         1817 velas
   VIST.BA    OK         1 velas
   PBR        OK         5 velas
   PBR.BA     OK         1 velas
   VALE       OK         5 velas
-  VALE.BA    OK         4 velas
+  VALE.BA    OK         5 velas
   JPM        OK         5 velas
-  JPM.BA     OK         4 velas
+  JPM.BA     OK         5 velas
   BAC        OK         5 velas
   BAC.BA     OK         1 velas
   C          OK         5 velas
-  C.BA       OK         4 velas
+  C.BA       OK         5 velas
   V          OK         5 velas
-  V.BA       OK         1533 velas
+  V.BA       OK         1534 velas
   BRK-B      OK         5 velas
-  BRKB.BA    OK         1371 velas
+  BRKB.BA    OK         1372 velas
   COIN       OK         1385 velas
   COIN.BA    OK         1 velas
   MSTR       OK         5 velas
-  MSTR.BA    OK         1033 velas
+  MSTR.BA    OK         1034 velas
   KO         OK         5 velas
-  KO.BA      OK         4 velas
+  KO.BA      OK         5 velas
   PEP        OK         5 velas
-  PEP.BA     OK         4 velas
+  PEP.BA     OK         5 velas
   PG         OK         5 velas
-  PG.BA      OK         4 velas
+  PG.BA      OK         5 velas
   MCD        OK         5 velas
-  MCD.BA     OK         4 velas
+  MCD.BA     OK         5 velas
   WMT        OK         5 velas
-  WMT.BA     OK         4 velas
+  WMT.BA     OK         5 velas
   HD         OK         5 velas
-  HD.BA      OK         4 velas
+  HD.BA      OK         5 velas
   NKE        OK         5 velas
-  NKE.BA     OK         4 velas
+  NKE.BA     OK         5 velas
   DIS        OK         5 velas
-  DISN.BA    OK         4 velas
+  DISN.BA    OK         5 velas
   JNJ        OK         5 velas
-  JNJ.BA     OK         4 velas
+  JNJ.BA     OK         5 velas
   PFE        OK         5 velas
-  PFE.BA     OK         4 velas
+  PFE.BA     OK         5 velas
   MRK        OK         5 velas
-  MRK.BA     OK         4 velas
+  MRK.BA     OK         5 velas
   LLY        OK         5 velas
-  LLY.BA     OK         4 velas
+  LLY.BA     OK         5 velas
   XOM        OK         5 velas
-  XOM.BA     OK         4 velas
+  XOM.BA     OK         5 velas
   CVX        OK         5 velas
-  CVX.BA     OK         4 velas
+  CVX.BA     OK         5 velas
   CAT        OK         5 velas
-  CAT.BA     OK         4 velas
+  CAT.BA     OK         5 velas
   BA         OK         5 velas
-  BA.BA      OK         4 velas
+  BA.BA      OK         5 velas
   BABA       OK         5 velas
-  BABA.BA    OK         1608 velas
+  BABA.BA    OK         1609 velas
   AAL        OK         5 velas
   AAL.BA     OK         1 velas
   ABBV       OK         5 velas
-  ABBV.BA    OK         1058 velas
+  ABBV.BA    OK         1059 velas
   ABNB       OK         1469 velas
-  ABNB.BA    OK         1033 velas
+  ABNB.BA    OK         1034 velas
   ABT        OK         5 velas
-  ABT.BA     OK         4 velas
+  ABT.BA     OK         5 velas
   ACN        OK         5 velas
-  ACN.BA     OK         618 velas
+  ACN.BA     OK         619 velas
   ADI        OK         5 velas
-  ADI.BA     OK         4 velas
+  ADI.BA     OK         5 velas
   ADP        OK         5 velas
-  ADP.BA     OK         4 velas
+  ADP.BA     OK         5 velas
   AEM        OK         5 velas
-  AEM.BA     OK         1442 velas
+  AEM.BA     OK         1443 velas
   AIG        OK         5 velas
-  AIG.BA     OK         4 velas
+  AIG.BA     OK         5 velas
   AMAT       OK         5 velas
-  AMAT.BA    OK         4 velas
+  AMAT.BA    OK         5 velas
   AMGN       OK         5 velas
-  AMGN.BA    OK         4 velas
+  AMGN.BA    OK         5 velas
   AMX        OK         5 velas
-  AMX.BA     OK         4 velas
+  AMX.BA     OK         5 velas
   ANET       OK         5 velas
-  ANET.BA    OK         106 velas
+  ANET.BA    OK         107 velas
   ARCO       OK         5 velas
-  ARCO.BA    OK         1608 velas
+  ARCO.BA    OK         1609 velas
   ARM        OK         776 velas
   ARM.BA     OK         1 velas
   ASML       OK         5 velas
-  ASML.BA    OK         348 velas
+  ASML.BA    OK         349 velas
   AXP        OK         5 velas
-  AXP.BA     OK         4 velas
+  AXP.BA     OK         5 velas
   AZN        OK         5 velas
-  AZN.BA     OK         4 velas
+  AZN.BA     OK         5 velas
   B          OK         5 velas
-  B.BA       OK         353 velas
+  B.BA       OK         354 velas
   BBD        OK         5 velas
-  BBD.BA     OK         4 velas
+  BBD.BA     OK         5 velas
   BHP        OK         5 velas
-  BHP.BA     OK         4 velas
+  BHP.BA     OK         5 velas
   BIDU       OK         5 velas
-  BIDU.BA    OK         1607 velas
+  BIDU.BA    OK         1608 velas
   BKNG       OK         5 velas
-  BKNG.BA    OK         576 velas
+  BKNG.BA    OK         577 velas
   BKR        OK         5 velas
   BKR.BA     OK         1 velas
   BMY        OK         5 velas
-  BMY.BA     OK         4 velas
+  BMY.BA     OK         5 velas
   BP         OK         5 velas
-  BP.BA      OK         4 velas
+  BP.BA      OK         5 velas
   BX         OK         5 velas
-  BX.BA      OK         182 velas
+  BX.BA      OK         183 velas
   CAAP       OK         2189 velas
   CAAP.BA    OK         1 velas
   CAH        OK         5 velas
-  CAH.BA     OK         4 velas
+  CAH.BA     OK         5 velas
   CCL        OK         5 velas
-  CCL.BA     OK         592 velas
+  CCL.BA     OK         593 velas
   CEG        OK         1191 velas
-  CEG.BA     OK         350 velas
+  CEG.BA     OK         351 velas
   CL         OK         5 velas
-  CL.BA      OK         4 velas
+  CL.BA      OK         5 velas
   COP        OK         5 velas
-  COP.BA     OK         105 velas
+  COP.BA     OK         106 velas
   COST       OK         5 velas
-  COST.BA    OK         4 velas
+  COST.BA    OK         5 velas
   CRWD       OK         1848 velas
-  CRWD.BA    OK         106 velas
+  CRWD.BA    OK         107 velas
   CVS        OK         5 velas
-  CVS.BA     OK         619 velas
+  CVS.BA     OK         620 velas
   DAL        OK         5 velas
-  DAL.BA     OK         616 velas
+  DAL.BA     OK         617 velas
   DE         OK         5 velas
-  DE.BA      OK         4 velas
+  DE.BA      OK         5 velas
   DELL       OK         5 velas
-  DELL.BA    OK         29 velas
+  DELL.BA    OK         30 velas
   DHR        OK         5 velas
   DHR.BA     OK         1 velas
   DOCU       OK         2130 velas
@@ -189,584 +189,586 @@ Descargando precios...
   EA         OK         1 velas
   EA.BA      OK         1 velas
   EBAY       OK         5 velas
-  EBAY.BA    OK         4 velas
+  EBAY.BA    OK         5 velas
   ETSY       OK         5 velas
   ETSY.BA    OK         1 velas
   F          OK         5 velas
-  F.BA       OK         1033 velas
+  F.BA       OK         1034 velas
   FCX        OK         5 velas
-  FCX.BA     OK         4 velas
+  FCX.BA     OK         5 velas
   FDX        OK         5 velas
-  FDX.BA     OK         4 velas
+  FDX.BA     OK         5 velas
   FSLR       OK         5 velas
-  FSLR.BA    OK         4 velas
+  FSLR.BA    OK         5 velas
   GE         OK         5 velas
-  GE.BA      OK         4 velas
+  GE.BA      OK         5 velas
   GEV        OK         642 velas
-  GEV.BA     OK         32 velas
+  GEV.BA     OK         33 velas
   GGB        OK         5 velas
-  GGB.BA     OK         1607 velas
+  GGB.BA     OK         1608 velas
   GILD       OK         5 velas
-  GILD.BA    OK         1608 velas
+  GILD.BA    OK         1609 velas
   GLW        OK         5 velas
-  GLW.BA     OK         4 velas
+  GLW.BA     OK         5 velas
   GM         OK         5 velas
   GM.BA      OK         1 velas
   GS         OK         5 velas
-  GS.BA      OK         1837 velas
+  GS.BA      OK         1838 velas
   HAL        OK         5 velas
   HAL.BA     OK         1 velas
   HMC        OK         5 velas
-  HMC.BA     OK         4 velas
+  HMC.BA     OK         5 velas
   HON        OK         5 velas
-  HON.BA     OK         4 velas
+  HON.BA     OK         5 velas
   HOOD       OK         1311 velas
-  HOOD.BA    OK         228 velas
+  HOOD.BA    OK         229 velas
   HPQ        OK         5 velas
-  HPQ.BA     OK         4 velas
+  HPQ.BA     OK         5 velas
   HSBC       OK         5 velas
-  HSBC.BA    OK         4 velas
+  HSBC.BA    OK         5 velas
   IBKR       OK         5 velas
-  IBKR.BA    OK         30 velas
+  IBKR.BA    OK         31 velas
   INFY       OK         5 velas
-  INFY.BA    OK         4 velas
+  INFY.BA    OK         5 velas
   ISRG       OK         5 velas
   ISRG.BA    OK         1 velas
   ITUB       OK         5 velas
-  ITUB.BA    OK         1776 velas
+  ITUB.BA    OK         1777 velas
   JD         OK         5 velas
-  JD.BA      OK         1607 velas
+  JD.BA      OK         1608 velas
   KLAC       OK         5 velas
-  KLAC.BA    OK         32 velas
+  KLAC.BA    OK         33 velas
   KMB        OK         5 velas
-  KMB.BA     OK         4 velas
+  KMB.BA     OK         5 velas
   LIN        OK         5 velas
-  LIN.BA     OK         30 velas
+  LIN.BA     OK         31 velas
   LMT        OK         5 velas
-  LMT.BA     OK         4 velas
+  LMT.BA     OK         5 velas
   LRCX       OK         5 velas
   LRCX.BA    OK         1 velas
   LVS        OK         5 velas
-  LVS.BA     OK         4 velas
+  LVS.BA     OK         5 velas
   MA         OK         5 velas
   MA.BA      OK         1 velas
-  MDLZ       OK         5 velas$TXR: possibly delisted; no price data found  (1d 2016-10-18 -> 2026-10-16)
+  MDLZ       OK         5 velas$SCHW.BA: possibly delisted; no timezone found
 
 1 Failed download:
-['TXR']: possibly delisted; no price data found  (1d 2016-10-18 -> 2026-10-16)
+['SCHW.BA']: possibly delisted; no timezone found
+$TXR: possibly delisted; no price data found  (1d 2016-10-22 -> 2026-10-19)
+
+1 Failed download:
+['TXR']: possibly delisted; no price data found  (1d 2016-10-22 -> 2026-10-19)
 $BA.C.BA: possibly delisted; no timezone found
 
 1 Failed download:
 ['BA.C.BA']: possibly delisted; no timezone found
 
-  MDLZ.BA    OK         618 velas
+  MDLZ.BA    OK         619 velas
   MDT        OK         5 velas
-  MDT.BA     OK         4 velas
+  MDT.BA     OK         5 velas
   MMM        OK         5 velas
-  MMM.BA     OK         4 velas
+  MMM.BA     OK         5 velas
   MO         OK         5 velas
-  MO.BA      OK         4 velas
+  MO.BA      OK         5 velas
   MRNA       OK         1975 velas
-  MRNA.BA    OK         600 velas
+  MRNA.BA    OK         601 velas
   MRVL       OK         5 velas
-  MRVL.BA    OK         631 velas
+  MRVL.BA    OK         632 velas
   MS         OK         5 velas
-  MS.BA      OK         32 velas
+  MS.BA      OK         33 velas
   MU         OK         5 velas
-  MU.BA      OK         1029 velas
+  MU.BA      OK         1030 velas
   NEE        OK         5 velas
-  NEE.BA     OK         105 velas
+  NEE.BA     OK         106 velas
   NEM        OK         5 velas
-  NEM.BA     OK         4 velas
+  NEM.BA     OK         5 velas
   NIO        OK         2035 velas
   NIO.BA     OK         1 velas
   NOW        OK         5 velas
-  NOW.BA     OK         345 velas
+  NOW.BA     OK         346 velas
   NTES       OK         5 velas
   NTES.BA    OK         1 velas
   NUE        OK         5 velas
-  NUE.BA     OK         4 velas
+  NUE.BA     OK         5 velas
   NVO        OK         5 velas
-  NVO.BA     OK         102 velas
+  NVO.BA     OK         103 velas
   NVS        OK         5 velas
-  NVS.BA     OK         4 velas
+  NVS.BA     OK         5 velas
   OXY        OK         5 velas
-  OXY.BA     OK         1033 velas
+  OXY.BA     OK         1034 velas
   PANW       OK         5 velas
-  PANW.BA    OK         1028 velas
+  PANW.BA    OK         1029 velas
   PAAS       OK         5 velas
-  PAAS.BA    OK         1372 velas
+  PAAS.BA    OK         1373 velas
   PAGS       OK         2195 velas
   PAGS.BA    OK         1 velas
   PDD        OK         2068 velas
-  PDD.BA     OK         349 velas
+  PDD.BA     OK         350 velas
   PINS       OK         1885 velas
-  PINS.BA    OK         528 velas
+  PINS.BA    OK         529 velas
   PLTR       OK         1519 velas
-  PLTR.BA    OK         627 velas
+  PLTR.BA    OK         628 velas
   PM         OK         5 velas
-  PM.BA      OK         592 velas
+  PM.BA      OK         593 velas
   RACE       OK         5 velas
-  RACE.BA    OK         618 velas
+  RACE.BA    OK         619 velas
   RBLX       OK         1409 velas
-  RBLX.BA    OK         1033 velas
+  RBLX.BA    OK         1034 velas
   RIO        OK         5 velas
-  RIO.BA     OK         4 velas
+  RIO.BA     OK         5 velas
   ROKU       OK         2275 velas
-  ROKU.BA    OK         617 velas
+  ROKU.BA    OK         618 velas
   RTX        OK         5 velas
-  RTX.BA     OK         4 velas
+  RTX.BA     OK         5 velas
   SAP        OK         5 velas
-  SAP.BA     OK         4 velas
+  SAP.BA     OK         5 velas
   SBUX       OK         5 velas
-  SBUX.BA    OK         4 velas
+  SBUX.BA    OK         5 velas
   SCCO       OK         5 velas
-  SCCO.BA    OK         4 velas
+  SCCO.BA    OK         5 velas
   SCHW       OK         5 velas
-  SCHW.BA    OK         1 velas
+  SCHW.BA    SIN DATOS  0 velas
   SE         OK         2259 velas
   SE.BA      OK         1 velas
   SHEL       OK         5 velas
-  SHEL.BA    OK         4 velas
+  SHEL.BA    OK         5 velas
   SHOP       OK         5 velas
   SHOP.BA    OK         1 velas
   SLB        OK         5 velas
-  SLB.BA     OK         4 velas
+  SLB.BA     OK         5 velas
   SNAP       OK         2421 velas
-  SNAP.BA    OK         1633 velas
+  SNAP.BA    OK         1634 velas
   SNOW       OK         1529 velas
   SNOW.BA    OK         1 velas
   SONY       OK         5 velas
-  SONY.BA    OK         4 velas
+  SONY.BA    OK         5 velas
   SPGI       OK         5 velas
-  SPGI.BA    OK         873 velas
+  SPGI.BA    OK         874 velas
   SPOT       OK         2148 velas
-  SPOT.BA    OK         1370 velas
+  SPOT.BA    OK         1371 velas
   STNE       OK         2004 velas
-  STNE.BA    OK         626 velas
+  STNE.BA    OK         627 velas
   T          OK         5 velas
-  T.BA       OK         4 velas
+  T.BA       OK         5 velas
   TGT        OK         5 velas
-  TGT.BA     OK         1583 velas
+  TGT.BA     OK         1584 velas
   TM         OK         5 velas
-  TM.BA      OK         4 velas
+  TM.BA      OK         5 velas
   TMO        OK         5 velas
-  TMO.BA     OK         1562 velas
+  TMO.BA     OK         1563 velas
   TMUS       OK         5 velas
-  TMUS.BA    OK         501 velas
+  TMUS.BA    OK         502 velas
   TTE        OK         5 velas
-  TTE.BA     OK         4 velas
+  TTE.BA     OK         5 velas
   TXN        OK         5 velas
-  TXN.BA     OK         4 velas
+  TXN.BA     OK         5 velas
   UAL        OK         5 velas
-  UAL.BA     OK         1018 velas
+  UAL.BA     OK         1019 velas
   UNH        OK         5 velas
   UNH.BA     OK         1 velas
   UNP        OK         5 velas
   UNP.BA     OK         1 velas
   UPST       OK         1465 velas
-  UPST.BA    OK         1033 velas
+  UPST.BA    OK         1034 velas
   USB        OK         5 velas
-  USB.BA     OK         4 velas
+  USB.BA     OK         5 velas
   VZ         OK         5 velas
-  VZ.BA      OK         4 velas
+  VZ.BA      OK         5 velas
   WFC        OK         5 velas
-  WFC.BA     OK         4 velas
+  WFC.BA     OK         5 velas
   XP         OK         1721 velas
   XP.BA      OK         1 velas
   XPEV       OK         1542 velas
-  XPEV.BA    OK         349 velas
+  XPEV.BA    OK         350 velas
   ZM         OK         1885 velas
   ZM.BA      OK         1 velas
   TEN        OK         5 velas
   TEN.BA     OK         1 velas
   TXR        SIN DATOS  0 velas
-  TXR.BA     OK         4 velas
+  TXR.BA     OK         5 velas
   BA.C.BA    SIN DATOS  0 velas
-  BA-C.BA    OK         4 velas
+  BA-C.BA    OK         5 velas
 
 Resumen de la base:
   AAL         2529 velas  2016-09-26 -> 2026-10-16
-  AAL.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  AAL.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   AAPL        2529 velas  2016-09-26 -> 2026-10-16
-  AAPL.BA     2458 velas  2016-09-26 -> 2026-10-16
+  AAPL.BA     2459 velas  2016-09-26 -> 2026-10-19
   ABBV        2529 velas  2016-09-26 -> 2026-10-16
-  ABBV.BA     1063 velas  2022-06-22 -> 2026-10-16
+  ABBV.BA     1064 velas  2022-06-22 -> 2026-10-19
   ABNB        1469 velas  2020-12-10 -> 2026-10-16
-  ABNB.BA     1033 velas  2022-07-26 -> 2026-10-16
+  ABNB.BA     1034 velas  2022-07-26 -> 2026-10-19
   ABT         2529 velas  2016-09-26 -> 2026-10-16
-  ABT.BA      2458 velas  2016-09-27 -> 2026-10-16
+  ABT.BA      2459 velas  2016-09-27 -> 2026-10-19
   ACN         2529 velas  2016-09-26 -> 2026-10-16
-  ACN.BA       618 velas  2024-04-10 -> 2026-10-16
+  ACN.BA       619 velas  2024-04-10 -> 2026-10-19
   ADBE        2529 velas  2016-09-26 -> 2026-10-16
-  ADBE.BA     1613 velas  2020-03-12 -> 2026-10-16
+  ADBE.BA     1614 velas  2020-03-12 -> 2026-10-19
   ADI         2529 velas  2016-09-26 -> 2026-10-16
-  ADI.BA      2458 velas  2016-09-27 -> 2026-10-16
+  ADI.BA      2459 velas  2016-09-27 -> 2026-10-19
   ADP         2529 velas  2016-09-26 -> 2026-10-16
-  ADP.BA      2458 velas  2016-09-27 -> 2026-10-16
+  ADP.BA      2459 velas  2016-09-27 -> 2026-10-19
   AEM         2529 velas  2016-09-26 -> 2026-10-16
-  AEM.BA      1447 velas  2020-11-17 -> 2026-10-16
+  AEM.BA      1448 velas  2020-11-17 -> 2026-10-19
   AIG         2529 velas  2016-09-26 -> 2026-10-16
-  AIG.BA      2458 velas  2016-09-27 -> 2026-10-16
+  AIG.BA      2459 velas  2016-09-27 -> 2026-10-19
   AMAT        2529 velas  2016-09-26 -> 2026-10-16
-  AMAT.BA     2458 velas  2016-09-27 -> 2026-10-16
+  AMAT.BA     2459 velas  2016-09-27 -> 2026-10-19
   AMD         2529 velas  2016-09-26 -> 2026-10-16
-  AMD.BA      1459 velas  2020-10-30 -> 2026-10-16
+  AMD.BA      1460 velas  2020-10-30 -> 2026-10-19
   AMGN        2529 velas  2016-09-26 -> 2026-10-16
-  AMGN.BA     2458 velas  2016-09-27 -> 2026-10-16
+  AMGN.BA     2459 velas  2016-09-27 -> 2026-10-19
   AMX         2529 velas  2016-09-26 -> 2026-10-16
-  AMX.BA      2457 velas  2016-09-27 -> 2026-10-16
+  AMX.BA      2458 velas  2016-09-27 -> 2026-10-19
   AMZN        2529 velas  2016-09-26 -> 2026-10-16
-  AMZN.BA     1613 velas  2020-03-12 -> 2026-10-16
+  AMZN.BA     1614 velas  2020-03-12 -> 2026-10-19
   ANET        2529 velas  2016-09-26 -> 2026-10-16
-  ANET.BA      106 velas  2026-05-15 -> 2026-10-16  <-- revisar
+  ANET.BA      107 velas  2026-05-15 -> 2026-10-19  <-- revisar
   ARCO        2529 velas  2016-09-26 -> 2026-10-16
-  ARCO.BA     1613 velas  2020-03-12 -> 2026-10-16
+  ARCO.BA     1614 velas  2020-03-12 -> 2026-10-19
   ARM          776 velas  2023-09-14 -> 2026-10-16
-  ARM.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  ARM.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   ASML        2529 velas  2016-09-26 -> 2026-10-16
-  ASML.BA      348 velas  2025-05-19 -> 2026-10-16
+  ASML.BA      349 velas  2025-05-19 -> 2026-10-19
   AVGO        2529 velas  2016-09-26 -> 2026-10-16
-  AVGO.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  AVGO.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   AXP         2529 velas  2016-09-26 -> 2026-10-16
-  AXP.BA      2458 velas  2016-09-27 -> 2026-10-16
+  AXP.BA      2459 velas  2016-09-27 -> 2026-10-19
   AZN         2529 velas  2016-09-26 -> 2026-10-16
-  AZN.BA      2457 velas  2016-09-27 -> 2026-10-16
+  AZN.BA      2458 velas  2016-09-27 -> 2026-10-19
   B           2529 velas  2016-09-26 -> 2026-10-16
-  B.BA         353 velas  2025-05-13 -> 2026-10-16
+  B.BA         354 velas  2025-05-13 -> 2026-10-19
   BA          2529 velas  2016-09-26 -> 2026-10-16
-  BA-C.BA     2458 velas  2016-09-27 -> 2026-10-16
-  BA.BA       2459 velas  2016-09-26 -> 2026-10-16
+  BA-C.BA     2459 velas  2016-09-27 -> 2026-10-19
+  BA.BA       2460 velas  2016-09-26 -> 2026-10-19
   BABA        2529 velas  2016-09-26 -> 2026-10-16
-  BABA.BA     1613 velas  2020-03-12 -> 2026-10-16
+  BABA.BA     1614 velas  2020-03-12 -> 2026-10-19
   BAC         2529 velas  2016-09-26 -> 2026-10-16
   BAC.BA         5 velas  2026-09-22 -> 2026-10-13  <-- revisar
   BBD         2529 velas  2016-09-26 -> 2026-10-16
-  BBD.BA      2458 velas  2016-09-27 -> 2026-10-16
+  BBD.BA      2459 velas  2016-09-27 -> 2026-10-19
   BHP         2529 velas  2016-09-26 -> 2026-10-16
-  BHP.BA      2458 velas  2016-09-27 -> 2026-10-16
+  BHP.BA      2459 velas  2016-09-27 -> 2026-10-19
   BIDU        2529 velas  2016-09-26 -> 2026-10-16
-  BIDU.BA     1612 velas  2020-03-13 -> 2026-10-16
+  BIDU.BA     1613 velas  2020-03-13 -> 2026-10-19
   BKNG        2529 velas  2016-09-26 -> 2026-10-16
-  BKNG.BA      576 velas  2024-04-22 -> 2026-10-16
+  BKNG.BA      577 velas  2024-04-22 -> 2026-10-19
   BKR         2529 velas  2016-09-26 -> 2026-10-16
-  BKR.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  BKR.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   BMY         2529 velas  2016-09-26 -> 2026-10-16
-  BMY.BA      2458 velas  2016-09-27 -> 2026-10-16
+  BMY.BA      2459 velas  2016-09-27 -> 2026-10-19
   BP          2529 velas  2016-09-26 -> 2026-10-16
-  BP.BA       2458 velas  2016-09-27 -> 2026-10-16
+  BP.BA       2459 velas  2016-09-27 -> 2026-10-19
   BRK-B       2529 velas  2016-09-26 -> 2026-10-16
-  BRKB.BA     1376 velas  2021-03-09 -> 2026-10-16
+  BRKB.BA     1377 velas  2021-03-09 -> 2026-10-19
   BX          2529 velas  2016-09-26 -> 2026-10-16
-  BX.BA        182 velas  2026-01-20 -> 2026-10-16  <-- revisar
+  BX.BA        183 velas  2026-01-20 -> 2026-10-19  <-- revisar
   C           2529 velas  2016-09-26 -> 2026-10-16
-  C.BA        2459 velas  2016-09-26 -> 2026-10-16
+  C.BA        2460 velas  2016-09-26 -> 2026-10-19
   CAAP        2189 velas  2018-02-01 -> 2026-10-16
-  CAAP.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  CAAP.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   CAH         2529 velas  2016-09-26 -> 2026-10-16
-  CAH.BA      2458 velas  2016-09-27 -> 2026-10-16
+  CAH.BA      2459 velas  2016-09-27 -> 2026-10-19
   CAT         2529 velas  2016-09-26 -> 2026-10-16
-  CAT.BA      2459 velas  2016-09-26 -> 2026-10-16
+  CAT.BA      2460 velas  2016-09-26 -> 2026-10-19
   CCL         2529 velas  2016-09-26 -> 2026-10-16
-  CCL.BA       592 velas  2024-04-17 -> 2026-10-16
+  CCL.BA       593 velas  2024-04-17 -> 2026-10-19
   CEG         1191 velas  2022-01-19 -> 2026-10-16
-  CEG.BA       350 velas  2025-05-16 -> 2026-10-16
+  CEG.BA       351 velas  2025-05-16 -> 2026-10-19
   CL          2529 velas  2016-09-26 -> 2026-10-16
-  CL.BA       2458 velas  2016-09-27 -> 2026-10-16
+  CL.BA       2459 velas  2016-09-27 -> 2026-10-19
   COIN        1385 velas  2021-04-14 -> 2026-10-16
-  COIN.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  COIN.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   COP         2529 velas  2016-09-26 -> 2026-10-16
-  COP.BA       105 velas  2026-05-18 -> 2026-10-16  <-- revisar
+  COP.BA       106 velas  2026-05-18 -> 2026-10-19  <-- revisar
   COST        2529 velas  2016-09-26 -> 2026-10-16
-  COST.BA     2458 velas  2016-09-27 -> 2026-10-16
+  COST.BA     2459 velas  2016-09-27 -> 2026-10-19
   CRM         2529 velas  2016-09-26 -> 2026-10-16
-  CRM.BA      1612 velas  2020-03-13 -> 2026-10-16
+  CRM.BA      1613 velas  2020-03-13 -> 2026-10-19
   CRWD        1848 velas  2019-06-12 -> 2026-10-16
-  CRWD.BA      106 velas  2026-05-15 -> 2026-10-16  <-- revisar
+  CRWD.BA      107 velas  2026-05-15 -> 2026-10-19  <-- revisar
   CSCO        2529 velas  2016-09-26 -> 2026-10-16
-  CSCO.BA     2458 velas  2016-09-26 -> 2026-10-16
+  CSCO.BA     2459 velas  2016-09-26 -> 2026-10-19
   CVS         2529 velas  2016-09-26 -> 2026-10-16
-  CVS.BA       619 velas  2024-04-10 -> 2026-10-16
+  CVS.BA       620 velas  2024-04-10 -> 2026-10-19
   CVX         2529 velas  2016-09-26 -> 2026-10-16
-  CVX.BA      2459 velas  2016-09-26 -> 2026-10-16
+  CVX.BA      2460 velas  2016-09-26 -> 2026-10-19
   DAL         2529 velas  2016-09-26 -> 2026-10-16
-  DAL.BA       616 velas  2024-04-10 -> 2026-10-16
+  DAL.BA       617 velas  2024-04-10 -> 2026-10-19
   DE          2529 velas  2016-09-26 -> 2026-10-16
-  DE.BA       2458 velas  2016-09-27 -> 2026-10-16
+  DE.BA       2459 velas  2016-09-27 -> 2026-10-19
   DELL        2529 velas  2016-09-26 -> 2026-10-16
-  DELL.BA       29 velas  2026-09-07 -> 2026-10-16  <-- revisar
+  DELL.BA       30 velas  2026-09-07 -> 2026-10-19  <-- revisar
   DHR         2529 velas  2016-09-26 -> 2026-10-16
-  DHR.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  DHR.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   DIS         2529 velas  2016-09-26 -> 2026-10-16
-  DISN.BA     2459 velas  2016-09-26 -> 2026-10-16
+  DISN.BA     2460 velas  2016-09-26 -> 2026-10-19
   DOCU        2130 velas  2018-04-27 -> 2026-10-16
-  DOCU.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  DOCU.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   EA             1 velas  2026-08-04 -> 2026-08-04  <-- revisar
   EA.BA          1 velas  2026-08-03 -> 2026-08-03  <-- revisar
   EBAY        2529 velas  2016-09-26 -> 2026-10-16
-  EBAY.BA     2458 velas  2016-09-27 -> 2026-10-16
+  EBAY.BA     2459 velas  2016-09-27 -> 2026-10-19
   ETSY        2529 velas  2016-09-26 -> 2026-10-16
-  ETSY.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  ETSY.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   F           2529 velas  2016-09-26 -> 2026-10-16
-  F.BA        1033 velas  2022-07-26 -> 2026-10-16
+  F.BA        1034 velas  2022-07-26 -> 2026-10-19
   FCX         2529 velas  2016-09-26 -> 2026-10-16
-  FCX.BA      2458 velas  2016-09-27 -> 2026-10-16
+  FCX.BA      2459 velas  2016-09-27 -> 2026-10-19
   FDX         2529 velas  2016-09-26 -> 2026-10-16
-  FDX.BA      2458 velas  2016-09-27 -> 2026-10-16
+  FDX.BA      2459 velas  2016-09-27 -> 2026-10-19
   FSLR        2529 velas  2016-09-26 -> 2026-10-16
-  FSLR.BA     2458 velas  2016-09-27 -> 2026-10-16
+  FSLR.BA     2459 velas  2016-09-27 -> 2026-10-19
   GE          2529 velas  2016-09-26 -> 2026-10-16
-  GE.BA       2458 velas  2016-09-27 -> 2026-10-16
+  GE.BA       2459 velas  2016-09-27 -> 2026-10-19
   GEV          642 velas  2024-03-27 -> 2026-10-16
-  GEV.BA        32 velas  2026-09-02 -> 2026-10-16  <-- revisar
+  GEV.BA        33 velas  2026-09-02 -> 2026-10-19  <-- revisar
   GGB         2529 velas  2016-09-26 -> 2026-10-16
-  GGB.BA      1612 velas  2020-03-13 -> 2026-10-16
+  GGB.BA      1613 velas  2020-03-13 -> 2026-10-19
   GILD        2529 velas  2016-09-26 -> 2026-10-16
-  GILD.BA     1613 velas  2020-03-12 -> 2026-10-16
+  GILD.BA     1614 velas  2020-03-12 -> 2026-10-19
   GLOB        2529 velas  2016-09-26 -> 2026-10-16
-  GLOB.BA     1068 velas  2022-06-13 -> 2026-10-16
+  GLOB.BA     1069 velas  2022-06-13 -> 2026-10-19
   GLW         2529 velas  2016-09-26 -> 2026-10-16
-  GLW.BA      2458 velas  2016-09-27 -> 2026-10-16
+  GLW.BA      2459 velas  2016-09-27 -> 2026-10-19
   GM          2529 velas  2016-09-26 -> 2026-10-16
-  GM.BA         16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  GM.BA         17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   GOOGL       2529 velas  2016-09-26 -> 2026-10-16
-  GOOGL.BA    2459 velas  2016-09-26 -> 2026-10-16
+  GOOGL.BA    2460 velas  2016-09-26 -> 2026-10-19
   GS          2529 velas  2016-09-26 -> 2026-10-16
-  GS.BA       1842 velas  2019-04-04 -> 2026-10-16
+  GS.BA       1843 velas  2019-04-04 -> 2026-10-19
   HAL         2529 velas  2016-09-26 -> 2026-10-16
-  HAL.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  HAL.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   HD          2529 velas  2016-09-26 -> 2026-10-16
-  HD.BA       2459 velas  2016-09-26 -> 2026-10-16
+  HD.BA       2460 velas  2016-09-26 -> 2026-10-19
   HMC         2529 velas  2016-09-26 -> 2026-10-16
-  HMC.BA      2457 velas  2016-09-27 -> 2026-10-16
+  HMC.BA      2458 velas  2016-09-27 -> 2026-10-19
   HON         2529 velas  2016-09-26 -> 2026-10-16
-  HON.BA      2458 velas  2016-09-27 -> 2026-10-16
+  HON.BA      2459 velas  2016-09-27 -> 2026-10-19
   HOOD        1311 velas  2021-07-29 -> 2026-10-16
-  HOOD.BA      228 velas  2025-11-11 -> 2026-10-16
+  HOOD.BA      229 velas  2025-11-11 -> 2026-10-19
   HPQ         2529 velas  2016-09-26 -> 2026-10-16
-  HPQ.BA      2458 velas  2016-09-27 -> 2026-10-16
+  HPQ.BA      2459 velas  2016-09-27 -> 2026-10-19
   HSBC        2529 velas  2016-09-26 -> 2026-10-16
-  HSBC.BA     2457 velas  2016-09-27 -> 2026-10-16
+  HSBC.BA     2458 velas  2016-09-27 -> 2026-10-19
   IBKR        2529 velas  2016-09-26 -> 2026-10-16
-  IBKR.BA       30 velas  2026-09-04 -> 2026-10-16  <-- revisar
+  IBKR.BA       31 velas  2026-09-04 -> 2026-10-19  <-- revisar
   IBM         2529 velas  2016-09-26 -> 2026-10-16
-  IBM.BA      2459 velas  2016-09-26 -> 2026-10-16
+  IBM.BA      2460 velas  2016-09-26 -> 2026-10-19
   INFY        2529 velas  2016-09-26 -> 2026-10-16
-  INFY.BA     2458 velas  2016-09-27 -> 2026-10-16
+  INFY.BA     2459 velas  2016-09-27 -> 2026-10-19
   INTC        2529 velas  2016-09-26 -> 2026-10-16
-  INTC.BA     2459 velas  2016-09-26 -> 2026-10-16
+  INTC.BA     2460 velas  2016-09-26 -> 2026-10-19
   ISRG        2529 velas  2016-09-26 -> 2026-10-16
-  ISRG.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  ISRG.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   ITUB        2529 velas  2016-09-26 -> 2026-10-16
-  ITUB.BA     1781 velas  2019-07-05 -> 2026-10-16
+  ITUB.BA     1782 velas  2019-07-05 -> 2026-10-19
   JD          2529 velas  2016-09-26 -> 2026-10-16
-  JD.BA       1612 velas  2020-03-13 -> 2026-10-16
+  JD.BA       1613 velas  2020-03-13 -> 2026-10-19
   JNJ         2529 velas  2016-09-26 -> 2026-10-16
-  JNJ.BA      2459 velas  2016-09-26 -> 2026-10-16
+  JNJ.BA      2460 velas  2016-09-26 -> 2026-10-19
   JPM         2529 velas  2016-09-26 -> 2026-10-16
-  JPM.BA      2459 velas  2016-09-26 -> 2026-10-16
+  JPM.BA      2460 velas  2016-09-26 -> 2026-10-19
   KLAC        2529 velas  2016-09-26 -> 2026-10-16
-  KLAC.BA       32 velas  2026-09-02 -> 2026-10-16  <-- revisar
+  KLAC.BA       33 velas  2026-09-02 -> 2026-10-19  <-- revisar
   KMB         2529 velas  2016-09-26 -> 2026-10-16
-  KMB.BA      2458 velas  2016-09-27 -> 2026-10-16
+  KMB.BA      2459 velas  2016-09-27 -> 2026-10-19
   KO          2529 velas  2016-09-26 -> 2026-10-16
-  KO.BA       2459 velas  2016-09-26 -> 2026-10-16
+  KO.BA       2460 velas  2016-09-26 -> 2026-10-19
   LIN         2529 velas  2016-09-26 -> 2026-10-16
-  LIN.BA        30 velas  2026-09-04 -> 2026-10-16  <-- revisar
+  LIN.BA        31 velas  2026-09-04 -> 2026-10-19  <-- revisar
   LLY         2529 velas  2016-09-26 -> 2026-10-16
-  LLY.BA      2459 velas  2016-09-26 -> 2026-10-16
+  LLY.BA      2460 velas  2016-09-26 -> 2026-10-19
   LMT         2529 velas  2016-09-26 -> 2026-10-16
-  LMT.BA      2458 velas  2016-09-27 -> 2026-10-16
+  LMT.BA      2459 velas  2016-09-27 -> 2026-10-19
   LRCX        2529 velas  2016-09-26 -> 2026-10-16
-  LRCX.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  LRCX.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   LVS         2529 velas  2016-09-26 -> 2026-10-16
-  LVS.BA      2457 velas  2016-09-27 -> 2026-10-16
+  LVS.BA      2458 velas  2016-09-27 -> 2026-10-19
   MA          2529 velas  2016-09-26 -> 2026-10-16
-  MA.BA         16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  MA.BA         17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   MCD         2529 velas  2016-09-26 -> 2026-10-16
-  MCD.BA      2459 velas  2016-09-26 -> 2026-10-16
+  MCD.BA      2460 velas  2016-09-26 -> 2026-10-19
   MDLZ        2529 velas  2016-09-26 -> 2026-10-16
-  MDLZ.BA      618 velas  2024-04-10 -> 2026-10-16
+  MDLZ.BA      619 velas  2024-04-10 -> 2026-10-19
   MDT         2529 velas  2016-09-26 -> 2026-10-16
-  MDT.BA      2458 velas  2016-09-27 -> 2026-10-16
+  MDT.BA      2459 velas  2016-09-27 -> 2026-10-19
   MELI        2529 velas  2016-09-26 -> 2026-10-16
-  MELI.BA     2458 velas  2016-09-26 -> 2026-10-16
+  MELI.BA     2459 velas  2016-09-26 -> 2026-10-19
   META        2529 velas  2016-09-26 -> 2026-10-16
-  META.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  META.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   MMM         2529 velas  2016-09-26 -> 2026-10-16
-  MMM.BA      2458 velas  2016-09-27 -> 2026-10-16
+  MMM.BA      2459 velas  2016-09-27 -> 2026-10-19
   MO          2529 velas  2016-09-26 -> 2026-10-16
-  MO.BA       2458 velas  2016-09-27 -> 2026-10-16
+  MO.BA       2459 velas  2016-09-27 -> 2026-10-19
   MRK         2529 velas  2016-09-26 -> 2026-10-16
-  MRK.BA      2459 velas  2016-09-26 -> 2026-10-16
+  MRK.BA      2460 velas  2016-09-26 -> 2026-10-19
   MRNA        1975 velas  2018-12-07 -> 2026-10-16
-  MRNA.BA      600 velas  2024-05-07 -> 2026-10-16
+  MRNA.BA      601 velas  2024-05-07 -> 2026-10-19
   MRVL        2529 velas  2016-09-26 -> 2026-10-16
-  MRVL.BA      631 velas  2024-03-18 -> 2026-10-16
+  MRVL.BA      632 velas  2024-03-18 -> 2026-10-19
   MS          2529 velas  2016-09-26 -> 2026-10-16
-  MS.BA         32 velas  2026-09-02 -> 2026-10-16  <-- revisar
+  MS.BA         33 velas  2026-09-02 -> 2026-10-19  <-- revisar
   MSFT        2529 velas  2016-09-26 -> 2026-10-16
-  MSFT.BA     2459 velas  2016-09-26 -> 2026-10-16
+  MSFT.BA     2460 velas  2016-09-26 -> 2026-10-19
   MSTR        2529 velas  2016-09-26 -> 2026-10-16
-  MSTR.BA     1033 velas  2022-07-26 -> 2026-10-16
+  MSTR.BA     1034 velas  2022-07-26 -> 2026-10-19
   MU          2529 velas  2016-09-26 -> 2026-10-16
-  MU.BA       1029 velas  2022-07-26 -> 2026-10-16
+  MU.BA       1030 velas  2022-07-26 -> 2026-10-19
   NEE         2529 velas  2016-09-26 -> 2026-10-16
-  NEE.BA       105 velas  2026-05-18 -> 2026-10-16  <-- revisar
+  NEE.BA       106 velas  2026-05-18 -> 2026-10-19  <-- revisar
   NEM         2529 velas  2016-09-26 -> 2026-10-16
-  NEM.BA      2458 velas  2016-09-27 -> 2026-10-16
+  NEM.BA      2459 velas  2016-09-27 -> 2026-10-19
   NFLX        2529 velas  2016-09-26 -> 2026-10-16
-  NFLX.BA     1613 velas  2020-03-12 -> 2026-10-16
+  NFLX.BA     1614 velas  2020-03-12 -> 2026-10-19
   NIO         2035 velas  2018-09-12 -> 2026-10-16
-  NIO.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  NIO.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   NKE         2529 velas  2016-09-26 -> 2026-10-16
-  NKE.BA      2458 velas  2016-09-26 -> 2026-10-16
+  NKE.BA      2459 velas  2016-09-26 -> 2026-10-19
   NOW         2529 velas  2016-09-26 -> 2026-10-16
-  NOW.BA       345 velas  2025-05-19 -> 2026-10-16
+  NOW.BA       346 velas  2025-05-19 -> 2026-10-19
   NTES        2529 velas  2016-09-26 -> 2026-10-16
-  NTES.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  NTES.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   NU          1218 velas  2021-12-09 -> 2026-10-16
-  NU.BA        630 velas  2024-03-19 -> 2026-10-16
+  NU.BA        631 velas  2024-03-19 -> 2026-10-19
   NUE         2529 velas  2016-09-26 -> 2026-10-16
-  NUE.BA      2458 velas  2016-09-27 -> 2026-10-16
+  NUE.BA      2459 velas  2016-09-27 -> 2026-10-19
   NVDA        2529 velas  2016-09-26 -> 2026-10-16
-  NVDA.BA     1613 velas  2020-03-12 -> 2026-10-16
+  NVDA.BA     1614 velas  2020-03-12 -> 2026-10-19
   NVO         2529 velas  2016-09-26 -> 2026-10-16
-  NVO.BA       102 velas  2026-05-21 -> 2026-10-16  <-- revisar
+  NVO.BA       103 velas  2026-05-21 -> 2026-10-19  <-- revisar
   NVS         2529 velas  2016-09-26 -> 2026-10-16
-  NVS.BA      2457 velas  2016-09-27 -> 2026-10-16
+  NVS.BA      2458 velas  2016-09-27 -> 2026-10-19
   ORCL        2529 velas  2016-09-26 -> 2026-10-16
-  ORCL.BA     2459 velas  2016-09-26 -> 2026-10-16
+  ORCL.BA     2460 velas  2016-09-26 -> 2026-10-19
   OXY         2529 velas  2016-09-26 -> 2026-10-16
-  OXY.BA      1033 velas  2022-07-26 -> 2026-10-16
+  OXY.BA      1034 velas  2022-07-26 -> 2026-10-19
   PAAS        2529 velas  2016-09-26 -> 2026-10-16
-  PAAS.BA     1377 velas  2021-03-08 -> 2026-10-16
+  PAAS.BA     1378 velas  2021-03-08 -> 2026-10-19
   PAGS        2195 velas  2018-01-24 -> 2026-10-16
-  PAGS.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  PAGS.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   PANW        2529 velas  2016-09-26 -> 2026-10-16
-  PANW.BA     1028 velas  2022-08-01 -> 2026-10-16
+  PANW.BA     1029 velas  2022-08-01 -> 2026-10-19
   PBR         2529 velas  2016-09-26 -> 2026-10-16
-  PBR.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  PBR.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   PDD         2068 velas  2018-07-26 -> 2026-10-16
-  PDD.BA       349 velas  2025-05-19 -> 2026-10-16
+  PDD.BA       350 velas  2025-05-19 -> 2026-10-19
   PEP         2529 velas  2016-09-26 -> 2026-10-16
-  PEP.BA      2458 velas  2016-09-26 -> 2026-10-16
+  PEP.BA      2459 velas  2016-09-26 -> 2026-10-19
   PFE         2529 velas  2016-09-26 -> 2026-10-16
-  PFE.BA      2458 velas  2016-09-26 -> 2026-10-16
+  PFE.BA      2459 velas  2016-09-26 -> 2026-10-19
   PG          2529 velas  2016-09-26 -> 2026-10-16
-  PG.BA       2459 velas  2016-09-26 -> 2026-10-16
+  PG.BA       2460 velas  2016-09-26 -> 2026-10-19
   PINS        1885 velas  2019-04-18 -> 2026-10-16
-  PINS.BA      528 velas  2024-05-13 -> 2026-10-16
+  PINS.BA      529 velas  2024-05-13 -> 2026-10-19
   PLTR        1519 velas  2020-09-30 -> 2026-10-16
-  PLTR.BA      627 velas  2024-03-19 -> 2026-10-16
+  PLTR.BA      628 velas  2024-03-19 -> 2026-10-19
   PM          2529 velas  2016-09-26 -> 2026-10-16
-  PM.BA        592 velas  2024-04-15 -> 2026-10-16
+  PM.BA        593 velas  2024-04-15 -> 2026-10-19
   PYPL        2529 velas  2016-09-26 -> 2026-10-16
-  PYPL.BA     1840 velas  2019-04-08 -> 2026-10-16
+  PYPL.BA     1841 velas  2019-04-08 -> 2026-10-19
   QCOM        2529 velas  2016-09-26 -> 2026-10-16
-  QCOM.BA     2458 velas  2016-09-26 -> 2026-10-16
+  QCOM.BA     2459 velas  2016-09-26 -> 2026-10-19
   RACE        2529 velas  2016-09-26 -> 2026-10-16
-  RACE.BA      618 velas  2024-04-10 -> 2026-10-16
+  RACE.BA      619 velas  2024-04-10 -> 2026-10-19
   RBLX        1409 velas  2021-03-10 -> 2026-10-16
-  RBLX.BA     1033 velas  2022-07-26 -> 2026-10-16
+  RBLX.BA     1034 velas  2022-07-26 -> 2026-10-19
   RIO         2529 velas  2016-09-26 -> 2026-10-16
-  RIO.BA      2458 velas  2016-09-27 -> 2026-10-16
+  RIO.BA      2459 velas  2016-09-27 -> 2026-10-19
   ROKU        2275 velas  2017-09-28 -> 2026-10-16
-  ROKU.BA      617 velas  2024-04-10 -> 2026-10-16
+  ROKU.BA      618 velas  2024-04-10 -> 2026-10-19
   RTX         2529 velas  2016-09-26 -> 2026-10-16
-  RTX.BA      2458 velas  2016-09-27 -> 2026-10-16
+  RTX.BA      2459 velas  2016-09-27 -> 2026-10-19
   SAP         2529 velas  2016-09-26 -> 2026-10-16
-  SAP.BA      2458 velas  2016-09-27 -> 2026-10-16
+  SAP.BA      2459 velas  2016-09-27 -> 2026-10-19
   SBUX        2529 velas  2016-09-26 -> 2026-10-16
-  SBUX.BA     2458 velas  2016-09-27 -> 2026-10-16
+  SBUX.BA     2459 velas  2016-09-27 -> 2026-10-19
   SCCO        2529 velas  2016-09-26 -> 2026-10-16
-  SCCO.BA     2458 velas  2016-09-27 -> 2026-10-16
+  SCCO.BA     2459 velas  2016-09-27 -> 2026-10-19
   SCHW        2529 velas  2016-09-26 -> 2026-10-16
   SCHW.BA        1 velas  2025-07-28 -> 2025-07-28  <-- revisar
   SE          2259 velas  2017-10-20 -> 2026-10-16
-  SE.BA         16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  SE.BA         17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   SHEL        2529 velas  2016-09-26 -> 2026-10-16
-  SHEL.BA     2458 velas  2016-09-27 -> 2026-10-16
+  SHEL.BA     2459 velas  2016-09-27 -> 2026-10-19
   SHOP        2529 velas  2016-09-26 -> 2026-10-16
-  SHOP.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  SHOP.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   SLB         2529 velas  2016-09-26 -> 2026-10-16
-  SLB.BA      2458 velas  2016-09-27 -> 2026-10-16
+  SLB.BA      2459 velas  2016-09-27 -> 2026-10-19
   SNAP        2421 velas  2017-03-02 -> 2026-10-16
-  SNAP.BA     1638 velas  2020-02-04 -> 2026-10-16
+  SNAP.BA     1639 velas  2020-02-04 -> 2026-10-19
   SNOW        1529 velas  2020-09-16 -> 2026-10-16
-  SNOW.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  SNOW.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   SONY        2529 velas  2016-09-26 -> 2026-10-16
-  SONY.BA     2458 velas  2016-09-27 -> 2026-10-16
+  SONY.BA     2459 velas  2016-09-27 -> 2026-10-19
   SPGI        2529 velas  2016-09-26 -> 2026-10-16
-  SPGI.BA      873 velas  2023-03-14 -> 2026-10-16
+  SPGI.BA      874 velas  2023-03-14 -> 2026-10-19
   SPOT        2148 velas  2018-04-03 -> 2026-10-16
-  SPOT.BA     1370 velas  2021-03-09 -> 2026-10-16
+  SPOT.BA     1371 velas  2021-03-09 -> 2026-10-19
   SPY         2529 velas  2016-09-26 -> 2026-10-16
-  SPY.BA      1142 velas  2022-01-18 -> 2026-10-16
+  SPY.BA      1143 velas  2022-01-18 -> 2026-10-19
   STNE        2004 velas  2018-10-25 -> 2026-10-16
-  STNE.BA      626 velas  2024-03-19 -> 2026-10-16
+  STNE.BA      627 velas  2024-03-19 -> 2026-10-19
   T           2529 velas  2016-09-26 -> 2026-10-16
-  T.BA        2458 velas  2016-09-27 -> 2026-10-16
+  T.BA        2459 velas  2016-09-27 -> 2026-10-19
   TEN         2529 velas  2016-09-26 -> 2026-10-16
-  TEN.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  TEN.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   TGT         2529 velas  2016-09-26 -> 2026-10-16
-  TGT.BA      1588 velas  2020-04-23 -> 2026-10-16
+  TGT.BA      1589 velas  2020-04-23 -> 2026-10-19
   TM          2529 velas  2016-09-26 -> 2026-10-16
-  TM.BA       2458 velas  2016-09-27 -> 2026-10-16
+  TM.BA       2459 velas  2016-09-27 -> 2026-10-19
   TMO         2529 velas  2016-09-26 -> 2026-10-16
-  TMO.BA      1567 velas  2020-05-26 -> 2026-10-16
+  TMO.BA      1568 velas  2020-05-26 -> 2026-10-19
   TMUS        2529 velas  2016-09-26 -> 2026-10-16
-  TMUS.BA      501 velas  2024-06-10 -> 2026-10-16
+  TMUS.BA      502 velas  2024-06-10 -> 2026-10-19
   TSLA        2529 velas  2016-09-26 -> 2026-10-16
-  TSLA.BA     1613 velas  2020-03-12 -> 2026-10-16
+  TSLA.BA     1614 velas  2020-03-12 -> 2026-10-19
   TSM         2529 velas  2016-09-26 -> 2026-10-16
-  TSM.BA      2459 velas  2016-09-26 -> 2026-10-16
+  TSM.BA      2460 velas  2016-09-26 -> 2026-10-19
   TTE         2529 velas  2016-09-26 -> 2026-10-16
-  TTE.BA      2457 velas  2016-09-27 -> 2026-10-16
+  TTE.BA      2458 velas  2016-09-27 -> 2026-10-19
   TXN         2529 velas  2016-09-26 -> 2026-10-16
-  TXN.BA      2458 velas  2016-09-27 -> 2026-10-16
+  TXN.BA      2459 velas  2016-09-27 -> 2026-10-19
   TXR           16 velas  2016-11-28 -> 2017-07-17  <-- revisar
-  TXR.BA      2458 velas  2016-09-27 -> 2026-10-16
+  TXR.BA      2459 velas  2016-09-27 -> 2026-10-19
   UAL         2529 velas  2016-09-26 -> 2026-10-16
-  UAL.BA      1018 velas  2022-07-26 -> 2026-10-16
+  UAL.BA      1019 velas  2022-07-26 -> 2026-10-19
   UBER        1870 velas  2019-05-10 -> 2026-10-16
-  UBER.BA     1032 velas  2022-07-26 -> 2026-10-16
+  UBER.BA     1033 velas  2022-07-26 -> 2026-10-19
   UNH         2529 velas  2016-09-26 -> 2026-10-16
-  UNH.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  UNH.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   UNP         2529 velas  2016-09-26 -> 2026-10-16
-  UNP.BA        16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  UNP.BA        17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   UPST        1465 velas  2020-12-16 -> 2026-10-16
-  UPST.BA     1033 velas  2022-07-26 -> 2026-10-16
+  UPST.BA     1034 velas  2022-07-26 -> 2026-10-19
   USB         2529 velas  2016-09-26 -> 2026-10-16
-  USB.BA      2456 velas  2016-09-27 -> 2026-10-16
+  USB.BA      2457 velas  2016-09-27 -> 2026-10-19
   V           2529 velas  2016-09-26 -> 2026-10-16
-  V.BA        1538 velas  2020-07-07 -> 2026-10-16
+  V.BA        1539 velas  2020-07-07 -> 2026-10-19
   VALE        2529 velas  2016-09-26 -> 2026-10-16
-  VALE.BA     2458 velas  2016-09-26 -> 2026-10-16
+  VALE.BA     2459 velas  2016-09-26 -> 2026-10-19
   VIST        1817 velas  2019-07-26 -> 2026-10-16
-  VIST.BA       16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  VIST.BA       17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   VZ          2529 velas  2016-09-26 -> 2026-10-16
-  VZ.BA       2458 velas  2016-09-27 -> 2026-10-16
+  VZ.BA       2459 velas  2016-09-27 -> 2026-10-19
   WFC         2529 velas  2016-09-26 -> 2026-10-16
-  WFC.BA      2458 velas  2016-09-27 -> 2026-10-16
+  WFC.BA      2459 velas  2016-09-27 -> 2026-10-19
   WMT         2529 velas  2016-09-26 -> 2026-10-16
-  WMT.BA      2458 velas  2016-09-26 -> 2026-10-16
+  WMT.BA      2459 velas  2016-09-26 -> 2026-10-19
   XOM         2529 velas  2016-09-26 -> 2026-10-16
-  XOM.BA      2459 velas  2016-09-26 -> 2026-10-16
+  XOM.BA      2460 velas  2016-09-26 -> 2026-10-19
   XP          1721 velas  2019-12-11 -> 2026-10-16
-  XP.BA         16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  XP.BA         17 velas  2026-09-24 -> 2026-10-19  <-- revisar
   XPEV        1542 velas  2020-08-27 -> 2026-10-16
-  XPEV.BA      349 velas  2025-05-19 -> 2026-10-16
+  XPEV.BA      350 velas  2025-05-19 -> 2026-10-19
   ZM          1885 velas  2019-04-18 -> 2026-10-16
-  ZM.BA         16 velas  2026-09-24 -> 2026-10-16  <-- revisar
+  ZM.BA         17 velas  2026-09-24 -> 2026-10-19  <-- revisar
 
 === 2a. Paper trading swing ===
-  2026-10-16: {'MANTENER': 5, 'NO_OPERAR': 45} · cartera USD 10,473.08
-Paper trading actualizado.
+Paper trading: no hay velas nuevas para procesar.
 
 === 2b. Paper trading momentum ===
-  2026-10-16: seguimiento · cartera USD 9,412.91 · posiciones 5
-Momentum: paper trading actualizado.
+Momentum: no hay velas nuevas para procesar.
 
 === 3a. Backtest y calibración swing ===
 # Backtest – v4.1-retroceso-4R
@@ -936,26 +938,24 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 | Máximo de 52 semanas | después | 5080 | 0.62% | 0.42% | 53% | +0.10% | 48% |
 
 === 4. CEDEARs en pesos ===
-CCL implícito (mediana de 180 CEDEARs): 1,618.47
+CCL implícito (mediana de 180 CEDEARs): 1,618.06
 estado
-normal                                177
+normal                                131
+caro                                   36
+barato                                 13
 ratio o precio a revisar                4
-barato                                  2
-caro                                    1
 precio en pesos viejo (2026-08-03)      1
 precio en pesos viejo (2025-07-28)      1
 A revisar: BA-C (ratio o precio a revisar), EA (precio en pesos viejo (2026-08-03)), GLW (ratio o precio a revisar), SCHW (precio en pesos viejo (2025-07-28)), TEN (ratio o precio a revisar), TXR (ratio o precio a revisar)
 
 === 4b. Tesis de inversión y revisión semanal ===
 Tesis: 0 nuevas · 22 en total (9 abiertas, 2 cerradas)
-Revisión semanal escrita: reportes/revision_semanal/2026-S42.md
 
 === 4c. Tesis y revisiones en la web + PDF semanal ===
-Publicar: 11 páginas actualizadas en docs/
-Publicar: PDF semanal -> docs/revision_semanal/2026-S42.pdf
+Publicar: 0 páginas actualizadas en docs/
 
 === 5. Tablero ===
 Tablero generado: docs/index.html
 
 === 6. Alertas por mail ===
-Alertas: mail enviado -> Agente Inversor · Resumen semanal 16/10/2026 (adjunto 2026-S42.pdf)
+Alertas: ya se avisó lo del 2026-10-16.
