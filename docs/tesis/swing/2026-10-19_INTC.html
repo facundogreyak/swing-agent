@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tesis de inversión · INTC · Swing · retroceso · Agente Inversor – Facundo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6fa;--card:#fff;--tx:#111827;--mu:#6b7280;--bd:#e5e7eb;--ac:#4f46e5;--ac2:#eef2ff;
+  --pos:#16a34a;--neg:#dc2626}
+@media (prefers-color-scheme: dark){:root{--bg:#0f1117;--card:#171a22;--tx:#e5e7eb;--mu:#9ca3af;--bd:#2a2f3a;
+  --ac:#818cf8;--ac2:#1e2140}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+header{max-width:860px;margin:0 auto;padding:18px 16px 0;font-size:13px;color:var(--mu)}
+header a{color:var(--ac);text-decoration:none;margin-right:14px}
+main{max-width:860px;margin:10px auto 40px;padding:24px 22px;background:var(--card);border-radius:16px;
+  box-shadow:0 1px 2px rgba(17,24,39,.04),0 4px 16px rgba(17,24,39,.06)}
+h1{font-size:24px;line-height:1.25;margin:0 0 8px}
+h2{font-size:18px;margin:28px 0 8px;padding-top:14px;border-top:1px solid var(--bd)}
+h3{font-size:15px;margin:20px 0 6px}
+a{color:var(--ac)}
+blockquote{margin:12px 0;padding:10px 14px;background:var(--ac2);border-radius:10px;color:var(--mu);font-size:13px}
+blockquote p{margin:0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--bd);vertical-align:top}
+th{color:var(--mu);font-weight:600;font-size:12px}
+ul{padding-left:20px}li{margin:3px 0}
+details{margin:10px 0}summary{cursor:pointer;color:var(--mu)}
+.pie{max-width:860px;margin:0 auto 30px;padding:0 16px;font-size:12px;color:var(--mu)}
+.boton{display:inline-block;background:var(--ac);color:#fff!important;text-decoration:none;padding:6px 14px;
+  border-radius:999px;font-weight:600;font-size:13px}
+.salto{page-break-before:always;break-before:page}
+@media (max-width:600px){main{padding:16px 14px;border-radius:0;margin:6px 0 30px}h1{font-size:20px}
+  table{font-size:13px}th,td{padding:6px 6px}}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff;--card:#fff;--tx:#111827;--mu:#4b5563;--bd:#d1d5db;--ac:#3730a3;--ac2:#f3f4f6}
+  body{font-size:11pt;background:#fff}
+  header,.pie,.no-imprimir{display:none}
+  main{box-shadow:none;margin:0;padding:0;max-width:none}
+  a{color:inherit;text-decoration:none}
+  tr,li,blockquote{break-inside:avoid}
+  h2,h3{break-after:avoid}
+  .tw{overflow:visible}
+}
+</style></head><body>
+<header><a href="../../index.html">← Tablero</a><a href="../../tesis/index.html">Tesis</a>
+<a href="../../revision_semanal/index.html">Revisiones semanales</a></header>
+<main><h1>Tesis de inversión · INTC · Swing · retroceso</h1>
+<p>Decisión: <strong>compra</strong> al cierre del 19/10/2026 · Sector: Tecnología · Estado: <strong>PENDIENTE</strong></p>
+<blockquote>
+<p>Escrita por el agente el día de la decisión con sus propios datos (precio, volumen, ranking y backtest) y contexto de internet (Yahoo Finance y Google News). Las secciones 1 a 5 no se modifican después; la 6 a 8 se actualizan con lo que pasó. Simulado, sin dinero real. No es asesoramiento financiero.</p>
+</blockquote>
+<h2>1. La idea</h2>
+<p>Comprar un <strong>retroceso dentro de una tendencia alcista</strong>. INTC viene en tendencia de suba (precio arriba de sus medias de 50 y 200 ruedas), en los últimos días corrigió (el RSI bajó a 31) y hoy rebotó con volumen. La apuesta es que la corrección fue una pausa y que la tendencia de fondo retoma en las próximas semanas.</p>
+<h2>2. Por qué ahora (datos al cierre del 19/10/2026)</h2>
+<div class='tw'><table>
+<thead>
+<tr>
+<th></th>
+<th>Dato</th>
+<th>Regla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precio</td>
+<td>USD 92,03</td>
+<td></td>
+</tr>
+<tr>
+<td>Tendencia</td>
+<td>precio +8,5% vs. media de 200; media de 50 +21,4% vs. la de 200</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Retroceso</td>
+<td>RSI mínimo de las últimas 3 ruedas: 31 (tiene que ser &lt; 40)</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Rebote</td>
+<td>RSI 31 → 35; cierre +2,4% vs. ayer</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Volumen</td>
+<td>1,0x su promedio de 20 ruedas (mínimo 0,8x)</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Volatilidad</td>
+<td>se mueve ~USD 5,82 por día (ATR 14) = 6,3% del precio</td>
+<td></td>
+</tr>
+<tr>
+<td>Máximo de 52 semanas</td>
+<td>USD 140,94 (-34,7% desde ahí)</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Contexto: cuánto subió contra el mercado</strong></p>
+<div class='tw'><table>
+<thead>
+<tr>
+<th>Plazo</th>
+<th>INTC</th>
+<th>SPY</th>
+<th>Diferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 mes</td>
+<td>-15,3%</td>
+<td>+0,6%</td>
+<td>-15,9%</td>
+</tr>
+<tr>
+<td>3 meses</td>
+<td>-12,7%</td>
+<td>+2,7%</td>
+<td>-15,4%</td>
+</tr>
+<tr>
+<td>6 meses</td>
+<td>+40,1%</td>
+<td>+8,7%</td>
+<td>+31,4%</td>
+</tr>
+<tr>
+<td>12 meses</td>
+<td>+149,8%</td>
+<td>+17,3%</td>
+<td>+132,5%</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Mercado: SPY está 6,1% por encima de su media de 200 ruedas (mercado alcista). El filtro de mercado está apagado.</li>
+<li>Sector: Tecnología.</li>
+</ul>
+<h3>Contexto: la empresa y las noticias (al 19/10/2026)</h3>
+<p><em>Fuentes: Yahoo Finance y Google News. Acompaña la decisión; no la cambia.</em></p>
+<ul>
+<li><strong>Intel Corporation</strong> · Semiconductors · capitalización USD 485 mil millones.</li>
+<li>Números: P/E estimado 43,4 · ventas +25% interanual · margen neto -20% · beta 2,23.</li>
+<li>Analistas: precio objetivo promedio USD 117,37 (+28% desde acá), 43 analistas, recomendación: compra.</li>
+<li>Próximo balance: 29/10/2026 — <strong>antes de la salida por tiempo</strong>.</li>
+</ul>
+<p><strong>Noticias de los últimos 7 días</strong></p>
+<ul>
+<li>19/10/2026 · <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPQmt2MXZ3aVRLRm5lbG1yQmhuTDZMaThKTDNVZkFwY0NrZkZXX29hYklOTnY2d1hvUGRvdFlqd3Y0MGFfYUJGWmx0LU40c1BMX2ZoSF80MV81TXFXT2JiTF96bEdyWTQ4elBHQndJclA1VDhsTjVEb2RLakwzU2FLRzQtQXFnY1Y3RUlYMlZsNDVsSmNkQWc?oc=5">Did Foundry Win Just Shift Intel (INTC) Investment Narrative?</a> — <em>Yahoo Finance</em></li>
+<li>19/10/2026 · <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPNm1DVllTSzBWeFJ2bEpOMllmXzVwZ0NiRm51c05QV3gwZWFld3Rtc2VETE93VFFBXy1NRzFhR0ktdkhTZU9yc0NVZllrMUhBR2FqSzlyUGN6TmRZWl9TTlZrSW00WHN3YkJXcVhwWW9ySy12Y19JWUJUZXFLVFNtT2VpNmdnbFVOZEl1Z3hPejl2OXdtRlFGOWoxVWh0VU5nRnlwOFpNcXhkME5naDJraFRUYjhoQkZEdlRyb19wOXM0NUxkdkpWQ2VB?oc=5">Why a former Intel skeptic is giving up his negative call on the stock after four years</a> — <em>MarketWatch</em></li>
+<li>19/10/2026 · <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOZV96ZEZnMnNTUkNUb0puR2wxaTdHYlo0bUtxWVdoNmJuRGZvRnlnU3dHdzY3SVNyRlV4azdMTVZyV3NPc3paMF9mcmU5OHlCREVubWV6REUzRUh1eklGTTVOUFg0MnlhU2s5WDFVUTJRS3h0VHRyVUVwRFhtdVFGT0w4bTFNcmpDaGNEREJ2djROQmFSY1E?oc=5">Why Intel (INTC) Stock Is Up Today</a> — <em>Yahoo Finance</em></li>
+<li>19/10/2026 · <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE50c2hTekRqQl80NHFwM2NJM1dZR3JUQ0VhZHdyY0xEdEV0YUZuaTJOel9aU3FZVHpHcE5aRTNfeVdRM25wRFhyNGM2QUZPeWJwbEVIVUFSS2ZjWFNrY0s2TWpPM3g?oc=5">Datadog, Intel, CoreWeave, Tesla, Amazon, Cleveland-Cliffs, and More Stocks That Explain Today’s Market</a> — <em>Barron's</em></li>
+<li>19/10/2026 · <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTEt3a3NfQVIwNnB5bDRyMWtCdU1fVjN6YXlGOFhwVF9VdWhhVW5aSi1lTzZPSVdFVUhrOFJJWXJpM29yOEVXVWwzWVRDalJHREZqMkVsS0prYjJtYXROOGh0ejdwY2JzclFTNk1EVE9BSVdWejd6RnBJa2Z6azJFdEhYdS1UMWdmSGFKYzBtLVJ5RlYxcWQxRUZzdllGUXNibUNCNnh0VmlSdmZWNjA2QjVOQ3VuaWFwTE8wX0ZiYVRpQQ?oc=5">Intel leads chip stocks higher as investors jump back into AI trade</a> — <em>Yahoo Finance</em></li>
+</ul>
+<h2>3. El plan</h2>
+<ul>
+<li><strong>Entrada:</strong> en la apertura de la rueda siguiente (referencia: cierre de USD 92,03).</li>
+<li><strong>Stop (si sale mal):</strong> entrada − 2,0 × ATR ≈ <strong>USD 80,38</strong> (-12,7%).</li>
+<li><strong>Objetivo (si sale bien):</strong> 4,0 veces lo arriesgado (4R) ≈ <strong>USD 138,63</strong> (+50,6%).</li>
+<li><strong>Salida por tiempo:</strong> si en 20 ruedas no tocó ni el stop ni el objetivo, se vende (≈ 17/11/2026).</li>
+<li><strong>Tamaño:</strong> se arriesga 1% del capital (≈ USD 104) → ≈ 8,92 acciones ≈ USD 821 (8% de la cartera, tope 25%). Hoy hay USD -0 libres: si en la apertura no se libera efectivo, la compra se achica o se descarta.</li>
+<li><strong>En BYMA:</strong> CEDEAR INTC (ratio 5:1) ≈ 44 CEDEARs; hoy a ARS 30.000 (CCL implícito 1.630, normal).</li>
+</ul>
+<h2>4. Qué confirmaría o invalidaría la tesis</h2>
+<ul>
+<li>✔ <strong>Se confirma</strong> si toca el objetivo (USD 138,63) antes de ≈ 17/11/2026.</li>
+<li>✘ <strong>Se invalida</strong> si toca el stop (USD 80,38): el retroceso no era una pausa sino el comienzo de una baja. La pérdida queda acotada a ~1R (USD 104), salvo que abra con un salto.</li>
+<li>⚠ <strong>Señales de alerta</strong> en el seguimiento: cierre debajo de la media de 50 (hoy USD 102,98) o de la de 200 (USD 84,83). El agente no vende por eso (solo por stop, objetivo o tiempo), pero la tesis pierde fuerza.</li>
+<li>⚠ <strong>Del contexto:</strong> presenta balance el 29/10/2026, antes de la salida por tiempo: el precio puede saltar para cualquier lado.</li>
+</ul>
+<h2>5. Qué se puede esperar (backtest de esta configuración)</h2>
+<ul>
+<li>624 operaciones con esta misma regla desde 17/07/2017: gana el <strong>45%</strong>, resultado promedio <strong>0,18R</strong> por operación, 14 ruedas en promedio.</li>
+<li>Cómo terminaron: objetivo 3%, stop 45%, tiempo 51%.</li>
+<li>Las ganadoras dejan en promedio 1,58R y las perdedoras -0,97R: se pierde más seguido de lo que se gana, la ventaja está en que las ganadoras son más grandes.</li>
+<li>En INTC: 10 operaciones, ganó el 30%, promedio -0,59R.</li>
+</ul>
+<p><strong>Riesgos a tener en cuenta:</strong> un salto en la apertura (resultados, noticias) puede saltar el stop; la tesis se basa solo en precio y volumen, no mira balances ni noticias.</p>
+<h2>6. Ejecución</h2>
+<p>Orden pendiente: se compra en la próxima apertura.</p>
+<p><a href="../index.html">← Todas las tesis</a></p></main>
+<div class="pie">Agente Inversor – Facundo · Simulado, sin dinero real. Herramienta de análisis: no es asesoramiento financiero.
+Para guardarlo en PDF: Imprimir → Guardar como PDF.</div>
+</body></html>
