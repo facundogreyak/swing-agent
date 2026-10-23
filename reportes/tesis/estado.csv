@@ -1,18 +1,18 @@
 cartera,ticker,fecha,estado,resultado,r,vs_spy,fecha_salida,archivo,nota
 swing,JPM,2026-09-24,CERRADA,-0.03991959268117318,-1.07,-0.034170166607560115,2026-10-01,tesis/swing/2026-09-24_JPM.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
 swing,BAC,2026-09-24,CERRADA,-0.04374356242230515,-1.07,-0.03799413634869209,2026-10-01,tesis/swing/2026-09-24_BAC.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
-momentum,MRNA,2026-09-25,ABIERTA,0.24044990818095702,,0.23953884912027656,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
-momentum,DELL,2026-09-25,ABIERTA,-0.16344655533658292,,-0.16435761439726337,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
-momentum,AMD,2026-09-25,ABIERTA,-0.14427910028104496,,-0.1451901593417254,,tesis/momentum/2026-09-25_AMD.md,"⚠ cayó al puesto #18: si sigue así, sale en la próxima revisión."
-momentum,CRWD,2026-09-25,ABIERTA,-0.08653732225628741,,-0.08744838131696786,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
-momentum,SCCO,2026-09-25,ABIERTA,0.027315172308542968,,0.026404113247862515,,tesis/momentum/2026-09-25_SCCO.md,"⚠ cayó al puesto #33: si sigue así, sale en la próxima revisión."
+momentum,MRNA,2026-09-25,ABIERTA,0.2595628990217711,,0.2533937685211596,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
+momentum,DELL,2026-09-25,ABIERTA,-0.11936780932538427,,-0.12553693982599579,,tesis/momentum/2026-09-25_DELL.md,✔ firme: sigue entre las primeras.
+momentum,AMD,2026-09-25,ABIERTA,-0.11550652791946703,,-0.12167565842007855,,tesis/momentum/2026-09-25_AMD.md,"⚠ cayó al puesto #11: si sigue así, sale en la próxima revisión."
+momentum,CRWD,2026-09-25,ABIERTA,-0.03844764638668341,,-0.04461677688729493,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
+momentum,SCCO,2026-09-25,ABIERTA,0.005635699249688875,,-0.0005334312509226447,,tesis/momentum/2026-09-25_SCCO.md,"⚠ cayó al puesto #18: si sigue así, sale en la próxima revisión."
 swing,V,2026-10-01,CERRADA,0.12922961605729988,3.9,0.1353549134094254,2026-10-20,tesis/swing/2026-10-01_V.md,✔ Tesis confirmada: llegó al objetivo.
 swing,BRK-B,2026-10-01,NO EJECUTADA,,,,,tesis/swing/2026-10-01_BRK-B.md,máximo por sector (Financieras)
 swing,BRK-B,2026-10-02,NO EJECUTADA,,,,,tesis/swing/2026-10-02_BRK-B.md,máximo por sector (Financieras)
-swing,MELI,2026-10-05,ABIERTA,0.010152584367492334,0.1479617559185842,,,tesis/swing/2026-10-05_MELI.md,"en curso, sin alertas."
+swing,MELI,2026-10-05,ABIERTA,-0.0030796325491034837,-0.04488195547612265,,,tesis/swing/2026-10-05_MELI.md,⚠ cerró debajo de la media de 50.
 swing,VIST,2026-10-05,NO EJECUTADA,,,,,tesis/swing/2026-10-05_VIST.md,sin precio de apertura
-swing,KO,2026-10-05,ABIERTA,0.07956117625599934,2.797312144803275,,,tesis/swing/2026-10-05_KO.md,"en curso, sin alertas."
-swing,DIS,2026-10-05,ABIERTA,0.07977178658813866,1.932904536277623,,,tesis/swing/2026-10-05_DIS.md,"en curso, sin alertas."
+swing,KO,2026-10-05,ABIERTA,0.07020785571796528,2.468456308747084,,,tesis/swing/2026-10-05_KO.md,"en curso, sin alertas."
+swing,DIS,2026-10-05,ABIERTA,0.08131891153601511,1.9703920360296114,,,tesis/swing/2026-10-05_DIS.md,"en curso, sin alertas."
 swing,JNJ,2026-10-06,NO EJECUTADA,,,,,tesis/swing/2026-10-06_JNJ.md,cartera llena (5 posiciones)
 swing,MRK,2026-10-06,NO EJECUTADA,,,,,tesis/swing/2026-10-06_MRK.md,cartera llena (5 posiciones)
 swing,JNJ,2026-10-07,NO EJECUTADA,,,,,tesis/swing/2026-10-07_JNJ.md,cartera llena (5 posiciones)
@@ -23,6 +23,8 @@ swing,JNJ,2026-10-12,NO EJECUTADA,,,,,tesis/swing/2026-10-12_JNJ.md,cartera llen
 swing,JNJ,2026-10-14,NO EJECUTADA,,,,,tesis/swing/2026-10-14_JNJ.md,cartera llena (5 posiciones)
 swing,NVDA,2026-10-19,NO EJECUTADA,,,,,tesis/swing/2026-10-19_NVDA.md,cartera llena (5 posiciones)
 swing,AMD,2026-10-19,NO EJECUTADA,,,,,tesis/swing/2026-10-19_AMD.md,cartera llena (5 posiciones)
-swing,INTC,2026-10-19,ABIERTA,0.010580871171676831,0.08240514191012055,,,tesis/swing/2026-10-19_INTC.md,⚠ cerró debajo de la media de 50.
+swing,INTC,2026-10-19,ABIERTA,0.024578409395708656,0.1914197121688822,,,tesis/swing/2026-10-19_INTC.md,⚠ cerró debajo de la media de 50.
 swing,TSM,2026-10-19,NO EJECUTADA,,,,,tesis/swing/2026-10-19_TSM.md,cartera llena (5 posiciones)
-swing,TSM,2026-10-20,PENDIENTE,,,,,tesis/swing/2026-10-20_TSM.md,
+swing,TSM,2026-10-20,NO EJECUTADA,,,,,tesis/swing/2026-10-20_TSM.md,cartera llena (5 posiciones)
+swing,AMD,2026-10-21,PENDIENTE,,,,,tesis/swing/2026-10-21_AMD.md,
+swing,TSM,2026-10-21,PENDIENTE,,,,,tesis/swing/2026-10-21_TSM.md,
