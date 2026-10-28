@@ -1543,6 +1543,12 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.drop(
@@ -1948,300 +1954,6 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  splits.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  splits.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.drop(
@@ -2404,6 +2116,300 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   dividends.set_index("date", inplace=True)
@@ -2698,12 +2704,6 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.drop(
@@ -4109,255 +4109,255 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 Parámetros registrados -> versión 13e0e78b (v4.1-retroceso-4R)
 
 Descargando precios...
-  SPY        OK         5 velas
-  SPY.BA     OK         1148 velas
-  AAPL       OK         5 velas
-  AAPL.BA    OK         6 velas
-  MSFT       OK         5 velas
-  MSFT.BA    OK         6 velas
-  GOOGL      OK         5 velas
-  GOOGL.BA   OK         6 velas
-  AMZN       OK         5 velas
-  AMZN.BA    OK         1614 velas
-  NVDA       OK         5 velas
-  NVDA.BA    OK         1614 velas
-  META       OK         5 velas
+  SPY        OK         6 velas
+  SPY.BA     OK         1149 velas
+  AAPL       OK         6 velas
+  AAPL.BA    OK         5 velas
+  MSFT       OK         6 velas
+  MSFT.BA    OK         5 velas
+  GOOGL      OK         6 velas
+  GOOGL.BA   OK         5 velas
+  AMZN       OK         6 velas
+  AMZN.BA    OK         1615 velas
+  NVDA       OK         6 velas
+  NVDA.BA    OK         1615 velas
+  META       OK         6 velas
   META.BA    OK         1 velas
-  TSLA       OK         5 velas
-  TSLA.BA    OK         1614 velas
-  AVGO       OK         5 velas
+  TSLA       OK         6 velas
+  TSLA.BA    OK         1615 velas
+  AVGO       OK         6 velas
   AVGO.BA    OK         1 velas
-  ORCL       OK         5 velas
-  ORCL.BA    OK         6 velas
-  ADBE       OK         5 velas
-  ADBE.BA    OK         1614 velas
-  CRM        OK         5 velas
-  CRM.BA     OK         1613 velas
-  AMD        OK         5 velas
-  AMD.BA     OK         1460 velas
-  INTC       OK         5 velas
-  INTC.BA    OK         6 velas
-  QCOM       OK         5 velas
-  QCOM.BA    OK         6 velas
-  CSCO       OK         5 velas
-  CSCO.BA    OK         6 velas
-  IBM        OK         5 velas
-  IBM.BA     OK         6 velas
-  TSM        OK         5 velas
-  TSM.BA     OK         6 velas
-  NFLX       OK         5 velas
-  NFLX.BA    OK         1614 velas
-  UBER       OK         1875 velas
-  UBER.BA    OK         1038 velas
-  PYPL       OK         5 velas
-  PYPL.BA    OK         1841 velas
-  MELI       OK         5 velas
-  MELI.BA    OK         6 velas
-  GLOB       OK         5 velas
-  GLOB.BA    OK         1069 velas
-  NU         OK         1223 velas
-  NU.BA      OK         636 velas
-  VIST       OK         1822 velas
+  ORCL       OK         6 velas
+  ORCL.BA    OK         5 velas
+  ADBE       OK         6 velas
+  ADBE.BA    OK         1615 velas
+  CRM        OK         6 velas
+  CRM.BA     OK         1614 velas
+  AMD        OK         6 velas
+  AMD.BA     OK         1461 velas
+  INTC       OK         6 velas
+  INTC.BA    OK         5 velas
+  QCOM       OK         6 velas
+  QCOM.BA    OK         5 velas
+  CSCO       OK         6 velas
+  CSCO.BA    OK         5 velas
+  IBM        OK         6 velas
+  IBM.BA     OK         5 velas
+  TSM        OK         6 velas
+  TSM.BA     OK         5 velas
+  NFLX       OK         6 velas
+  NFLX.BA    OK         1615 velas
+  UBER       OK         1876 velas
+  UBER.BA    OK         1039 velas
+  PYPL       OK         6 velas
+  PYPL.BA    OK         1842 velas
+  MELI       OK         6 velas
+  MELI.BA    OK         5 velas
+  GLOB       OK         6 velas
+  GLOB.BA    OK         1070 velas
+  NU         OK         1224 velas
+  NU.BA      OK         637 velas
+  VIST       OK         1823 velas
   VIST.BA    OK         1 velas
-  PBR        OK         5 velas
+  PBR        OK         6 velas
   PBR.BA     OK         1 velas
-  VALE       OK         5 velas
-  VALE.BA    OK         6 velas
-  JPM        OK         5 velas
-  JPM.BA     OK         6 velas
-  BAC        OK         5 velas
+  VALE       OK         6 velas
+  VALE.BA    OK         5 velas
+  JPM        OK         6 velas
+  JPM.BA     OK         5 velas
+  BAC        OK         6 velas
   BAC.BA     OK         1 velas
-  C          OK         5 velas
-  C.BA       OK         6 velas
-  V          OK         5 velas
-  V.BA       OK         1539 velas
-  BRK-B      OK         5 velas
-  BRKB.BA    OK         1377 velas
-  COIN       OK         1390 velas
+  C          OK         6 velas
+  C.BA       OK         5 velas
+  V          OK         6 velas
+  V.BA       OK         1540 velas
+  BRK-B      OK         6 velas
+  BRKB.BA    OK         1378 velas
+  COIN       OK         1391 velas
   COIN.BA    OK         1 velas
-  MSTR       OK         5 velas
-  MSTR.BA    OK         1039 velas
-  KO         OK         5 velas
-  KO.BA      OK         6 velas
-  PEP        OK         5 velas
-  PEP.BA     OK         6 velas
-  PG         OK         5 velas
-  PG.BA      OK         6 velas
-  MCD        OK         5 velas
-  MCD.BA     OK         6 velas
-  WMT        OK         5 velas
-  WMT.BA     OK         6 velas
-  HD         OK         5 velas
-  HD.BA      OK         6 velas
-  NKE        OK         5 velas
-  NKE.BA     OK         6 velas
-  DIS        OK         5 velas
-  DISN.BA    OK         6 velas
-  JNJ        OK         5 velas
-  JNJ.BA     OK         6 velas
-  PFE        OK         5 velas
-  PFE.BA     OK         6 velas
-  MRK        OK         5 velas
-  MRK.BA     OK         6 velas
-  LLY        OK         5 velas
-  LLY.BA     OK         6 velas
-  XOM        OK         5 velas
-  XOM.BA     OK         6 velas
-  CVX        OK         5 velas
-  CVX.BA     OK         6 velas
-  CAT        OK         5 velas
-  CAT.BA     OK         6 velas
-  BA         OK         5 velas
-  BA.BA      OK         6 velas
-  BABA       OK         5 velas
-  BABA.BA    OK         1614 velas
-  AAL        OK         5 velas
+  MSTR       OK         6 velas
+  MSTR.BA    OK         1040 velas
+  KO         OK         6 velas
+  KO.BA      OK         5 velas
+  PEP        OK         6 velas
+  PEP.BA     OK         5 velas
+  PG         OK         6 velas
+  PG.BA      OK         5 velas
+  MCD        OK         6 velas
+  MCD.BA     OK         5 velas
+  WMT        OK         6 velas
+  WMT.BA     OK         5 velas
+  HD         OK         6 velas
+  HD.BA      OK         5 velas
+  NKE        OK         6 velas
+  NKE.BA     OK         5 velas
+  DIS        OK         6 velas
+  DISN.BA    OK         5 velas
+  JNJ        OK         6 velas
+  JNJ.BA     OK         5 velas
+  PFE        OK         6 velas
+  PFE.BA     OK         5 velas
+  MRK        OK         6 velas
+  MRK.BA     OK         5 velas
+  LLY        OK         6 velas
+  LLY.BA     OK         5 velas
+  XOM        OK         6 velas
+  XOM.BA     OK         5 velas
+  CVX        OK         6 velas
+  CVX.BA     OK         5 velas
+  CAT        OK         6 velas
+  CAT.BA     OK         5 velas
+  BA         OK         6 velas
+  BA.BA      OK         5 velas
+  BABA       OK         6 velas
+  BABA.BA    OK         1615 velas
+  AAL        OK         6 velas
   AAL.BA     OK         1 velas
-  ABBV       OK         5 velas
-  ABBV.BA    OK         1064 velas
-  ABNB       OK         1474 velas
-  ABNB.BA    OK         1039 velas
-  ABT        OK         5 velas
-  ABT.BA     OK         6 velas
-  ACN        OK         5 velas
-  ACN.BA     OK         624 velas
-  ADI        OK         5 velas
-  ADI.BA     OK         6 velas
-  ADP        OK         5 velas
-  ADP.BA     OK         6 velas
-  AEM        OK         5 velas
-  AEM.BA     OK         1448 velas
-  AIG        OK         5 velas
-  AIG.BA     OK         6 velas
-  AMAT       OK         5 velas
-  AMAT.BA    OK         6 velas
-  AMGN       OK         5 velas
-  AMGN.BA    OK         6 velas
-  AMX        OK         5 velas
-  AMX.BA     OK         6 velas
-  ANET       OK         5 velas
-  ANET.BA    OK         112 velas
-  ARCO       OK         5 velas
-  ARCO.BA    OK         1614 velas
-  ARM        OK         781 velas
+  ABBV       OK         6 velas
+  ABBV.BA    OK         1065 velas
+  ABNB       OK         1475 velas
+  ABNB.BA    OK         1040 velas
+  ABT        OK         6 velas
+  ABT.BA     OK         5 velas
+  ACN        OK         6 velas
+  ACN.BA     OK         625 velas
+  ADI        OK         6 velas
+  ADI.BA     OK         5 velas
+  ADP        OK         6 velas
+  ADP.BA     OK         5 velas
+  AEM        OK         6 velas
+  AEM.BA     OK         1449 velas
+  AIG        OK         6 velas
+  AIG.BA     OK         5 velas
+  AMAT       OK         6 velas
+  AMAT.BA    OK         5 velas
+  AMGN       OK         6 velas
+  AMGN.BA    OK         5 velas
+  AMX        OK         6 velas
+  AMX.BA     OK         5 velas
+  ANET       OK         6 velas
+  ANET.BA    OK         113 velas
+  ARCO       OK         6 velas
+  ARCO.BA    OK         1615 velas
+  ARM        OK         782 velas
   ARM.BA     OK         1 velas
-  ASML       OK         5 velas
-  ASML.BA    OK         354 velas
-  AXP        OK         5 velas
-  AXP.BA     OK         6 velas
-  AZN        OK         5 velas
-  AZN.BA     OK         6 velas
-  B          OK         5 velas
-  B.BA       OK         359 velas
-  BBD        OK         5 velas
-  BBD.BA     OK         6 velas
-  BHP        OK         5 velas
-  BHP.BA     OK         6 velas
-  BIDU       OK         5 velas
-  BIDU.BA    OK         1613 velas
-  BKNG       OK         5 velas
-  BKNG.BA    OK         582 velas
-  BKR        OK         5 velas
+  ASML       OK         6 velas
+  ASML.BA    OK         355 velas
+  AXP        OK         6 velas
+  AXP.BA     OK         5 velas
+  AZN        OK         6 velas
+  AZN.BA     OK         5 velas
+  B          OK         6 velas
+  B.BA       OK         360 velas
+  BBD        OK         6 velas
+  BBD.BA     OK         5 velas
+  BHP        OK         6 velas
+  BHP.BA     OK         5 velas
+  BIDU       OK         6 velas
+  BIDU.BA    OK         1614 velas
+  BKNG       OK         6 velas
+  BKNG.BA    OK         583 velas
+  BKR        OK         6 velas
   BKR.BA     OK         1 velas
-  BMY        OK         5 velas
-  BMY.BA     OK         6 velas
-  BP         OK         5 velas
-  BP.BA      OK         6 velas
-  BX         OK         5 velas
-  BX.BA      OK         188 velas
-  CAAP       OK         2194 velas
+  BMY        OK         6 velas
+  BMY.BA     OK         5 velas
+  BP         OK         6 velas
+  BP.BA      OK         5 velas
+  BX         OK         6 velas
+  BX.BA      OK         189 velas
+  CAAP       OK         2195 velas
   CAAP.BA    OK         1 velas
-  CAH        OK         5 velas
-  CAH.BA     OK         5 velas
-  CCL        OK         5 velas
-  CCL.BA     OK         598 velas
-  CEG        OK         1196 velas
-  CEG.BA     OK         356 velas
-  CL         OK         5 velas
-  CL.BA      OK         6 velas
-  COP        OK         5 velas
-  COP.BA     OK         111 velas
-  COST       OK         5 velas
-  COST.BA    OK         6 velas
-  CRWD       OK         1853 velas
-  CRWD.BA    OK         112 velas
-  CVS        OK         5 velas
-  CVS.BA     OK         625 velas
-  DAL        OK         5 velas
-  DAL.BA     OK         622 velas
-  DE         OK         5 velas
-  DE.BA      OK         6 velas
-  DELL       OK         5 velas
-  DELL.BA    OK         35 velas
-  DHR        OK         5 velas
+  CAH        OK         6 velas
+  CAH.BA     OK         7 velas
+  CCL        OK         6 velas
+  CCL.BA     OK         599 velas
+  CEG        OK         1197 velas
+  CEG.BA     OK         357 velas
+  CL         OK         6 velas
+  CL.BA      OK         5 velas
+  COP        OK         6 velas
+  COP.BA     OK         112 velas
+  COST       OK         6 velas
+  COST.BA    OK         5 velas
+  CRWD       OK         1854 velas
+  CRWD.BA    OK         113 velas
+  CVS        OK         6 velas
+  CVS.BA     OK         626 velas
+  DAL        OK         6 velas
+  DAL.BA     OK         623 velas
+  DE         OK         6 velas
+  DE.BA      OK         5 velas
+  DELL       OK         6 velas
+  DELL.BA    OK         39 velas
+  DHR        OK         6 velas
   DHR.BA     OK         1 velas
-  DOCU       OK         2135 velas
+  DOCU       OK         2136 velas
   DOCU.BA    OK         1 velas
   EA         OK         1 velas
   EA.BA      OK         1 velas
-  EBAY       OK         5 velas
-  EBAY.BA    OK         6 velas
-  ETSY       OK         5 velas
+  EBAY       OK         6 velas
+  EBAY.BA    OK         5 velas
+  ETSY       OK         6 velas
   ETSY.BA    OK         1 velas
-  F          OK         5 velas
-  F.BA       OK         1039 velas
-  FCX        OK         5 velas
-  FCX.BA     OK         6 velas
-  FDX        OK         5 velas
-  FDX.BA     OK         6 velas
-  FSLR       OK         5 velas
-  FSLR.BA    OK         6 velas
-  GE         OK         5 velas
-  GE.BA      OK         6 velas
-  GEV        OK         647 velas
-  GEV.BA     OK         38 velas
-  GGB        OK         5 velas
-  GGB.BA     OK         1613 velas
-  GILD       OK         5 velas
-  GILD.BA    OK         1614 velas
-  GLW        OK         5 velas
-  GLW.BA     OK         6 velas
-  GM         OK         5 velas
+  F          OK         6 velas
+  F.BA       OK         1040 velas
+  FCX        OK         6 velas
+  FCX.BA     OK         5 velas
+  FDX        OK         6 velas
+  FDX.BA     OK         5 velas
+  FSLR       OK         6 velas
+  FSLR.BA    OK         5 velas
+  GE         OK         6 velas
+  GE.BA      OK         5 velas
+  GEV        OK         648 velas
+  GEV.BA     OK         39 velas
+  GGB        OK         6 velas
+  GGB.BA     OK         1614 velas
+  GILD       OK         6 velas
+  GILD.BA    OK         1615 velas
+  GLW        OK         6 velas
+  GLW.BA     OK         5 velas
+  GM         OK         6 velas
   GM.BA      OK         1 velas
-  GS         OK         5 velas
-  GS.BA      OK         1843 velas
-  HAL        OK         5 velas
+  GS         OK         6 velas
+  GS.BA      OK         1844 velas
+  HAL        OK         6 velas
   HAL.BA     OK         1 velas
-  HMC        OK         5 velas
-  HMC.BA     OK         6 velas
-  HON        OK         5 velas
-  HON.BA     OK         6 velas
-  HOOD       OK         1316 velas
-  HOOD.BA    OK         234 velas
-  HPQ        OK         5 velas
-  HPQ.BA     OK         6 velas
-  HSBC       OK         5 velas
-  HSBC.BA    OK         6 velas
-  IBKR       OK         5 velas
-  IBKR.BA    OK         36 velas
-  INFY       OK         5 velas
-  INFY.BA    OK         6 velas
-  ISRG       OK         5 velas
+  HMC        OK         6 velas
+  HMC.BA     OK         5 velas
+  HON        OK         6 velas
+  HON.BA     OK         5 velas
+  HOOD       OK         1317 velas
+  HOOD.BA    OK         235 velas
+  HPQ        OK         6 velas
+  HPQ.BA     OK         5 velas
+  HSBC       OK         6 velas
+  HSBC.BA    OK         5 velas
+  IBKR       OK         6 velas
+  IBKR.BA    OK         38 velas
+  INFY       OK         6 velas
+  INFY.BA    OK         5 velas
+  ISRG       OK         6 velas
   ISRG.BA    OK         1 velas
-  ITUB       OK         5 velas
-  ITUB.BA    OK         1782 velas
-  JD         OK         5 velas
-  JD.BA      OK         1613 velas
-  KLAC       OK         5 velas
-  KLAC.BA    OK         38 velas
-  KMB        OK         5 velas
-  KMB.BA     OK         6 velas
-  LIN        OK         5 velas
-  LIN.BA     OK         36 velas
-  LMT        OK         5 velas
-  LMT.BA     OK         6 velas
-  LRCX       OK         5 velas
+  ITUB       OK         6 velas
+  ITUB.BA    OK         1783 velas
+  JD         OK         6 velas
+  JD.BA      OK         1614 velas
+  KLAC       OK         6 velas
+  KLAC.BA    OK         39 velas
+  KMB        OK         6 velas
+  KMB.BA     OK         5 velas
+  LIN        OK         6 velas
+  LIN.BA     OK         38 velas
+  LMT        OK         6 velas
+  LMT.BA     OK         5 velas
+  LRCX       OK         6 velas
   LRCX.BA    OK         1 velas
-  LVS        OK         5 velas
-  LVS.BA     OK         6 velas
-  MA         OK         5 velas
+  LVS        OK         6 velas
+  LVS.BA     OK         5 velas
+  MA         OK         6 velas
   MA.BA      OK         1 velas
-  MDLZ       OK         5 velas/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+  MDLZ       OK         6 velas/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
@@ -6334,10 +6334,10 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.sort_index(level=0, axis=1, inplace=True)
-$TXR: possibly delisted; no price data found  (1d 2016-10-29 -> 2026-10-26)
+$TXR: possibly delisted; no price data found  (1d 2016-10-30 -> 2026-10-27)
 
 1 Failed download:
-['TXR']: possibly delisted; no price data found  (1d 2016-10-29 -> 2026-10-26)
+['TXR']: possibly delisted; no price data found  (1d 2016-10-30 -> 2026-10-27)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.rename(columns=ctx.isins, inplace=True)
@@ -6385,531 +6385,533 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.sort_index(level=0, axis=1, inplace=True)
 
-  MDLZ.BA    OK         624 velas
-  MDT        OK         5 velas
-  MDT.BA     OK         6 velas
-  MMM        OK         5 velas
-  MMM.BA     OK         6 velas
-  MO         OK         5 velas
-  MO.BA      OK         6 velas
-  MRNA       OK         1980 velas
-  MRNA.BA    OK         606 velas
-  MRVL       OK         5 velas
-  MRVL.BA    OK         637 velas
-  MS         OK         5 velas
-  MS.BA      OK         38 velas
-  MU         OK         5 velas
-  MU.BA      OK         1035 velas
-  NEE        OK         5 velas
-  NEE.BA     OK         111 velas
-  NEM        OK         5 velas
-  NEM.BA     OK         6 velas
-  NIO        OK         2040 velas
+  MDLZ.BA    OK         625 velas
+  MDT        OK         6 velas
+  MDT.BA     OK         5 velas
+  MMM        OK         6 velas
+  MMM.BA     OK         5 velas
+  MO         OK         6 velas
+  MO.BA      OK         5 velas
+  MRNA       OK         1981 velas
+  MRNA.BA    OK         607 velas
+  MRVL       OK         6 velas
+  MRVL.BA    OK         638 velas
+  MS         OK         6 velas
+  MS.BA      OK         39 velas
+  MU         OK         6 velas
+  MU.BA      OK         1036 velas
+  NEE        OK         6 velas
+  NEE.BA     OK         112 velas
+  NEM        OK         6 velas
+  NEM.BA     OK         5 velas
+  NIO        OK         2041 velas
   NIO.BA     OK         1 velas
-  NOW        OK         5 velas
-  NOW.BA     OK         351 velas
-  NTES       OK         5 velas
+  NOW        OK         6 velas
+  NOW.BA     OK         352 velas
+  NTES       OK         6 velas
   NTES.BA    OK         1 velas
-  NUE        OK         5 velas
-  NUE.BA     OK         6 velas
-  NVO        OK         5 velas
-  NVO.BA     OK         108 velas
-  NVS        OK         5 velas
-  NVS.BA     OK         6 velas
-  OXY        OK         5 velas
-  OXY.BA     OK         1039 velas
-  PANW       OK         5 velas
-  PANW.BA    OK         1034 velas
-  PAAS       OK         5 velas
-  PAAS.BA    OK         1378 velas
-  PAGS       OK         2200 velas
+  NUE        OK         6 velas
+  NUE.BA     OK         5 velas
+  NVO        OK         6 velas
+  NVO.BA     OK         109 velas
+  NVS        OK         6 velas
+  NVS.BA     OK         5 velas
+  OXY        OK         6 velas
+  OXY.BA     OK         1040 velas
+  PANW       OK         6 velas
+  PANW.BA    OK         1035 velas
+  PAAS       OK         6 velas
+  PAAS.BA    OK         1379 velas
+  PAGS       OK         2201 velas
   PAGS.BA    OK         1 velas
-  PDD        OK         2073 velas
-  PDD.BA     OK         355 velas
-  PINS       OK         1890 velas
-  PINS.BA    OK         534 velas
-  PLTR       OK         1524 velas
-  PLTR.BA    OK         633 velas
-  PM         OK         5 velas
-  PM.BA      OK         598 velas
-  RACE       OK         5 velas
-  RACE.BA    OK         624 velas
-  RBLX       OK         1414 velas
-  RBLX.BA    OK         1039 velas
-  RIO        OK         5 velas
-  RIO.BA     OK         6 velas
-  ROKU       OK         2280 velas
+  PDD        OK         2074 velas
+  PDD.BA     OK         356 velas
+  PINS       OK         1891 velas
+  PINS.BA    OK         535 velas
+  PLTR       OK         1525 velas
+  PLTR.BA    OK         634 velas
+  PM         OK         6 velas
+  PM.BA      OK         599 velas
+  RACE       OK         6 velas
+  RACE.BA    OK         625 velas
+  RBLX       OK         1415 velas
+  RBLX.BA    OK         1040 velas
+  RIO        OK         6 velas
+  RIO.BA     OK         5 velas
+  ROKU       OK         2281 velas
   ROKU.BA    OK         623 velas
-  RTX        OK         5 velas
-  RTX.BA     OK         6 velas
-  SAP        OK         5 velas
-  SAP.BA     OK         6 velas
-  SBUX       OK         5 velas
-  SBUX.BA    OK         6 velas
-  SCCO       OK         5 velas
-  SCCO.BA    OK         6 velas
-  SCHW       OK         5 velas
+  RTX        OK         6 velas
+  RTX.BA     OK         5 velas
+  SAP        OK         6 velas
+  SAP.BA     OK         5 velas
+  SBUX       OK         6 velas
+  SBUX.BA    OK         5 velas
+  SCCO       OK         6 velas
+  SCCO.BA    OK         5 velas
+  SCHW       OK         6 velas
   SCHW.BA    OK         1 velas
-  SE         OK         2264 velas
+  SE         OK         2265 velas
   SE.BA      OK         1 velas
-  SHEL       OK         5 velas
-  SHEL.BA    OK         6 velas
-  SHOP       OK         5 velas
+  SHEL       OK         6 velas
+  SHEL.BA    OK         5 velas
+  SHOP       OK         6 velas
   SHOP.BA    OK         1 velas
-  SLB        OK         5 velas
-  SLB.BA     OK         6 velas
-  SNAP       OK         2426 velas
-  SNAP.BA    OK         1639 velas
-  SNOW       OK         1534 velas
+  SLB        OK         6 velas
+  SLB.BA     OK         5 velas
+  SNAP       OK         2427 velas
+  SNAP.BA    OK         1640 velas
+  SNOW       OK         1535 velas
   SNOW.BA    OK         1 velas
-  SONY       OK         5 velas
-  SONY.BA    OK         6 velas
-  SPGI       OK         5 velas
-  SPGI.BA    OK         879 velas
-  SPOT       OK         2153 velas
-  SPOT.BA    OK         1376 velas
-  STNE       OK         2009 velas
-  STNE.BA    OK         632 velas
-  T          OK         5 velas
-  T.BA       OK         6 velas
-  TGT        OK         5 velas
-  TGT.BA     OK         1589 velas
-  TM         OK         5 velas
-  TM.BA      OK         6 velas
-  TMO        OK         5 velas
-  TMO.BA     OK         1568 velas
-  TMUS       OK         5 velas
-  TMUS.BA    OK         507 velas
-  TTE        OK         5 velas
-  TTE.BA     OK         6 velas
-  TXN        OK         5 velas
-  TXN.BA     OK         6 velas
-  UAL        OK         5 velas
-  UAL.BA     OK         1024 velas
-  UNH        OK         5 velas
+  SONY       OK         6 velas
+  SONY.BA    OK         5 velas
+  SPGI       OK         6 velas
+  SPGI.BA    OK         880 velas
+  SPOT       OK         2154 velas
+  SPOT.BA    OK         1377 velas
+  STNE       OK         2010 velas
+  STNE.BA    OK         633 velas
+  T          OK         6 velas
+  T.BA       OK         5 velas
+  TGT        OK         6 velas
+  TGT.BA     OK         1590 velas
+  TM         OK         6 velas
+  TM.BA      OK         5 velas
+  TMO        OK         6 velas
+  TMO.BA     OK         1569 velas
+  TMUS       OK         6 velas
+  TMUS.BA    OK         508 velas
+  TTE        OK         6 velas
+  TTE.BA     OK         5 velas
+  TXN        OK         6 velas
+  TXN.BA     OK         5 velas
+  UAL        OK         6 velas
+  UAL.BA     OK         1025 velas
+  UNH        OK         6 velas
   UNH.BA     OK         1 velas
-  UNP        OK         5 velas
+  UNP        OK         6 velas
   UNP.BA     OK         1 velas
-  UPST       OK         1470 velas
-  UPST.BA    OK         1039 velas
-  USB        OK         5 velas
-  USB.BA     OK         6 velas
-  VZ         OK         5 velas
-  VZ.BA      OK         6 velas
-  WFC        OK         5 velas
-  WFC.BA     OK         6 velas
-  XP         OK         1726 velas
+  UPST       OK         1471 velas
+  UPST.BA    OK         1040 velas
+  USB        OK         6 velas
+  USB.BA     OK         5 velas
+  VZ         OK         6 velas
+  VZ.BA      OK         5 velas
+  WFC        OK         6 velas
+  WFC.BA     OK         5 velas
+  XP         OK         1727 velas
   XP.BA      OK         1 velas
-  XPEV       OK         1547 velas
-  XPEV.BA    OK         355 velas
-  ZM         OK         1890 velas
+  XPEV       OK         1548 velas
+  XPEV.BA    OK         356 velas
+  ZM         OK         1891 velas
   ZM.BA      OK         1 velas
-  TEN        OK         5 velas
+  TEN        OK         6 velas
   TEN.BA     OK         1 velas
   TXR        SIN DATOS  0 velas
-  TXR.BA     OK         6 velas
+  TXR.BA     OK         5 velas
   BA.C.BA    SIN DATOS  0 velas
-  BA-C.BA    OK         6 velas
+  BA-C.BA    OK         5 velas
 
 Resumen de la base:
-  AAL         2534 velas  2016-09-26 -> 2026-10-23
-  AAL.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  AAPL        2534 velas  2016-09-26 -> 2026-10-23
-  AAPL.BA     2464 velas  2016-09-26 -> 2026-10-26
-  ABBV        2534 velas  2016-09-26 -> 2026-10-23
-  ABBV.BA     1069 velas  2022-06-22 -> 2026-10-26
-  ABNB        1474 velas  2020-12-10 -> 2026-10-23
-  ABNB.BA     1039 velas  2022-07-26 -> 2026-10-26
-  ABT         2534 velas  2016-09-26 -> 2026-10-23
-  ABT.BA      2464 velas  2016-09-27 -> 2026-10-26
-  ACN         2534 velas  2016-09-26 -> 2026-10-23
-  ACN.BA       624 velas  2024-04-10 -> 2026-10-26
-  ADBE        2534 velas  2016-09-26 -> 2026-10-23
-  ADBE.BA     1619 velas  2020-03-12 -> 2026-10-26
-  ADI         2534 velas  2016-09-26 -> 2026-10-23
-  ADI.BA      2464 velas  2016-09-27 -> 2026-10-26
-  ADP         2534 velas  2016-09-26 -> 2026-10-23
-  ADP.BA      2464 velas  2016-09-27 -> 2026-10-26
-  AEM         2534 velas  2016-09-26 -> 2026-10-23
-  AEM.BA      1453 velas  2020-11-17 -> 2026-10-26
-  AIG         2534 velas  2016-09-26 -> 2026-10-23
-  AIG.BA      2464 velas  2016-09-27 -> 2026-10-26
-  AMAT        2534 velas  2016-09-26 -> 2026-10-23
-  AMAT.BA     2464 velas  2016-09-27 -> 2026-10-26
-  AMD         2534 velas  2016-09-26 -> 2026-10-23
-  AMD.BA      1465 velas  2020-10-30 -> 2026-10-26
-  AMGN        2534 velas  2016-09-26 -> 2026-10-23
-  AMGN.BA     2464 velas  2016-09-27 -> 2026-10-26
-  AMX         2534 velas  2016-09-26 -> 2026-10-23
-  AMX.BA      2463 velas  2016-09-27 -> 2026-10-26
-  AMZN        2534 velas  2016-09-26 -> 2026-10-23
-  AMZN.BA     1619 velas  2020-03-12 -> 2026-10-26
-  ANET        2534 velas  2016-09-26 -> 2026-10-23
-  ANET.BA      112 velas  2026-05-15 -> 2026-10-26  <-- revisar
-  ARCO        2534 velas  2016-09-26 -> 2026-10-23
-  ARCO.BA     1619 velas  2020-03-12 -> 2026-10-26
-  ARM          781 velas  2023-09-14 -> 2026-10-23
-  ARM.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  ASML        2534 velas  2016-09-26 -> 2026-10-23
-  ASML.BA      354 velas  2025-05-19 -> 2026-10-26
-  AVGO        2534 velas  2016-09-26 -> 2026-10-23
-  AVGO.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  AXP         2534 velas  2016-09-26 -> 2026-10-23
-  AXP.BA      2464 velas  2016-09-27 -> 2026-10-26
-  AZN         2534 velas  2016-09-26 -> 2026-10-23
-  AZN.BA      2463 velas  2016-09-27 -> 2026-10-26
-  B           2534 velas  2016-09-26 -> 2026-10-23
-  B.BA         359 velas  2025-05-13 -> 2026-10-26
-  BA          2534 velas  2016-09-26 -> 2026-10-23
-  BA-C.BA     2464 velas  2016-09-27 -> 2026-10-26
-  BA.BA       2465 velas  2016-09-26 -> 2026-10-26
-  BABA        2534 velas  2016-09-26 -> 2026-10-23
-  BABA.BA     1619 velas  2020-03-12 -> 2026-10-26
-  BAC         2534 velas  2016-09-26 -> 2026-10-23
-  BAC.BA         6 velas  2026-09-22 -> 2026-10-23  <-- revisar
-  BBD         2534 velas  2016-09-26 -> 2026-10-23
-  BBD.BA      2464 velas  2016-09-27 -> 2026-10-26
-  BHP         2534 velas  2016-09-26 -> 2026-10-23
-  BHP.BA      2464 velas  2016-09-27 -> 2026-10-26
-  BIDU        2534 velas  2016-09-26 -> 2026-10-23
-  BIDU.BA     1618 velas  2020-03-13 -> 2026-10-26
-  BKNG        2534 velas  2016-09-26 -> 2026-10-23
-  BKNG.BA      582 velas  2024-04-22 -> 2026-10-26
-  BKR         2534 velas  2016-09-26 -> 2026-10-23
-  BKR.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  BMY         2534 velas  2016-09-26 -> 2026-10-23
-  BMY.BA      2464 velas  2016-09-27 -> 2026-10-26
-  BP          2534 velas  2016-09-26 -> 2026-10-23
-  BP.BA       2464 velas  2016-09-27 -> 2026-10-26
-  BRK-B       2534 velas  2016-09-26 -> 2026-10-23
-  BRKB.BA     1382 velas  2021-03-09 -> 2026-10-26
-  BX          2534 velas  2016-09-26 -> 2026-10-23
-  BX.BA        188 velas  2026-01-20 -> 2026-10-26  <-- revisar
-  C           2534 velas  2016-09-26 -> 2026-10-23
-  C.BA        2465 velas  2016-09-26 -> 2026-10-26
-  CAAP        2194 velas  2018-02-01 -> 2026-10-23
-  CAAP.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  CAH         2534 velas  2016-09-26 -> 2026-10-23
-  CAH.BA      2463 velas  2016-09-27 -> 2026-10-23
-  CAT         2534 velas  2016-09-26 -> 2026-10-23
-  CAT.BA      2465 velas  2016-09-26 -> 2026-10-26
-  CCL         2534 velas  2016-09-26 -> 2026-10-23
-  CCL.BA       598 velas  2024-04-17 -> 2026-10-26
-  CEG         1196 velas  2022-01-19 -> 2026-10-23
-  CEG.BA       356 velas  2025-05-16 -> 2026-10-26
-  CL          2534 velas  2016-09-26 -> 2026-10-23
-  CL.BA       2464 velas  2016-09-27 -> 2026-10-26
-  COIN        1390 velas  2021-04-14 -> 2026-10-23
-  COIN.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  COP         2534 velas  2016-09-26 -> 2026-10-23
-  COP.BA       111 velas  2026-05-18 -> 2026-10-26  <-- revisar
-  COST        2534 velas  2016-09-26 -> 2026-10-23
-  COST.BA     2464 velas  2016-09-27 -> 2026-10-26
-  CRM         2534 velas  2016-09-26 -> 2026-10-23
-  CRM.BA      1618 velas  2020-03-13 -> 2026-10-26
-  CRWD        1853 velas  2019-06-12 -> 2026-10-23
-  CRWD.BA      112 velas  2026-05-15 -> 2026-10-26  <-- revisar
-  CSCO        2534 velas  2016-09-26 -> 2026-10-23
-  CSCO.BA     2464 velas  2016-09-26 -> 2026-10-26
-  CVS         2534 velas  2016-09-26 -> 2026-10-23
-  CVS.BA       625 velas  2024-04-10 -> 2026-10-26
-  CVX         2534 velas  2016-09-26 -> 2026-10-23
-  CVX.BA      2465 velas  2016-09-26 -> 2026-10-26
-  DAL         2534 velas  2016-09-26 -> 2026-10-23
-  DAL.BA       622 velas  2024-04-10 -> 2026-10-26
-  DE          2534 velas  2016-09-26 -> 2026-10-23
-  DE.BA       2464 velas  2016-09-27 -> 2026-10-26
-  DELL        2534 velas  2016-09-26 -> 2026-10-23
-  DELL.BA       35 velas  2026-09-07 -> 2026-10-26  <-- revisar
-  DHR         2534 velas  2016-09-26 -> 2026-10-23
-  DHR.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  DIS         2534 velas  2016-09-26 -> 2026-10-23
-  DISN.BA     2465 velas  2016-09-26 -> 2026-10-26
-  DOCU        2135 velas  2018-04-27 -> 2026-10-23
-  DOCU.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
+  AAL         2535 velas  2016-09-26 -> 2026-10-26
+  AAL.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  AAPL        2535 velas  2016-09-26 -> 2026-10-26
+  AAPL.BA     2465 velas  2016-09-26 -> 2026-10-27
+  ABBV        2535 velas  2016-09-26 -> 2026-10-26
+  ABBV.BA     1070 velas  2022-06-22 -> 2026-10-27
+  ABNB        1475 velas  2020-12-10 -> 2026-10-26
+  ABNB.BA     1040 velas  2022-07-26 -> 2026-10-27
+  ABT         2535 velas  2016-09-26 -> 2026-10-26
+  ABT.BA      2465 velas  2016-09-27 -> 2026-10-27
+  ACN         2535 velas  2016-09-26 -> 2026-10-26
+  ACN.BA       625 velas  2024-04-10 -> 2026-10-27
+  ADBE        2535 velas  2016-09-26 -> 2026-10-26
+  ADBE.BA     1620 velas  2020-03-12 -> 2026-10-27
+  ADI         2535 velas  2016-09-26 -> 2026-10-26
+  ADI.BA      2465 velas  2016-09-27 -> 2026-10-27
+  ADP         2535 velas  2016-09-26 -> 2026-10-26
+  ADP.BA      2465 velas  2016-09-27 -> 2026-10-27
+  AEM         2535 velas  2016-09-26 -> 2026-10-26
+  AEM.BA      1454 velas  2020-11-17 -> 2026-10-27
+  AIG         2535 velas  2016-09-26 -> 2026-10-26
+  AIG.BA      2465 velas  2016-09-27 -> 2026-10-27
+  AMAT        2535 velas  2016-09-26 -> 2026-10-26
+  AMAT.BA     2465 velas  2016-09-27 -> 2026-10-27
+  AMD         2535 velas  2016-09-26 -> 2026-10-26
+  AMD.BA      1466 velas  2020-10-30 -> 2026-10-27
+  AMGN        2535 velas  2016-09-26 -> 2026-10-26
+  AMGN.BA     2465 velas  2016-09-27 -> 2026-10-27
+  AMX         2535 velas  2016-09-26 -> 2026-10-26
+  AMX.BA      2464 velas  2016-09-27 -> 2026-10-27
+  AMZN        2535 velas  2016-09-26 -> 2026-10-26
+  AMZN.BA     1620 velas  2020-03-12 -> 2026-10-27
+  ANET        2535 velas  2016-09-26 -> 2026-10-26
+  ANET.BA      113 velas  2026-05-15 -> 2026-10-27  <-- revisar
+  ARCO        2535 velas  2016-09-26 -> 2026-10-26
+  ARCO.BA     1620 velas  2020-03-12 -> 2026-10-27
+  ARM          782 velas  2023-09-14 -> 2026-10-26
+  ARM.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  ASML        2535 velas  2016-09-26 -> 2026-10-26
+  ASML.BA      355 velas  2025-05-19 -> 2026-10-27
+  AVGO        2535 velas  2016-09-26 -> 2026-10-26
+  AVGO.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  AXP         2535 velas  2016-09-26 -> 2026-10-26
+  AXP.BA      2465 velas  2016-09-27 -> 2026-10-27
+  AZN         2535 velas  2016-09-26 -> 2026-10-26
+  AZN.BA      2464 velas  2016-09-27 -> 2026-10-27
+  B           2535 velas  2016-09-26 -> 2026-10-26
+  B.BA         360 velas  2025-05-13 -> 2026-10-27
+  BA          2535 velas  2016-09-26 -> 2026-10-26
+  BA-C.BA     2465 velas  2016-09-27 -> 2026-10-27
+  BA.BA       2466 velas  2016-09-26 -> 2026-10-27
+  BABA        2535 velas  2016-09-26 -> 2026-10-26
+  BABA.BA     1620 velas  2020-03-12 -> 2026-10-27
+  BAC         2535 velas  2016-09-26 -> 2026-10-26
+  BAC.BA         7 velas  2026-09-22 -> 2026-10-27  <-- revisar
+  BBD         2535 velas  2016-09-26 -> 2026-10-26
+  BBD.BA      2465 velas  2016-09-27 -> 2026-10-27
+  BHP         2535 velas  2016-09-26 -> 2026-10-26
+  BHP.BA      2465 velas  2016-09-27 -> 2026-10-27
+  BIDU        2535 velas  2016-09-26 -> 2026-10-26
+  BIDU.BA     1619 velas  2020-03-13 -> 2026-10-27
+  BKNG        2535 velas  2016-09-26 -> 2026-10-26
+  BKNG.BA      583 velas  2024-04-22 -> 2026-10-27
+  BKR         2535 velas  2016-09-26 -> 2026-10-26
+  BKR.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  BMY         2535 velas  2016-09-26 -> 2026-10-26
+  BMY.BA      2465 velas  2016-09-27 -> 2026-10-27
+  BP          2535 velas  2016-09-26 -> 2026-10-26
+  BP.BA       2465 velas  2016-09-27 -> 2026-10-27
+  BRK-B       2535 velas  2016-09-26 -> 2026-10-26
+  BRKB.BA     1383 velas  2021-03-09 -> 2026-10-27
+  BX          2535 velas  2016-09-26 -> 2026-10-26
+  BX.BA        189 velas  2026-01-20 -> 2026-10-27  <-- revisar
+  C           2535 velas  2016-09-26 -> 2026-10-26
+  C.BA        2466 velas  2016-09-26 -> 2026-10-27
+  CAAP        2195 velas  2018-02-01 -> 2026-10-26
+  CAAP.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  CAH         2535 velas  2016-09-26 -> 2026-10-26
+  CAH.BA      2465 velas  2016-09-27 -> 2026-10-27
+  CAT         2535 velas  2016-09-26 -> 2026-10-26
+  CAT.BA      2466 velas  2016-09-26 -> 2026-10-27
+  CCL         2535 velas  2016-09-26 -> 2026-10-26
+  CCL.BA       599 velas  2024-04-17 -> 2026-10-27
+  CEG         1197 velas  2022-01-19 -> 2026-10-26
+  CEG.BA       357 velas  2025-05-16 -> 2026-10-27
+  CL          2535 velas  2016-09-26 -> 2026-10-26
+  CL.BA       2465 velas  2016-09-27 -> 2026-10-27
+  COIN        1391 velas  2021-04-14 -> 2026-10-26
+  COIN.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  COP         2535 velas  2016-09-26 -> 2026-10-26
+  COP.BA       112 velas  2026-05-18 -> 2026-10-27  <-- revisar
+  COST        2535 velas  2016-09-26 -> 2026-10-26
+  COST.BA     2465 velas  2016-09-27 -> 2026-10-27
+  CRM         2535 velas  2016-09-26 -> 2026-10-26
+  CRM.BA      1619 velas  2020-03-13 -> 2026-10-27
+  CRWD        1854 velas  2019-06-12 -> 2026-10-26
+  CRWD.BA      113 velas  2026-05-15 -> 2026-10-27  <-- revisar
+  CSCO        2535 velas  2016-09-26 -> 2026-10-26
+  CSCO.BA     2465 velas  2016-09-26 -> 2026-10-27
+  CVS         2535 velas  2016-09-26 -> 2026-10-26
+  CVS.BA       626 velas  2024-04-10 -> 2026-10-27
+  CVX         2535 velas  2016-09-26 -> 2026-10-26
+  CVX.BA      2466 velas  2016-09-26 -> 2026-10-27
+  DAL         2535 velas  2016-09-26 -> 2026-10-26
+  DAL.BA       623 velas  2024-04-10 -> 2026-10-27
+  DE          2535 velas  2016-09-26 -> 2026-10-26
+  DE.BA       2465 velas  2016-09-27 -> 2026-10-27
+  DELL        2535 velas  2016-09-26 -> 2026-10-26
+  DELL.BA       39 velas  2026-09-02 -> 2026-10-27  <-- revisar
+  DHR         2535 velas  2016-09-26 -> 2026-10-26
+  DHR.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  DIS         2535 velas  2016-09-26 -> 2026-10-26
+  DISN.BA     2466 velas  2016-09-26 -> 2026-10-27
+  DOCU        2136 velas  2018-04-27 -> 2026-10-26
+  DOCU.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
   EA             1 velas  2026-08-04 -> 2026-08-04  <-- revisar
   EA.BA          1 velas  2026-08-03 -> 2026-08-03  <-- revisar
-  EBAY        2534 velas  2016-09-26 -> 2026-10-23
-  EBAY.BA     2464 velas  2016-09-27 -> 2026-10-26
-  ETSY        2534 velas  2016-09-26 -> 2026-10-23
-  ETSY.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  F           2534 velas  2016-09-26 -> 2026-10-23
-  F.BA        1039 velas  2022-07-26 -> 2026-10-26
-  FCX         2534 velas  2016-09-26 -> 2026-10-23
-  FCX.BA      2464 velas  2016-09-27 -> 2026-10-26
-  FDX         2534 velas  2016-09-26 -> 2026-10-23
-  FDX.BA      2464 velas  2016-09-27 -> 2026-10-26
-  FSLR        2534 velas  2016-09-26 -> 2026-10-23
-  FSLR.BA     2464 velas  2016-09-27 -> 2026-10-26
-  GE          2534 velas  2016-09-26 -> 2026-10-23
-  GE.BA       2464 velas  2016-09-27 -> 2026-10-26
-  GEV          647 velas  2024-03-27 -> 2026-10-23
-  GEV.BA        38 velas  2026-09-02 -> 2026-10-26  <-- revisar
-  GGB         2534 velas  2016-09-26 -> 2026-10-23
-  GGB.BA      1618 velas  2020-03-13 -> 2026-10-26
-  GILD        2534 velas  2016-09-26 -> 2026-10-23
-  GILD.BA     1619 velas  2020-03-12 -> 2026-10-26
-  GLOB        2534 velas  2016-09-26 -> 2026-10-23
-  GLOB.BA     1074 velas  2022-06-13 -> 2026-10-26
-  GLW         2534 velas  2016-09-26 -> 2026-10-23
-  GLW.BA      2464 velas  2016-09-27 -> 2026-10-26
-  GM          2534 velas  2016-09-26 -> 2026-10-23
-  GM.BA         22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  GOOGL       2534 velas  2016-09-26 -> 2026-10-23
-  GOOGL.BA    2465 velas  2016-09-26 -> 2026-10-26
-  GS          2534 velas  2016-09-26 -> 2026-10-23
-  GS.BA       1848 velas  2019-04-04 -> 2026-10-26
-  HAL         2534 velas  2016-09-26 -> 2026-10-23
-  HAL.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  HD          2534 velas  2016-09-26 -> 2026-10-23
-  HD.BA       2465 velas  2016-09-26 -> 2026-10-26
-  HMC         2534 velas  2016-09-26 -> 2026-10-23
-  HMC.BA      2463 velas  2016-09-27 -> 2026-10-26
-  HON         2534 velas  2016-09-26 -> 2026-10-23
-  HON.BA      2464 velas  2016-09-27 -> 2026-10-26
-  HOOD        1316 velas  2021-07-29 -> 2026-10-23
-  HOOD.BA      234 velas  2025-11-11 -> 2026-10-26
-  HPQ         2534 velas  2016-09-26 -> 2026-10-23
-  HPQ.BA      2464 velas  2016-09-27 -> 2026-10-26
-  HSBC        2534 velas  2016-09-26 -> 2026-10-23
-  HSBC.BA     2463 velas  2016-09-27 -> 2026-10-26
-  IBKR        2534 velas  2016-09-26 -> 2026-10-23
-  IBKR.BA       36 velas  2026-09-04 -> 2026-10-26  <-- revisar
-  IBM         2534 velas  2016-09-26 -> 2026-10-23
-  IBM.BA      2465 velas  2016-09-26 -> 2026-10-26
-  INFY        2534 velas  2016-09-26 -> 2026-10-23
-  INFY.BA     2464 velas  2016-09-27 -> 2026-10-26
-  INTC        2534 velas  2016-09-26 -> 2026-10-23
-  INTC.BA     2465 velas  2016-09-26 -> 2026-10-26
-  ISRG        2534 velas  2016-09-26 -> 2026-10-23
-  ISRG.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  ITUB        2534 velas  2016-09-26 -> 2026-10-23
-  ITUB.BA     1787 velas  2019-07-05 -> 2026-10-26
-  JD          2534 velas  2016-09-26 -> 2026-10-23
-  JD.BA       1618 velas  2020-03-13 -> 2026-10-26
-  JNJ         2534 velas  2016-09-26 -> 2026-10-23
-  JNJ.BA      2465 velas  2016-09-26 -> 2026-10-26
-  JPM         2534 velas  2016-09-26 -> 2026-10-23
-  JPM.BA      2465 velas  2016-09-26 -> 2026-10-26
-  KLAC        2534 velas  2016-09-26 -> 2026-10-23
-  KLAC.BA       38 velas  2026-09-02 -> 2026-10-26  <-- revisar
-  KMB         2534 velas  2016-09-26 -> 2026-10-23
-  KMB.BA      2464 velas  2016-09-27 -> 2026-10-26
-  KO          2534 velas  2016-09-26 -> 2026-10-23
-  KO.BA       2465 velas  2016-09-26 -> 2026-10-26
-  LIN         2534 velas  2016-09-26 -> 2026-10-23
-  LIN.BA        36 velas  2026-09-04 -> 2026-10-26  <-- revisar
-  LLY         2534 velas  2016-09-26 -> 2026-10-23
-  LLY.BA      2465 velas  2016-09-26 -> 2026-10-26
-  LMT         2534 velas  2016-09-26 -> 2026-10-23
-  LMT.BA      2464 velas  2016-09-27 -> 2026-10-26
-  LRCX        2534 velas  2016-09-26 -> 2026-10-23
-  LRCX.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  LVS         2534 velas  2016-09-26 -> 2026-10-23
-  LVS.BA      2463 velas  2016-09-27 -> 2026-10-26
-  MA          2534 velas  2016-09-26 -> 2026-10-23
-  MA.BA         22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  MCD         2534 velas  2016-09-26 -> 2026-10-23
-  MCD.BA      2465 velas  2016-09-26 -> 2026-10-26
-  MDLZ        2534 velas  2016-09-26 -> 2026-10-23
-  MDLZ.BA      624 velas  2024-04-10 -> 2026-10-26
-  MDT         2534 velas  2016-09-26 -> 2026-10-23
-  MDT.BA      2464 velas  2016-09-27 -> 2026-10-26
-  MELI        2534 velas  2016-09-26 -> 2026-10-23
-  MELI.BA     2464 velas  2016-09-26 -> 2026-10-26
-  META        2534 velas  2016-09-26 -> 2026-10-23
-  META.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  MMM         2534 velas  2016-09-26 -> 2026-10-23
-  MMM.BA      2464 velas  2016-09-27 -> 2026-10-26
-  MO          2534 velas  2016-09-26 -> 2026-10-23
-  MO.BA       2464 velas  2016-09-27 -> 2026-10-26
-  MRK         2534 velas  2016-09-26 -> 2026-10-23
-  MRK.BA      2465 velas  2016-09-26 -> 2026-10-26
-  MRNA        1980 velas  2018-12-07 -> 2026-10-23
-  MRNA.BA      606 velas  2024-05-07 -> 2026-10-26
-  MRVL        2534 velas  2016-09-26 -> 2026-10-23
-  MRVL.BA      637 velas  2024-03-18 -> 2026-10-26
-  MS          2534 velas  2016-09-26 -> 2026-10-23
-  MS.BA         38 velas  2026-09-02 -> 2026-10-26  <-- revisar
-  MSFT        2534 velas  2016-09-26 -> 2026-10-23
-  MSFT.BA     2465 velas  2016-09-26 -> 2026-10-26
-  MSTR        2534 velas  2016-09-26 -> 2026-10-23
-  MSTR.BA     1039 velas  2022-07-26 -> 2026-10-26
-  MU          2534 velas  2016-09-26 -> 2026-10-23
-  MU.BA       1035 velas  2022-07-26 -> 2026-10-26
-  NEE         2534 velas  2016-09-26 -> 2026-10-23
-  NEE.BA       111 velas  2026-05-18 -> 2026-10-26  <-- revisar
-  NEM         2534 velas  2016-09-26 -> 2026-10-23
-  NEM.BA      2464 velas  2016-09-27 -> 2026-10-26
-  NFLX        2534 velas  2016-09-26 -> 2026-10-23
-  NFLX.BA     1619 velas  2020-03-12 -> 2026-10-26
-  NIO         2040 velas  2018-09-12 -> 2026-10-23
-  NIO.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  NKE         2534 velas  2016-09-26 -> 2026-10-23
-  NKE.BA      2464 velas  2016-09-26 -> 2026-10-26
-  NOW         2534 velas  2016-09-26 -> 2026-10-23
-  NOW.BA       351 velas  2025-05-19 -> 2026-10-26
-  NTES        2534 velas  2016-09-26 -> 2026-10-23
-  NTES.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  NU          1223 velas  2021-12-09 -> 2026-10-23
-  NU.BA        636 velas  2024-03-19 -> 2026-10-26
-  NUE         2534 velas  2016-09-26 -> 2026-10-23
-  NUE.BA      2464 velas  2016-09-27 -> 2026-10-26
-  NVDA        2534 velas  2016-09-26 -> 2026-10-23
-  NVDA.BA     1619 velas  2020-03-12 -> 2026-10-26
-  NVO         2534 velas  2016-09-26 -> 2026-10-23
-  NVO.BA       108 velas  2026-05-21 -> 2026-10-26  <-- revisar
-  NVS         2534 velas  2016-09-26 -> 2026-10-23
-  NVS.BA      2463 velas  2016-09-27 -> 2026-10-26
-  ORCL        2534 velas  2016-09-26 -> 2026-10-23
-  ORCL.BA     2465 velas  2016-09-26 -> 2026-10-26
-  OXY         2534 velas  2016-09-26 -> 2026-10-23
-  OXY.BA      1039 velas  2022-07-26 -> 2026-10-26
-  PAAS        2534 velas  2016-09-26 -> 2026-10-23
-  PAAS.BA     1383 velas  2021-03-08 -> 2026-10-26
-  PAGS        2200 velas  2018-01-24 -> 2026-10-23
-  PAGS.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  PANW        2534 velas  2016-09-26 -> 2026-10-23
-  PANW.BA     1034 velas  2022-08-01 -> 2026-10-26
-  PBR         2534 velas  2016-09-26 -> 2026-10-23
-  PBR.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  PDD         2073 velas  2018-07-26 -> 2026-10-23
-  PDD.BA       355 velas  2025-05-19 -> 2026-10-26
-  PEP         2534 velas  2016-09-26 -> 2026-10-23
-  PEP.BA      2464 velas  2016-09-26 -> 2026-10-26
-  PFE         2534 velas  2016-09-26 -> 2026-10-23
-  PFE.BA      2464 velas  2016-09-26 -> 2026-10-26
-  PG          2534 velas  2016-09-26 -> 2026-10-23
-  PG.BA       2465 velas  2016-09-26 -> 2026-10-26
-  PINS        1890 velas  2019-04-18 -> 2026-10-23
-  PINS.BA      534 velas  2024-05-13 -> 2026-10-26
-  PLTR        1524 velas  2020-09-30 -> 2026-10-23
-  PLTR.BA      633 velas  2024-03-19 -> 2026-10-26
-  PM          2534 velas  2016-09-26 -> 2026-10-23
-  PM.BA        598 velas  2024-04-15 -> 2026-10-26
-  PYPL        2534 velas  2016-09-26 -> 2026-10-23
-  PYPL.BA     1846 velas  2019-04-08 -> 2026-10-26
-  QCOM        2534 velas  2016-09-26 -> 2026-10-23
-  QCOM.BA     2464 velas  2016-09-26 -> 2026-10-26
-  RACE        2534 velas  2016-09-26 -> 2026-10-23
-  RACE.BA      624 velas  2024-04-10 -> 2026-10-26
-  RBLX        1414 velas  2021-03-10 -> 2026-10-23
-  RBLX.BA     1039 velas  2022-07-26 -> 2026-10-26
-  RIO         2534 velas  2016-09-26 -> 2026-10-23
-  RIO.BA      2464 velas  2016-09-27 -> 2026-10-26
-  ROKU        2280 velas  2017-09-28 -> 2026-10-23
+  EBAY        2535 velas  2016-09-26 -> 2026-10-26
+  EBAY.BA     2465 velas  2016-09-27 -> 2026-10-27
+  ETSY        2535 velas  2016-09-26 -> 2026-10-26
+  ETSY.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  F           2535 velas  2016-09-26 -> 2026-10-26
+  F.BA        1040 velas  2022-07-26 -> 2026-10-27
+  FCX         2535 velas  2016-09-26 -> 2026-10-26
+  FCX.BA      2465 velas  2016-09-27 -> 2026-10-27
+  FDX         2535 velas  2016-09-26 -> 2026-10-26
+  FDX.BA      2465 velas  2016-09-27 -> 2026-10-27
+  FSLR        2535 velas  2016-09-26 -> 2026-10-26
+  FSLR.BA     2465 velas  2016-09-27 -> 2026-10-27
+  GE          2535 velas  2016-09-26 -> 2026-10-26
+  GE.BA       2465 velas  2016-09-27 -> 2026-10-27
+  GEV          648 velas  2024-03-27 -> 2026-10-26
+  GEV.BA        39 velas  2026-09-02 -> 2026-10-27  <-- revisar
+  GGB         2535 velas  2016-09-26 -> 2026-10-26
+  GGB.BA      1619 velas  2020-03-13 -> 2026-10-27
+  GILD        2535 velas  2016-09-26 -> 2026-10-26
+  GILD.BA     1620 velas  2020-03-12 -> 2026-10-27
+  GLOB        2535 velas  2016-09-26 -> 2026-10-26
+  GLOB.BA     1075 velas  2022-06-13 -> 2026-10-27
+  GLW         2535 velas  2016-09-26 -> 2026-10-26
+  GLW.BA      2465 velas  2016-09-27 -> 2026-10-27
+  GM          2535 velas  2016-09-26 -> 2026-10-26
+  GM.BA         23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  GOOGL       2535 velas  2016-09-26 -> 2026-10-26
+  GOOGL.BA    2466 velas  2016-09-26 -> 2026-10-27
+  GS          2535 velas  2016-09-26 -> 2026-10-26
+  GS.BA       1849 velas  2019-04-04 -> 2026-10-27
+  HAL         2535 velas  2016-09-26 -> 2026-10-26
+  HAL.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  HD          2535 velas  2016-09-26 -> 2026-10-26
+  HD.BA       2466 velas  2016-09-26 -> 2026-10-27
+  HMC         2535 velas  2016-09-26 -> 2026-10-26
+  HMC.BA      2464 velas  2016-09-27 -> 2026-10-27
+  HON         2535 velas  2016-09-26 -> 2026-10-26
+  HON.BA      2465 velas  2016-09-27 -> 2026-10-27
+  HOOD        1317 velas  2021-07-29 -> 2026-10-26
+  HOOD.BA      235 velas  2025-11-11 -> 2026-10-27
+  HPQ         2535 velas  2016-09-26 -> 2026-10-26
+  HPQ.BA      2465 velas  2016-09-27 -> 2026-10-27
+  HSBC        2535 velas  2016-09-26 -> 2026-10-26
+  HSBC.BA     2464 velas  2016-09-27 -> 2026-10-27
+  IBKR        2535 velas  2016-09-26 -> 2026-10-26
+  IBKR.BA       38 velas  2026-09-03 -> 2026-10-27  <-- revisar
+  IBM         2535 velas  2016-09-26 -> 2026-10-26
+  IBM.BA      2466 velas  2016-09-26 -> 2026-10-27
+  INFY        2535 velas  2016-09-26 -> 2026-10-26
+  INFY.BA     2465 velas  2016-09-27 -> 2026-10-27
+  INTC        2535 velas  2016-09-26 -> 2026-10-26
+  INTC.BA     2466 velas  2016-09-26 -> 2026-10-27
+  ISRG        2535 velas  2016-09-26 -> 2026-10-26
+  ISRG.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  ITUB        2535 velas  2016-09-26 -> 2026-10-26
+  ITUB.BA     1788 velas  2019-07-05 -> 2026-10-27
+  JD          2535 velas  2016-09-26 -> 2026-10-26
+  JD.BA       1619 velas  2020-03-13 -> 2026-10-27
+  JNJ         2535 velas  2016-09-26 -> 2026-10-26
+  JNJ.BA      2466 velas  2016-09-26 -> 2026-10-27
+  JPM         2535 velas  2016-09-26 -> 2026-10-26
+  JPM.BA      2466 velas  2016-09-26 -> 2026-10-27
+  KLAC        2535 velas  2016-09-26 -> 2026-10-26
+  KLAC.BA       39 velas  2026-09-02 -> 2026-10-27  <-- revisar
+  KMB         2535 velas  2016-09-26 -> 2026-10-26
+  KMB.BA      2465 velas  2016-09-27 -> 2026-10-27
+  KO          2535 velas  2016-09-26 -> 2026-10-26
+  KO.BA       2466 velas  2016-09-26 -> 2026-10-27
+  LIN         2535 velas  2016-09-26 -> 2026-10-26
+  LIN.BA        38 velas  2026-09-03 -> 2026-10-27  <-- revisar
+  LLY         2535 velas  2016-09-26 -> 2026-10-26
+  LLY.BA      2466 velas  2016-09-26 -> 2026-10-27
+  LMT         2535 velas  2016-09-26 -> 2026-10-26
+  LMT.BA      2465 velas  2016-09-27 -> 2026-10-27
+  LRCX        2535 velas  2016-09-26 -> 2026-10-26
+  LRCX.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  LVS         2535 velas  2016-09-26 -> 2026-10-26
+  LVS.BA      2464 velas  2016-09-27 -> 2026-10-27
+  MA          2535 velas  2016-09-26 -> 2026-10-26
+  MA.BA         23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  MCD         2535 velas  2016-09-26 -> 2026-10-26
+  MCD.BA      2466 velas  2016-09-26 -> 2026-10-27
+  MDLZ        2535 velas  2016-09-26 -> 2026-10-26
+  MDLZ.BA      625 velas  2024-04-10 -> 2026-10-27
+  MDT         2535 velas  2016-09-26 -> 2026-10-26
+  MDT.BA      2465 velas  2016-09-27 -> 2026-10-27
+  MELI        2535 velas  2016-09-26 -> 2026-10-26
+  MELI.BA     2465 velas  2016-09-26 -> 2026-10-27
+  META        2535 velas  2016-09-26 -> 2026-10-26
+  META.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  MMM         2535 velas  2016-09-26 -> 2026-10-26
+  MMM.BA      2465 velas  2016-09-27 -> 2026-10-27
+  MO          2535 velas  2016-09-26 -> 2026-10-26
+  MO.BA       2465 velas  2016-09-27 -> 2026-10-27
+  MRK         2535 velas  2016-09-26 -> 2026-10-26
+  MRK.BA      2466 velas  2016-09-26 -> 2026-10-27
+  MRNA        1981 velas  2018-12-07 -> 2026-10-26
+  MRNA.BA      607 velas  2024-05-07 -> 2026-10-27
+  MRVL        2535 velas  2016-09-26 -> 2026-10-26
+  MRVL.BA      638 velas  2024-03-18 -> 2026-10-27
+  MS          2535 velas  2016-09-26 -> 2026-10-26
+  MS.BA         39 velas  2026-09-02 -> 2026-10-27  <-- revisar
+  MSFT        2535 velas  2016-09-26 -> 2026-10-26
+  MSFT.BA     2466 velas  2016-09-26 -> 2026-10-27
+  MSTR        2535 velas  2016-09-26 -> 2026-10-26
+  MSTR.BA     1040 velas  2022-07-26 -> 2026-10-27
+  MU          2535 velas  2016-09-26 -> 2026-10-26
+  MU.BA       1036 velas  2022-07-26 -> 2026-10-27
+  NEE         2535 velas  2016-09-26 -> 2026-10-26
+  NEE.BA       112 velas  2026-05-18 -> 2026-10-27  <-- revisar
+  NEM         2535 velas  2016-09-26 -> 2026-10-26
+  NEM.BA      2465 velas  2016-09-27 -> 2026-10-27
+  NFLX        2535 velas  2016-09-26 -> 2026-10-26
+  NFLX.BA     1620 velas  2020-03-12 -> 2026-10-27
+  NIO         2041 velas  2018-09-12 -> 2026-10-26
+  NIO.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  NKE         2535 velas  2016-09-26 -> 2026-10-26
+  NKE.BA      2465 velas  2016-09-26 -> 2026-10-27
+  NOW         2535 velas  2016-09-26 -> 2026-10-26
+  NOW.BA       352 velas  2025-05-19 -> 2026-10-27
+  NTES        2535 velas  2016-09-26 -> 2026-10-26
+  NTES.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  NU          1224 velas  2021-12-09 -> 2026-10-26
+  NU.BA        637 velas  2024-03-19 -> 2026-10-27
+  NUE         2535 velas  2016-09-26 -> 2026-10-26
+  NUE.BA      2465 velas  2016-09-27 -> 2026-10-27
+  NVDA        2535 velas  2016-09-26 -> 2026-10-26
+  NVDA.BA     1620 velas  2020-03-12 -> 2026-10-27
+  NVO         2535 velas  2016-09-26 -> 2026-10-26
+  NVO.BA       109 velas  2026-05-21 -> 2026-10-27  <-- revisar
+  NVS         2535 velas  2016-09-26 -> 2026-10-26
+  NVS.BA      2464 velas  2016-09-27 -> 2026-10-27
+  ORCL        2535 velas  2016-09-26 -> 2026-10-26
+  ORCL.BA     2466 velas  2016-09-26 -> 2026-10-27
+  OXY         2535 velas  2016-09-26 -> 2026-10-26
+  OXY.BA      1040 velas  2022-07-26 -> 2026-10-27
+  PAAS        2535 velas  2016-09-26 -> 2026-10-26
+  PAAS.BA     1384 velas  2021-03-08 -> 2026-10-27
+  PAGS        2201 velas  2018-01-24 -> 2026-10-26
+  PAGS.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  PANW        2535 velas  2016-09-26 -> 2026-10-26
+  PANW.BA     1035 velas  2022-08-01 -> 2026-10-27
+  PBR         2535 velas  2016-09-26 -> 2026-10-26
+  PBR.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  PDD         2074 velas  2018-07-26 -> 2026-10-26
+  PDD.BA       356 velas  2025-05-19 -> 2026-10-27
+  PEP         2535 velas  2016-09-26 -> 2026-10-26
+  PEP.BA      2465 velas  2016-09-26 -> 2026-10-27
+  PFE         2535 velas  2016-09-26 -> 2026-10-26
+  PFE.BA      2465 velas  2016-09-26 -> 2026-10-27
+  PG          2535 velas  2016-09-26 -> 2026-10-26
+  PG.BA       2466 velas  2016-09-26 -> 2026-10-27
+  PINS        1891 velas  2019-04-18 -> 2026-10-26
+  PINS.BA      535 velas  2024-05-13 -> 2026-10-27
+  PLTR        1525 velas  2020-09-30 -> 2026-10-26
+  PLTR.BA      634 velas  2024-03-19 -> 2026-10-27
+  PM          2535 velas  2016-09-26 -> 2026-10-26
+  PM.BA        599 velas  2024-04-15 -> 2026-10-27
+  PYPL        2535 velas  2016-09-26 -> 2026-10-26
+  PYPL.BA     1847 velas  2019-04-08 -> 2026-10-27
+  QCOM        2535 velas  2016-09-26 -> 2026-10-26
+  QCOM.BA     2465 velas  2016-09-26 -> 2026-10-27
+  RACE        2535 velas  2016-09-26 -> 2026-10-26
+  RACE.BA      625 velas  2024-04-10 -> 2026-10-27
+  RBLX        1415 velas  2021-03-10 -> 2026-10-26
+  RBLX.BA     1040 velas  2022-07-26 -> 2026-10-27
+  RIO         2535 velas  2016-09-26 -> 2026-10-26
+  RIO.BA      2465 velas  2016-09-27 -> 2026-10-27
+  ROKU        2281 velas  2017-09-28 -> 2026-10-26
   ROKU.BA      623 velas  2024-04-10 -> 2026-10-26
-  RTX         2534 velas  2016-09-26 -> 2026-10-23
-  RTX.BA      2464 velas  2016-09-27 -> 2026-10-26
-  SAP         2534 velas  2016-09-26 -> 2026-10-23
-  SAP.BA      2464 velas  2016-09-27 -> 2026-10-26
-  SBUX        2534 velas  2016-09-26 -> 2026-10-23
-  SBUX.BA     2464 velas  2016-09-27 -> 2026-10-26
-  SCCO        2534 velas  2016-09-26 -> 2026-10-23
-  SCCO.BA     2464 velas  2016-09-27 -> 2026-10-26
-  SCHW        2534 velas  2016-09-26 -> 2026-10-23
+  RTX         2535 velas  2016-09-26 -> 2026-10-26
+  RTX.BA      2465 velas  2016-09-27 -> 2026-10-27
+  SAP         2535 velas  2016-09-26 -> 2026-10-26
+  SAP.BA      2465 velas  2016-09-27 -> 2026-10-27
+  SBUX        2535 velas  2016-09-26 -> 2026-10-26
+  SBUX.BA     2465 velas  2016-09-27 -> 2026-10-27
+  SCCO        2535 velas  2016-09-26 -> 2026-10-26
+  SCCO.BA     2465 velas  2016-09-27 -> 2026-10-27
+  SCHW        2535 velas  2016-09-26 -> 2026-10-26
   SCHW.BA        1 velas  2025-07-28 -> 2025-07-28  <-- revisar
-  SE          2264 velas  2017-10-20 -> 2026-10-23
-  SE.BA         22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  SHEL        2534 velas  2016-09-26 -> 2026-10-23
-  SHEL.BA     2464 velas  2016-09-27 -> 2026-10-26
-  SHOP        2534 velas  2016-09-26 -> 2026-10-23
-  SHOP.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  SLB         2534 velas  2016-09-26 -> 2026-10-23
-  SLB.BA      2464 velas  2016-09-27 -> 2026-10-26
-  SNAP        2426 velas  2017-03-02 -> 2026-10-23
-  SNAP.BA     1644 velas  2020-02-04 -> 2026-10-26
-  SNOW        1534 velas  2020-09-16 -> 2026-10-23
-  SNOW.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  SONY        2534 velas  2016-09-26 -> 2026-10-23
-  SONY.BA     2464 velas  2016-09-27 -> 2026-10-26
-  SPGI        2534 velas  2016-09-26 -> 2026-10-23
-  SPGI.BA      879 velas  2023-03-14 -> 2026-10-26
-  SPOT        2153 velas  2018-04-03 -> 2026-10-23
-  SPOT.BA     1376 velas  2021-03-09 -> 2026-10-26
-  SPY         2534 velas  2016-09-26 -> 2026-10-23
-  SPY.BA      1148 velas  2022-01-18 -> 2026-10-26
-  STNE        2009 velas  2018-10-25 -> 2026-10-23
-  STNE.BA      632 velas  2024-03-19 -> 2026-10-26
-  T           2534 velas  2016-09-26 -> 2026-10-23
-  T.BA        2464 velas  2016-09-27 -> 2026-10-26
-  TEN         2534 velas  2016-09-26 -> 2026-10-23
-  TEN.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  TGT         2534 velas  2016-09-26 -> 2026-10-23
-  TGT.BA      1594 velas  2020-04-23 -> 2026-10-26
-  TM          2534 velas  2016-09-26 -> 2026-10-23
-  TM.BA       2464 velas  2016-09-27 -> 2026-10-26
-  TMO         2534 velas  2016-09-26 -> 2026-10-23
-  TMO.BA      1573 velas  2020-05-26 -> 2026-10-26
-  TMUS        2534 velas  2016-09-26 -> 2026-10-23
-  TMUS.BA      507 velas  2024-06-10 -> 2026-10-26
-  TSLA        2534 velas  2016-09-26 -> 2026-10-23
-  TSLA.BA     1619 velas  2020-03-12 -> 2026-10-26
-  TSM         2534 velas  2016-09-26 -> 2026-10-23
-  TSM.BA      2465 velas  2016-09-26 -> 2026-10-26
-  TTE         2534 velas  2016-09-26 -> 2026-10-23
-  TTE.BA      2463 velas  2016-09-27 -> 2026-10-26
-  TXN         2534 velas  2016-09-26 -> 2026-10-23
-  TXN.BA      2464 velas  2016-09-27 -> 2026-10-26
+  SE          2265 velas  2017-10-20 -> 2026-10-26
+  SE.BA         23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  SHEL        2535 velas  2016-09-26 -> 2026-10-26
+  SHEL.BA     2465 velas  2016-09-27 -> 2026-10-27
+  SHOP        2535 velas  2016-09-26 -> 2026-10-26
+  SHOP.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  SLB         2535 velas  2016-09-26 -> 2026-10-26
+  SLB.BA      2465 velas  2016-09-27 -> 2026-10-27
+  SNAP        2427 velas  2017-03-02 -> 2026-10-26
+  SNAP.BA     1645 velas  2020-02-04 -> 2026-10-27
+  SNOW        1535 velas  2020-09-16 -> 2026-10-26
+  SNOW.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  SONY        2535 velas  2016-09-26 -> 2026-10-26
+  SONY.BA     2465 velas  2016-09-27 -> 2026-10-27
+  SPGI        2535 velas  2016-09-26 -> 2026-10-26
+  SPGI.BA      880 velas  2023-03-14 -> 2026-10-27
+  SPOT        2154 velas  2018-04-03 -> 2026-10-26
+  SPOT.BA     1377 velas  2021-03-09 -> 2026-10-27
+  SPY         2535 velas  2016-09-26 -> 2026-10-26
+  SPY.BA      1149 velas  2022-01-18 -> 2026-10-27
+  STNE        2010 velas  2018-10-25 -> 2026-10-26
+  STNE.BA      633 velas  2024-03-19 -> 2026-10-27
+  T           2535 velas  2016-09-26 -> 2026-10-26
+  T.BA        2465 velas  2016-09-27 -> 2026-10-27
+  TEN         2535 velas  2016-09-26 -> 2026-10-26
+  TEN.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  TGT         2535 velas  2016-09-26 -> 2026-10-26
+  TGT.BA      1595 velas  2020-04-23 -> 2026-10-27
+  TM          2535 velas  2016-09-26 -> 2026-10-26
+  TM.BA       2465 velas  2016-09-27 -> 2026-10-27
+  TMO         2535 velas  2016-09-26 -> 2026-10-26
+  TMO.BA      1574 velas  2020-05-26 -> 2026-10-27
+  TMUS        2535 velas  2016-09-26 -> 2026-10-26
+  TMUS.BA      508 velas  2024-06-10 -> 2026-10-27
+  TSLA        2535 velas  2016-09-26 -> 2026-10-26
+  TSLA.BA     1620 velas  2020-03-12 -> 2026-10-27
+  TSM         2535 velas  2016-09-26 -> 2026-10-26
+  TSM.BA      2466 velas  2016-09-26 -> 2026-10-27
+  TTE         2535 velas  2016-09-26 -> 2026-10-26
+  TTE.BA      2464 velas  2016-09-27 -> 2026-10-27
+  TXN         2535 velas  2016-09-26 -> 2026-10-26
+  TXN.BA      2465 velas  2016-09-27 -> 2026-10-27
   TXR           16 velas  2016-11-28 -> 2017-07-17  <-- revisar
-  TXR.BA      2464 velas  2016-09-27 -> 2026-10-26
-  UAL         2534 velas  2016-09-26 -> 2026-10-23
-  UAL.BA      1024 velas  2022-07-26 -> 2026-10-26
-  UBER        1875 velas  2019-05-10 -> 2026-10-23
-  UBER.BA     1038 velas  2022-07-26 -> 2026-10-26
-  UNH         2534 velas  2016-09-26 -> 2026-10-23
-  UNH.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  UNP         2534 velas  2016-09-26 -> 2026-10-23
-  UNP.BA        22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  UPST        1470 velas  2020-12-16 -> 2026-10-23
-  UPST.BA     1039 velas  2022-07-26 -> 2026-10-26
-  USB         2534 velas  2016-09-26 -> 2026-10-23
-  USB.BA      2462 velas  2016-09-27 -> 2026-10-26
-  V           2534 velas  2016-09-26 -> 2026-10-23
-  V.BA        1544 velas  2020-07-07 -> 2026-10-26
-  VALE        2534 velas  2016-09-26 -> 2026-10-23
-  VALE.BA     2464 velas  2016-09-26 -> 2026-10-26
-  VIST        1822 velas  2019-07-26 -> 2026-10-23
-  VIST.BA       22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  VZ          2534 velas  2016-09-26 -> 2026-10-23
-  VZ.BA       2464 velas  2016-09-27 -> 2026-10-26
-  WFC         2534 velas  2016-09-26 -> 2026-10-23
-  WFC.BA      2464 velas  2016-09-27 -> 2026-10-26
-  WMT         2534 velas  2016-09-26 -> 2026-10-23
-  WMT.BA      2464 velas  2016-09-26 -> 2026-10-26
-  XOM         2534 velas  2016-09-26 -> 2026-10-23
-  XOM.BA      2465 velas  2016-09-26 -> 2026-10-26
-  XP          1726 velas  2019-12-11 -> 2026-10-23
-  XP.BA         22 velas  2026-09-24 -> 2026-10-26  <-- revisar
-  XPEV        1547 velas  2020-08-27 -> 2026-10-23
-  XPEV.BA      355 velas  2025-05-19 -> 2026-10-26
-  ZM          1890 velas  2019-04-18 -> 2026-10-23
-  ZM.BA         22 velas  2026-09-24 -> 2026-10-26  <-- revisar
+  TXR.BA      2465 velas  2016-09-27 -> 2026-10-27
+  UAL         2535 velas  2016-09-26 -> 2026-10-26
+  UAL.BA      1025 velas  2022-07-26 -> 2026-10-27
+  UBER        1876 velas  2019-05-10 -> 2026-10-26
+  UBER.BA     1039 velas  2022-07-26 -> 2026-10-27
+  UNH         2535 velas  2016-09-26 -> 2026-10-26
+  UNH.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  UNP         2535 velas  2016-09-26 -> 2026-10-26
+  UNP.BA        23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  UPST        1471 velas  2020-12-16 -> 2026-10-26
+  UPST.BA     1040 velas  2022-07-26 -> 2026-10-27
+  USB         2535 velas  2016-09-26 -> 2026-10-26
+  USB.BA      2463 velas  2016-09-27 -> 2026-10-27
+  V           2535 velas  2016-09-26 -> 2026-10-26
+  V.BA        1545 velas  2020-07-07 -> 2026-10-27
+  VALE        2535 velas  2016-09-26 -> 2026-10-26
+  VALE.BA     2465 velas  2016-09-26 -> 2026-10-27
+  VIST        1823 velas  2019-07-26 -> 2026-10-26
+  VIST.BA       23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  VZ          2535 velas  2016-09-26 -> 2026-10-26
+  VZ.BA       2465 velas  2016-09-27 -> 2026-10-27
+  WFC         2535 velas  2016-09-26 -> 2026-10-26
+  WFC.BA      2465 velas  2016-09-27 -> 2026-10-27
+  WMT         2535 velas  2016-09-26 -> 2026-10-26
+  WMT.BA      2465 velas  2016-09-26 -> 2026-10-27
+  XOM         2535 velas  2016-09-26 -> 2026-10-26
+  XOM.BA      2466 velas  2016-09-26 -> 2026-10-27
+  XP          1727 velas  2019-12-11 -> 2026-10-26
+  XP.BA         23 velas  2026-09-24 -> 2026-10-27  <-- revisar
+  XPEV        1548 velas  2020-08-27 -> 2026-10-26
+  XPEV.BA      356 velas  2025-05-19 -> 2026-10-27
+  ZM          1891 velas  2019-04-18 -> 2026-10-26
+  ZM.BA         23 velas  2026-09-24 -> 2026-10-27  <-- revisar
 
 === 2a. Paper trading swing ===
-Paper trading: no hay velas nuevas para procesar.
+  2026-10-26: {'COMPRAR': 3, 'MANTENER': 5, 'NO_OPERAR': 41, 'VENDER': 1} · cartera USD 10,431.13
+Paper trading actualizado.
 
 === 2b. Paper trading momentum ===
-Momentum: no hay velas nuevas para procesar.
+  2026-10-26: REBALANCEO · cartera USD 9,409.90 · posiciones 5
+Momentum: paper trading actualizado.
 
 === 3a. Backtest y calibración swing ===
 # Backtest – v4.1-retroceso-4R
 
-Período: 2017-07-13 → 2026-10-23 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
+Período: 2017-07-13 → 2026-10-26 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
 ## Configuración actual
 
 | Métrica | Valor |
 |---|---|
 | operaciones | 626 |
-| win_rate | 45.0% |
+| win_rate | 45.2% |
 | r_promedio (expectancy) | 0.18 |
-| ganancia_prom_R | 1.58 |
+| ganancia_prom_R | 1.57 |
 | perdida_prom_R | -0.97 |
-| profit_factor | 1.34 |
-| dias_prom_en_posicion | 14.15 |
-| retorno_total | 154.7% |
-| retorno_anual (CAGR) | 10.6% |
+| profit_factor | 1.35 |
+| dias_prom_en_posicion | 14.16 |
+| retorno_total | 156.1% |
+| retorno_anual (CAGR) | 10.7% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.46 |
 | exposicion_prom | 69.6% |
@@ -6929,15 +6931,15 @@ Período: 2017-07-13 → 2026-10-23 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 10.0% | 12.3% |
+| 2026 | 10.6% | 13.1% |
 
 ## Variantes de riesgo por operación
 
 | Variante | operaciones | win_rate | r_promedio (expectancy) | retorno_anual (CAGR) | max_drawdown | exposicion_prom |
 |---|---|---|---|---|---|---|
-| efectivo en SPY: sí | 626 | 45.0% | 0.18 | 9.1% | -40.8% | 69.6% |
-| riesgo 0.5% | 628 | 45.1% | 0.18 | 5.9% | -12.5% | 40.2% |
-| riesgo 1.0% | 626 | 45.0% | 0.18 | 10.6% | -23.1% | 69.6% |
+| efectivo en SPY: sí | 626 | 45.2% | 0.18 | 9.2% | -40.8% | 69.6% |
+| riesgo 0.5% | 628 | 45.2% | 0.18 | 5.9% | -12.5% | 40.2% |
+| riesgo 1.0% | 626 | 45.2% | 0.18 | 10.7% | -23.1% | 69.6% |
 
 === Calibración ===
 # Calibración de parámetros
@@ -6952,16 +6954,16 @@ Configuración actual: entrada=retroceso, objetivo_r=4.0, max_dias_en_posicion=2
 
 | entrada    |   objetivo_r |   max_dias_en_posicion | filtro_mercado   |   in_operaciones |   in_r_promedio (expectancy) | in_retorno_anual (CAGR)   | in_max_drawdown   |   in_retorno/caida (MAR) |   out_r_promedio (expectancy) | out_retorno_anual (CAGR)   | out_max_drawdown   |   out_retorno/caida (MAR) | out_spy_retorno_anual   |
 |:-----------|-------------:|-----------------------:|:-----------------|-----------------:|-----------------------------:|:--------------------------|:------------------|-------------------------:|------------------------------:|:---------------------------|:-------------------|--------------------------:|:------------------------|
-| ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.16 | 12.1%                      | -18.4%             |                      0.66 | 21.4%                   |
-| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.11 | 5.5%                       | -18.9%             |                      0.29 | 21.4%                   |
-| ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.22 | 8.9%                       | -19.4%             |                      0.46 | 21.4%                   |
-| ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.16 | 5.6%                       | -14.8%             |                      0.38 | 21.4%                   |
-| retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.19 | 11.2%                      | -18.4%             |                      0.61 | 21.4%                   |
-| ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.23 | 8.8%                       | -22.4%             |                      0.39 | 21.4%                   |
-| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.1  | 7.1%                       | -16.1%             |                      0.44 | 21.4%                   |
-| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.23 | 9.8%                       | -17.1%             |                      0.57 | 21.4%                   |
-| ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.16 | 8.2%                       | -13.1%             |                      0.62 | 21.4%                   |
-| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.17 | 9.4%                       | -16.0%             |                      0.59 | 21.4%                   |
+| ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.15 | 11.1%                      | -18.4%             |                      0.6  | 21.6%                   |
+| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.1  | 4.6%                       | -18.9%             |                      0.24 | 21.6%                   |
+| ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.2  | 7.9%                       | -19.4%             |                      0.41 | 21.6%                   |
+| ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.14 | 4.7%                       | -14.8%             |                      0.32 | 21.6%                   |
+| retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.19 | 11.3%                      | -18.4%             |                      0.61 | 21.6%                   |
+| ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.22 | 8.0%                       | -22.4%             |                      0.36 | 21.6%                   |
+| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.09 | 6.2%                       | -16.1%             |                      0.38 | 21.6%                   |
+| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.23 | 9.6%                       | -17.1%             |                      0.56 | 21.6%                   |
+| ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.15 | 7.2%                       | -13.1%             |                      0.55 | 21.6%                   |
+| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.18 | 9.5%                       | -16.0%             |                      0.6  | 21.6%                   |
 
 ## Mejor combinación de cada tipo de entrada
 
@@ -6969,16 +6971,16 @@ Elegida solo con datos dentro de muestra; las columnas 'fuera' muestran cómo le
 
 | Entrada | Parámetros | CAGR dentro | Caída dentro | CAGR fuera | Caída fuera | SPY fuera |
 |---|---|---|---|---|---|---|
-| ruptura_20 | objetivo_r=5.0, max_dias_en_posicion=20, filtro_mercado=sí | 8.4% | -18.3% | 12.1% | -18.4% | 21.4% |
-| ruptura_55 | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.2% | -19.1% | 5.5% | -18.9% | 21.4% |
-| retroceso | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.3% | -21.3% | 11.2% | -18.4% | 21.4% |
+| ruptura_20 | objetivo_r=5.0, max_dias_en_posicion=20, filtro_mercado=sí | 8.4% | -18.3% | 11.1% | -18.4% | 21.6% |
+| ruptura_55 | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.2% | -19.1% | 4.6% | -18.9% | 21.6% |
+| retroceso | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.3% | -21.3% | 11.3% | -18.4% | 21.6% |
 
-Correlación de ranking dentro vs fuera de muestra (Spearman): **0.05** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
+Correlación de ranking dentro vs fuera de muestra (Spearman): **0.03** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
 
 === 3b. Backtest y calibración momentum ===
 # Momentum (m4-ampliado-top5-mensual-tope25) – booms del momento
 
-Período: 2017-10-06 → 2026-10-23 · 183 acciones · Parámetros: puntaje=mix, top_n=5, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
+Período: 2017-10-06 → 2026-10-26 · 183 acciones · Parámetros: puntaje=mix, top_n=5, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
 
 ## Resultado
 
@@ -6987,18 +6989,18 @@ Período: 2017-10-06 → 2026-10-23 · 183 acciones · Parámetros: puntaje=mix,
 | retorno_anual (CAGR) | 43.0% |
 | max_drawdown | -51.7% |
 | retorno/caida (MAR) | 0.83 |
-| retorno_total | 2444.3% |
-| compras_por_anio | 21.00 |
+| retorno_total | 2454.1% |
+| compras_por_anio | 20.99 |
 | aciertos | 57.6% |
 | retorno_prom_por_posicion | 31.1% |
 | dias_prom_en_posicion | 62.96 |
-| rotacion_anual | 7.69 |
+| rotacion_anual | 7.68 |
 | pct_en_acciones | 99.3% |
 | pct_en_spy | 0.6% |
-| spy_retorno_anual | 14.6% |
+| spy_retorno_anual | 14.7% |
 | spy_max_drawdown | -33.7% |
 
-**Referencia:** las mismas 183 acciones en partes iguales rindieron 20.1% anual (caída máx. -35.3%). La diferencia contra SPY es en gran parte por haber elegido la lista hoy; la ventaja real de la estrategia se mide contra esta referencia.
+**Referencia:** las mismas 183 acciones en partes iguales rindieron 19.9% anual (caída máx. -35.3%). La diferencia contra SPY es en gran parte por haber elegido la lista hoy; la ventaja real de la estrategia se mide contra esta referencia.
 
 ## Retorno por año
 
@@ -7013,7 +7015,7 @@ Período: 2017-10-06 → 2026-10-23 · 183 acciones · Parámetros: puntaje=mix,
 | 2023 | 20.9% | 37.0% | 26.2% |
 | 2024 | 71.3% | 20.5% | 24.9% |
 | 2025 | 66.6% | 27.5% | 17.7% |
-| 2026 | 104.3% | 21.6% | 12.3% |
+| 2026 | 105.1% | 20.3% | 13.1% |
 
 ## Qué acciones aportaron (posiciones cerradas)
 
@@ -7038,7 +7040,7 @@ Misma configuración. 'Ampliado' = 183 acciones con CEDEAR en BYMA y liquidez su
 |---|---|---|---|---|---|---|
 
 === 3c. Setups de swing (screener) ===
-# Setups de swing trading · 2026-10-23
+# Setups de swing trading · 2026-10-26
 
 Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 
@@ -7046,35 +7048,35 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 
 | Setup | Período | Señales | Retorno prom. | Mediana | Aciertos | vs SPY | Le gana a SPY |
 |---|---|---|---|---|---|---|---|
-| Trend Template (Minervini) | todo | 5612 | 0.69% | 0.75% | 55% | +0.23% | 51% |
+| Trend Template (Minervini) | todo | 5613 | 0.69% | 0.75% | 55% | +0.23% | 51% |
 | Trend Template (Minervini) | antes | 3007 | 0.63% | 0.82% | 56% | +0.35% | 51% |
-| Trend Template (Minervini) | después | 2605 | 0.75% | 0.62% | 54% | +0.10% | 50% |
+| Trend Template (Minervini) | después | 2606 | 0.75% | 0.62% | 54% | +0.11% | 50% |
 | Breakout (Qullamaggie) | todo | 467 | 0.96% | 0.66% | 53% | +0.19% | 47% |
 | Breakout (Qullamaggie) | antes | 261 | 2.25% | 1.24% | 57% | +1.35% | 51% |
 | Breakout (Qullamaggie) | después | 206 | -0.66% | -0.35% | 48% | -1.27% | 41% |
 | Episodic Pivot (Qullamaggie) | todo | 321 | 2.01% | 1.55% | 57% | +0.98% | 53% |
 | Episodic Pivot (Qullamaggie) | antes | 170 | 2.39% | 2.27% | 60% | +1.32% | 58% |
 | Episodic Pivot (Qullamaggie) | después | 151 | 1.59% | 0.56% | 54% | +0.60% | 48% |
-| Máximo de 52 semanas | todo | 12116 | 0.52% | 0.45% | 54% | +0.18% | 49% |
+| Máximo de 52 semanas | todo | 12121 | 0.52% | 0.45% | 54% | +0.18% | 49% |
 | Máximo de 52 semanas | antes | 7019 | 0.45% | 0.47% | 54% | +0.25% | 50% |
-| Máximo de 52 semanas | después | 5097 | 0.61% | 0.42% | 53% | +0.09% | 48% |
+| Máximo de 52 semanas | después | 5102 | 0.61% | 0.42% | 53% | +0.09% | 48% |
 
 === 4. CEDEARs en pesos ===
-CCL implícito (mediana de 172 CEDEARs): 1,678.52
+CCL implícito (mediana de 180 CEDEARs): 1,653.89
 estado
-normal                                102
-caro                                   38
-barato                                 32
-ratio o precio a revisar               12
-precio en pesos viejo (2026-08-03)      1
-precio en pesos viejo (2025-07-28)      1
-A revisar: NU (ratio o precio a revisar), PBR (ratio o precio a revisar), BA-C (ratio o precio a revisar), ARCO (ratio o precio a revisar), BBD (ratio o precio a revisar), EA (precio en pesos viejo (2026-08-03)), GLW (ratio o precio a revisar), ITUB (ratio o precio a revisar), PAGS (ratio o precio a revisar), SCHW (precio en pesos viejo (2025-07-28)), STNE (ratio o precio a revisar), XP (ratio o precio a revisar), TEN (ratio o precio a revisar), TXR (ratio o precio a revisar)
+normal                                90
+caro                                  54
+barato                                36
+ratio o precio a revisar               4
+precio en pesos viejo (2026-08-03)     1
+precio en pesos viejo (2025-07-28)     1
+A revisar: BA-C (ratio o precio a revisar), BA (ratio o precio a revisar), EA (precio en pesos viejo (2026-08-03)), GLW (ratio o precio a revisar), SCHW (precio en pesos viejo (2025-07-28)), TXR (ratio o precio a revisar)
 
 === 4b. Tesis de inversión y revisión semanal ===
-Tesis: 0 nuevas · 31 en total (9 abiertas, 3 cerradas)
+Tesis: 4 nuevas · 35 en total (9 abiertas, 4 cerradas)
 
 === 4c. Tesis y revisiones en la web + PDF semanal ===
-Publicar: 0 páginas actualizadas en docs/
+Publicar: 15 páginas actualizadas en docs/
 
 === 5. Tablero ===
 Tablero generado: docs/index.html
