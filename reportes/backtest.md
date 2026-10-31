@@ -1,6 +1,6 @@
 # Backtest – v4.1-retroceso-4R
 
-Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
+Período: 2017-07-13 → 2026-10-29 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
 ## Configuración actual
 
@@ -11,9 +11,9 @@ Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital in
 | r_promedio (expectancy) | 0.18 |
 | ganancia_prom_R | 1.57 |
 | perdida_prom_R | -0.98 |
-| profit_factor | 1.36 |
+| profit_factor | 1.35 |
 | dias_prom_en_posicion | 14.18 |
-| retorno_total | 160.3% |
+| retorno_total | 160.1% |
 | retorno_anual (CAGR) | 10.8% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.47 |
@@ -34,7 +34,7 @@ Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 12.4% | 14.1% |
+| 2026 | 12.3% | 13.7% |
 
 ## Variantes de riesgo por operación
 
@@ -49,7 +49,7 @@ Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital in
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 5 | 0.76 |
+| FIN PERÍODO | 5 | 0.75 |
 | OBJETIVO | 15 | 3.93 |
 | OBJETIVO (gap) | 7 | 4.68 |
 | STOP | 210 | -1.07 |
@@ -63,10 +63,10 @@ Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital in
 | China | 12 | 42% | 0.38 | 955 |
 | Consumo | 131 | 38% | 0.04 | -1,007 |
 | Energía / Industria | 61 | 43% | 0.11 | 1,578 |
-| Financieras | 85 | 47% | 0.14 | 1,810 |
-| Latam / Brasil | 85 | 45% | 0.21 | 2,132 |
-| Salud | 69 | 54% | 0.28 | 2,421 |
-| Tecnología | 183 | 48% | 0.26 | 8,109 |
+| Financieras | 85 | 47% | 0.14 | 1,888 |
+| Latam / Brasil | 85 | 45% | 0.21 | 2,099 |
+| Salud | 69 | 54% | 0.28 | 2,506 |
+| Tecnología | 183 | 48% | 0.25 | 7,956 |
 
 ## Últimas 10 operaciones
 
@@ -77,8 +77,8 @@ Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital in
 | GOOGL    | Tecnología     | 2026-09-14      |          343.12  |       326.819  |   408.324  |    15.0024 | 2026-10-12     |         352.72  | TIEMPO          |     20 |    128.36 |         0.52 |
 | JNJ      | Salud          | 2026-10-08      |          256.22  |       246.116  |   296.637  |    16.229  | 2026-10-13     |         246.116 | STOP            |      3 |   -176.21 |        -1.07 |
 | V        | Financieras    | 2026-10-02      |          360.21  |       348.572  |   406.76   |    15.5379 | 2026-10-20     |         406.76  | OBJETIVO        |     12 |    705.41 |         3.9  |
-| JPM      | Financieras    | 2026-10-02      |          332.342 |       319.141  |   385.145  |    18.152  | 2026-10-28     |         339.3   | FIN PERÍODO     |     18 |    108.01 |         0.45 |
-| VIST     | Latam / Brasil | 2026-10-09      |           66.82  |        61.6894 |    87.3422 |    48.67   | 2026-10-28     |          72.27  | FIN PERÍODO     |     13 |    255.1  |         1.02 |
-| JNJ      | Salud          | 2026-10-15      |          257.11  |       244.952  |   305.74   |    20.6798 | 2026-10-28     |         271.04  | FIN PERÍODO     |      9 |    271.69 |         1.08 |
-| INTC     | Tecnología     | 2026-10-20      |           90.73  |        79.0802 |   137.329  |    21.7232 | 2026-10-28     |          95.53  | FIN PERÍODO     |      6 |     98.2  |         0.39 |
-| TSM      | Tecnología     | 2026-10-20      |          416.29  |       391.409  |   515.813  |    10.1713 | 2026-10-28     |         439.51  | FIN PERÍODO     |      6 |    223.12 |         0.88 |
+| JPM      | Financieras    | 2026-10-02      |          332.342 |       319.141  |   385.145  |    18.152  | 2026-10-29     |         343.58  | FIN PERÍODO     |     19 |    185.59 |         0.77 |
+| VIST     | Latam / Brasil | 2026-10-09      |           66.82  |        61.6894 |    87.3422 |    48.67   | 2026-10-29     |          71.58  | FIN PERÍODO     |     14 |    221.57 |         0.89 |
+| JNJ      | Salud          | 2026-10-15      |          257.11  |       244.952  |   305.74   |    20.6798 | 2026-10-29     |         275.2   | FIN PERÍODO     |     10 |    357.59 |         1.42 |
+| INTC     | Tecnología     | 2026-10-20      |           90.73  |        79.0802 |   137.329  |    21.7232 | 2026-10-29     |          92.07  | FIN PERÍODO     |      7 |     23.15 |         0.09 |
+| TSM      | Tecnología     | 2026-10-20      |          416.29  |       391.409  |   515.813  |    10.1713 | 2026-10-29     |         431.81  | FIN PERÍODO     |      7 |    144.92 |         0.57 |

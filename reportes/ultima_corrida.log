@@ -1192,12 +1192,6 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.drop(
@@ -2770,69 +2764,69 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  splits.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  splits.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  splits.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  splits.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.rename(columns=ctx.isins, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   dividends.set_index("date", inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   dividends.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:604: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:606: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  splits.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.drop(
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.rename(columns=ctx.isins, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  data.sort_index(level=0, axis=1, inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.drop(
@@ -4110,7 +4104,7 @@ Parámetros registrados -> versión 13e0e78b (v4.1-retroceso-4R)
 
 Descargando precios...
   SPY        OK         5 velas
-  SPY.BA     OK         1151 velas
+  SPY.BA     OK         1152 velas
   AAPL       OK         5 velas
   AAPL.BA    OK         5 velas
   MSFT       OK         5 velas
@@ -4118,23 +4112,23 @@ Descargando precios...
   GOOGL      OK         5 velas
   GOOGL.BA   OK         5 velas
   AMZN       OK         5 velas
-  AMZN.BA    OK         1617 velas
+  AMZN.BA    OK         1618 velas
   NVDA       OK         5 velas
-  NVDA.BA    OK         1617 velas
+  NVDA.BA    OK         1618 velas
   META       OK         5 velas
   META.BA    OK         1 velas
   TSLA       OK         5 velas
-  TSLA.BA    OK         1617 velas
+  TSLA.BA    OK         1618 velas
   AVGO       OK         5 velas
   AVGO.BA    OK         1 velas
   ORCL       OK         5 velas
   ORCL.BA    OK         5 velas
   ADBE       OK         5 velas
-  ADBE.BA    OK         1617 velas
+  ADBE.BA    OK         1618 velas
   CRM        OK         5 velas
-  CRM.BA     OK         1616 velas
+  CRM.BA     OK         1617 velas
   AMD        OK         5 velas
-  AMD.BA     OK         1463 velas
+  AMD.BA     OK         1464 velas
   INTC       OK         5 velas
   INTC.BA    OK         5 velas
   QCOM       OK         5 velas
@@ -4146,18 +4140,18 @@ Descargando precios...
   TSM        OK         5 velas
   TSM.BA     OK         5 velas
   NFLX       OK         5 velas
-  NFLX.BA    OK         1617 velas
-  UBER       OK         1878 velas
-  UBER.BA    OK         1041 velas
+  NFLX.BA    OK         1618 velas
+  UBER       OK         1879 velas
+  UBER.BA    OK         1042 velas
   PYPL       OK         5 velas
-  PYPL.BA    OK         1844 velas
+  PYPL.BA    OK         1845 velas
   MELI       OK         5 velas
   MELI.BA    OK         5 velas
   GLOB       OK         5 velas
-  GLOB.BA    OK         1072 velas
-  NU         OK         1226 velas
-  NU.BA      OK         639 velas
-  VIST       OK         1825 velas
+  GLOB.BA    OK         1073 velas
+  NU         OK         1227 velas
+  NU.BA      OK         640 velas
+  VIST       OK         1826 velas
   VIST.BA    OK         1 velas
   PBR        OK         5 velas
   PBR.BA     OK         1 velas
@@ -4170,13 +4164,13 @@ Descargando precios...
   C          OK         5 velas
   C.BA       OK         5 velas
   V          OK         5 velas
-  V.BA       OK         1542 velas
+  V.BA       OK         1543 velas
   BRK-B      OK         5 velas
-  BRKB.BA    OK         1380 velas
-  COIN       OK         1393 velas
+  BRKB.BA    OK         1381 velas
+  COIN       OK         1394 velas
   COIN.BA    OK         1 velas
   MSTR       OK         5 velas
-  MSTR.BA    OK         1042 velas
+  MSTR.BA    OK         1043 velas
   KO         OK         5 velas
   KO.BA      OK         5 velas
   PEP        OK         5 velas
@@ -4210,23 +4204,23 @@ Descargando precios...
   BA         OK         5 velas
   BA.BA      OK         5 velas
   BABA       OK         5 velas
-  BABA.BA    OK         1617 velas
+  BABA.BA    OK         1618 velas
   AAL        OK         5 velas
   AAL.BA     OK         1 velas
   ABBV       OK         5 velas
-  ABBV.BA    OK         1067 velas
-  ABNB       OK         1477 velas
-  ABNB.BA    OK         1042 velas
+  ABBV.BA    OK         1068 velas
+  ABNB       OK         1478 velas
+  ABNB.BA    OK         1043 velas
   ABT        OK         5 velas
   ABT.BA     OK         5 velas
   ACN        OK         5 velas
-  ACN.BA     OK         627 velas
+  ACN.BA     OK         628 velas
   ADI        OK         5 velas
   ADI.BA     OK         5 velas
   ADP        OK         5 velas
   ADP.BA     OK         5 velas
   AEM        OK         5 velas
-  AEM.BA     OK         1451 velas
+  AEM.BA     OK         1452 velas
   AIG        OK         5 velas
   AIG.BA     OK         5 velas
   AMAT       OK         5 velas
@@ -4236,27 +4230,27 @@ Descargando precios...
   AMX        OK         5 velas
   AMX.BA     OK         5 velas
   ANET       OK         5 velas
-  ANET.BA    OK         115 velas
+  ANET.BA    OK         116 velas
   ARCO       OK         5 velas
-  ARCO.BA    OK         1617 velas
-  ARM        OK         784 velas
+  ARCO.BA    OK         1618 velas
+  ARM        OK         785 velas
   ARM.BA     OK         1 velas
   ASML       OK         5 velas
-  ASML.BA    OK         357 velas
+  ASML.BA    OK         358 velas
   AXP        OK         5 velas
   AXP.BA     OK         5 velas
   AZN        OK         5 velas
   AZN.BA     OK         5 velas
   B          OK         5 velas
-  B.BA       OK         362 velas
+  B.BA       OK         363 velas
   BBD        OK         5 velas
   BBD.BA     OK         5 velas
   BHP        OK         5 velas
   BHP.BA     OK         5 velas
   BIDU       OK         5 velas
-  BIDU.BA    OK         1616 velas
+  BIDU.BA    OK         1617 velas
   BKNG       OK         5 velas
-  BKNG.BA    OK         585 velas
+  BKNG.BA    OK         586 velas
   BKR        OK         5 velas
   BKR.BA     OK         1 velas
   BMY        OK         5 velas
@@ -4264,34 +4258,34 @@ Descargando precios...
   BP         OK         5 velas
   BP.BA      OK         5 velas
   BX         OK         5 velas
-  BX.BA      OK         191 velas
-  CAAP       OK         2197 velas
+  BX.BA      OK         192 velas
+  CAAP       OK         2198 velas
   CAAP.BA    OK         1 velas
   CAH        OK         5 velas
   CAH.BA     OK         5 velas
   CCL        OK         5 velas
-  CCL.BA     OK         601 velas
-  CEG        OK         1199 velas
-  CEG.BA     OK         359 velas
+  CCL.BA     OK         602 velas
+  CEG        OK         1200 velas
+  CEG.BA     OK         360 velas
   CL         OK         5 velas
   CL.BA      OK         5 velas
   COP        OK         5 velas
-  COP.BA     OK         114 velas
+  COP.BA     OK         115 velas
   COST       OK         5 velas
   COST.BA    OK         5 velas
-  CRWD       OK         1856 velas
-  CRWD.BA    OK         115 velas
+  CRWD       OK         1857 velas
+  CRWD.BA    OK         116 velas
   CVS        OK         5 velas
-  CVS.BA     OK         628 velas
+  CVS.BA     OK         629 velas
   DAL        OK         5 velas
-  DAL.BA     OK         625 velas
+  DAL.BA     OK         626 velas
   DE         OK         5 velas
   DE.BA      OK         5 velas
   DELL       OK         5 velas
-  DELL.BA    OK         41 velas
+  DELL.BA    OK         42 velas
   DHR        OK         5 velas
   DHR.BA     OK         1 velas
-  DOCU       OK         2138 velas
+  DOCU       OK         2139 velas
   DOCU.BA    OK         1 velas
   EA         OK         1 velas
   EA.BA      OK         1 velas
@@ -4300,7 +4294,7 @@ Descargando precios...
   ETSY       OK         5 velas
   ETSY.BA    OK         1 velas
   F          OK         5 velas
-  F.BA       OK         1042 velas
+  F.BA       OK         1043 velas
   FCX        OK         5 velas
   FCX.BA     OK         5 velas
   FDX        OK         5 velas
@@ -4309,46 +4303,46 @@ Descargando precios...
   FSLR.BA    OK         5 velas
   GE         OK         5 velas
   GE.BA      OK         5 velas
-  GEV        OK         650 velas
-  GEV.BA     OK         41 velas
+  GEV        OK         651 velas
+  GEV.BA     OK         42 velas
   GGB        OK         5 velas
-  GGB.BA     OK         1616 velas
+  GGB.BA     OK         1617 velas
   GILD       OK         5 velas
-  GILD.BA    OK         1617 velas
+  GILD.BA    OK         1618 velas
   GLW        OK         5 velas
   GLW.BA     OK         5 velas
   GM         OK         5 velas
   GM.BA      OK         1 velas
   GS         OK         5 velas
-  GS.BA      OK         1846 velas
+  GS.BA      OK         1847 velas
   HAL        OK         5 velas
   HAL.BA     OK         1 velas
   HMC        OK         5 velas
   HMC.BA     OK         5 velas
   HON        OK         5 velas
   HON.BA     OK         5 velas
-  HOOD       OK         1319 velas
-  HOOD.BA    OK         237 velas
+  HOOD       OK         1320 velas
+  HOOD.BA    OK         238 velas
   HPQ        OK         5 velas
   HPQ.BA     OK         5 velas
   HSBC       OK         5 velas
   HSBC.BA    OK         5 velas
   IBKR       OK         5 velas
-  IBKR.BA    OK         40 velas
+  IBKR.BA    OK         41 velas
   INFY       OK         5 velas
   INFY.BA    OK         5 velas
   ISRG       OK         5 velas
   ISRG.BA    OK         1 velas
   ITUB       OK         5 velas
-  ITUB.BA    OK         1785 velas
+  ITUB.BA    OK         1786 velas
   JD         OK         5 velas
-  JD.BA      OK         1616 velas
+  JD.BA      OK         1617 velas
   KLAC       OK         5 velas
-  KLAC.BA    OK         41 velas
+  KLAC.BA    OK         42 velas
   KMB        OK         5 velas
   KMB.BA     OK         5 velas
   LIN        OK         5 velas
-  LIN.BA     OK         40 velas
+  LIN.BA     OK         41 velas
   LMT        OK         5 velas
   LMT.BA     OK         5 velas
   LRCX       OK         5 velas
@@ -5401,21 +5395,10 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.sort_index(level=0, axis=1, inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  quotes.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.set_index("date", inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  dividends.sort_index(inplace=True)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.drop(
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
-See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
-  df.rename(columns={
+$SCHW.BA: possibly delisted; no timezone found
+
+1 Failed download:
+['SCHW.BA']: possibly delisted; no timezone found
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.rename(columns=ctx.isins, inplace=True)
@@ -5962,6 +5945,12 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   quotes.sort_index(inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:585: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.set_index("date", inplace=True)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:587: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  dividends.sort_index(inplace=True)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:514: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   df.drop(
@@ -6334,10 +6323,10 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:224: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.sort_index(level=0, axis=1, inplace=True)
-$TXR: possibly delisted; no price data found  (1d 2016-11-01 -> 2026-10-29)
+$TXR: possibly delisted; no price data found  (1d 2016-11-02 -> 2026-10-30)
 
 1 Failed download:
-['TXR']: possibly delisted; no price data found  (1d 2016-11-01 -> 2026-10-29)
+['TXR']: possibly delisted; no price data found  (1d 2016-11-02 -> 2026-10-30)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/multi.py:220: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.rename(columns=ctx.isins, inplace=True)
@@ -6385,61 +6374,61 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
 See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
   data.sort_index(level=0, axis=1, inplace=True)
 
-  MDLZ.BA    OK         627 velas
+  MDLZ.BA    OK         628 velas
   MDT        OK         5 velas
   MDT.BA     OK         5 velas
   MMM        OK         5 velas
   MMM.BA     OK         5 velas
   MO         OK         5 velas
   MO.BA      OK         5 velas
-  MRNA       OK         1983 velas
-  MRNA.BA    OK         609 velas
+  MRNA       OK         1984 velas
+  MRNA.BA    OK         610 velas
   MRVL       OK         5 velas
-  MRVL.BA    OK         640 velas
+  MRVL.BA    OK         641 velas
   MS         OK         5 velas
-  MS.BA      OK         41 velas
+  MS.BA      OK         42 velas
   MU         OK         5 velas
-  MU.BA      OK         1038 velas
+  MU.BA      OK         1039 velas
   NEE        OK         5 velas
-  NEE.BA     OK         114 velas
+  NEE.BA     OK         115 velas
   NEM        OK         5 velas
   NEM.BA     OK         5 velas
-  NIO        OK         2043 velas
+  NIO        OK         2044 velas
   NIO.BA     OK         1 velas
   NOW        OK         5 velas
-  NOW.BA     OK         354 velas
+  NOW.BA     OK         355 velas
   NTES       OK         5 velas
   NTES.BA    OK         1 velas
   NUE        OK         5 velas
   NUE.BA     OK         5 velas
   NVO        OK         5 velas
-  NVO.BA     OK         111 velas
+  NVO.BA     OK         112 velas
   NVS        OK         5 velas
   NVS.BA     OK         5 velas
   OXY        OK         5 velas
-  OXY.BA     OK         1042 velas
+  OXY.BA     OK         1043 velas
   PANW       OK         5 velas
-  PANW.BA    OK         1037 velas
+  PANW.BA    OK         1038 velas
   PAAS       OK         5 velas
-  PAAS.BA    OK         1381 velas
-  PAGS       OK         2203 velas
+  PAAS.BA    OK         1382 velas
+  PAGS       OK         2204 velas
   PAGS.BA    OK         1 velas
-  PDD        OK         2076 velas
-  PDD.BA     OK         358 velas
-  PINS       OK         1893 velas
-  PINS.BA    OK         537 velas
-  PLTR       OK         1527 velas
-  PLTR.BA    OK         636 velas
+  PDD        OK         2077 velas
+  PDD.BA     OK         359 velas
+  PINS       OK         1894 velas
+  PINS.BA    OK         538 velas
+  PLTR       OK         1528 velas
+  PLTR.BA    OK         637 velas
   PM         OK         5 velas
-  PM.BA      OK         601 velas
+  PM.BA      OK         602 velas
   RACE       OK         5 velas
-  RACE.BA    OK         627 velas
-  RBLX       OK         1417 velas
-  RBLX.BA    OK         1042 velas
+  RACE.BA    OK         628 velas
+  RBLX       OK         1418 velas
+  RBLX.BA    OK         1043 velas
   RIO        OK         5 velas
   RIO.BA     OK         5 velas
-  ROKU       OK         2283 velas
-  ROKU.BA    OK         625 velas
+  ROKU       OK         2284 velas
+  ROKU.BA    OK         626 velas
   RTX        OK         5 velas
   RTX.BA     OK         5 velas
   SAP        OK         5 velas
@@ -6449,60 +6438,60 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
   SCCO       OK         5 velas
   SCCO.BA    OK         5 velas
   SCHW       OK         5 velas
-  SCHW.BA    OK         1 velas
-  SE         OK         2267 velas
+  SCHW.BA    SIN DATOS  0 velas
+  SE         OK         2268 velas
   SE.BA      OK         1 velas
-  SHEL       OK         4 velas
+  SHEL       OK         5 velas
   SHEL.BA    OK         5 velas
   SHOP       OK         5 velas
   SHOP.BA    OK         1 velas
   SLB        OK         5 velas
   SLB.BA     OK         5 velas
-  SNAP       OK         2429 velas
-  SNAP.BA    OK         1642 velas
-  SNOW       OK         1537 velas
+  SNAP       OK         2430 velas
+  SNAP.BA    OK         1643 velas
+  SNOW       OK         1538 velas
   SNOW.BA    OK         1 velas
   SONY       OK         5 velas
   SONY.BA    OK         5 velas
   SPGI       OK         5 velas
-  SPGI.BA    OK         882 velas
-  SPOT       OK         2156 velas
-  SPOT.BA    OK         1379 velas
-  STNE       OK         2012 velas
-  STNE.BA    OK         635 velas
+  SPGI.BA    OK         883 velas
+  SPOT       OK         2157 velas
+  SPOT.BA    OK         1380 velas
+  STNE       OK         2013 velas
+  STNE.BA    OK         636 velas
   T          OK         5 velas
   T.BA       OK         5 velas
   TGT        OK         5 velas
-  TGT.BA     OK         1592 velas
+  TGT.BA     OK         1593 velas
   TM         OK         5 velas
   TM.BA      OK         5 velas
   TMO        OK         5 velas
-  TMO.BA     OK         1571 velas
+  TMO.BA     OK         1572 velas
   TMUS       OK         5 velas
-  TMUS.BA    OK         510 velas
+  TMUS.BA    OK         511 velas
   TTE        OK         5 velas
   TTE.BA     OK         5 velas
   TXN        OK         5 velas
   TXN.BA     OK         5 velas
   UAL        OK         5 velas
-  UAL.BA     OK         1027 velas
+  UAL.BA     OK         1028 velas
   UNH        OK         5 velas
   UNH.BA     OK         1 velas
   UNP        OK         5 velas
   UNP.BA     OK         1 velas
-  UPST       OK         1473 velas
-  UPST.BA    OK         1042 velas
+  UPST       OK         1474 velas
+  UPST.BA    OK         1043 velas
   USB        OK         5 velas
   USB.BA     OK         5 velas
   VZ         OK         5 velas
   VZ.BA      OK         5 velas
   WFC        OK         5 velas
   WFC.BA     OK         5 velas
-  XP         OK         1729 velas
+  XP         OK         1730 velas
   XP.BA      OK         1 velas
-  XPEV       OK         1550 velas
-  XPEV.BA    OK         358 velas
-  ZM         OK         1893 velas
+  XPEV       OK         1551 velas
+  XPEV.BA    OK         359 velas
+  ZM         OK         1894 velas
   ZM.BA      OK         1 velas
   TEN        OK         5 velas
   TEN.BA     OK         1 velas
@@ -6512,392 +6501,392 @@ See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace 
   BA-C.BA    OK         5 velas
 
 Resumen de la base:
-  AAL         2537 velas  2016-09-26 -> 2026-10-28
-  AAL.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  AAPL        2537 velas  2016-09-26 -> 2026-10-28
-  AAPL.BA     2467 velas  2016-09-26 -> 2026-10-29
-  ABBV        2537 velas  2016-09-26 -> 2026-10-28
-  ABBV.BA     1072 velas  2022-06-22 -> 2026-10-29
-  ABNB        1477 velas  2020-12-10 -> 2026-10-28
-  ABNB.BA     1042 velas  2022-07-26 -> 2026-10-29
-  ABT         2537 velas  2016-09-26 -> 2026-10-28
-  ABT.BA      2467 velas  2016-09-27 -> 2026-10-29
-  ACN         2537 velas  2016-09-26 -> 2026-10-28
-  ACN.BA       627 velas  2024-04-10 -> 2026-10-29
-  ADBE        2537 velas  2016-09-26 -> 2026-10-28
-  ADBE.BA     1622 velas  2020-03-12 -> 2026-10-29
-  ADI         2537 velas  2016-09-26 -> 2026-10-28
-  ADI.BA      2467 velas  2016-09-27 -> 2026-10-29
-  ADP         2537 velas  2016-09-26 -> 2026-10-28
-  ADP.BA      2467 velas  2016-09-27 -> 2026-10-29
-  AEM         2537 velas  2016-09-26 -> 2026-10-28
-  AEM.BA      1456 velas  2020-11-17 -> 2026-10-29
-  AIG         2537 velas  2016-09-26 -> 2026-10-28
-  AIG.BA      2467 velas  2016-09-27 -> 2026-10-29
-  AMAT        2537 velas  2016-09-26 -> 2026-10-28
-  AMAT.BA     2467 velas  2016-09-27 -> 2026-10-29
-  AMD         2537 velas  2016-09-26 -> 2026-10-28
-  AMD.BA      1468 velas  2020-10-30 -> 2026-10-29
-  AMGN        2537 velas  2016-09-26 -> 2026-10-28
-  AMGN.BA     2467 velas  2016-09-27 -> 2026-10-29
-  AMX         2537 velas  2016-09-26 -> 2026-10-28
-  AMX.BA      2466 velas  2016-09-27 -> 2026-10-29
-  AMZN        2537 velas  2016-09-26 -> 2026-10-28
-  AMZN.BA     1622 velas  2020-03-12 -> 2026-10-29
-  ANET        2537 velas  2016-09-26 -> 2026-10-28
-  ANET.BA      115 velas  2026-05-15 -> 2026-10-29  <-- revisar
-  ARCO        2537 velas  2016-09-26 -> 2026-10-28
-  ARCO.BA     1622 velas  2020-03-12 -> 2026-10-29
-  ARM          784 velas  2023-09-14 -> 2026-10-28
-  ARM.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  ASML        2537 velas  2016-09-26 -> 2026-10-28
-  ASML.BA      357 velas  2025-05-19 -> 2026-10-29
-  AVGO        2537 velas  2016-09-26 -> 2026-10-28
-  AVGO.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  AXP         2537 velas  2016-09-26 -> 2026-10-28
-  AXP.BA      2467 velas  2016-09-27 -> 2026-10-29
-  AZN         2537 velas  2016-09-26 -> 2026-10-28
-  AZN.BA      2466 velas  2016-09-27 -> 2026-10-29
-  B           2537 velas  2016-09-26 -> 2026-10-28
-  B.BA         362 velas  2025-05-13 -> 2026-10-29
-  BA          2537 velas  2016-09-26 -> 2026-10-28
-  BA-C.BA     2467 velas  2016-09-27 -> 2026-10-29
-  BA.BA       2468 velas  2016-09-26 -> 2026-10-29
-  BABA        2537 velas  2016-09-26 -> 2026-10-28
-  BABA.BA     1622 velas  2020-03-12 -> 2026-10-29
-  BAC         2537 velas  2016-09-26 -> 2026-10-28
+  AAL         2538 velas  2016-09-26 -> 2026-10-29
+  AAL.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  AAPL        2538 velas  2016-09-26 -> 2026-10-29
+  AAPL.BA     2468 velas  2016-09-26 -> 2026-10-30
+  ABBV        2538 velas  2016-09-26 -> 2026-10-29
+  ABBV.BA     1073 velas  2022-06-22 -> 2026-10-30
+  ABNB        1478 velas  2020-12-10 -> 2026-10-29
+  ABNB.BA     1043 velas  2022-07-26 -> 2026-10-30
+  ABT         2538 velas  2016-09-26 -> 2026-10-29
+  ABT.BA      2468 velas  2016-09-27 -> 2026-10-30
+  ACN         2538 velas  2016-09-26 -> 2026-10-29
+  ACN.BA       628 velas  2024-04-10 -> 2026-10-30
+  ADBE        2538 velas  2016-09-26 -> 2026-10-29
+  ADBE.BA     1623 velas  2020-03-12 -> 2026-10-30
+  ADI         2538 velas  2016-09-26 -> 2026-10-29
+  ADI.BA      2468 velas  2016-09-27 -> 2026-10-30
+  ADP         2538 velas  2016-09-26 -> 2026-10-29
+  ADP.BA      2468 velas  2016-09-27 -> 2026-10-30
+  AEM         2538 velas  2016-09-26 -> 2026-10-29
+  AEM.BA      1457 velas  2020-11-17 -> 2026-10-30
+  AIG         2538 velas  2016-09-26 -> 2026-10-29
+  AIG.BA      2468 velas  2016-09-27 -> 2026-10-30
+  AMAT        2538 velas  2016-09-26 -> 2026-10-29
+  AMAT.BA     2468 velas  2016-09-27 -> 2026-10-30
+  AMD         2538 velas  2016-09-26 -> 2026-10-29
+  AMD.BA      1469 velas  2020-10-30 -> 2026-10-30
+  AMGN        2538 velas  2016-09-26 -> 2026-10-29
+  AMGN.BA     2468 velas  2016-09-27 -> 2026-10-30
+  AMX         2538 velas  2016-09-26 -> 2026-10-29
+  AMX.BA      2467 velas  2016-09-27 -> 2026-10-30
+  AMZN        2538 velas  2016-09-26 -> 2026-10-29
+  AMZN.BA     1623 velas  2020-03-12 -> 2026-10-30
+  ANET        2538 velas  2016-09-26 -> 2026-10-29
+  ANET.BA      116 velas  2026-05-15 -> 2026-10-30  <-- revisar
+  ARCO        2538 velas  2016-09-26 -> 2026-10-29
+  ARCO.BA     1623 velas  2020-03-12 -> 2026-10-30
+  ARM          785 velas  2023-09-14 -> 2026-10-29
+  ARM.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  ASML        2538 velas  2016-09-26 -> 2026-10-29
+  ASML.BA      358 velas  2025-05-19 -> 2026-10-30
+  AVGO        2538 velas  2016-09-26 -> 2026-10-29
+  AVGO.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  AXP         2538 velas  2016-09-26 -> 2026-10-29
+  AXP.BA      2468 velas  2016-09-27 -> 2026-10-30
+  AZN         2538 velas  2016-09-26 -> 2026-10-29
+  AZN.BA      2467 velas  2016-09-27 -> 2026-10-30
+  B           2538 velas  2016-09-26 -> 2026-10-29
+  B.BA         363 velas  2025-05-13 -> 2026-10-30
+  BA          2538 velas  2016-09-26 -> 2026-10-29
+  BA-C.BA     2468 velas  2016-09-27 -> 2026-10-30
+  BA.BA       2469 velas  2016-09-26 -> 2026-10-30
+  BABA        2538 velas  2016-09-26 -> 2026-10-29
+  BABA.BA     1623 velas  2020-03-12 -> 2026-10-30
+  BAC         2538 velas  2016-09-26 -> 2026-10-29
   BAC.BA         8 velas  2026-09-22 -> 2026-10-28  <-- revisar
-  BBD         2537 velas  2016-09-26 -> 2026-10-28
-  BBD.BA      2467 velas  2016-09-27 -> 2026-10-29
-  BHP         2537 velas  2016-09-26 -> 2026-10-28
-  BHP.BA      2467 velas  2016-09-27 -> 2026-10-29
-  BIDU        2537 velas  2016-09-26 -> 2026-10-28
-  BIDU.BA     1621 velas  2020-03-13 -> 2026-10-29
-  BKNG        2537 velas  2016-09-26 -> 2026-10-28
-  BKNG.BA      585 velas  2024-04-22 -> 2026-10-29
-  BKR         2537 velas  2016-09-26 -> 2026-10-28
-  BKR.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  BMY         2537 velas  2016-09-26 -> 2026-10-28
-  BMY.BA      2467 velas  2016-09-27 -> 2026-10-29
-  BP          2537 velas  2016-09-26 -> 2026-10-28
-  BP.BA       2467 velas  2016-09-27 -> 2026-10-29
-  BRK-B       2537 velas  2016-09-26 -> 2026-10-28
-  BRKB.BA     1385 velas  2021-03-09 -> 2026-10-29
-  BX          2537 velas  2016-09-26 -> 2026-10-28
-  BX.BA        191 velas  2026-01-20 -> 2026-10-29  <-- revisar
-  C           2537 velas  2016-09-26 -> 2026-10-28
-  C.BA        2468 velas  2016-09-26 -> 2026-10-29
-  CAAP        2197 velas  2018-02-01 -> 2026-10-28
-  CAAP.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  CAH         2537 velas  2016-09-26 -> 2026-10-28
-  CAH.BA      2467 velas  2016-09-27 -> 2026-10-29
-  CAT         2537 velas  2016-09-26 -> 2026-10-28
-  CAT.BA      2468 velas  2016-09-26 -> 2026-10-29
-  CCL         2537 velas  2016-09-26 -> 2026-10-28
-  CCL.BA       601 velas  2024-04-17 -> 2026-10-29
-  CEG         1199 velas  2022-01-19 -> 2026-10-28
-  CEG.BA       359 velas  2025-05-16 -> 2026-10-29
-  CL          2537 velas  2016-09-26 -> 2026-10-28
-  CL.BA       2467 velas  2016-09-27 -> 2026-10-29
-  COIN        1393 velas  2021-04-14 -> 2026-10-28
-  COIN.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  COP         2537 velas  2016-09-26 -> 2026-10-28
-  COP.BA       114 velas  2026-05-18 -> 2026-10-29  <-- revisar
-  COST        2537 velas  2016-09-26 -> 2026-10-28
-  COST.BA     2467 velas  2016-09-27 -> 2026-10-29
-  CRM         2537 velas  2016-09-26 -> 2026-10-28
-  CRM.BA      1621 velas  2020-03-13 -> 2026-10-29
-  CRWD        1856 velas  2019-06-12 -> 2026-10-28
-  CRWD.BA      115 velas  2026-05-15 -> 2026-10-29  <-- revisar
-  CSCO        2537 velas  2016-09-26 -> 2026-10-28
-  CSCO.BA     2467 velas  2016-09-26 -> 2026-10-29
-  CVS         2537 velas  2016-09-26 -> 2026-10-28
-  CVS.BA       628 velas  2024-04-10 -> 2026-10-29
-  CVX         2537 velas  2016-09-26 -> 2026-10-28
-  CVX.BA      2468 velas  2016-09-26 -> 2026-10-29
-  DAL         2537 velas  2016-09-26 -> 2026-10-28
-  DAL.BA       625 velas  2024-04-10 -> 2026-10-29
-  DE          2537 velas  2016-09-26 -> 2026-10-28
-  DE.BA       2467 velas  2016-09-27 -> 2026-10-29
-  DELL        2537 velas  2016-09-26 -> 2026-10-28
-  DELL.BA       41 velas  2026-09-02 -> 2026-10-29  <-- revisar
-  DHR         2537 velas  2016-09-26 -> 2026-10-28
-  DHR.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  DIS         2537 velas  2016-09-26 -> 2026-10-28
-  DISN.BA     2468 velas  2016-09-26 -> 2026-10-29
-  DOCU        2138 velas  2018-04-27 -> 2026-10-28
-  DOCU.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
+  BBD         2538 velas  2016-09-26 -> 2026-10-29
+  BBD.BA      2468 velas  2016-09-27 -> 2026-10-30
+  BHP         2538 velas  2016-09-26 -> 2026-10-29
+  BHP.BA      2468 velas  2016-09-27 -> 2026-10-30
+  BIDU        2538 velas  2016-09-26 -> 2026-10-29
+  BIDU.BA     1622 velas  2020-03-13 -> 2026-10-30
+  BKNG        2538 velas  2016-09-26 -> 2026-10-29
+  BKNG.BA      586 velas  2024-04-22 -> 2026-10-30
+  BKR         2538 velas  2016-09-26 -> 2026-10-29
+  BKR.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  BMY         2538 velas  2016-09-26 -> 2026-10-29
+  BMY.BA      2468 velas  2016-09-27 -> 2026-10-30
+  BP          2538 velas  2016-09-26 -> 2026-10-29
+  BP.BA       2468 velas  2016-09-27 -> 2026-10-30
+  BRK-B       2538 velas  2016-09-26 -> 2026-10-29
+  BRKB.BA     1386 velas  2021-03-09 -> 2026-10-30
+  BX          2538 velas  2016-09-26 -> 2026-10-29
+  BX.BA        192 velas  2026-01-20 -> 2026-10-30  <-- revisar
+  C           2538 velas  2016-09-26 -> 2026-10-29
+  C.BA        2469 velas  2016-09-26 -> 2026-10-30
+  CAAP        2198 velas  2018-02-01 -> 2026-10-29
+  CAAP.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  CAH         2538 velas  2016-09-26 -> 2026-10-29
+  CAH.BA      2468 velas  2016-09-27 -> 2026-10-30
+  CAT         2538 velas  2016-09-26 -> 2026-10-29
+  CAT.BA      2469 velas  2016-09-26 -> 2026-10-30
+  CCL         2538 velas  2016-09-26 -> 2026-10-29
+  CCL.BA       602 velas  2024-04-17 -> 2026-10-30
+  CEG         1200 velas  2022-01-19 -> 2026-10-29
+  CEG.BA       360 velas  2025-05-16 -> 2026-10-30
+  CL          2538 velas  2016-09-26 -> 2026-10-29
+  CL.BA       2468 velas  2016-09-27 -> 2026-10-30
+  COIN        1394 velas  2021-04-14 -> 2026-10-29
+  COIN.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  COP         2538 velas  2016-09-26 -> 2026-10-29
+  COP.BA       115 velas  2026-05-18 -> 2026-10-30  <-- revisar
+  COST        2538 velas  2016-09-26 -> 2026-10-29
+  COST.BA     2468 velas  2016-09-27 -> 2026-10-30
+  CRM         2538 velas  2016-09-26 -> 2026-10-29
+  CRM.BA      1622 velas  2020-03-13 -> 2026-10-30
+  CRWD        1857 velas  2019-06-12 -> 2026-10-29
+  CRWD.BA      116 velas  2026-05-15 -> 2026-10-30  <-- revisar
+  CSCO        2538 velas  2016-09-26 -> 2026-10-29
+  CSCO.BA     2468 velas  2016-09-26 -> 2026-10-30
+  CVS         2538 velas  2016-09-26 -> 2026-10-29
+  CVS.BA       629 velas  2024-04-10 -> 2026-10-30
+  CVX         2538 velas  2016-09-26 -> 2026-10-29
+  CVX.BA      2469 velas  2016-09-26 -> 2026-10-30
+  DAL         2538 velas  2016-09-26 -> 2026-10-29
+  DAL.BA       626 velas  2024-04-10 -> 2026-10-30
+  DE          2538 velas  2016-09-26 -> 2026-10-29
+  DE.BA       2468 velas  2016-09-27 -> 2026-10-30
+  DELL        2538 velas  2016-09-26 -> 2026-10-29
+  DELL.BA       42 velas  2026-09-02 -> 2026-10-30  <-- revisar
+  DHR         2538 velas  2016-09-26 -> 2026-10-29
+  DHR.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  DIS         2538 velas  2016-09-26 -> 2026-10-29
+  DISN.BA     2469 velas  2016-09-26 -> 2026-10-30
+  DOCU        2139 velas  2018-04-27 -> 2026-10-29
+  DOCU.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
   EA             1 velas  2026-08-04 -> 2026-08-04  <-- revisar
   EA.BA          1 velas  2026-08-03 -> 2026-08-03  <-- revisar
-  EBAY        2537 velas  2016-09-26 -> 2026-10-28
-  EBAY.BA     2467 velas  2016-09-27 -> 2026-10-29
-  ETSY        2537 velas  2016-09-26 -> 2026-10-28
-  ETSY.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  F           2537 velas  2016-09-26 -> 2026-10-28
-  F.BA        1042 velas  2022-07-26 -> 2026-10-29
-  FCX         2537 velas  2016-09-26 -> 2026-10-28
-  FCX.BA      2467 velas  2016-09-27 -> 2026-10-29
-  FDX         2537 velas  2016-09-26 -> 2026-10-28
-  FDX.BA      2467 velas  2016-09-27 -> 2026-10-29
-  FSLR        2537 velas  2016-09-26 -> 2026-10-28
-  FSLR.BA     2467 velas  2016-09-27 -> 2026-10-29
-  GE          2537 velas  2016-09-26 -> 2026-10-28
-  GE.BA       2467 velas  2016-09-27 -> 2026-10-29
-  GEV          650 velas  2024-03-27 -> 2026-10-28
-  GEV.BA        41 velas  2026-09-02 -> 2026-10-29  <-- revisar
-  GGB         2537 velas  2016-09-26 -> 2026-10-28
-  GGB.BA      1621 velas  2020-03-13 -> 2026-10-29
-  GILD        2537 velas  2016-09-26 -> 2026-10-28
-  GILD.BA     1622 velas  2020-03-12 -> 2026-10-29
-  GLOB        2537 velas  2016-09-26 -> 2026-10-28
-  GLOB.BA     1077 velas  2022-06-13 -> 2026-10-29
-  GLW         2537 velas  2016-09-26 -> 2026-10-28
-  GLW.BA      2467 velas  2016-09-27 -> 2026-10-29
-  GM          2537 velas  2016-09-26 -> 2026-10-28
-  GM.BA         25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  GOOGL       2537 velas  2016-09-26 -> 2026-10-28
-  GOOGL.BA    2468 velas  2016-09-26 -> 2026-10-29
-  GS          2537 velas  2016-09-26 -> 2026-10-28
-  GS.BA       1851 velas  2019-04-04 -> 2026-10-29
-  HAL         2537 velas  2016-09-26 -> 2026-10-28
-  HAL.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  HD          2537 velas  2016-09-26 -> 2026-10-28
-  HD.BA       2468 velas  2016-09-26 -> 2026-10-29
-  HMC         2537 velas  2016-09-26 -> 2026-10-28
-  HMC.BA      2466 velas  2016-09-27 -> 2026-10-29
-  HON         2537 velas  2016-09-26 -> 2026-10-28
-  HON.BA      2467 velas  2016-09-27 -> 2026-10-29
-  HOOD        1319 velas  2021-07-29 -> 2026-10-28
-  HOOD.BA      237 velas  2025-11-11 -> 2026-10-29
-  HPQ         2537 velas  2016-09-26 -> 2026-10-28
-  HPQ.BA      2467 velas  2016-09-27 -> 2026-10-29
-  HSBC        2537 velas  2016-09-26 -> 2026-10-28
-  HSBC.BA     2466 velas  2016-09-27 -> 2026-10-29
-  IBKR        2537 velas  2016-09-26 -> 2026-10-28
-  IBKR.BA       40 velas  2026-09-03 -> 2026-10-29  <-- revisar
-  IBM         2537 velas  2016-09-26 -> 2026-10-28
-  IBM.BA      2468 velas  2016-09-26 -> 2026-10-29
-  INFY        2537 velas  2016-09-26 -> 2026-10-28
-  INFY.BA     2467 velas  2016-09-27 -> 2026-10-29
-  INTC        2537 velas  2016-09-26 -> 2026-10-28
-  INTC.BA     2468 velas  2016-09-26 -> 2026-10-29
-  ISRG        2537 velas  2016-09-26 -> 2026-10-28
-  ISRG.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  ITUB        2537 velas  2016-09-26 -> 2026-10-28
-  ITUB.BA     1790 velas  2019-07-05 -> 2026-10-29
-  JD          2537 velas  2016-09-26 -> 2026-10-28
-  JD.BA       1621 velas  2020-03-13 -> 2026-10-29
-  JNJ         2537 velas  2016-09-26 -> 2026-10-28
-  JNJ.BA      2468 velas  2016-09-26 -> 2026-10-29
-  JPM         2537 velas  2016-09-26 -> 2026-10-28
-  JPM.BA      2468 velas  2016-09-26 -> 2026-10-29
-  KLAC        2537 velas  2016-09-26 -> 2026-10-28
-  KLAC.BA       41 velas  2026-09-02 -> 2026-10-29  <-- revisar
-  KMB         2537 velas  2016-09-26 -> 2026-10-28
-  KMB.BA      2467 velas  2016-09-27 -> 2026-10-29
-  KO          2537 velas  2016-09-26 -> 2026-10-28
-  KO.BA       2468 velas  2016-09-26 -> 2026-10-29
-  LIN         2537 velas  2016-09-26 -> 2026-10-28
-  LIN.BA        40 velas  2026-09-03 -> 2026-10-29  <-- revisar
-  LLY         2537 velas  2016-09-26 -> 2026-10-28
-  LLY.BA      2468 velas  2016-09-26 -> 2026-10-29
-  LMT         2537 velas  2016-09-26 -> 2026-10-28
-  LMT.BA      2467 velas  2016-09-27 -> 2026-10-29
-  LRCX        2537 velas  2016-09-26 -> 2026-10-28
-  LRCX.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  LVS         2537 velas  2016-09-26 -> 2026-10-28
-  LVS.BA      2466 velas  2016-09-27 -> 2026-10-29
-  MA          2537 velas  2016-09-26 -> 2026-10-28
-  MA.BA         25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  MCD         2537 velas  2016-09-26 -> 2026-10-28
-  MCD.BA      2468 velas  2016-09-26 -> 2026-10-29
-  MDLZ        2537 velas  2016-09-26 -> 2026-10-28
-  MDLZ.BA      627 velas  2024-04-10 -> 2026-10-29
-  MDT         2537 velas  2016-09-26 -> 2026-10-28
-  MDT.BA      2467 velas  2016-09-27 -> 2026-10-29
-  MELI        2537 velas  2016-09-26 -> 2026-10-28
-  MELI.BA     2467 velas  2016-09-26 -> 2026-10-29
-  META        2537 velas  2016-09-26 -> 2026-10-28
-  META.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  MMM         2537 velas  2016-09-26 -> 2026-10-28
-  MMM.BA      2467 velas  2016-09-27 -> 2026-10-29
-  MO          2537 velas  2016-09-26 -> 2026-10-28
-  MO.BA       2467 velas  2016-09-27 -> 2026-10-29
-  MRK         2537 velas  2016-09-26 -> 2026-10-28
-  MRK.BA      2468 velas  2016-09-26 -> 2026-10-29
-  MRNA        1983 velas  2018-12-07 -> 2026-10-28
-  MRNA.BA      609 velas  2024-05-07 -> 2026-10-29
-  MRVL        2537 velas  2016-09-26 -> 2026-10-28
-  MRVL.BA      640 velas  2024-03-18 -> 2026-10-29
-  MS          2537 velas  2016-09-26 -> 2026-10-28
-  MS.BA         41 velas  2026-09-02 -> 2026-10-29  <-- revisar
-  MSFT        2537 velas  2016-09-26 -> 2026-10-28
-  MSFT.BA     2468 velas  2016-09-26 -> 2026-10-29
-  MSTR        2537 velas  2016-09-26 -> 2026-10-28
-  MSTR.BA     1042 velas  2022-07-26 -> 2026-10-29
-  MU          2537 velas  2016-09-26 -> 2026-10-28
-  MU.BA       1038 velas  2022-07-26 -> 2026-10-29
-  NEE         2537 velas  2016-09-26 -> 2026-10-28
-  NEE.BA       114 velas  2026-05-18 -> 2026-10-29  <-- revisar
-  NEM         2537 velas  2016-09-26 -> 2026-10-28
-  NEM.BA      2467 velas  2016-09-27 -> 2026-10-29
-  NFLX        2537 velas  2016-09-26 -> 2026-10-28
-  NFLX.BA     1622 velas  2020-03-12 -> 2026-10-29
-  NIO         2043 velas  2018-09-12 -> 2026-10-28
-  NIO.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  NKE         2537 velas  2016-09-26 -> 2026-10-28
-  NKE.BA      2467 velas  2016-09-26 -> 2026-10-29
-  NOW         2537 velas  2016-09-26 -> 2026-10-28
-  NOW.BA       354 velas  2025-05-19 -> 2026-10-29
-  NTES        2537 velas  2016-09-26 -> 2026-10-28
-  NTES.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  NU          1226 velas  2021-12-09 -> 2026-10-28
-  NU.BA        639 velas  2024-03-19 -> 2026-10-29
-  NUE         2537 velas  2016-09-26 -> 2026-10-28
-  NUE.BA      2467 velas  2016-09-27 -> 2026-10-29
-  NVDA        2537 velas  2016-09-26 -> 2026-10-28
-  NVDA.BA     1622 velas  2020-03-12 -> 2026-10-29
-  NVO         2537 velas  2016-09-26 -> 2026-10-28
-  NVO.BA       111 velas  2026-05-21 -> 2026-10-29  <-- revisar
-  NVS         2537 velas  2016-09-26 -> 2026-10-28
-  NVS.BA      2466 velas  2016-09-27 -> 2026-10-29
-  ORCL        2537 velas  2016-09-26 -> 2026-10-28
-  ORCL.BA     2468 velas  2016-09-26 -> 2026-10-29
-  OXY         2537 velas  2016-09-26 -> 2026-10-28
-  OXY.BA      1042 velas  2022-07-26 -> 2026-10-29
-  PAAS        2537 velas  2016-09-26 -> 2026-10-28
-  PAAS.BA     1386 velas  2021-03-08 -> 2026-10-29
-  PAGS        2203 velas  2018-01-24 -> 2026-10-28
-  PAGS.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  PANW        2537 velas  2016-09-26 -> 2026-10-28
-  PANW.BA     1037 velas  2022-08-01 -> 2026-10-29
-  PBR         2537 velas  2016-09-26 -> 2026-10-28
-  PBR.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  PDD         2076 velas  2018-07-26 -> 2026-10-28
-  PDD.BA       358 velas  2025-05-19 -> 2026-10-29
-  PEP         2537 velas  2016-09-26 -> 2026-10-28
-  PEP.BA      2467 velas  2016-09-26 -> 2026-10-29
-  PFE         2537 velas  2016-09-26 -> 2026-10-28
-  PFE.BA      2467 velas  2016-09-26 -> 2026-10-29
-  PG          2537 velas  2016-09-26 -> 2026-10-28
-  PG.BA       2468 velas  2016-09-26 -> 2026-10-29
-  PINS        1893 velas  2019-04-18 -> 2026-10-28
-  PINS.BA      537 velas  2024-05-13 -> 2026-10-29
-  PLTR        1527 velas  2020-09-30 -> 2026-10-28
-  PLTR.BA      636 velas  2024-03-19 -> 2026-10-29
-  PM          2537 velas  2016-09-26 -> 2026-10-28
-  PM.BA        601 velas  2024-04-15 -> 2026-10-29
-  PYPL        2537 velas  2016-09-26 -> 2026-10-28
-  PYPL.BA     1849 velas  2019-04-08 -> 2026-10-29
-  QCOM        2537 velas  2016-09-26 -> 2026-10-28
-  QCOM.BA     2467 velas  2016-09-26 -> 2026-10-29
-  RACE        2537 velas  2016-09-26 -> 2026-10-28
-  RACE.BA      627 velas  2024-04-10 -> 2026-10-29
-  RBLX        1417 velas  2021-03-10 -> 2026-10-28
-  RBLX.BA     1042 velas  2022-07-26 -> 2026-10-29
-  RIO         2537 velas  2016-09-26 -> 2026-10-28
-  RIO.BA      2467 velas  2016-09-27 -> 2026-10-29
-  ROKU        2283 velas  2017-09-28 -> 2026-10-28
-  ROKU.BA      625 velas  2024-04-10 -> 2026-10-29
-  RTX         2537 velas  2016-09-26 -> 2026-10-28
-  RTX.BA      2467 velas  2016-09-27 -> 2026-10-29
-  SAP         2537 velas  2016-09-26 -> 2026-10-28
-  SAP.BA      2467 velas  2016-09-27 -> 2026-10-29
-  SBUX        2537 velas  2016-09-26 -> 2026-10-28
-  SBUX.BA     2467 velas  2016-09-27 -> 2026-10-29
-  SCCO        2537 velas  2016-09-26 -> 2026-10-28
-  SCCO.BA     2467 velas  2016-09-27 -> 2026-10-29
-  SCHW        2537 velas  2016-09-26 -> 2026-10-28
+  EBAY        2538 velas  2016-09-26 -> 2026-10-29
+  EBAY.BA     2468 velas  2016-09-27 -> 2026-10-30
+  ETSY        2538 velas  2016-09-26 -> 2026-10-29
+  ETSY.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  F           2538 velas  2016-09-26 -> 2026-10-29
+  F.BA        1043 velas  2022-07-26 -> 2026-10-30
+  FCX         2538 velas  2016-09-26 -> 2026-10-29
+  FCX.BA      2468 velas  2016-09-27 -> 2026-10-30
+  FDX         2538 velas  2016-09-26 -> 2026-10-29
+  FDX.BA      2468 velas  2016-09-27 -> 2026-10-30
+  FSLR        2538 velas  2016-09-26 -> 2026-10-29
+  FSLR.BA     2468 velas  2016-09-27 -> 2026-10-30
+  GE          2538 velas  2016-09-26 -> 2026-10-29
+  GE.BA       2468 velas  2016-09-27 -> 2026-10-30
+  GEV          651 velas  2024-03-27 -> 2026-10-29
+  GEV.BA        42 velas  2026-09-02 -> 2026-10-30  <-- revisar
+  GGB         2538 velas  2016-09-26 -> 2026-10-29
+  GGB.BA      1622 velas  2020-03-13 -> 2026-10-30
+  GILD        2538 velas  2016-09-26 -> 2026-10-29
+  GILD.BA     1623 velas  2020-03-12 -> 2026-10-30
+  GLOB        2538 velas  2016-09-26 -> 2026-10-29
+  GLOB.BA     1078 velas  2022-06-13 -> 2026-10-30
+  GLW         2538 velas  2016-09-26 -> 2026-10-29
+  GLW.BA      2468 velas  2016-09-27 -> 2026-10-30
+  GM          2538 velas  2016-09-26 -> 2026-10-29
+  GM.BA         26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  GOOGL       2538 velas  2016-09-26 -> 2026-10-29
+  GOOGL.BA    2469 velas  2016-09-26 -> 2026-10-30
+  GS          2538 velas  2016-09-26 -> 2026-10-29
+  GS.BA       1852 velas  2019-04-04 -> 2026-10-30
+  HAL         2538 velas  2016-09-26 -> 2026-10-29
+  HAL.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  HD          2538 velas  2016-09-26 -> 2026-10-29
+  HD.BA       2469 velas  2016-09-26 -> 2026-10-30
+  HMC         2538 velas  2016-09-26 -> 2026-10-29
+  HMC.BA      2467 velas  2016-09-27 -> 2026-10-30
+  HON         2538 velas  2016-09-26 -> 2026-10-29
+  HON.BA      2468 velas  2016-09-27 -> 2026-10-30
+  HOOD        1320 velas  2021-07-29 -> 2026-10-29
+  HOOD.BA      238 velas  2025-11-11 -> 2026-10-30
+  HPQ         2538 velas  2016-09-26 -> 2026-10-29
+  HPQ.BA      2468 velas  2016-09-27 -> 2026-10-30
+  HSBC        2538 velas  2016-09-26 -> 2026-10-29
+  HSBC.BA     2467 velas  2016-09-27 -> 2026-10-30
+  IBKR        2538 velas  2016-09-26 -> 2026-10-29
+  IBKR.BA       41 velas  2026-09-03 -> 2026-10-30  <-- revisar
+  IBM         2538 velas  2016-09-26 -> 2026-10-29
+  IBM.BA      2469 velas  2016-09-26 -> 2026-10-30
+  INFY        2538 velas  2016-09-26 -> 2026-10-29
+  INFY.BA     2468 velas  2016-09-27 -> 2026-10-30
+  INTC        2538 velas  2016-09-26 -> 2026-10-29
+  INTC.BA     2469 velas  2016-09-26 -> 2026-10-30
+  ISRG        2538 velas  2016-09-26 -> 2026-10-29
+  ISRG.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  ITUB        2538 velas  2016-09-26 -> 2026-10-29
+  ITUB.BA     1791 velas  2019-07-05 -> 2026-10-30
+  JD          2538 velas  2016-09-26 -> 2026-10-29
+  JD.BA       1622 velas  2020-03-13 -> 2026-10-30
+  JNJ         2538 velas  2016-09-26 -> 2026-10-29
+  JNJ.BA      2469 velas  2016-09-26 -> 2026-10-30
+  JPM         2538 velas  2016-09-26 -> 2026-10-29
+  JPM.BA      2469 velas  2016-09-26 -> 2026-10-30
+  KLAC        2538 velas  2016-09-26 -> 2026-10-29
+  KLAC.BA       42 velas  2026-09-02 -> 2026-10-30  <-- revisar
+  KMB         2538 velas  2016-09-26 -> 2026-10-29
+  KMB.BA      2468 velas  2016-09-27 -> 2026-10-30
+  KO          2538 velas  2016-09-26 -> 2026-10-29
+  KO.BA       2469 velas  2016-09-26 -> 2026-10-30
+  LIN         2538 velas  2016-09-26 -> 2026-10-29
+  LIN.BA        41 velas  2026-09-03 -> 2026-10-30  <-- revisar
+  LLY         2538 velas  2016-09-26 -> 2026-10-29
+  LLY.BA      2469 velas  2016-09-26 -> 2026-10-30
+  LMT         2538 velas  2016-09-26 -> 2026-10-29
+  LMT.BA      2468 velas  2016-09-27 -> 2026-10-30
+  LRCX        2538 velas  2016-09-26 -> 2026-10-29
+  LRCX.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  LVS         2538 velas  2016-09-26 -> 2026-10-29
+  LVS.BA      2467 velas  2016-09-27 -> 2026-10-30
+  MA          2538 velas  2016-09-26 -> 2026-10-29
+  MA.BA         26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  MCD         2538 velas  2016-09-26 -> 2026-10-29
+  MCD.BA      2469 velas  2016-09-26 -> 2026-10-30
+  MDLZ        2538 velas  2016-09-26 -> 2026-10-29
+  MDLZ.BA      628 velas  2024-04-10 -> 2026-10-30
+  MDT         2538 velas  2016-09-26 -> 2026-10-29
+  MDT.BA      2468 velas  2016-09-27 -> 2026-10-30
+  MELI        2538 velas  2016-09-26 -> 2026-10-29
+  MELI.BA     2468 velas  2016-09-26 -> 2026-10-30
+  META        2538 velas  2016-09-26 -> 2026-10-29
+  META.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  MMM         2538 velas  2016-09-26 -> 2026-10-29
+  MMM.BA      2468 velas  2016-09-27 -> 2026-10-30
+  MO          2538 velas  2016-09-26 -> 2026-10-29
+  MO.BA       2468 velas  2016-09-27 -> 2026-10-30
+  MRK         2538 velas  2016-09-26 -> 2026-10-29
+  MRK.BA      2469 velas  2016-09-26 -> 2026-10-30
+  MRNA        1984 velas  2018-12-07 -> 2026-10-29
+  MRNA.BA      610 velas  2024-05-07 -> 2026-10-30
+  MRVL        2538 velas  2016-09-26 -> 2026-10-29
+  MRVL.BA      641 velas  2024-03-18 -> 2026-10-30
+  MS          2538 velas  2016-09-26 -> 2026-10-29
+  MS.BA         42 velas  2026-09-02 -> 2026-10-30  <-- revisar
+  MSFT        2538 velas  2016-09-26 -> 2026-10-29
+  MSFT.BA     2469 velas  2016-09-26 -> 2026-10-30
+  MSTR        2538 velas  2016-09-26 -> 2026-10-29
+  MSTR.BA     1043 velas  2022-07-26 -> 2026-10-30
+  MU          2538 velas  2016-09-26 -> 2026-10-29
+  MU.BA       1039 velas  2022-07-26 -> 2026-10-30
+  NEE         2538 velas  2016-09-26 -> 2026-10-29
+  NEE.BA       115 velas  2026-05-18 -> 2026-10-30  <-- revisar
+  NEM         2538 velas  2016-09-26 -> 2026-10-29
+  NEM.BA      2468 velas  2016-09-27 -> 2026-10-30
+  NFLX        2538 velas  2016-09-26 -> 2026-10-29
+  NFLX.BA     1623 velas  2020-03-12 -> 2026-10-30
+  NIO         2044 velas  2018-09-12 -> 2026-10-29
+  NIO.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  NKE         2538 velas  2016-09-26 -> 2026-10-29
+  NKE.BA      2468 velas  2016-09-26 -> 2026-10-30
+  NOW         2538 velas  2016-09-26 -> 2026-10-29
+  NOW.BA       355 velas  2025-05-19 -> 2026-10-30
+  NTES        2538 velas  2016-09-26 -> 2026-10-29
+  NTES.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  NU          1227 velas  2021-12-09 -> 2026-10-29
+  NU.BA        640 velas  2024-03-19 -> 2026-10-30
+  NUE         2538 velas  2016-09-26 -> 2026-10-29
+  NUE.BA      2468 velas  2016-09-27 -> 2026-10-30
+  NVDA        2538 velas  2016-09-26 -> 2026-10-29
+  NVDA.BA     1623 velas  2020-03-12 -> 2026-10-30
+  NVO         2538 velas  2016-09-26 -> 2026-10-29
+  NVO.BA       112 velas  2026-05-21 -> 2026-10-30  <-- revisar
+  NVS         2538 velas  2016-09-26 -> 2026-10-29
+  NVS.BA      2467 velas  2016-09-27 -> 2026-10-30
+  ORCL        2538 velas  2016-09-26 -> 2026-10-29
+  ORCL.BA     2469 velas  2016-09-26 -> 2026-10-30
+  OXY         2538 velas  2016-09-26 -> 2026-10-29
+  OXY.BA      1043 velas  2022-07-26 -> 2026-10-30
+  PAAS        2538 velas  2016-09-26 -> 2026-10-29
+  PAAS.BA     1387 velas  2021-03-08 -> 2026-10-30
+  PAGS        2204 velas  2018-01-24 -> 2026-10-29
+  PAGS.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  PANW        2538 velas  2016-09-26 -> 2026-10-29
+  PANW.BA     1038 velas  2022-08-01 -> 2026-10-30
+  PBR         2538 velas  2016-09-26 -> 2026-10-29
+  PBR.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  PDD         2077 velas  2018-07-26 -> 2026-10-29
+  PDD.BA       359 velas  2025-05-19 -> 2026-10-30
+  PEP         2538 velas  2016-09-26 -> 2026-10-29
+  PEP.BA      2468 velas  2016-09-26 -> 2026-10-30
+  PFE         2538 velas  2016-09-26 -> 2026-10-29
+  PFE.BA      2468 velas  2016-09-26 -> 2026-10-30
+  PG          2538 velas  2016-09-26 -> 2026-10-29
+  PG.BA       2469 velas  2016-09-26 -> 2026-10-30
+  PINS        1894 velas  2019-04-18 -> 2026-10-29
+  PINS.BA      538 velas  2024-05-13 -> 2026-10-30
+  PLTR        1528 velas  2020-09-30 -> 2026-10-29
+  PLTR.BA      637 velas  2024-03-19 -> 2026-10-30
+  PM          2538 velas  2016-09-26 -> 2026-10-29
+  PM.BA        602 velas  2024-04-15 -> 2026-10-30
+  PYPL        2538 velas  2016-09-26 -> 2026-10-29
+  PYPL.BA     1850 velas  2019-04-08 -> 2026-10-30
+  QCOM        2538 velas  2016-09-26 -> 2026-10-29
+  QCOM.BA     2468 velas  2016-09-26 -> 2026-10-30
+  RACE        2538 velas  2016-09-26 -> 2026-10-29
+  RACE.BA      628 velas  2024-04-10 -> 2026-10-30
+  RBLX        1418 velas  2021-03-10 -> 2026-10-29
+  RBLX.BA     1043 velas  2022-07-26 -> 2026-10-30
+  RIO         2538 velas  2016-09-26 -> 2026-10-29
+  RIO.BA      2468 velas  2016-09-27 -> 2026-10-30
+  ROKU        2284 velas  2017-09-28 -> 2026-10-29
+  ROKU.BA      626 velas  2024-04-10 -> 2026-10-30
+  RTX         2538 velas  2016-09-26 -> 2026-10-29
+  RTX.BA      2468 velas  2016-09-27 -> 2026-10-30
+  SAP         2538 velas  2016-09-26 -> 2026-10-29
+  SAP.BA      2468 velas  2016-09-27 -> 2026-10-30
+  SBUX        2538 velas  2016-09-26 -> 2026-10-29
+  SBUX.BA     2468 velas  2016-09-27 -> 2026-10-30
+  SCCO        2538 velas  2016-09-26 -> 2026-10-29
+  SCCO.BA     2468 velas  2016-09-27 -> 2026-10-30
+  SCHW        2538 velas  2016-09-26 -> 2026-10-29
   SCHW.BA        1 velas  2025-07-28 -> 2025-07-28  <-- revisar
-  SE          2267 velas  2017-10-20 -> 2026-10-28
-  SE.BA         25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  SHEL        2537 velas  2016-09-26 -> 2026-10-28
-  SHEL.BA     2467 velas  2016-09-27 -> 2026-10-29
-  SHOP        2537 velas  2016-09-26 -> 2026-10-28
-  SHOP.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  SLB         2537 velas  2016-09-26 -> 2026-10-28
-  SLB.BA      2467 velas  2016-09-27 -> 2026-10-29
-  SNAP        2429 velas  2017-03-02 -> 2026-10-28
-  SNAP.BA     1647 velas  2020-02-04 -> 2026-10-29
-  SNOW        1537 velas  2020-09-16 -> 2026-10-28
-  SNOW.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  SONY        2537 velas  2016-09-26 -> 2026-10-28
-  SONY.BA     2467 velas  2016-09-27 -> 2026-10-29
-  SPGI        2537 velas  2016-09-26 -> 2026-10-28
-  SPGI.BA      882 velas  2023-03-14 -> 2026-10-29
-  SPOT        2156 velas  2018-04-03 -> 2026-10-28
-  SPOT.BA     1379 velas  2021-03-09 -> 2026-10-29
-  SPY         2537 velas  2016-09-26 -> 2026-10-28
-  SPY.BA      1151 velas  2022-01-18 -> 2026-10-29
-  STNE        2012 velas  2018-10-25 -> 2026-10-28
-  STNE.BA      635 velas  2024-03-19 -> 2026-10-29
-  T           2537 velas  2016-09-26 -> 2026-10-28
-  T.BA        2467 velas  2016-09-27 -> 2026-10-29
-  TEN         2537 velas  2016-09-26 -> 2026-10-28
-  TEN.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  TGT         2537 velas  2016-09-26 -> 2026-10-28
-  TGT.BA      1597 velas  2020-04-23 -> 2026-10-29
-  TM          2537 velas  2016-09-26 -> 2026-10-28
-  TM.BA       2467 velas  2016-09-27 -> 2026-10-29
-  TMO         2537 velas  2016-09-26 -> 2026-10-28
-  TMO.BA      1576 velas  2020-05-26 -> 2026-10-29
-  TMUS        2537 velas  2016-09-26 -> 2026-10-28
-  TMUS.BA      510 velas  2024-06-10 -> 2026-10-29
-  TSLA        2537 velas  2016-09-26 -> 2026-10-28
-  TSLA.BA     1622 velas  2020-03-12 -> 2026-10-29
-  TSM         2537 velas  2016-09-26 -> 2026-10-28
-  TSM.BA      2468 velas  2016-09-26 -> 2026-10-29
-  TTE         2537 velas  2016-09-26 -> 2026-10-28
-  TTE.BA      2466 velas  2016-09-27 -> 2026-10-29
-  TXN         2537 velas  2016-09-26 -> 2026-10-28
-  TXN.BA      2467 velas  2016-09-27 -> 2026-10-29
+  SE          2268 velas  2017-10-20 -> 2026-10-29
+  SE.BA         26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  SHEL        2538 velas  2016-09-26 -> 2026-10-29
+  SHEL.BA     2468 velas  2016-09-27 -> 2026-10-30
+  SHOP        2538 velas  2016-09-26 -> 2026-10-29
+  SHOP.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  SLB         2538 velas  2016-09-26 -> 2026-10-29
+  SLB.BA      2468 velas  2016-09-27 -> 2026-10-30
+  SNAP        2430 velas  2017-03-02 -> 2026-10-29
+  SNAP.BA     1648 velas  2020-02-04 -> 2026-10-30
+  SNOW        1538 velas  2020-09-16 -> 2026-10-29
+  SNOW.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  SONY        2538 velas  2016-09-26 -> 2026-10-29
+  SONY.BA     2468 velas  2016-09-27 -> 2026-10-30
+  SPGI        2538 velas  2016-09-26 -> 2026-10-29
+  SPGI.BA      883 velas  2023-03-14 -> 2026-10-30
+  SPOT        2157 velas  2018-04-03 -> 2026-10-29
+  SPOT.BA     1380 velas  2021-03-09 -> 2026-10-30
+  SPY         2538 velas  2016-09-26 -> 2026-10-29
+  SPY.BA      1152 velas  2022-01-18 -> 2026-10-30
+  STNE        2013 velas  2018-10-25 -> 2026-10-29
+  STNE.BA      636 velas  2024-03-19 -> 2026-10-30
+  T           2538 velas  2016-09-26 -> 2026-10-29
+  T.BA        2468 velas  2016-09-27 -> 2026-10-30
+  TEN         2538 velas  2016-09-26 -> 2026-10-29
+  TEN.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  TGT         2538 velas  2016-09-26 -> 2026-10-29
+  TGT.BA      1598 velas  2020-04-23 -> 2026-10-30
+  TM          2538 velas  2016-09-26 -> 2026-10-29
+  TM.BA       2468 velas  2016-09-27 -> 2026-10-30
+  TMO         2538 velas  2016-09-26 -> 2026-10-29
+  TMO.BA      1577 velas  2020-05-26 -> 2026-10-30
+  TMUS        2538 velas  2016-09-26 -> 2026-10-29
+  TMUS.BA      511 velas  2024-06-10 -> 2026-10-30
+  TSLA        2538 velas  2016-09-26 -> 2026-10-29
+  TSLA.BA     1623 velas  2020-03-12 -> 2026-10-30
+  TSM         2538 velas  2016-09-26 -> 2026-10-29
+  TSM.BA      2469 velas  2016-09-26 -> 2026-10-30
+  TTE         2538 velas  2016-09-26 -> 2026-10-29
+  TTE.BA      2467 velas  2016-09-27 -> 2026-10-30
+  TXN         2538 velas  2016-09-26 -> 2026-10-29
+  TXN.BA      2468 velas  2016-09-27 -> 2026-10-30
   TXR           16 velas  2016-11-28 -> 2017-07-17  <-- revisar
-  TXR.BA      2467 velas  2016-09-27 -> 2026-10-29
-  UAL         2537 velas  2016-09-26 -> 2026-10-28
-  UAL.BA      1027 velas  2022-07-26 -> 2026-10-29
-  UBER        1878 velas  2019-05-10 -> 2026-10-28
-  UBER.BA     1041 velas  2022-07-26 -> 2026-10-29
-  UNH         2537 velas  2016-09-26 -> 2026-10-28
-  UNH.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  UNP         2537 velas  2016-09-26 -> 2026-10-28
-  UNP.BA        25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  UPST        1473 velas  2020-12-16 -> 2026-10-28
-  UPST.BA     1042 velas  2022-07-26 -> 2026-10-29
-  USB         2537 velas  2016-09-26 -> 2026-10-28
-  USB.BA      2465 velas  2016-09-27 -> 2026-10-29
-  V           2537 velas  2016-09-26 -> 2026-10-28
-  V.BA        1547 velas  2020-07-07 -> 2026-10-29
-  VALE        2537 velas  2016-09-26 -> 2026-10-28
-  VALE.BA     2467 velas  2016-09-26 -> 2026-10-29
-  VIST        1825 velas  2019-07-26 -> 2026-10-28
-  VIST.BA       25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  VZ          2537 velas  2016-09-26 -> 2026-10-28
-  VZ.BA       2467 velas  2016-09-27 -> 2026-10-29
-  WFC         2537 velas  2016-09-26 -> 2026-10-28
-  WFC.BA      2467 velas  2016-09-27 -> 2026-10-29
-  WMT         2537 velas  2016-09-26 -> 2026-10-28
-  WMT.BA      2467 velas  2016-09-26 -> 2026-10-29
-  XOM         2537 velas  2016-09-26 -> 2026-10-28
-  XOM.BA      2468 velas  2016-09-26 -> 2026-10-29
-  XP          1729 velas  2019-12-11 -> 2026-10-28
-  XP.BA         25 velas  2026-09-24 -> 2026-10-29  <-- revisar
-  XPEV        1550 velas  2020-08-27 -> 2026-10-28
-  XPEV.BA      358 velas  2025-05-19 -> 2026-10-29
-  ZM          1893 velas  2019-04-18 -> 2026-10-28
-  ZM.BA         25 velas  2026-09-24 -> 2026-10-29  <-- revisar
+  TXR.BA      2468 velas  2016-09-27 -> 2026-10-30
+  UAL         2538 velas  2016-09-26 -> 2026-10-29
+  UAL.BA      1028 velas  2022-07-26 -> 2026-10-30
+  UBER        1879 velas  2019-05-10 -> 2026-10-29
+  UBER.BA     1042 velas  2022-07-26 -> 2026-10-30
+  UNH         2538 velas  2016-09-26 -> 2026-10-29
+  UNH.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  UNP         2538 velas  2016-09-26 -> 2026-10-29
+  UNP.BA        26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  UPST        1474 velas  2020-12-16 -> 2026-10-29
+  UPST.BA     1043 velas  2022-07-26 -> 2026-10-30
+  USB         2538 velas  2016-09-26 -> 2026-10-29
+  USB.BA      2466 velas  2016-09-27 -> 2026-10-30
+  V           2538 velas  2016-09-26 -> 2026-10-29
+  V.BA        1548 velas  2020-07-07 -> 2026-10-30
+  VALE        2538 velas  2016-09-26 -> 2026-10-29
+  VALE.BA     2468 velas  2016-09-26 -> 2026-10-30
+  VIST        1826 velas  2019-07-26 -> 2026-10-29
+  VIST.BA       26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  VZ          2538 velas  2016-09-26 -> 2026-10-29
+  VZ.BA       2468 velas  2016-09-27 -> 2026-10-30
+  WFC         2538 velas  2016-09-26 -> 2026-10-29
+  WFC.BA      2468 velas  2016-09-27 -> 2026-10-30
+  WMT         2538 velas  2016-09-26 -> 2026-10-29
+  WMT.BA      2468 velas  2016-09-26 -> 2026-10-30
+  XOM         2538 velas  2016-09-26 -> 2026-10-29
+  XOM.BA      2469 velas  2016-09-26 -> 2026-10-30
+  XP          1730 velas  2019-12-11 -> 2026-10-29
+  XP.BA         26 velas  2026-09-24 -> 2026-10-30  <-- revisar
+  XPEV        1551 velas  2020-08-27 -> 2026-10-29
+  XPEV.BA      359 velas  2025-05-19 -> 2026-10-30
+  ZM          1894 velas  2019-04-18 -> 2026-10-29
+  ZM.BA         26 velas  2026-09-24 -> 2026-10-30  <-- revisar
 
 === 2a. Paper trading swing ===
-  2026-10-28: {'MANTENER': 5, 'NO_OPERAR': 45} · cartera USD 10,517.85
+  2026-10-29: {'MANTENER': 5, 'NO_OPERAR': 45} · cartera USD 10,560.79
 Paper trading actualizado.
 
 === 2b. Paper trading momentum ===
-  2026-10-28: seguimiento · cartera USD 9,899.31 · posiciones 5
+  2026-10-29: seguimiento · cartera USD 9,910.94 · posiciones 5
 Momentum: paper trading actualizado.
 
 === 3a. Backtest y calibración swing ===
 # Backtest – v4.1-retroceso-4R
 
-Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
+Período: 2017-07-13 → 2026-10-29 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
 ## Configuración actual
 
@@ -6908,9 +6897,9 @@ Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital in
 | r_promedio (expectancy) | 0.18 |
 | ganancia_prom_R | 1.57 |
 | perdida_prom_R | -0.98 |
-| profit_factor | 1.36 |
+| profit_factor | 1.35 |
 | dias_prom_en_posicion | 14.18 |
-| retorno_total | 160.3% |
+| retorno_total | 160.1% |
 | retorno_anual (CAGR) | 10.8% |
 | max_drawdown | -23.1% |
 | retorno/caida (MAR) | 0.47 |
@@ -6931,7 +6920,7 @@ Período: 2017-07-13 → 2026-10-28 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 12.4% | 14.1% |
+| 2026 | 12.3% | 13.7% |
 
 ## Variantes de riesgo por operación
 
@@ -6954,16 +6943,16 @@ Configuración actual: entrada=retroceso, objetivo_r=4.0, max_dias_en_posicion=2
 
 | entrada    |   objetivo_r |   max_dias_en_posicion | filtro_mercado   |   in_operaciones |   in_r_promedio (expectancy) | in_retorno_anual (CAGR)   | in_max_drawdown   |   in_retorno/caida (MAR) |   out_r_promedio (expectancy) | out_retorno_anual (CAGR)   | out_max_drawdown   |   out_retorno/caida (MAR) | out_spy_retorno_anual   |
 |:-----------|-------------:|-----------------------:|:-----------------|-----------------:|-----------------------------:|:--------------------------|:------------------|-------------------------:|------------------------------:|:---------------------------|:-------------------|--------------------------:|:------------------------|
-| ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.15 | 10.6%                      | -18.4%             |                      0.58 | 21.9%                   |
-| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.09 | 4.3%                       | -18.9%             |                      0.23 | 21.9%                   |
-| ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.2  | 7.5%                       | -19.4%             |                      0.39 | 21.9%                   |
-| ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.13 | 4.3%                       | -14.8%             |                      0.29 | 21.9%                   |
-| retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.2  | 11.6%                      | -18.4%             |                      0.63 | 21.9%                   |
-| ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.22 | 7.9%                       | -22.4%             |                      0.35 | 21.9%                   |
-| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.08 | 5.9%                       | -16.1%             |                      0.36 | 21.9%                   |
-| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.23 | 9.9%                       | -17.1%             |                      0.58 | 21.9%                   |
-| ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.14 | 6.9%                       | -13.3%             |                      0.52 | 21.9%                   |
-| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.18 | 9.8%                       | -16.0%             |                      0.62 | 21.9%                   |
+| ruptura_20 |            5 |                     20 | sí               |              345 |                         0.2  | 8.4%                      | -18.3%            |                     0.46 |                          0.15 | 10.8%                      | -18.4%             |                      0.59 | 21.7%                   |
+| ruptura_55 |            3 |                     40 | no               |              290 |                         0.22 | 8.2%                      | -19.1%            |                     0.43 |                          0.1  | 4.6%                       | -18.9%             |                      0.24 | 21.7%                   |
+| ruptura_55 |            5 |                     40 | no               |              259 |                         0.21 | 8.0%                      | -18.9%            |                     0.43 |                          0.2  | 7.7%                       | -19.4%             |                      0.4  | 21.7%                   |
+| ruptura_55 |            5 |                     40 | sí               |              230 |                         0.22 | 8.2%                      | -20.6%            |                     0.4  |                          0.14 | 4.5%                       | -14.8%             |                      0.3  | 21.7%                   |
+| retroceso  |            3 |                     40 | no               |              272 |                         0.22 | 8.3%                      | -21.3%            |                     0.39 |                          0.2  | 11.9%                      | -18.4%             |                      0.65 | 21.7%                   |
+| ruptura_20 |            5 |                     40 | no               |              275 |                         0.29 | 10.6%                     | -27.3%            |                     0.39 |                          0.22 | 8.2%                       | -22.4%             |                      0.37 | 21.7%                   |
+| ruptura_55 |            5 |                     20 | sí               |              326 |                         0.17 | 6.9%                      | -19.1%            |                     0.36 |                          0.09 | 6.1%                       | -16.1%             |                      0.38 | 21.7%                   |
+| retroceso  |            5 |                     40 | no               |              250 |                         0.22 | 7.9%                      | -22.3%            |                     0.35 |                          0.25 | 10.6%                      | -17.1%             |                      0.62 | 21.7%                   |
+| ruptura_55 |            3 |                     40 | sí               |              263 |                         0.22 | 8.1%                      | -23.6%            |                     0.34 |                          0.15 | 7.2%                       | -13.3%             |                      0.54 | 21.7%                   |
+| retroceso  |            3 |                     40 | sí               |              218 |                         0.22 | 6.7%                      | -19.5%            |                     0.34 |                          0.19 | 10.1%                      | -16.0%             |                      0.63 | 21.7%                   |
 
 ## Mejor combinación de cada tipo de entrada
 
@@ -6971,36 +6960,36 @@ Elegida solo con datos dentro de muestra; las columnas 'fuera' muestran cómo le
 
 | Entrada | Parámetros | CAGR dentro | Caída dentro | CAGR fuera | Caída fuera | SPY fuera |
 |---|---|---|---|---|---|---|
-| ruptura_20 | objetivo_r=5.0, max_dias_en_posicion=20, filtro_mercado=sí | 8.4% | -18.3% | 10.6% | -18.4% | 21.9% |
-| ruptura_55 | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.2% | -19.1% | 4.3% | -18.9% | 21.9% |
-| retroceso | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.3% | -21.3% | 11.6% | -18.4% | 21.9% |
+| ruptura_20 | objetivo_r=5.0, max_dias_en_posicion=20, filtro_mercado=sí | 8.4% | -18.3% | 10.8% | -18.4% | 21.7% |
+| ruptura_55 | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.2% | -19.1% | 4.6% | -18.9% | 21.7% |
+| retroceso | objetivo_r=3.0, max_dias_en_posicion=40, filtro_mercado=no | 8.3% | -21.3% | 11.9% | -18.4% | 21.7% |
 
-Correlación de ranking dentro vs fuera de muestra (Spearman): **0.02** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
+Correlación de ranking dentro vs fuera de muestra (Spearman): **0.04** (cerca de 1 = los parámetros que funcionaron antes siguieron funcionando después).
 
 === 3b. Backtest y calibración momentum ===
 # Momentum (m4-ampliado-top5-mensual-tope25) – booms del momento
 
-Período: 2017-10-06 → 2026-10-28 · 183 acciones · Parámetros: puntaje=mix, top_n=5, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
+Período: 2017-10-06 → 2026-10-29 · 183 acciones · Parámetros: puntaje=mix, top_n=5, rebalanceo_dias=21, buffer=5, max_por_sector=3, filtro_mercado=False
 
 ## Resultado
 
 | Métrica | Valor |
 |---|---|
-| retorno_anual (CAGR) | 43.7% |
+| retorno_anual (CAGR) | 43.4% |
 | max_drawdown | -51.7% |
-| retorno/caida (MAR) | 0.85 |
-| retorno_total | 2573.5% |
+| retorno/caida (MAR) | 0.84 |
+| retorno_total | 2519.0% |
 | compras_por_anio | 20.97 |
 | aciertos | 57.6% |
 | retorno_prom_por_posicion | 31.1% |
 | dias_prom_en_posicion | 62.96 |
-| rotacion_anual | 7.65 |
+| rotacion_anual | 7.63 |
 | pct_en_acciones | 99.3% |
 | pct_en_spy | 0.6% |
-| spy_retorno_anual | 14.8% |
+| spy_retorno_anual | 14.7% |
 | spy_max_drawdown | -33.7% |
 
-**Referencia:** las mismas 183 acciones en partes iguales rindieron 19.9% anual (caída máx. -35.3%). La diferencia contra SPY es en gran parte por haber elegido la lista hoy; la ventaja real de la estrategia se mide contra esta referencia.
+**Referencia:** las mismas 183 acciones en partes iguales rindieron 20.0% anual (caída máx. -35.3%). La diferencia contra SPY es en gran parte por haber elegido la lista hoy; la ventaja real de la estrategia se mide contra esta referencia.
 
 ## Retorno por año
 
@@ -7015,7 +7004,7 @@ Período: 2017-10-06 → 2026-10-28 · 183 acciones · Parámetros: puntaje=mix,
 | 2023 | 20.9% | 37.0% | 26.2% |
 | 2024 | 71.3% | 20.5% | 24.9% |
 | 2025 | 66.6% | 27.5% | 17.7% |
-| 2026 | 114.7% | 20.6% | 14.1% |
+| 2026 | 110.3% | 20.9% | 13.7% |
 
 ## Qué acciones aportaron (posiciones cerradas)
 
@@ -7040,7 +7029,7 @@ Misma configuración. 'Ampliado' = 183 acciones con CEDEAR en BYMA y liquidez su
 |---|---|---|---|---|---|---|
 
 === 3c. Setups de swing (screener) ===
-# Setups de swing trading · 2026-10-28
+# Setups de swing trading · 2026-10-29
 
 Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 
@@ -7048,29 +7037,29 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 
 | Setup | Período | Señales | Retorno prom. | Mediana | Aciertos | vs SPY | Le gana a SPY |
 |---|---|---|---|---|---|---|---|
-| Trend Template (Minervini) | todo | 5623 | 0.68% | 0.75% | 55% | +0.23% | 51% |
+| Trend Template (Minervini) | todo | 5628 | 0.68% | 0.75% | 55% | +0.23% | 51% |
 | Trend Template (Minervini) | antes | 3007 | 0.63% | 0.82% | 56% | +0.35% | 51% |
-| Trend Template (Minervini) | después | 2616 | 0.75% | 0.62% | 54% | +0.10% | 50% |
+| Trend Template (Minervini) | después | 2621 | 0.74% | 0.61% | 54% | +0.10% | 50% |
 | Breakout (Qullamaggie) | todo | 467 | 0.96% | 0.66% | 53% | +0.19% | 47% |
 | Breakout (Qullamaggie) | antes | 261 | 2.25% | 1.24% | 57% | +1.35% | 51% |
 | Breakout (Qullamaggie) | después | 206 | -0.66% | -0.35% | 48% | -1.27% | 41% |
 | Episodic Pivot (Qullamaggie) | todo | 321 | 2.01% | 1.55% | 57% | +0.98% | 53% |
 | Episodic Pivot (Qullamaggie) | antes | 170 | 2.39% | 2.27% | 60% | +1.32% | 58% |
 | Episodic Pivot (Qullamaggie) | después | 151 | 1.59% | 0.56% | 54% | +0.60% | 48% |
-| Máximo de 52 semanas | todo | 12135 | 0.52% | 0.45% | 54% | +0.18% | 49% |
+| Máximo de 52 semanas | todo | 12142 | 0.52% | 0.45% | 54% | +0.18% | 49% |
 | Máximo de 52 semanas | antes | 7019 | 0.45% | 0.47% | 54% | +0.25% | 50% |
-| Máximo de 52 semanas | después | 5116 | 0.61% | 0.42% | 53% | +0.09% | 48% |
+| Máximo de 52 semanas | después | 5123 | 0.61% | 0.42% | 53% | +0.09% | 48% |
 
 === 4. CEDEARs en pesos ===
-CCL implícito (mediana de 176 CEDEARs): 1,661.24
+CCL implícito (mediana de 175 CEDEARs): 1,640.19
 estado
-normal                                90
-barato                                51
-caro                                  35
-ratio o precio a revisar               8
+normal                                68
+barato                                55
+caro                                  52
+ratio o precio a revisar               9
 precio en pesos viejo (2026-08-03)     1
 precio en pesos viejo (2025-07-28)     1
-A revisar: GOOGL (ratio o precio a revisar), BA-C (ratio o precio a revisar), CAT (ratio o precio a revisar), EA (precio en pesos viejo (2026-08-03)), GLW (ratio o precio a revisar), MRVL (ratio o precio a revisar), NOW (ratio o precio a revisar), SCHW (precio en pesos viejo (2025-07-28)), TEN (ratio o precio a revisar), TXR (ratio o precio a revisar)
+A revisar: INTC (ratio o precio a revisar), QCOM (ratio o precio a revisar), BA-C (ratio o precio a revisar), COIN (ratio o precio a revisar), DELL (ratio o precio a revisar), EA (precio en pesos viejo (2026-08-03)), GLW (ratio o precio a revisar), RBLX (ratio o precio a revisar), SCHW (precio en pesos viejo (2025-07-28)), TEN (ratio o precio a revisar), TXR (ratio o precio a revisar)
 
 === 4b. Tesis de inversión y revisión semanal ===
 Tesis: 0 nuevas · 37 en total (9 abiertas, 5 cerradas)
