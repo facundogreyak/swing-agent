@@ -1,10 +1,10 @@
 cartera,ticker,fecha,estado,resultado,r,vs_spy,fecha_salida,archivo,nota
 swing,JPM,2026-09-24,CERRADA,-0.03991959268117318,-1.07,-0.034170166607560115,2026-10-01,tesis/swing/2026-09-24_JPM.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
 swing,BAC,2026-09-24,CERRADA,-0.04374356242230515,-1.07,-0.03799413634869209,2026-10-01,tesis/swing/2026-09-24_BAC.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
-momentum,MRNA,2026-09-25,ABIERTA,0.32397327705061363,,0.32597754343478236,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
-momentum,DELL,2026-09-25,ABIERTA,-0.3251169294385716,,-0.3231126630544029,,tesis/momentum/2026-09-25_DELL.md,"⚠ cayó al puesto #28: si sigue así, sale en la próxima revisión."
-momentum,AMD,2026-09-25,ABIERTA,-0.21782685424980497,,-0.21582258786563624,,tesis/momentum/2026-09-25_AMD.md,"◐ en zona de margen (puesto #8): se queda, pero perdió fuerza."
-momentum,CRWD,2026-09-25,ABIERTA,-0.03177855449760958,,-0.02977428811344085,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
+momentum,MRNA,2026-09-25,ABIERTA,0.23727297129905556,,0.28328061977848695,,tesis/momentum/2026-09-25_MRNA.md,✔ firme: sigue entre las primeras.
+momentum,DELL,2026-09-25,ABIERTA,-0.4256171318698855,,-0.3796094833904541,,tesis/momentum/2026-09-25_DELL.md,"⚠ cayó al puesto #35: si sigue así, sale en la próxima revisión."
+momentum,AMD,2026-09-25,ABIERTA,-0.352856466800313,,-0.3068488183208816,,tesis/momentum/2026-09-25_AMD.md,"⚠ cayó al puesto #27: si sigue así, sale en la próxima revisión."
+momentum,CRWD,2026-09-25,ABIERTA,-0.12739545639692185,,-0.08138780791749045,,tesis/momentum/2026-09-25_CRWD.md,✔ firme: sigue entre las primeras.
 momentum,SCCO,2026-09-25,CERRADA,-0.0371,,-0.03578556157667787,2026-10-27,tesis/momentum/2026-09-25_SCCO.md,✘ Tesis fallida: perdió plata.
 swing,V,2026-10-01,CERRADA,0.12922961605729988,3.9,0.1353549134094254,2026-10-20,tesis/swing/2026-10-01_V.md,✔ Tesis confirmada: llegó al objetivo.
 swing,BRK-B,2026-10-01,NO EJECUTADA,,,,,tesis/swing/2026-10-01_BRK-B.md,máximo por sector (Financieras)
@@ -33,14 +33,14 @@ swing,TSM,2026-10-23,CERRADA,-0.06126390317410957,-1.05,-0.06223470046420476,202
 swing,NVDA,2026-10-26,NO EJECUTADA,,,,,tesis/swing/2026-10-26_NVDA.md,cartera llena (5 posiciones)
 swing,AMD,2026-10-26,NO EJECUTADA,,,,,tesis/swing/2026-10-26_AMD.md,cartera llena (5 posiciones)
 swing,CSCO,2026-10-26,NO EJECUTADA,,,,,tesis/swing/2026-10-26_CSCO.md,cartera llena (5 posiciones)
-momentum,MRK,2026-10-26,ABIERTA,0.07231493802846645,,0.07300567391910806,,tesis/momentum/2026-10-26_MRK.md,✔ firme: sigue entre las primeras.
+momentum,MRK,2026-10-26,ABIERTA,0.04792470718446906,,0.09267674103339119,,tesis/momentum/2026-10-26_MRK.md,✔ firme: sigue entre las primeras.
 swing,NVDA,2026-10-27,NO EJECUTADA,,,,,tesis/swing/2026-10-27_NVDA.md,cartera llena (5 posiciones)
 swing,AMD,2026-10-27,NO EJECUTADA,,,,,tesis/swing/2026-10-27_AMD.md,cartera llena (5 posiciones)
 swing,PBR,2026-10-30,CERRADA,-0.08592592592592596,-1.03,-0.09058716494158703,2026-11-04,tesis/swing/2026-10-30_PBR.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
-swing,AMZN,2026-11-02,ABIERTA,0.07015567311354798,1.1326362372016279,,,tesis/swing/2026-11-02_AMZN.md,"en curso, sin alertas."
+swing,AMZN,2026-11-02,ABIERTA,0.046743599722748774,0.754657357752715,,,tesis/swing/2026-11-02_AMZN.md,"en curso, sin alertas."
 swing,NVDA,2026-11-03,NO EJECUTADA,,,,,tesis/swing/2026-11-03_NVDA.md,máximo por sector (Tecnología)
-swing,AMD,2026-11-03,ABIERTA,0.007274598205660787,0.05755136437408225,,,tesis/swing/2026-11-03_AMD.md,⚠ cerró debajo de la media de 50.
+swing,AMD,2026-11-03,CERRADA,-0.12640185471406495,-1.02,-0.12965219941123218,2026-11-05,tesis/swing/2026-11-03_AMD.md,✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado.
 swing,CSCO,2026-11-03,NO EJECUTADA,,,,,tesis/swing/2026-11-03_CSCO.md,máximo por sector (Tecnología)
-swing,CRM,2026-11-04,PENDIENTE,,,,,tesis/swing/2026-11-04_CRM.md,
-swing,QCOM,2026-11-04,PENDIENTE,,,,,tesis/swing/2026-11-04_QCOM.md,
-swing,CSCO,2026-11-04,PENDIENTE,,,,,tesis/swing/2026-11-04_CSCO.md,
+swing,CRM,2026-11-04,NO EJECUTADA,,,,,tesis/swing/2026-11-04_CRM.md,máximo por sector (Tecnología)
+swing,QCOM,2026-11-04,NO EJECUTADA,,,,,tesis/swing/2026-11-04_QCOM.md,máximo por sector (Tecnología)
+swing,CSCO,2026-11-04,ABIERTA,-0.04480589541260227,-0.7156877139767991,,,tesis/swing/2026-11-04_CSCO.md,⚠ cerró debajo de la media de 200; está cerca del stop.
