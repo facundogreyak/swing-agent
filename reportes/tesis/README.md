@@ -6,24 +6,23 @@ Cada compra del agente, documentada el día de la decisión y seguida hasta el c
 
 | Decisión | Acción | Estado | Resultado | Veredicto |
 |---|---|---|---|---|
-| 26/10/2026 | [MRK](momentum/2026-10-26_MRK.md) | ABIERTA | +6,1% | ✔ firme: sigue entre las primeras. |
-| 25/09/2026 | [MRNA](momentum/2026-09-25_MRNA.md) | ABIERTA | +37,8% | ✔ firme: sigue entre las primeras. |
-| 25/09/2026 | [DELL](momentum/2026-09-25_DELL.md) | ABIERTA | -37,2% | ⚠ cayó al puesto #34: si sigue así, sale en la próxima revisión. |
-| 25/09/2026 | [AMD](momentum/2026-09-25_AMD.md) | ABIERTA | -18,6% | ✔ firme: sigue entre las primeras. |
-| 25/09/2026 | [CRWD](momentum/2026-09-25_CRWD.md) | ABIERTA | -8,2% | ✔ firme: sigue entre las primeras. |
+| 26/10/2026 | [MRK](momentum/2026-10-26_MRK.md) | ABIERTA | +5,6% | ✔ firme: sigue entre las primeras. |
+| 25/09/2026 | [MRNA](momentum/2026-09-25_MRNA.md) | ABIERTA | +28,5% | ✔ firme: sigue entre las primeras. |
+| 25/09/2026 | [DELL](momentum/2026-09-25_DELL.md) | ABIERTA | -39,4% | ⚠ cayó al puesto #41: si sigue así, sale en la próxima revisión. |
+| 25/09/2026 | [AMD](momentum/2026-09-25_AMD.md) | ABIERTA | -17,6% | ✔ firme: sigue entre las primeras. |
+| 25/09/2026 | [CRWD](momentum/2026-09-25_CRWD.md) | ABIERTA | -9,3% | ◐ en zona de margen (puesto #6): se queda, pero perdió fuerza. |
 | 25/09/2026 | [SCCO](momentum/2026-09-25_SCCO.md) | CERRADA | -3,7% | ✘ Tesis fallida: perdió plata. |
 
 ## Swing
 
 | Decisión | Acción | Estado | Resultado | Veredicto |
 |---|---|---|---|---|
-| 09/11/2026 | [CRM](swing/2026-11-09_CRM.md) | PENDIENTE |  |  |
-| 09/11/2026 | [QCOM](swing/2026-11-09_QCOM.md) | PENDIENTE |  |  |
-| 06/11/2026 | [AMD](swing/2026-11-06_AMD.md) | ABIERTA | +7,4% (0,48R) | ⚠ cerró debajo de la media de 50. |
-| 06/11/2026 | [XOM](swing/2026-11-06_XOM.md) | ABIERTA | +0,6% (0,10R) | ⚠ cerró debajo de la media de 50. |
+| 10/11/2026 | [CVX](swing/2026-11-10_CVX.md) | PENDIENTE |  |  |
+| 06/11/2026 | [AMD](swing/2026-11-06_AMD.md) | ABIERTA | +8,8% (0,57R) | ⚠ cerró debajo de la media de 50. |
+| 06/11/2026 | [XOM](swing/2026-11-06_XOM.md) | ABIERTA | +0,4% (0,07R) | ⚠ cerró debajo de la media de 50. |
 | 04/11/2026 | [CSCO](swing/2026-11-04_CSCO.md) | CERRADA | -6,3% (-1,05R) | ✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado. |
 | 03/11/2026 | [AMD](swing/2026-11-03_AMD.md) | CERRADA | -12,6% (-1,02R) | ✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado. |
-| 02/11/2026 | [AMZN](swing/2026-11-02_AMZN.md) | ABIERTA | +7,4% (1,19R) | en curso, sin alertas. |
+| 02/11/2026 | [AMZN](swing/2026-11-02_AMZN.md) | ABIERTA | +9,0% (1,45R) | en curso, sin alertas. |
 | 30/10/2026 | [PBR](swing/2026-10-30_PBR.md) | CERRADA | -8,6% (-1,03R) | ✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado. |
 | 23/10/2026 | [TSM](swing/2026-10-23_TSM.md) | CERRADA | -6,1% (-1,05R) | ✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado. |
 | 19/10/2026 | [INTC](swing/2026-10-19_INTC.md) | CERRADA | -24,7% (-1,94R) | ✘ Tesis invalidada: tocó el stop (abrió debajo, con un salto). |
@@ -34,10 +33,12 @@ Cada compra del agente, documentada el día de la decisión y seguida hasta el c
 | 24/09/2026 | [JPM](swing/2026-09-24_JPM.md) | CERRADA | -4,0% (-1,07R) | ✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado. |
 | 24/09/2026 | [BAC](swing/2026-09-24_BAC.md) | CERRADA | -4,4% (-1,07R) | ✘ Tesis invalidada: tocó el stop; la pérdida quedó en lo planeado. |
 
-<details markdown="1"><summary>Señales que no se operaron (27)</summary>
+<details markdown="1"><summary>Señales que no se operaron (29)</summary>
 
 | Decisión | Acción | Motivo |
 |---|---|---|
+| 09/11/2026 | CRM | máximo por sector (Tecnología) |
+| 09/11/2026 | QCOM | máximo por sector (Tecnología) |
 | 04/11/2026 | CRM | máximo por sector (Tecnología) |
 | 04/11/2026 | QCOM | máximo por sector (Tecnología) |
 | 03/11/2026 | NVDA | máximo por sector (Tecnología) |

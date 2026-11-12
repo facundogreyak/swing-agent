@@ -1,4 +1,4 @@
-# Setups de swing trading · 2026-11-09
+# Setups de swing trading · 2026-11-10
 
 Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 
@@ -6,48 +6,48 @@ Universo: 183 acciones. Entrada en la apertura siguiente a la señal.
 
 | Setup | Período | Señales | Retorno prom. | Mediana | Aciertos | vs SPY | Le gana a SPY |
 |---|---|---|---|---|---|---|---|
-| Trend Template (Minervini) | todo | 5654 | 0.66% | 0.73% | 55% | +0.22% | 51% |
+| Trend Template (Minervini) | todo | 5659 | 0.65% | 0.72% | 55% | +0.21% | 51% |
 | Trend Template (Minervini) | antes | 3007 | 0.63% | 0.82% | 56% | +0.35% | 51% |
-| Trend Template (Minervini) | después | 2647 | 0.70% | 0.59% | 54% | +0.08% | 50% |
+| Trend Template (Minervini) | después | 2652 | 0.67% | 0.55% | 54% | +0.06% | 50% |
 | Breakout (Qullamaggie) | todo | 468 | 0.93% | 0.63% | 53% | +0.17% | 47% |
 | Breakout (Qullamaggie) | antes | 261 | 2.25% | 1.24% | 57% | +1.35% | 51% |
 | Breakout (Qullamaggie) | después | 207 | -0.73% | -0.38% | 47% | -1.32% | 41% |
 | Episodic Pivot (Qullamaggie) | todo | 321 | 2.01% | 1.55% | 57% | +0.98% | 53% |
 | Episodic Pivot (Qullamaggie) | antes | 170 | 2.39% | 2.27% | 60% | +1.32% | 58% |
 | Episodic Pivot (Qullamaggie) | después | 151 | 1.59% | 0.56% | 54% | +0.60% | 48% |
-| Máximo de 52 semanas | todo | 12181 | 0.52% | 0.45% | 54% | +0.19% | 49% |
+| Máximo de 52 semanas | todo | 12182 | 0.52% | 0.45% | 54% | +0.19% | 49% |
 | Máximo de 52 semanas | antes | 7019 | 0.45% | 0.47% | 54% | +0.25% | 50% |
-| Máximo de 52 semanas | después | 5162 | 0.60% | 0.43% | 53% | +0.11% | 48% |
-| RS Rating ≥ 90 | todo | 2638 | 0.59% | 0.52% | 53% | +0.03% | 50% |
+| Máximo de 52 semanas | después | 5163 | 0.60% | 0.43% | 53% | +0.11% | 48% |
+| RS Rating ≥ 90 | todo | 2640 | 0.59% | 0.51% | 53% | +0.03% | 50% |
 | RS Rating ≥ 90 | antes | 1479 | 0.44% | 0.60% | 54% | +0.08% | 50% |
-| RS Rating ≥ 90 | después | 1159 | 0.78% | 0.33% | 52% | -0.02% | 49% |
+| RS Rating ≥ 90 | después | 1161 | 0.77% | 0.32% | 52% | -0.02% | 49% |
 
 ## Hoy: 37 acciones cumplen algún setup
 
-| ticker   | sector              | setups                       | nuevos_hoy    |   rs |        r21 |        r63 |       adr |   dist_max52 |
-|:---------|:--------------------|:-----------------------------|:--------------|-----:|-----------:|-----------:|----------:|-------------:|
-| MRNA     | Salud               | trend_template,max_52s,rs_90 | max_52s       |   99 |  0.195556  |  3.44114   | 0.109366  |   0          |
-| TMO      | Salud               | trend_template,max_52s,rs_90 | max_52s,rs_90 |   91 |  0.0966688 |  0.193691  | 0.0340509 |   0          |
-| DOCU     | Tecnología          | trend_template,rs_90         |               |   96 |  0.0938379 |  0.310246  | 0.0368432 |  -0.0881904  |
-| TGT      | Consumo             | trend_template,rs_90         |               |   96 |  0.0797969 |  0.0977305 | 0.0329485 |  -0.0234858  |
-| ETSY     | Consumo             | trend_template,rs_90         |               |   95 |  0.152914  |  0.112733  | 0.0482349 |  -0.0810473  |
-| ROKU     | Comunicación        | trend_template,rs_90         |               |   94 |  0.0501799 |  0.0636803 | 0.0154871 |  -0.0138232  |
-| MRK      | Salud               | trend_template,rs_90         |               |   93 |  0.0217032 |  0.147355  | 0.031114  |  -0.0435404  |
-| LLY      | Salud               | trend_template,rs_90         |               |   93 |  0.197308  |  0.163745  | 0.0328781 |  -0.00425958 |
-| ABNB     | Consumo             | trend_template,rs_90         |               |   92 |  0.147224  |  0.0287058 | 0.0294061 |  -0.0011024  |
-| ABBV     | Salud               | trend_template,rs_90         |               |   91 |  0.0608745 |  0.172778  | 0.0262604 |  -0.00539193 |
-| JNJ      | Salud               | trend_template,max_52s       | max_52s       |   85 |  0.0790621 |  0.0912292 | 0.0263372 |   0          |
-| KO       | Consumo             | trend_template,max_52s       | max_52s       |   83 |  0.0906303 |  0.117056  | 0.0176622 |   0          |
-| AAPL     | Tecnología          | trend_template,max_52s       | max_52s       |   82 |  0.0417359 |  0.150143  | 0.0218267 |   0          |
-| AMD      | Tecnología          | rs_90                        |               |   98 | -0.163657  |  0.0722297 | 0.0577107 |  -0.21687    |
-| DELL     | Tecnología          | rs_90                        |               |   98 | -0.409088  | -0.214663  | 0.0646334 |  -0.411438   |
-| CRWD     | Tecnología          | rs_90                        |               |   97 | -0.168921  |  0.0301037 | 0.0572298 |  -0.180305   |
-| MU       | Tecnología          | rs_90                        |               |   97 | -0.2874    | -0.155863  | 0.0565591 |  -0.395775   |
-| TEN      | Energía / Industria | rs_90                        |               |   95 | -0.128988  |  0.17107   | 0.0468386 |  -0.206206   |
-| PANW     | Tecnología          | rs_90                        |               |   94 | -0.209871  | -0.137858  | 0.0526571 |  -0.211998   |
-| ACN      | Tecnología          | rs_90                        |               |   90 |  0.226493  |  0.414581  | 0.0402925 |  -0.100258   |
-| AMGN     | Salud               | trend_template               |               |   90 |  0.121387  |  0.129493  | 0.0258364 |  -0.0276919  |
-| CAH      | Salud               | trend_template               |               |   89 |  0.154565  |  0.141638  | 0.0249829 |   0          |
-| SPOT     | Comunicación        | trend_template               |               |   88 |  0.151113  |  0.215768  | 0.0373654 |  -0.0598423  |
-| EBAY     | Consumo             | trend_template               |               |   87 |  0.0782601 |  0.144588  | 0.0309477 |  -0.0333999  |
-| ADP      | Tecnología          | trend_template               |               |   86 |  0.115106  |  0.121374  | 0.0225666 |  -0.0190946  |
+| ticker   | sector              | setups                       | nuevos_hoy   |   rs |        r21 |        r63 |       adr |   dist_max52 |
+|:---------|:--------------------|:-----------------------------|:-------------|-----:|-----------:|-----------:|----------:|-------------:|
+| LLY      | Salud               | trend_template,max_52s,rs_90 | max_52s      |   95 |  0.211116  |  0.175421  | 0.0327607 |   0          |
+| MRNA     | Salud               | trend_template,rs_90         |              |   99 |  0.173529  |  2.93953   | 0.110493  |  -0.0675465  |
+| DOCU     | Tecnología          | trend_template,rs_90         |              |   96 |  0.0942652 |  0.336661  | 0.0368054 |  -0.0892458  |
+| TGT      | Consumo             | trend_template,rs_90         |              |   95 |  0.0531181 |  0.0505195 | 0.032966  |  -0.0477368  |
+| ETSY     | Consumo             | trend_template,rs_90         |              |   94 |  0.124399  |  0.0862741 | 0.0498044 |  -0.101205   |
+| MRK      | Salud               | trend_template,rs_90         |              |   93 |  0.0178756 |  0.120403  | 0.0308176 |  -0.0481054  |
+| ROKU     | Comunicación        | trend_template,rs_90         |              |   93 |  0.0504549 |  0.0575137 | 0.0159503 |  -0.0138232  |
+| ABNB     | Consumo             | trend_template,rs_90         |              |   91 |  0.143119  |  0.0377856 | 0.0301098 |  -0.0188977  |
+| TMO      | Salud               | trend_template,rs_90         |              |   91 |  0.0845011 |  0.191938  | 0.0339937 |  -0.00475312 |
+| CAH      | Salud               | trend_template,rs_90         | rs_90        |   90 |  0.162592  |  0.182055  | 0.0248869 |   0          |
+| AMD      | Tecnología          | rs_90                        |              |   98 | -0.132993  |  0.066842  | 0.0590609 |  -0.206661   |
+| DELL     | Tecnología          | rs_90                        |              |   98 | -0.420244  | -0.309845  | 0.0657449 |  -0.431713   |
+| CRWD     | Tecnología          | rs_90                        |              |   97 | -0.14163   |  0.0179457 | 0.0582862 |  -0.190418   |
+| MU       | Tecnología          | rs_90                        |              |   97 | -0.266739  | -0.204304  | 0.0585249 |  -0.402402   |
+| TEN      | Energía / Industria | rs_90                        |              |   96 | -0.172591  |  0.148817  | 0.0471533 |  -0.199291   |
+| PANW     | Tecnología          | rs_90                        |              |   94 | -0.191838  | -0.156714  | 0.0536531 |  -0.222786   |
+| ACN      | Tecnología          | rs_90                        |              |   92 |  0.212751  |  0.435051  | 0.040889  |  -0.0856137  |
+| ABBV     | Salud               | trend_template               |              |   90 |  0.0518447 |  0.18142   | 0.0250773 |  -0.00339109 |
+| EBAY     | Consumo             | trend_template               |              |   88 |  0.0773659 |  0.210982  | 0.0313009 |  -0.0130244  |
+| ADP      | Tecnología          | trend_template               |              |   87 |  0.115518  |  0.141331  | 0.0234876 |  -0.00811846 |
+| AMGN     | Salud               | trend_template               |              |   87 |  0.114137  |  0.12439   | 0.0257215 |  -0.0276919  |
+| V        | Financieras         | trend_template               |              |   86 |  0.0866494 |  0.176896  | 0.0199569 |  -0.0292897  |
+| DAL      | Energía / Industria | trend_template               |              |   85 |  0.154155  |  0.0252418 | 0.0360413 |  -0.0131577  |
+| KO       | Consumo             | trend_template               |              |   84 |  0.0792962 |  0.124303  | 0.0177554 |   0          |
+| MO       | Consumo             | trend_template               |              |   84 |  0.0653083 |  0.20471   | 0.0203752 |  -0.0216584  |
