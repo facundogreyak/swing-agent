@@ -1,24 +1,24 @@
 # Backtest – v4.1-retroceso-4R
 
-Período: 2017-07-13 → 2026-11-19 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
+Período: 2017-07-13 → 2026-11-20 · Tickers con datos: 50 de 50 · Capital inicial: USD 10,000
 
 ## Configuración actual
 
 | Métrica | Valor |
 |---|---|
 | operaciones | 631 |
-| win_rate | 44.8% |
+| win_rate | 44.5% |
 | r_promedio (expectancy) | 0.17 |
-| ganancia_prom_R | 1.58 |
-| perdida_prom_R | -0.98 |
-| profit_factor | 1.31 |
+| ganancia_prom_R | 1.59 |
+| perdida_prom_R | -0.97 |
+| profit_factor | 1.30 |
 | dias_prom_en_posicion | 14.17 |
-| retorno_total | 142.7% |
-| retorno_anual (CAGR) | 9.9% |
+| retorno_total | 139.2% |
+| retorno_anual (CAGR) | 9.8% |
 | max_drawdown | -23.1% |
-| retorno/caida (MAR) | 0.43 |
+| retorno/caida (MAR) | 0.42 |
 | exposicion_prom | 69.6% |
-| spy_retorno_anual | 13.9% |
+| spy_retorno_anual | 13.4% |
 | spy_max_drawdown | -33.7% |
 
 ## Retorno por año
@@ -34,22 +34,22 @@ Período: 2017-07-13 → 2026-11-19 · Tickers con datos: 50 de 50 · Capital in
 | 2023 | 7.6% | 26.2% |
 | 2024 | 22.3% | 24.9% |
 | 2025 | 16.8% | 17.7% |
-| 2026 | 4.8% | 5.8% |
+| 2026 | 3.3% | 1.9% |
 
 ## Variantes de riesgo por operación
 
 | Variante | operaciones | win_rate | r_promedio (expectancy) | retorno_anual (CAGR) | max_drawdown | exposicion_prom |
 |---|---|---|---|---|---|---|
-| efectivo en SPY: sí | 631 | 44.8% | 0.17 | 8.0% | -40.8% | 69.6% |
-| riesgo 0.5% | 633 | 44.9% | 0.17 | 5.6% | -12.5% | 40.1% |
-| riesgo 1.0% | 631 | 44.8% | 0.17 | 9.9% | -23.1% | 69.6% |
-| riesgo 2.0% | 614 | 43.5% | 0.17 | 10.9% | -30.1% | 78.5% |
+| efectivo en SPY: sí | 631 | 44.5% | 0.17 | 7.7% | -40.8% | 69.6% |
+| riesgo 0.5% | 633 | 44.5% | 0.17 | 5.5% | -12.5% | 40.1% |
+| riesgo 1.0% | 631 | 44.5% | 0.17 | 9.8% | -23.1% | 69.6% |
+| riesgo 2.0% | 614 | 43.2% | 0.17 | 10.6% | -30.1% | 78.4% |
 
 ## Resultado por motivo de salida
 
 | Motivo | Operaciones | R promedio |
 |---|---|---|
-| FIN PERÍODO | 4 | 0.01 |
+| FIN PERÍODO | 4 | -0.35 |
 | OBJETIVO | 15 | 3.93 |
 | OBJETIVO (gap) | 7 | 4.68 |
 | STOP | 212 | -1.07 |
@@ -62,11 +62,11 @@ Período: 2017-07-13 → 2026-11-19 · Tickers con datos: 50 de 50 · Capital in
 |---|---|---|---|---|
 | China | 12 | 42% | 0.38 | 955 |
 | Consumo | 131 | 38% | 0.04 | -1,007 |
-| Energía / Industria | 63 | 41% | 0.09 | 1,315 |
+| Energía / Industria | 63 | 41% | 0.10 | 1,386 |
 | Financieras | 85 | 47% | 0.14 | 1,770 |
 | Latam / Brasil | 86 | 43% | 0.17 | 1,363 |
 | Salud | 69 | 54% | 0.29 | 2,678 |
-| Tecnología | 185 | 48% | 0.23 | 7,178 |
+| Tecnología | 185 | 46% | 0.23 | 6,758 |
 
 ## Últimas 10 operaciones
 
@@ -78,7 +78,7 @@ Período: 2017-07-13 → 2026-11-19 · Tickers con datos: 50 de 50 · Capital in
 | VIST     | Latam / Brasil      | 2026-10-09      |           66.82  |        61.6894 |    87.3422 |    48.67   | 2026-11-05     |         61.6894 | STOP            |     19 |   -259.09 |        -1.04 |
 | TSM      | Tecnología          | 2026-10-20      |          416.29  |       391.409  |   515.813  |    10.1713 | 2026-11-05     |        379.75   | STOP (gap)      |     12 |   -383.8  |        -1.52 |
 | JNJ      | Salud               | 2026-10-15      |          257.11  |       244.952  |   305.74   |    20.6798 | 2026-11-12     |        283.52   | TIEMPO          |     20 |    529.38 |         2.11 |
-| AMZN     | Tecnología          | 2026-11-03      |          248.59  |       233.192  |   310.181  |    16.0088 | 2026-11-19     |        257.37   | FIN PERÍODO     |     12 |    128.41 |         0.52 |
-| AMD      | Tecnología          | 2026-11-05      |          452.5   |       390.1    |   702.098  |     3.8793 | 2026-11-19     |        489.19   | FIN PERÍODO     |     10 |    136.85 |         0.57 |
-| XOM      | Energía / Industria | 2026-11-09      |          162.792 |       153.313  |   200.712  |    26.089  | 2026-11-19     |        158.93   | FIN PERÍODO     |      8 |   -113.36 |        -0.46 |
-| CVX      | Energía / Industria | 2026-11-11      |          212.32  |       201.613  |   255.147  |    23.2799 | 2026-11-19     |        206.5    | FIN PERÍODO     |      6 |   -150.11 |        -0.6  |
+| AMZN     | Tecnología          | 2026-11-03      |          248.59  |       233.192  |   310.181  |    16.0088 | 2026-11-20     |        246.82   | FIN PERÍODO     |     13 |    -40.23 |        -0.16 |
+| AMD      | Tecnología          | 2026-11-05      |          452.5   |       390.1    |   702.098  |     3.8793 | 2026-11-20     |        424.39   | FIN PERÍODO     |     11 |   -114.15 |        -0.47 |
+| XOM      | Energía / Industria | 2026-11-09      |          162.792 |       153.313  |   200.712  |    26.089  | 2026-11-20     |        159.99   | FIN PERÍODO     |      9 |    -85.75 |        -0.35 |
+| CVX      | Energía / Industria | 2026-11-11      |          212.32  |       201.613  |   255.147  |    23.2799 | 2026-11-20     |        208.37   | FIN PERÍODO     |      7 |   -106.65 |        -0.43 |

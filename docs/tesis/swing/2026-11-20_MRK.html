@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tesis de inversión · MRK · Swing · retroceso · Agente Inversor – Facundo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6fa;--card:#fff;--tx:#111827;--mu:#6b7280;--bd:#e5e7eb;--ac:#4f46e5;--ac2:#eef2ff;
+  --pos:#16a34a;--neg:#dc2626}
+@media (prefers-color-scheme: dark){:root{--bg:#0f1117;--card:#171a22;--tx:#e5e7eb;--mu:#9ca3af;--bd:#2a2f3a;
+  --ac:#818cf8;--ac2:#1e2140}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+header{max-width:860px;margin:0 auto;padding:18px 16px 0;font-size:13px;color:var(--mu)}
+header a{color:var(--ac);text-decoration:none;margin-right:14px}
+main{max-width:860px;margin:10px auto 40px;padding:24px 22px;background:var(--card);border-radius:16px;
+  box-shadow:0 1px 2px rgba(17,24,39,.04),0 4px 16px rgba(17,24,39,.06)}
+h1{font-size:24px;line-height:1.25;margin:0 0 8px}
+h2{font-size:18px;margin:28px 0 8px;padding-top:14px;border-top:1px solid var(--bd)}
+h3{font-size:15px;margin:20px 0 6px}
+a{color:var(--ac)}
+blockquote{margin:12px 0;padding:10px 14px;background:var(--ac2);border-radius:10px;color:var(--mu);font-size:13px}
+blockquote p{margin:0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--bd);vertical-align:top}
+th{color:var(--mu);font-weight:600;font-size:12px}
+ul{padding-left:20px}li{margin:3px 0}
+details{margin:10px 0}summary{cursor:pointer;color:var(--mu)}
+.pie{max-width:860px;margin:0 auto 30px;padding:0 16px;font-size:12px;color:var(--mu)}
+.boton{display:inline-block;background:var(--ac);color:#fff!important;text-decoration:none;padding:6px 14px;
+  border-radius:999px;font-weight:600;font-size:13px}
+.salto{page-break-before:always;break-before:page}
+@media (max-width:600px){main{padding:16px 14px;border-radius:0;margin:6px 0 30px}h1{font-size:20px}
+  table{font-size:13px}th,td{padding:6px 6px}}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff;--card:#fff;--tx:#111827;--mu:#4b5563;--bd:#d1d5db;--ac:#3730a3;--ac2:#f3f4f6}
+  body{font-size:11pt;background:#fff}
+  header,.pie,.no-imprimir{display:none}
+  main{box-shadow:none;margin:0;padding:0;max-width:none}
+  a{color:inherit;text-decoration:none}
+  tr,li,blockquote{break-inside:avoid}
+  h2,h3{break-after:avoid}
+  .tw{overflow:visible}
+}
+</style></head><body>
+<header><a href="../../index.html">← Tablero</a><a href="../../tesis/index.html">Tesis</a>
+<a href="../../revision_semanal/index.html">Revisiones semanales</a></header>
+<main><h1>Tesis de inversión · MRK · Swing · retroceso</h1>
+<p>Decisión: <strong>compra</strong> al cierre del 20/11/2026 · Sector: Salud · Estado: <strong>PENDIENTE</strong></p>
+<blockquote>
+<p>Escrita por el agente el día de la decisión con sus propios datos (precio, volumen, ranking y backtest) y contexto de internet (Yahoo Finance y Google News). Las secciones 1 a 5 no se modifican después; la 6 a 8 se actualizan con lo que pasó. Simulado, sin dinero real. No es asesoramiento financiero.</p>
+</blockquote>
+<h2>1. La idea</h2>
+<p>Comprar un <strong>retroceso dentro de una tendencia alcista</strong>. MRK viene en tendencia de suba (precio arriba de sus medias de 50 y 200 ruedas), en los últimos días corrigió (el RSI bajó a 32) y hoy rebotó con volumen. La apuesta es que la corrección fue una pausa y que la tendencia de fondo retoma en las próximas semanas.</p>
+<h2>2. Por qué ahora (datos al cierre del 20/11/2026)</h2>
+<div class='tw'><table>
+<thead>
+<tr>
+<th></th>
+<th>Dato</th>
+<th>Regla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precio</td>
+<td>USD 133,72</td>
+<td></td>
+</tr>
+<tr>
+<td>Tendencia</td>
+<td>precio +4,3% vs. media de 200; media de 50 +13,3% vs. la de 200</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Retroceso</td>
+<td>RSI mínimo de las últimas 3 ruedas: 32 (tiene que ser &lt; 40)</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Rebote</td>
+<td>RSI 32 → 34; cierre +0,7% vs. ayer</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Volumen</td>
+<td>1,6x su promedio de 20 ruedas (mínimo 0,8x)</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Volatilidad</td>
+<td>se mueve ~USD 4,51 por día (ATR 14) = 3,4% del precio</td>
+<td></td>
+</tr>
+<tr>
+<td>Máximo de 52 semanas</td>
+<td>USD 155,53 (-14,0% desde ahí)</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Contexto: cuánto subió contra el mercado</strong></p>
+<div class='tw'><table>
+<thead>
+<tr>
+<th>Plazo</th>
+<th>MRK</th>
+<th>SPY</th>
+<th>Diferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 mes</td>
+<td>-9,2%</td>
+<td>-9,7%</td>
+<td>+0,5%</td>
+</tr>
+<tr>
+<td>3 meses</td>
+<td>-10,7%</td>
+<td>-9,4%</td>
+<td>-1,3%</td>
+</tr>
+<tr>
+<td>6 meses</td>
+<td>+10,7%</td>
+<td>-7,0%</td>
+<td>+17,7%</td>
+</tr>
+<tr>
+<td>12 meses</td>
+<td>+44,8%</td>
+<td>+5,2%</td>
+<td>+39,6%</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Mercado: SPY está 5,5% por debajo de su media de 200 ruedas (mercado bajista: más riesgo de que las subas no sigan). El filtro de mercado está apagado.</li>
+<li>Sector: Salud.</li>
+</ul>
+<h3>Contexto: la empresa y las noticias (al 20/11/2026)</h3>
+<p><em>Fuentes: Yahoo Finance y Google News. Acompaña la decisión; no la cambia.</em></p>
+<p><strong>Noticias de los últimos 7 días</strong></p>
+<ul>
+<li>20/11/2026 · <a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVHhUWnY1MDlFbG9KMVh6em1MWDR0T2dQNnlxS1IyYlA0SHNwdzJ6MGJtNXc3Z08tUWI2bEZ2MFpDbUVVOFlGdzlRQWw5MXZsWXdON1Vmck83OVF0bUFTaHRNcVU2a1pZRlJncEhnbjJ5NExEUkFEWEhLZ01UNmViVU9iekxQbDIyZl9MTUZmYkJOdzlmTEtUSDVDTk1RWUJwTUJqVUtPMlAyVTNxcUZkZHotZnpXSnlETHdVT1dRcjhGakNHeXJrdVFYRTJTS0FjR21yRXJuQVVZMl9rUk9jdllwaXlpYjc5?oc=5">Why Is Merck Stock Trading Higher Today? - Merck &amp; Co (NYSE:MRK)</a> — <em>Benzinga</em></li>
+<li>20/11/2026 · <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbUppczE5MU4zQ0JCS1NvN3hLY0RLQlYtZWdKTm53Rmk5dHFZM0ZDMEpQbGhYdkVjOXpiQ1ZiSUJ4V3d6VmRMeE1obGhSaGlVTWozZGJvRkI0MmNRSzROLXhlUnczZWd3bGpMUFAwZWtSMWRWMlFXRi1yREFUVE03dTh3V1RrX014Y3F1SWdTMW5SNmRfXzIyUGFyaTZEWmdPdEEzcHJoRmZDZW5MQ3l3aWhmOUpsZ3VoV2xYWHFGSGtUN3dra3NyTWcwRzE5NFd1MW1DdDNDTlpoVTUtS3hod2JQWExvaVE?oc=5">HALO Faces Legal Setback in Germany Over MRK's Keytruda SC, Stock Down</a> — <em>The Globe and Mail</em></li>
+<li>20/11/2026 · <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxObUhGbF9CN0VMODV5R25GUVZsVlZ3S3l0NGRnYVJ4TmRfMTBHcF9VS2x1dlFZWGVoMHhVanY1Zzk0UFMxQjd3YWllRWwzYXFmUWtrTEtpRXVHWGUtSHhJc202VjJ5NUl6bmw1SnBjTnZJeVBRSzRDNFQ4UU1YTGl1RzA3ajNuU0JaM1dscEJaZDhpQ04zZ0pCUW5icFdGVmgteF80M3FIZndMLXFzTTBQVU9GTkpLWlJYZG0w?oc=5">Merck (MRK) Raises Dividend by 3.5%, Signaling Confidence Amid M</a> — <em>GuruFocus</em></li>
+<li>20/11/2026 · <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM1U2cnpWeDA2MmJLRmptVkdrenZxZmJTWVBuLUw4eUlqYmtlcEU2OHFsb3lqNC1DRDVDLXBCSjk5Wl9TTnpHajhFWmZTbWJYdW9QaHZpLXhYZFhUZ3ptQlNWYUpmRUxKQTdOYlpTaWpsbENUMWNmYmpsMDBhRXRqalh1OXk4Q3ZyaTRQdW1qTGdLSkdydFVaQ29uQ2lYaUZYOXh0NGlqZDJFQXpkaEJLeDVHMVItYWk1RzBhenV0QlI?oc=5">Merck (MRK) Reports Promising Sacituzumab Tirumotecan Data for G</a> — <em>GuruFocus</em></li>
+<li>20/11/2026 · <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMnJPVUZ2ZTQwNFhzMGtKbEFKVmg4RVRQZlh4T19GOTJvNUt1bEFVVWpWRXNGbnBSUHpGZ1pTUy1zeHAwVkpPdW1sbHFNTFN2ZEE4OFR4a1V0NzNyUlBDMWVveUtOYjJzUmhFZG5uMjBvN25zYkk1T3RpNV9HTV9HTGhsRE1XNlBTQW5LSmR2VkZURFRuMUpNVHd0TVZSdXJaVHBNQ3JuRVVZX3dxZVRKb1VzdExOQnRZR2tmTDAwX0NXN1JBTVdGRzllQURIRkRna05OWDBmdmQ0QQ?oc=5">Merck (MRK) Reports Positive Phase 3 Trial Results for Sacituzum</a> — <em>GuruFocus</em></li>
+</ul>
+<h2>3. El plan</h2>
+<ul>
+<li><strong>Entrada:</strong> en la apertura de la rueda siguiente (referencia: cierre de USD 133,72).</li>
+<li><strong>Stop (si sale mal):</strong> entrada − 2,0 × ATR ≈ <strong>USD 124,70</strong> (-6,7%).</li>
+<li><strong>Objetivo (si sale bien):</strong> 4,0 veces lo arriesgado (4R) ≈ <strong>USD 169,79</strong> (+27,0%).</li>
+<li><strong>Salida por tiempo:</strong> si en 20 ruedas no tocó ni el stop ni el objetivo, se vende (≈ 21/12/2026).</li>
+<li><strong>Tamaño:</strong> se arriesga 1% del capital (≈ USD 98) → ≈ 10,84 acciones ≈ USD 1.449 (15% de la cartera, tope 25%).</li>
+<li><strong>En BYMA:</strong> CEDEAR MRK (ratio 5:1) ≈ 54 CEDEARs; hoy a ARS 47.840 (CCL implícito 1.789, normal).</li>
+</ul>
+<h2>4. Qué confirmaría o invalidaría la tesis</h2>
+<ul>
+<li>✔ <strong>Se confirma</strong> si toca el objetivo (USD 169,79) antes de ≈ 21/12/2026.</li>
+<li>✘ <strong>Se invalida</strong> si toca el stop (USD 124,70): el retroceso no era una pausa sino el comienzo de una baja. La pérdida queda acotada a ~1R (USD 98), salvo que abra con un salto.</li>
+<li>⚠ <strong>Señales de alerta</strong> en el seguimiento: cierre debajo de la media de 50 (hoy USD 145,26) o de la de 200 (USD 128,19). El agente no vende por eso (solo por stop, objetivo o tiempo), pero la tesis pierde fuerza.</li>
+</ul>
+<h2>5. Qué se puede esperar (backtest de esta configuración)</h2>
+<ul>
+<li>631 operaciones con esta misma regla desde 17/07/2017: gana el <strong>45%</strong>, resultado promedio <strong>0,17R</strong> por operación, 14 ruedas en promedio.</li>
+<li>Cómo terminaron: objetivo 3%, stop 45%, tiempo 51%.</li>
+<li>Las ganadoras dejan en promedio 1,59R y las perdedoras -0,97R: se pierde más seguido de lo que se gana, la ventaja está en que las ganadoras son más grandes.</li>
+<li>En MRK: 17 operaciones, ganó el 53%, promedio 0,29R.</li>
+</ul>
+<p><strong>Riesgos a tener en cuenta:</strong> un salto en la apertura (resultados, noticias) puede saltar el stop; la tesis se basa solo en precio y volumen, no mira balances ni noticias.</p>
+<h2>6. Ejecución</h2>
+<p>Orden pendiente: se compra en la próxima apertura.</p>
+<p><a href="../index.html">← Todas las tesis</a></p></main>
+<div class="pie">Agente Inversor – Facundo · Simulado, sin dinero real. Herramienta de análisis: no es asesoramiento financiero.
+Para guardarlo en PDF: Imprimir → Guardar como PDF.</div>
+</body></html>
